@@ -1,184 +1,176 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Toledo Consultora IT",
+    "paragraph": "Soluciones a medida para tu negocio"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Toledo Consultora IT, una empresa de desarrollo de soluciones Web comprometida en brindar soluciones tecnológicas innovadoras y personalizadas para empresas y organizaciones de todos los tamaños. Fundada y liderada por Eduardo Toledo desde 2022.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Desarrollo web y aplicaciones a medida",
+      "Acompañando tu transformación digital",
+      "Ciberseguridad",
+      "Innovación tecnológica"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Codificamos tu éxito",
+      "Tu visión, nuestra tecnología",
+      "Software personalizado",
+      "Experiencia Internacional"
     ]
   },
   "Gallery": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "title": "Calyaan Login",
+      "largeImage": "img/portfolio/calyaan.png",
+      "smallImage": "img/portfolio/calyaan-tumb.png"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "title": "Calyaan Dasboard",
+      "largeImage": "img/portfolio/calyaan2.png",
+      "smallImage": "img/portfolio/calyaan2-tumb.png"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "title": "Calyaan Tools",
+      "largeImage": "img/portfolio/calyaan3.png",
+      "smallImage": "img/portfolio/calyaan3-tumb.png"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "title": "Gato Negro Land",
+      "largeImage": "img/portfolio/gatonegro.png",
+      "smallImage": "img/portfolio/gatonegro-tumb.png"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "title": "Gato Negro Products",
+     "largeImage": "img/portfolio/gatonegro2.png",
+      "smallImage": "img/portfolio/gatonegro2-tumb.png"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "title": "Gato Negro Cart",
+      "largeImage": "img/portfolio/gatonegro3.png",
+      "smallImage": "img/portfolio/gatonegro3-tumb.png"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
+      "title": "Store Computer Land",
+      "largeImage": "img/portfolio/store.png",
+      "smallImage": "img/portfolio/store-tumb.png"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
+      "title": "Store Computer Products",
+      "largeImage": "img/portfolio/store2.png",
+      "smallImage": "img/portfolio/store2-tumb.png"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "title": "Store Computer Cart",
+      "largeImage": "img/portfolio/store3.png",
+      "smallImage": "img/portfolio/store3-tumb.png"
     }
   ],
+  
   "Services": [
+  {
+    "icon": "fa fa-stack-exchange",
+    "name": "Desarrollo Full Stack",
+    "text": "Desarrollo de aplicaciones completas utilizando stacks MERN y PERN, ofreciendo soluciones robustas y escalables para aplicaciones web."
+  },
+  {
+    "icon": "fa fa-cloud",
+    "name": "DevOps y Gestión en la Nube",
+    "text": "Implementación de prácticas DevOps con Docker y AWS, optimizando el despliegue, la escalabilidad y la eficiencia en entornos de producción."
+  },
+  {
+    "icon": "fa fa-file-code-o",
+    "name": "Lenguajes y Frameworks",
+    "text": "Experto en HTML, CSS, JavaScript, Node.js, React y Express, creando aplicaciones interactivas y de alto rendimiento."
+  },
+  {
+    "icon": "fa fa-database",
+    "name": "Bases de Datos",
+    "text": "Gestión de bases de datos con PostgreSQL y MongoDB, asegurando una integración eficiente y consultas optimizadas para grandes volúmenes de datos."
+  },
+  {
+    "icon": "fa fa-server",
+    "name": "Integraciones y APIs",
+    "text": "Desarrollo de integraciones con plataformas como MercadoPago, Twilio y Nodemailer, facilitando funcionalidades avanzadas en tus aplicaciones."
+  },
+  {
+    "icon": "fa fa-github-square",
+    "name": "Herramientas y Metodologías",
+    "text": "Uso de herramientas como Postman, Trello, Git, y metodologías ágiles como Scrum para una gestión eficiente y colaborativa del desarrollo."
+  }
+]
+,
+
+  
+"Testimonials": [
+  
+  {
+    "img": "img/testimonials/04.jpg",
+    "text": "Consultora Toledo transformó la plataforma de ecommerce de Gato Negro, mejorando no solo la experiencia de usuario sino también el rendimiento y la seguridad del sitio. Su trabajo constante y visión a largo plazo han sido fundamentales para el crecimiento de nuestro negocio en línea.",
+    "name": "Gato Negro e-liquids"
+  },  
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }
-  ],
-  "Testimonials": [
-    {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    }
-  ],
+    "img": "img/testimonials/02.jpg",
+    "text": "Gracias a Eduardo y su Consultora por el desarrollo y puesta en produccion de nuestro SAAS calyaan.com.co, integrando desde pagos en línea hasta un sistema avanzado de geolocalización, chat, servicio de whatsapp, correos y liquidación de honorarios profesionales. No solo supervisaron el desarrollo técnico, sino que también actuaron como nexo entre los diferentes equipos y áreas de la empresa, garantizando que el proyecto se entregara a tiempo y con altos estándares.",
+    "name": "Calyaan Colombia"
+  },
+  {
+    "img": "img/testimonials/05.jpg",
+    "text": "Solicitamos a Consultora Toledo el desarrollo de la plataforma de ecommerce para nuestra empresa Computer Store. Y nos entregó junto a su equipo una solución robusta y funcional. Gracias a su experiencia, implementamos características avanzadas como la integración de MercadoPago y autenticación segura.",
+    "name": "Computer Store"
+  }
+]
+,
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
+      "img": "img/team/01.png",
+      "name": "Eduardo Toledo",
       "job": "Director"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
+      "img": "img/team/02.png",
+      "name": "Lucia Radwanski",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
+      "img": "img/team/03.png",
+      "name": "Leandro Krosteiner",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
+      "img": "img/team/04.png",
+      "name": "Franco Chaparro",
       "job": "Project Manager"
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "address": "C. 52 22 - Posadas, Misiones, Argentina",
+    "phone": "+54 3764221063",
+    "email": "eduardocarlostoledo@gmail.com",
+        "facebook": "https://www.facebook.com/people/Toledo-Consultora-It/61567966653297/",
+    "whatsapp": "https://wa.me/543764221063",
+    "youtube": "https://www.youtube.com/@eduardocarlostoledo"
   },
   "Features": [
-    {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    }
-  ]
+  {
+    "icon": "fa fa-database",
+    "title": "Bases de Datos",
+    "text": "Experiencia avanzada en PostgreSQL y MongoDB, asegurando almacenamiento y consultas eficientes para proyectos web y de alta demanda."
+  },
+  {
+    "icon": "fa fa-server",
+    "title": "Servidores Confiables",
+    "text": "Desarrollo de APIs y sistemas robustos con Node.js y Express, proporcionando seguridad y rendimiento óptimos en aplicaciones web."
+  },
+  {
+    "icon": "fa fa-laptop",
+    "title": "Interfaces Modernas",
+    "text": "Diseño de interfaces responsivas con React y Tailwind CSS, ofreciendo experiencias de usuario fluidas y compatibles con dispositivos móviles."
+  },
+  {
+    "icon": "fa fa-cloud-upload",
+    "title": "Implementación DevOps",
+    "text": "Integración y despliegue continuo utilizando Docker y Kubernetes, optimizando la gestión y escalabilidad de aplicaciones en entornos de producción."
+  }
+]
+
 }

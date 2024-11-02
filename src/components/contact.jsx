@@ -24,7 +24,7 @@ export const Contact = (props) => {
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
     
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("REACT_APP_YOUR_SERVICE_ID", "REACT_APP_YOUR_TEMPLATE_ID", e.target, "REACT_APP_YOUR_PUBLIC_KEY")
       .then(
         (result) => {
           console.log(result.text);
@@ -42,10 +42,9 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>Mantengamos el contacto</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Dejanos un mensaje o consulta y estaremos en comunicación a la brevedad posible.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -100,7 +99,7 @@ export const Contact = (props) => {
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
-              <h3>Contact Info</h3>
+              <h3>Información de contacto</h3>
               <p>
                 <span>
                   <i className="fa fa-map-marker"></i> Address
@@ -135,8 +134,8 @@ export const Contact = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
+                    <a href={props.data ? props.data.whatsapp : "/"}>
+                      <i className="fa fa-whatsapp"></i>
                     </a>
                   </li>
                   <li>

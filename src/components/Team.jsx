@@ -5,10 +5,9 @@ export const Team = (props) => {
     <div id="team" className="text-center">
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
-          <h2>Meet the Team</h2>
+          <h2>Nuestro Equipo</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          “Nuestra pasión es reinventar la industria y construir una empresa única que abrace completamente el futuro. A medida que ampliamos nuestro negocio, también debemos evolucionar y reinventarnos"
           </p>
         </div>
         <div id="row">
