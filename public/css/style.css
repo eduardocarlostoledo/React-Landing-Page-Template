@@ -57,9 +57,8 @@ ol {
 }
 ul,
 ol {
-  padding: 0;
-  webkit-padding: 0;
-  moz-padding: 0;
+  padding: 10px;
+  
 }
 hr {
   height: 2px;
@@ -392,10 +391,10 @@ header .intro-text {
 }
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateY(0);
+  backface-visibility: hidden; /* Propiedad estándar */
   transform: translateY(0);
 }
+
 .hover-bg:hover .hover-text {
   opacity: 1;
 }

@@ -128,9 +128,11 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
+  -webkit-appearance: button; /* Para navegadores basados en WebKit */
+  appearance: button; /* Propiedad estándar para compatibilidad */
+  cursor: pointer; /* Cambia el cursor a una mano */
 }
+
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -155,11 +157,13 @@ input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 input[type="search"] {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-  -webkit-appearance: textfield;
+  box-sizing: content-box;
+  appearance: textfield;
+  border: 1px solid #ccc; /* Agrega un borde */
+  padding: 8px; /* Agrega un relleno para mejorar la apariencia */
+  width: 100%; /* Opcional: hace que el campo ocupe todo el ancho disponible */
 }
+
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -2598,8 +2602,11 @@ textarea.form-control {
   height: auto;
 }
 input[type="search"] {
-  -webkit-appearance: none;
+  appearance: none; /* Propiedad estándar para eliminar estilos predeterminados */
+  -webkit-appearance: none; /* Para navegadores basados en WebKit */
+  /* Otros estilos aquí */
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"].form-control,
   input[type="time"].form-control,
@@ -5857,7 +5864,8 @@ button.list-group-item-danger.active:focus {
   opacity: .5;
 }
 button.close {
-  -webkit-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;  
   padding: 0;
   cursor: pointer;
   background: transparent;
