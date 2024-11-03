@@ -147,7 +147,7 @@ export const Contact = (props) => {
                   </li>
                   <li>
                     <a href={props.data ? props.data.whatsapp : "/"}>
-                      <i className="fa fa-whatsapp"></i>
+                      <i className="fa fa-whatsapp"></i>                      
                     </a>
                   </li>
                   <li>
@@ -164,10 +164,14 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
+            &copy; 2024 TOLEDO CONSULTORA IT. Design by Eduardo Toledo {" "}
+            <a href="http://wa.me/543764221063" rel="nofollow">
+              Whatsapp
             </a>
+            {/* {" "} */}
+            {/* <a href="http://www.templatewire.com" rel="nofollow">
+              TemplateWire
+            </a> */}
           </p>
         </div>
       </div>
