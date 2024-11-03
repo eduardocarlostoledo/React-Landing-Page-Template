@@ -1,18 +1,29 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 360px) {
   #features {
-    padding: 20px;
-    
+    padding: 20px;    
   }
-  #about,
+  
   #services,
   #testimonials,
   #team,
   #contact,
   #footer {
-    width: 111%;
+    width: 100%;
   }
 
   #portfolio {
     width: 110%;
   }
+}
+
+@media (max-width: 360px) {
+
+  #services {
+      width: 100% !important;
+    }
+
+  
+  
+      
+  
 }

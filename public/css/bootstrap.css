@@ -1291,7 +1291,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 10px;  
 }
 .lead {
   margin-bottom: 20px;
@@ -6762,4 +6762,15 @@ button.close {
     display: none !important;
   }
 }
+
+
+@media (max-width: 420px) {
+  p {
+    margin: 0 15px 10px; /* Configura los márgenes superior, lateral e inferior en una sola línea */
+  }
+}
+
+
+
+
 /*# sourceMappingURL=bootstrap.css.map */
