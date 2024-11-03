@@ -121,26 +121,7 @@
 ]
 ,
   "Team": [
-    {
-      "img": "img/team/01.png",
-      "name": "Eduardo Toledo",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.png",
-      "name": "Lucia Radwanski",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.png",
-      "name": "Leandro Krosteiner",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.png",
-      "name": "Franco Chaparro",
-      "job": "Project Manager"
-    }
+    
   ],
   "Contact": {
     "address": "C. 52 22 - Posadas, Misiones, Argentina",
