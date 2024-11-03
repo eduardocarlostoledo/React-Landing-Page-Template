@@ -604,7 +604,7 @@ label {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   
   .intro h1 {
     font-family: "Raleway", sans-serif;
@@ -619,5 +619,7 @@ label {
   .intro p {
     margin-left: 15px;
   }
+
+
   
 }
