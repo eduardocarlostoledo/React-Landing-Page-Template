@@ -603,3 +603,21 @@ label {
     margin: 50px 0;
   }
 }
+
+@media (max-width: 350px) {
+  
+  .intro h1 {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    margin-left: 15px;
+  }
+  
+}
