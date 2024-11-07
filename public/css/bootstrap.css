@@ -1627,6 +1627,10 @@ pre code {
 }
 .col-xs-12 {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las imágenes */
 }
 .col-xs-11 {
   width: 91.66666667%;
