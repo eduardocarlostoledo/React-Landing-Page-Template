@@ -352,10 +352,16 @@ header .intro-text {
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
+  text-align: center;
+
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
 }
 .portfolio-item .hover-bg {
   overflow: hidden;

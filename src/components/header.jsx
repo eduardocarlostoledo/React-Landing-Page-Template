@@ -18,7 +18,7 @@ export const Header = (props) => {
                   href="#features"
                   className="btn btn-custom bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition duration-300 text-sm md:text-base"
                 >
-                  Learn More
+                  Más Info
                 </a>
               </div>
             </div>
