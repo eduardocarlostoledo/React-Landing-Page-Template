@@ -6,8 +6,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;      
 }
 body {
   margin: 0;
@@ -1591,6 +1590,39 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (max-width: 550px) {
+  #services {
+    width: 110%;
+  }
+  #testimonials{
+    width: 110%;
+  }
+  #contact{
+    width: 110%;
+  }
+  #about {
+    width: 110%;
+  }
+  .img {
+    width: 110%;
+  }
+  .row {
+    width: 110%;
+  }
+  .section-tittle {
+    width: 110%;
+  }
+
+  
+}
+
+@media (max-width: 650px) {
+  p {
+    margin: 0 15px 10px; /* Configura los márgenes superior, lateral e inferior en una sola línea */
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
