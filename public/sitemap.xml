@@ -6,8 +6,13 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://toledoconsultora.com/servicios</loc>
+        <loc>https://toledoconsultora.com/#services</loc>
         <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+     <loc>https://toledoconsultora.com/#portfolio</loc>
+     <lastmod>2024-11-13</lastmod>
         <priority>0.8</priority>
     </url>
 </urlset>
