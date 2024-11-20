@@ -21,11 +21,6 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Asegúrate de reemplazar con tus propios IDs y claves
-    console.log( process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      e.target,
-      process.env.REACT_APP_PUBLIC_KEY)
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -53,7 +48,7 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>Mantengamos el contacto</h2>
                 <p>
-                  Dejanos un mensaje o consulta y estaremos en comunicación a la brevedad posible.
+                  Déjanos un mensaje o consulta y estaremos en comunicación a la brevedad posible.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -147,7 +142,7 @@ export const Contact = (props) => {
                   </li>
                   <li>
                     <a href={props.data ? props.data.whatsapp : "/"}>
-                      <i className="fa fa-whatsapp"></i>                      
+                      <i className="fa fa-whatsapp"></i>
                     </a>
                   </li>
                   <li>
@@ -161,14 +156,24 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
+      <div className="google-map">
+        <iframe
+          title="Google Maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.261900230452!2d-55.9518657477621!3d-27.367535016477795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bdf666326c87%3A0xf2d3d831576ad4b1!2sC.%2052%2022%2C%20N3301%20Posadas%2C%20Misiones!5e0!3m2!1ses!2sar!4v1732100062688!5m2!1ses!2sar"
+          width="100%"
+          height="400"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2024 TOLEDO CONSULTORA IT. Design by Eduardo Toledo {" "}
+            &copy; 2024 TOLEDO CONSULTORA IT. Design by Eduardo Toledo{" "}
             <a href="http://wa.me/543764221063" rel="nofollow">
               Whatsapp
             </a>
-     
           </p>
         </div>
       </div>
