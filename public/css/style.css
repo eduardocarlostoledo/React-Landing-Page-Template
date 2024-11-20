@@ -204,6 +204,7 @@ a:focus,
 }
 /* Header Section */
 .intro {
+  margin: 20px;
   display: table;
   width: 100%;
   padding: 0;
@@ -218,6 +219,7 @@ a:focus,
   background: rgba(0, 0, 0, 0.2);
 }
 .intro h1 {
+  
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 82px;
@@ -240,13 +242,16 @@ a:focus,
   margin-bottom: 60px;
 }
 header .intro-text {
+  border-radius: 20px;
   padding-top: 350px;
   padding-bottom: 200px;
   text-align: center;
 }
 /* Features Section */
 #features {
+  margin: 20px;
   background: #f6f6f6;
+  border-radius: 20px;
 }
 #features i.fa {
   font-size: 38px;
@@ -258,6 +263,27 @@ header .intro-text {
   padding: 30px 0;
   border-radius: 50%;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+/* Asesoramiento*/
+#asesoramiento {
+  
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+
+}
+#asesoramiento i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  border-radius: 20px;
+  background: linear-gradient(to right, #010314 0%, #000913 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -316,6 +342,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
+  border-radius: 20px;
   padding: 100px 0;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: #fff;
@@ -359,11 +386,13 @@ header .intro-text {
 }
 /* Portfolio Section */
 #portfolio {
+  
   padding: 100px 0;
   text-align: center;
 
 }
 .portfolio-item {
+  
   margin: 1px -15px 0 -14px;
   padding: 0;
   display: flex;
@@ -414,6 +443,7 @@ header .intro-text {
 }
 /* Testimonials Section */
 #testimonials {
+  border-radius: 20px;
   padding: 100px 0;
   background: #f6f6f6;
 }
@@ -472,6 +502,8 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
+  border-radius: 20px;
+  margin: 20px;
   padding: 100px 0 60px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(255, 255, 255, 0.75);

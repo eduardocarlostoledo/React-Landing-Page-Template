@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { initializeGoogleAnalytics } from './analytics';
+
+initializeGoogleAnalytics(); // Llama la función para iniciar Google Analytics
 
 ReactDOM.render(
   <React.StrictMode>

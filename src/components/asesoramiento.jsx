@@ -1,17 +1,16 @@
 import React from "react";
-import "./services.css";
+import "./asesoramiento.css";
 
-export const Features = (props) => {
+export const Asesoramiento = (props) => {
   return (
-    <div id="features" className="text-center">
-      <div className="container">
-        <div className="section-title">
-          <h2>Consultora de Tecnología Web</h2>
-          <h1>
-          Programa una llamada, resolvemos tus dudas, te ayudamos a llevar a cabo tu idea!
-          </h1>
+    <div id="asesoramiento" className="text-center-asesoramiento">
+      <div className="asesoramiento-container">
+        <div className="section-title-asesoramiento">
+          <h2> </h2>
+          <p>
+          </p>
         </div>
-        <div className="row">
+        <div className="asesoramiento-row">
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.title}-${i}`} className="col-md-6">

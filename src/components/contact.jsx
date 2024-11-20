@@ -168,10 +168,7 @@ export const Contact = (props) => {
             <a href="http://wa.me/543764221063" rel="nofollow">
               Whatsapp
             </a>
-            {/* {" "} */}
-            {/* <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a> */}
+     
           </p>
         </div>
       </div>
