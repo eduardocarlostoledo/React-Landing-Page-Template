@@ -1,0 +1,19 @@
+
+@media screen and (max-width: 360px) {
+    div.google-map {
+        margin: 20px;
+        display: inline;
+    }
+    
+}
+
+.section-title-contact {
+    color: aliceblue;
+}
+
+@media screen and (max-width: 450px) {
+    .row-contact {
+        width: 100%;
+    }
+
+}

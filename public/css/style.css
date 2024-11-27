@@ -140,6 +140,7 @@ hr {
   background-color: #608dfd;
 }
 .section-title {
+  margin: 20px;
   margin-bottom: 70px;
 }
 .section-title h2 {
@@ -267,11 +268,11 @@ header .intro-text {
 }
 /* Asesoramiento*/
 #asesoramiento {
-  
+  margin: 20px;
   text-align: center;
   padding: 40px;
   border-radius: 20px;
-  color: white;
+  
 
 }
 #asesoramiento i.fa {
@@ -342,6 +343,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
+  margin: 20px;
   border-radius: 20px;
   padding: 100px 0;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
@@ -386,7 +388,7 @@ header .intro-text {
 }
 /* Portfolio Section */
 #portfolio {
-  
+  margin: 20px;
   padding: 100px 0;
   text-align: center;
 
@@ -443,6 +445,7 @@ header .intro-text {
 }
 /* Testimonials Section */
 #testimonials {
+  margin: 20px;
   border-radius: 20px;
   padding: 100px 0;
   background: #f6f6f6;

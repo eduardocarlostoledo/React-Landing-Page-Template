@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import styles from "./Contact.css"
 
 const initialState = {
   name: "",
@@ -45,14 +46,14 @@ export const Contact = (props) => {
         <div className="container">
           <div className="col-md-8">
             <div className="row">
-              <div className="section-title">
+              <div className="section-title-contact">
                 <h2>Mantengamos el contacto</h2>
                 <p>
                   Déjanos un mensaje o consulta y estaremos en comunicación a la brevedad posible.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
-                <div className="row">
+                <div className="row-contact">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
@@ -132,7 +133,7 @@ export const Contact = (props) => {
             </div>
           </div>
           <div className="col-md-12">
-            <div className="row">
+            <div className="row-contact">
               <div className="social">
                 <ul>
                   <li>
@@ -145,11 +146,13 @@ export const Contact = (props) => {
                       <i className="fa fa-whatsapp"></i>
                     </a>
                   </li>
+                  
                   <li>
                     <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
+                      <i className="fa fa-instagram"></i>
                     </a>
                   </li>
+
                 </ul>
               </div>
             </div>

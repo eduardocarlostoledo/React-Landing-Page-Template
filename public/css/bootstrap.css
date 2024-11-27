@@ -1594,32 +1594,59 @@ pre code {
   margin-left: auto;
 }
 
-@media (max-width: 550px) {
+/* @media (max-width: 450px) {
   #services {
-    width: 110%;
+    width: 100%;
   }
   #testimonials{
-    width: 110%;
+    width: 100%;
   }
   #contact{
-    width: 110%;
+    width: 100%;
   }
   #about {
-    width: 110%;
+    width: 100%;
     margin:5px
   }
   .img {
-    width: 110%;
+    width: 100%;
   }
   .row {
-    width: 110%;
+    width: 100%;
   }
   .section-tittle {
-    width: 110%;
+    width: 100%;
   }
 
   
-}
+} */
+
+/* @media (max-width: 550px) {
+  #services {
+    width: 100%;
+  }
+  #testimonials{
+    width: 100%;
+  }
+  #contact{
+    width: 100%;
+  }
+  #about {
+    width: 100%;
+    margin:5px
+  }
+  .img {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+  }
+  .section-tittle {
+    width: 100%;
+  }
+
+  
+} */
 
 @media (max-width: 650px) {
   p {

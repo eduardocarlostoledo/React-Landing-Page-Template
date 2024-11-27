@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "./team.css"
 
 export const Team = (props) => {
   return (
     <div id="team" className="text-center">
       <div className="container">
-        <div className="col-md-8 col-md-offset-2 section-title">
-          <h2>Nuestro equipo esta conformado por Diseñadores Gráficos, Analistas de Sistemas, Desarrolladores Full Stack y Dev Ops</h2>
+        <div className="section-title-team">
+          <h2>Nuestro equipo esta conformado por Diseñadores Gráficos, Analistas de Sistemas, Devs Full Stack y Devs Ops</h2>
           <p>
           “Nuestra pasión es reinventar la industria y construir una empresa única que abrace completamente el futuro. A medida que ampliamos nuestro negocio, también debemos evolucionar y reinventarnos"
           </p>
