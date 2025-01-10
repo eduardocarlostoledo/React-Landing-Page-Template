@@ -167,25 +167,17 @@
     "title": "Incrementa Ventas y Accede a Nuevos Mercados",
     "text": "Resolvemos inquietudes como cómo incrementar las ventas, acceder a nuevos mercados y mejorar la competitividad."
   },
-  {
-    "icon": "fa fa-rocket",
-    "title": "Guía para Emprendedores",
-    "text": "Te ayudamos a validar tu modelo de negocio, diseñar tu plataforma web y crear una estrategia de marketing online efectiva."
-  },
-  {
-    "icon": "fa fa-cogs",
-    "title": "Mejora Procesos y Selecciona Tecnologías",
-    "text": "Asesoramos sobre la solución tecnológica ideal para tus necesidades y te guiamos para elegir un proveedor confiable."
-  },
+
+
   {
     "icon": "fa fa-users",
     "title": "Optimiza Recursos y Fideliza Clientes",
-    "text": "Descubre cómo las tecnologías pueden ayudarte a conectar con nuevos mercados, optimizar recursos y fidelizar clientes."
+    "text": "Conectar con nuevos mercados, optimizar recursos y fidelizar clientes."
   },
   {
     "icon": "fa fa-connectdevelop",
     "title": "Reinvéntate con Tecnología",
-    "text": "Identifica áreas de mejora en tu negocio y transforma tus procesos con las ventajas que la tecnología puede aportar."
+    "text": "Identifica áreas de mejora en tu negocio y transforma tus procesos ."
   }
 ]
 

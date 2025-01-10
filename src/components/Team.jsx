@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./team.css"
+//import styles from "./team.css"
 
 export const Team = (props) => {
   return (
