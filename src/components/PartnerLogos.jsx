@@ -33,7 +33,7 @@ const partnerLogos = [
 export const PartnerLogos = () => {
   return (
     <div className="partner-logos">
-      <h2>Our Partners</h2>
+      <h2>Confían en Nosotros</h2>
       <div className="logos-container">
         {partnerLogos.map((partner, index) => (
           <motion.div
