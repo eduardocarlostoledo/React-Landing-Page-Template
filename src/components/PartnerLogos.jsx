@@ -5,7 +5,7 @@ import "./PartnerLogos.css"; // Archivo CSS para estilos
 import logo1 from "../logo(1).png"; // Logo de la empresa
 import logoCalyaan from "../logo-calyaan.png"; // Logo de la empresa
 import logoRm from "../logo-rm.png"; // Logo de la empresa
-
+import logoalborada from "../logoalborada.jpg"; // Logo de la empresa
 // JSON con los datos de los logos
 const partnerLogos = [
   {
@@ -27,6 +27,11 @@ const partnerLogos = [
     name: "Rm Mandados",
     logo: logoRm,
     url: "https://kaldi-decap.netlify.app/",
+  },
+  {
+    name: "Yerba Mate Alborada",
+    logo: logoalborada,
+    url: "https://yerbamatealborada.com/",
   },
 ];
 
