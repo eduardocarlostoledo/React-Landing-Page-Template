@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./PartnerLogos.css"; // Archivo CSS para estilos
 import logo1 from "../logo(1).png"; // Logo de la empresa
-import logoCalyaan from "../logo-calyaan.png"; // Logo de la empresa
+import logoCalyaan from "../logocalyaan.png"; // Logo de la empresa
 import logoRm from "../logo-rm.png"; // Logo de la empresa
 import logoalborada from "../logoalborada.jpg"; // Logo de la empresa
 import logocrypto from "../logocrypto.png"; // Logo de la empresa
@@ -59,7 +59,8 @@ export const PartnerLogos = () => {
               <img src={partner.logo} alt={partner.name} />
             </div>
             <p className="logo-name">
-              <a href={partner.url} target="_blank" rel="noopener noreferrer">
+              <a href={partner.url} target="_blank" rel="noopener noreferrer"
+              style={{color: "white"}}>
                 {partner.name}
               </a>
             </p>

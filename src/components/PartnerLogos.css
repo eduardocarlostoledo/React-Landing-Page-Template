@@ -1,47 +1,49 @@
-/* PartnerLogos.css */
-
 .partner-logos {
   text-align: center;
   padding: 2rem;
   background-color: #f9f9f9;
 }
 
-.partner-logos h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #333;
-}
-
 .logos-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
 .logo-item {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Distribuye la imagen y el texto */
+  width: 150px;
+  height: 180px;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  padding: 10px;
   border-radius: 8px;
-  padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.logo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Permite que la imagen use el espacio disponible */
+  width: 100%;
+  height: 120px; /* Tamaño uniforme para las imágenes */
 }
 
-.logo-item img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 0.5rem;
+.logo-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
-.logo-item p {
-  font-size: 1rem;
-  color: #555;
-  margin: 0;
+.logo-name {
+  font-size: 14px;
+  color: white!important ;
+}
+
+.a{
+  color: white !important;
 }
