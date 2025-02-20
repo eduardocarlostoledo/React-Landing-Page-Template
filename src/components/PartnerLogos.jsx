@@ -6,6 +6,7 @@ import logo1 from "../logo(1).png"; // Logo de la empresa
 import logoCalyaan from "../logo-calyaan.png"; // Logo de la empresa
 import logoRm from "../logo-rm.png"; // Logo de la empresa
 import logoalborada from "../logoalborada.jpg"; // Logo de la empresa
+import logocrypto from "../logocrypto.png"; // Logo de la empresa
 // JSON con los datos de los logos
 const partnerLogos = [
   {
@@ -32,6 +33,11 @@ const partnerLogos = [
     name: "Yerba Mate Alborada",
     logo: logoalborada,
     url: "https://yerbamatealborada.com/",
+  },
+  {
+    name: "CryptoSeed.ai",
+    logo: logocrypto,
+    url: "https://cryptoseed.ai/",
   },
 ];
 
@@ -68,7 +74,7 @@ export const PartnerLogos = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h3>15</h3>
+          <h3>17</h3>
           <p>Projects Completed</p>
         </motion.div>
         <motion.div
@@ -78,7 +84,7 @@ export const PartnerLogos = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <h3>4</h3>
+          <h3>5</h3>
           <p>Countries</p>
         </motion.div>
         <motion.div
