@@ -22,7 +22,7 @@ const partnerLogos = [
   {
     name: "Calyaan SaaS Colombia",
     logo: logoCalyaan,
-    url: "https://calyaan.com.co/",
+    url: "https://calyaan.netlify.app/",
   },
   {
     name: "Rm Mandados",
