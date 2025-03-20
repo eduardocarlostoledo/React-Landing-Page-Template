@@ -7,6 +7,7 @@ import logoCalyaan from "../logocalyaan.png"; // Logo de la empresa
 import logoRm from "../logo-rm.png"; // Logo de la empresa
 import logoalborada from "../logoalborada.jpg"; // Logo de la empresa
 import logocrypto from "../logocrypto.png"; // Logo de la empresa
+import logoappel from "../logoappel.png"; // Logo de la empresa
 // JSON con los datos de los logos
 const partnerLogos = [
   {
@@ -39,6 +40,11 @@ const partnerLogos = [
     logo: logocrypto,
     url: "https://cryptoseed.ai/",
   },
+  {
+    name: "Appel Neumaticos PY",
+    logo: logoappel,
+    url: "https://appelneumaticos.com/",
+  }
 ];
 
 export const PartnerLogos = () => {
