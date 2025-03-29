@@ -1,5 +1,5 @@
 import React from "react";
-import "./Team.css";
+import "./team.css";
 
 export const Team = ({ data }) => {
   return (
