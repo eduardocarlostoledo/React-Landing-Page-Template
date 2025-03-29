@@ -49,7 +49,7 @@ const partnerLogos = [
 
 export const PartnerLogos = () => {
   return (
-    <div className="partner-logos">
+    <div className="partner-logos" id="partners">
       <h2>Confían en Nosotros</h2>
       <div className="logos-container">
         {partnerLogos.map((partner, index) => (
@@ -81,7 +81,7 @@ export const PartnerLogos = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h3>17</h3>
+          <h3>19</h3>
           <p>Projects Completed</p>
         </motion.div>
         <motion.div
@@ -101,7 +101,7 @@ export const PartnerLogos = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h3>4</h3>
+          <h3>5</h3>
           <p>Years of Experience</p>
         </motion.div>
       </div>

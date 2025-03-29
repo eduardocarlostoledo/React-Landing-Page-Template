@@ -10,6 +10,9 @@ import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import { PartnerLogos } from "./components/PartnerLogos.jsx";
+import { Hero } from "./components/Hero.jsx";
+// import { WhatsAppChat } from "./components/WhatsAppChat.jsx";
+import { Chatbot } from "./components/ChatBot.jsx";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -29,16 +32,22 @@ const App = () => {
   return (
     <div>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
+      {/* <Header data={landingPageData.Header} /> */}
+      <Chatbot />
+      <Hero />
+
       <Asesoramiento data={landingPageData.Asesoramiento} />
+      
+      <Features data={landingPageData.Features} />
+      
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
+      <Testimonials />
       <Team data={landingPageData.Team} />
       <PartnerLogos />
       <Contact data={landingPageData.Contact} />
+      {/* <WhatsAppChat /> */}
     </div>
   );
 };

@@ -1,0 +1,24 @@
+/* Posición flotante en esquina inferior derecha */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    inset: auto 100px 100px auto;
+    width: auto;
+    height: auto;
+  }
+  
+  /* Efectos al pasar el mouse */
+  .whatsapp-widget:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .whatsapp-widget {
+      bottom: 15px;
+      right: 15px;
+    }
+  }

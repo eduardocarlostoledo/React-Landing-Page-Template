@@ -1,6 +1,6 @@
 {
   "Header": {
-    "title": "Asesoramiento Gratis en ",
+    "title": "Servicio de Desarrollo Web, Consultoría IT y Asesoramiento",
     "paragraph": "Desarrollo de Aplicaciones Web, Tiendas Online, Landing Page en Misiones"
   },
   "About": {
@@ -23,46 +23,64 @@
   "Gallery": [
     {
       "title": "Calyaan Login",
+      "description": "HRM, SaaS, CRM, ERP, Ecommerce",
+      "link": "https://calyaan.netlify.app/",
       "largeImage": "img/portfolio/calyaan.png",
       "smallImage": "img/portfolio/calyaan-tumb.png"
     },
     {
       "title": "Calyaan Dasboard",
+      "description": "HRM, SaaS, CRM, ERP, Ecommerce",
+      "link": "https://calyaan.netlify.app/",
       "largeImage": "img/portfolio/calyaan2.png",
       "smallImage": "img/portfolio/calyaan2-tumb.png"
     },
     {
       "title": "Calyaan Tools",
+      "description": "HRM, SaaS, CRM, ERP, Ecommerce",
+      "link": "https://calyaan.netlify.app/",
       "largeImage": "img/portfolio/calyaan3.png",
       "smallImage": "img/portfolio/calyaan3-tumb.png"
     },
     {
       "title": "Gato Negro Land",
+      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+      "link": "https://elgatonegropremium.netlify.app",
       "largeImage": "img/portfolio/gatonegro.png",
       "smallImage": "img/portfolio/gatonegro-tumb.png"
     },
     {
       "title": "Gato Negro Products",
+      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+      "link": "https://elgatonegropremium.netlify.app",
      "largeImage": "img/portfolio/gatonegro2.png",
       "smallImage": "img/portfolio/gatonegro2-tumb.png"
     },
     {
       "title": "Gato Negro Cart",
+      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+      "link": "https://elgatonegropremium.netlify.app",
       "largeImage": "img/portfolio/gatonegro3.png",
       "smallImage": "img/portfolio/gatonegro3-tumb.png"
     },
     {
       "title": "Store Computer Land",
+      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+      "link": "https://storecomputer.netlify.app/",
       "largeImage": "img/portfolio/store.png",
       "smallImage": "img/portfolio/store-tumb.png"
     },
     {
       "title": "Store Computer Products",
+      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+      "link": "https://storecomputer.netlify.app/",
       "largeImage": "img/portfolio/store2.png",
       "smallImage": "img/portfolio/store2-tumb.png"
     },
     {
       "title": "Store Computer Cart",
+      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+      "link": "https://storecomputer.netlify.app/",
       "largeImage": "img/portfolio/store3.png",
       "smallImage": "img/portfolio/store3-tumb.png"
     }
@@ -108,16 +126,6 @@
     "icon": "fa fa-server",
     "title": "Servidores Confiables",
     "text": "Desarrollo de APIs y sistemas robustos con Node.js y Express, proporcionando seguridad y rendimiento óptimos en aplicaciones web."
-  },
-  {
-    "icon": "fa fa-laptop",
-    "title": "Interfaces Modernas",
-    "text": "Diseño de interfaces responsivas con React y Tailwind CSS, ofreciendo experiencias de usuario fluidas y compatibles con dispositivos móviles."
-  },
-  {
-    "icon": "fa fa-cloud-upload",
-    "title": "Implementación DevOps",
-    "text": "Integración y despliegue continuo utilizando Docker y Kubernetes, optimizando la gestión y escalabilidad de aplicaciones en entornos de producción."
   }
 ]
 ,
@@ -151,7 +159,8 @@
     "email": "eduardocarlostoledo@gmail.com",
         "facebook": "https://www.facebook.com/people/Toledo-Consultora-It/61567966653297/",
     "whatsapp": "https://wa.me/543764221063",
-    "youtube": "https://www.youtube.com/@eduardocarlostoledo"
+    "youtube": "https://www.youtube.com/@eduardocarlostoledo",
+    "instagram": "https://www.instagram.com/toledoconsultora/"
   },
   "Features": [
   
@@ -159,25 +168,33 @@
 "Asesoramiento": [
   {
     "icon": "fa fa-support",
-    "title": "Asesoramiento Tecnológico Gratuito",
-    "text": "Te ofrecemos un servicio gratuito de asesoramiento tecnológico para maximizar el uso de Internet y las TIC en tu negocio."
+    "title": "Asesoramiento Tecnológico",
+    "text": "Te ofrecemos un servicio de asesoramiento tecnológico para maximizar el uso de Internet y las TIC en tu negocio."
   },
   {
     "icon": "fa fa-diamond",
-    "title": "Incrementa Ventas y Accede a Nuevos Mercados",
-    "text": "Resolvemos inquietudes como cómo incrementar las ventas, acceder a nuevos mercados y mejorar la competitividad."
+    "title": "Posiciona tu negocio e Incrementa Ventas",
+    "text": "Incrementa las ventas, accede a nuevos mercados y mejora tu presencia en internet."
   },
-
-
   {
     "icon": "fa fa-users",
-    "title": "Optimiza Recursos y Fideliza Clientes",
-    "text": "Conectar con nuevos mercados, optimizar recursos y fidelizar clientes."
+    "title": "Implementa herramientas digitales para tu negocio",
+    "text": "Conecta con nuevos clientes, capta a los potenciales y cierra ventas."
   },
   {
     "icon": "fa fa-connectdevelop",
     "title": "Reinvéntate con Tecnología",
     "text": "Identifica áreas de mejora en tu negocio y transforma tus procesos ."
+  },
+  {
+    "icon": "fa fa-laptop",
+    "title": "Interfaces Modernas",
+    "text": "Diseño de interfaces responsivas con React y Tailwind CSS, ofreciendo experiencias de usuario fluidas y compatibles con dispositivos móviles."
+  },
+  {
+    "icon": "fa fa-cloud-upload",
+    "title": "Implementación DevOps",
+    "text": "Integración y despliegue continuo utilizando Docker y Kubernetes, optimizando la gestión y escalabilidad de aplicaciones en entornos de producción."
   }
 ]
 

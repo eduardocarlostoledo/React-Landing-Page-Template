@@ -1,45 +1,292 @@
-#portfolio {
-    padding: 40px 0;
-    text-align: center;
-}
+/* Estilos base */
 
-.container {
+/* Estilos para el botón de proyecto */
+.project-link {
+    display: inline-block;
+    background: linear-gradient(to right, #4285F4 0%, #34A853 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Resto del CSS permanece igual */
+  /* ... */
+  
+.gallery-section {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
     max-width: 1200px;
     margin: 0 auto;
-    
-}
-
-.section-title h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.section-title p {
+    padding: 0 1.5rem;
+  }
+  
+  /* Encabezado */
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #4285F4 0%, #34A853 100%);
+  }
+  
+  .section-subtitle {
     font-size: 1.2rem;
-    color: #777;
-    margin-bottom: 30px;
-}
-
-.portfolio-items {
+    color: #7f8c8d;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Grid de galería */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .gallery-item:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 20px; /* Espacio entre las imágenes */
-}
-
-.portfolio-items > div {
-    margin-bottom: 30px;
-    flex: 0 1 30%; /* Ajusta el tamaño para asegurar 3 columnas */
-}
-
-@media (max-width: 768px) {
-    .portfolio-items > div {
-        flex: 0 1 45%; /* Dos columnas en pantallas medianas */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-item:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .overlay-content {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .view-btn {
+    background: linear-gradient(to right, #4285F4 0%, #34A853 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover .view-btn {
+    transform: scale(1.05);
+  }
+  
+  /* Modal */
+  .gallery-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .gallery-modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-content {
+    background: white;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    position: relative;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: #4285F4;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .modal-info h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-info p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-link {
+    display: inline-block;
+    background: linear-gradient(to right, #4285F4 0%, #34A853 100%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .project-link:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Loading */
+  .loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-}
-
-@media (max-width: 576px) {
-    .portfolio-items > div {
-        flex: 0 1 100%; /* Una columna en pantallas pequeñas */
+    
+    .section-header h2 {
+      font-size: 2rem;
     }
-}
+    
+    .modal-content {
+      grid-template-columns: 1fr;
+      padding: 1.5rem;
+    }
+    
+    .modal-image {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-section {
+      padding: 3rem 0;
+    }
+    
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1rem;
+    }
+    
+    .image-wrapper {
+      height: 200px;
+    }
+  }
