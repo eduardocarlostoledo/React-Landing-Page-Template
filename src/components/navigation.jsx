@@ -62,7 +62,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#services" className="page-scroll" onClick={handleLinkClick}>
-                Servicios
+                Soluciones
               </a>
             </li>
             <li>
@@ -78,6 +78,11 @@ export const Navigation = (props) => {
             <li>
               <a href="#team" className="page-scroll" onClick={handleLinkClick}>
                 Equipo
+              </a>
+            </li>
+            <li>
+              <a href="#pricing" className="page-scroll" onClick={handleLinkClick}>
+                Pricing
               </a>
             </li>
             <li>

@@ -7,7 +7,7 @@ export const Services = (props) => {
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Nuestros Servicios</h2>
+          <h2>Nuestras Soluciones</h2>
           <p>
              Podemos brindarte soluciones en las siguientes especialidades
           </p>

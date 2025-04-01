@@ -13,9 +13,12 @@ import { PartnerLogos } from "./components/PartnerLogos.jsx";
 import { Hero } from "./components/Hero.jsx";
 // import { WhatsAppChat } from "./components/WhatsAppChat.jsx";
 import { Chatbot } from "./components/ChatBot.jsx";
+import { Cotizaciones } from "./components/Cotizaciones.jsx";
+
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -46,8 +49,11 @@ const App = () => {
       <Testimonials />
       <Team data={landingPageData.Team} />
       <PartnerLogos />
+      <Cotizaciones/>
+      
       <Contact data={landingPageData.Contact} />
       {/* <WhatsAppChat /> */}
+      
     </div>
   );
 };
