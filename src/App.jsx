@@ -33,7 +33,7 @@ const App = () => {
     <div>
       <Navigation />
       {/* <Header data={landingPageData.Header} /> */}
-      <Chatbot />
+      {/* <Chatbot /> */}
       <Hero />
 
       <Asesoramiento data={landingPageData.Asesoramiento} />
