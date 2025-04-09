@@ -9,6 +9,10 @@ export const Graciasporsucompra = ({ data, orderId, customerName }) => {
     navigate('/');
   };
 
+  const whatsappURL = "https://wa.me/5493764221063";
+  const instagramURL = data?.instagram || "#";
+  const facebookURL = data?.facebook || "#";
+
   return (
     <div className="thank-you-container">
       <div className="thank-you-card">
@@ -36,26 +40,19 @@ export const Graciasporsucompra = ({ data, orderId, customerName }) => {
         </div>
 
         <div className="support-message">
-          <p>¿Necesitas ayuda? <a href={data?.whatsapp || '#'} target="_blank" rel="noopener noreferrer">Contáctanos</a></p>
+          <p>¿Necesitas ayuda? <a href={whatsappURL} target="_blank" rel="noopener noreferrer">Contáctanos</a></p>
         </div>
 
-        {/* Redes sociales */}
         <div className="social-links">
-          {data?.whatsapp && (
-            <a href={data.whatsapp} target="_blank" rel="noopener noreferrer" title="WhatsApp">
-              <i className="fab fa-whatsapp"></i>
-            </a>
-          )}
-          {data?.instagram && (
-            <a href={data.instagram} target="_blank" rel="noopener noreferrer" title="Instagram">
-              <i className="fab fa-instagram"></i>
-            </a>
-          )}
-          {data?.facebook && (
-            <a href={data.facebook} target="_blank" rel="noopener noreferrer" title="Facebook">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-          )}
+          <a href={whatsappURL} target="_blank" rel="noopener noreferrer" title="WhatsApp">
+            <i className="fab fa-whatsapp"></i>
+          </a>
+          <a href={instagramURL} target="_blank" rel="noopener noreferrer" title="Instagram">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href={facebookURL} target="_blank" rel="noopener noreferrer" title="Facebook">
+            <i className="fab fa-facebook-f"></i>
+          </a>
         </div>
       </div>
     </div>
