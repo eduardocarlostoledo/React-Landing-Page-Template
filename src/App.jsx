@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { Asesoramiento } from "./components/asesoramiento";
 import { About } from "./components/about";
@@ -9,52 +9,51 @@ import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
-import { PartnerLogos } from "./components/PartnerLogos.jsx";
-import { Hero } from "./components/Hero.jsx";
-// import { WhatsAppChat } from "./components/WhatsAppChat.jsx";
-import { Chatbot } from "./components/ChatBot.jsx";
-import { Cotizaciones } from "./components/Cotizaciones.jsx";
-
+import { PartnerLogos } from "./components/PartnerLogos";
+import { Hero } from "./components/Hero";
+import { Chatbot } from "./components/ChatBot";
+import { Cotizaciones } from "./components/Cotizaciones";
+import { Graciasporsucompra } from "./components/graciasporsucompra";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
-
-
+// Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
 });
 
+const LandingPage = ({ data }) => (
+  <>
+    <Navigation />
+    <Hero />
+    <Asesoramiento data={data.Asesoramiento} />
+    <Features data={data.Features} />
+    <About data={data.About} />
+    <Services data={data.Services} />
+    <Gallery data={data.Gallery} />
+    <Testimonials />
+    <Team data={data.Team} />
+    <PartnerLogos />
+    <Cotizaciones />
+    <Contact data={data.Contact} />
+    <Chatbot />
+  </>
+);
+
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
 
   return (
-    <div>
-      <Navigation />
-      {/* <Header data={landingPageData.Header} /> */}
-      {/* <Chatbot /> */}
-      <Hero />
-
-      <Asesoramiento data={landingPageData.Asesoramiento} />
-      
-      <Features data={landingPageData.Features} />
-      
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials />
-      <Team data={landingPageData.Team} />
-      <PartnerLogos />
-      <Cotizaciones/>
-      
-      <Contact data={landingPageData.Contact} />
-      {/* <WhatsAppChat /> */}
-      
-    </div>
+    <Routes>
+      <Route path="/" element={<LandingPage data={landingPageData} />} />
+      <Route path="/gracias-por-su-compra" element={<Graciasporsucompra />} />
+    </Routes>
   );
 };
 

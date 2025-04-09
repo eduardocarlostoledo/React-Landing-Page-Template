@@ -1,3 +1,29 @@
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center; /* o flex-start dependiendo del diseño */
+}
+
+.social-links a {
+  color: white;
+  background: linear-gradient(45deg, #4facfe, #18585c); /* o tu color principal */
+  padding: 12px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+}
+
+
 /* Estilos base */
 .contact-section {
     padding: 5rem 0;
