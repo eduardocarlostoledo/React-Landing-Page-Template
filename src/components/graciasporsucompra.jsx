@@ -44,13 +44,14 @@ export const Graciasporsucompra = ({ data, orderId, customerName }) => {
         </div>
 
         <div className="social-links">
-          <a href={whatsappURL} target="_blank" rel="noopener noreferrer" title="WhatsApp">
-            <i className="fab fa-whatsapp"></i>
-          </a>
-          <a href={instagramURL} target="_blank" rel="noopener noreferrer" title="Instagram">
+        <a href="https://wa.me/5493764221063" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '40px', height: '40px' }} />
+</a>
+
+          <a href="https://www.instagram.com/toledoconsultora/" target="_blank" rel="noopener noreferrer" title="Instagram">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href={facebookURL} target="_blank" rel="noopener noreferrer" title="Facebook">
+          <a href="https://www.facebook.com/people/Toledo-Consultora-It/61567966653297/" target="_blank" rel="noopener noreferrer" title="Facebook">
             <i className="fab fa-facebook-f"></i>
           </a>
         </div>

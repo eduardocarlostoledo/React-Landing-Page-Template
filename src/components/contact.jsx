@@ -145,9 +145,10 @@ export const Contact = ({ data }) => {
               <a href={data?.facebook} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href={data?.whatsapp} target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-whatsapp"></i>
-              </a>
+              <a href="https://wa.me/5493764221063" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '40px', height: '40px' }} />
+</a>
+
               <a href={data?.instagram} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
