@@ -1,3 +1,23 @@
+/* Ajusta el scroll para compensar la altura del navbar */
+html {
+  scroll-padding-top: 220px; /* Igual a la altura del navbar */
+}
+
+/* Estilo del navbar fijo */
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 220px;
+  z-index: 1030; /* Asegura que esté por encima del contenido */
+}
+
+/* Evita que el contenido quede oculto detrás del navbar */
+body {
+  padding-top: 220px;
+}
+
+
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -533,7 +553,7 @@ header .intro-text {
   left: 30px;
 }
 #contact h3 {
-  color: #fff;
+  
   margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;

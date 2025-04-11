@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/navigation";
 import { Features } from "./components/features";
@@ -18,6 +19,7 @@ import { DetalleCotizacion } from "./components/DetalleCotizacion";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import { use } from "react";
 
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -45,6 +47,28 @@ const LandingPage = ({ data }) => (
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const sectionId = location.hash.substring(1); // Elimina el "#"
+      const element = document.getElementById(sectionId);
+
+      if (element) {
+        const navbarHeight = 220;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+        setTimeout(() => {
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }, 100); // Pequeño delay para asegurar que el DOM esté listo
+      }
+    }
+  }, [location]);
+
 
   useEffect(() => {
     setLandingPageData(JsonData);

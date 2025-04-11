@@ -20,71 +20,109 @@
       "Costos Accesibles"
     ]
   },
-  "Gallery": [
-    {
-      "title": "Calyaan Login",
-      "description": "HRM, SaaS, CRM, ERP, Ecommerce",
-      "link": "https://calyaan.netlify.app/",
-      "largeImage": "img/portfolio/calyaan.png",
-      "smallImage": "img/portfolio/calyaan-tumb.png"
-    },
-    {
-      "title": "Calyaan Dasboard",
-      "description": "HRM, SaaS, CRM, ERP, Ecommerce",
-      "link": "https://calyaan.netlify.app/",
-      "largeImage": "img/portfolio/calyaan2.png",
-      "smallImage": "img/portfolio/calyaan2-tumb.png"
-    },
-    {
-      "title": "Calyaan Tools",
-      "description": "HRM, SaaS, CRM, ERP, Ecommerce",
-      "link": "https://calyaan.netlify.app/",
-      "largeImage": "img/portfolio/calyaan3.png",
-      "smallImage": "img/portfolio/calyaan3-tumb.png"
-    },
-    {
-      "title": "Gato Negro Land",
-      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
-      "link": "https://elgatonegropremium.netlify.app",
-      "largeImage": "img/portfolio/gatonegro.png",
-      "smallImage": "img/portfolio/gatonegro-tumb.png"
-    },
-    {
-      "title": "Gato Negro Products",
-      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
-      "link": "https://elgatonegropremium.netlify.app",
-     "largeImage": "img/portfolio/gatonegro2.png",
-      "smallImage": "img/portfolio/gatonegro2-tumb.png"
-    },
-    {
-      "title": "Gato Negro Cart",
-      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
-      "link": "https://elgatonegropremium.netlify.app",
-      "largeImage": "img/portfolio/gatonegro3.png",
-      "smallImage": "img/portfolio/gatonegro3-tumb.png"
-    },
-    {
-      "title": "Store Computer Land",
-      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
-      "link": "https://storecomputer.netlify.app/",
-      "largeImage": "img/portfolio/store.png",
-      "smallImage": "img/portfolio/store-tumb.png"
-    },
-    {
-      "title": "Store Computer Products",
-      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
-      "link": "https://storecomputer.netlify.app/",
-      "largeImage": "img/portfolio/store2.png",
-      "smallImage": "img/portfolio/store2-tumb.png"
-    },
-    {
-      "title": "Store Computer Cart",
-      "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
-      "link": "https://storecomputer.netlify.app/",
-      "largeImage": "img/portfolio/store3.png",
-      "smallImage": "img/portfolio/store3-tumb.png"
-    }
-  ],
+"Gallery": [
+  
+  {
+    "title": "Calyaan Login",
+    "description": "HRM, SaaS, CRM, ERP, Ecommerce",
+    "link": "https://calyaan.netlify.app/",
+    "largeImage": "img/portfolio/calyaan.png",
+    "smallImage": "img/portfolio/calyaan-tumb.png"
+  }, 
+  {
+    "title": "Gato Negro Land",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://elgatonegropremium.netlify.app",
+    "largeImage": "img/portfolio/gatonegro.png",
+    "smallImage": "img/portfolio/gatonegro-tumb.png"
+  },
+  {
+    "title": "Gato Negro Products",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://elgatonegropremium.netlify.app",
+    "largeImage": "img/portfolio/gatonegro2.png",
+    "smallImage": "img/portfolio/gatonegro2-tumb.png"
+  },
+ 
+  {
+    "title": "Store Computer Land",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://storecomputer.netlify.app/",
+    "largeImage": "img/portfolio/store.png",
+    "smallImage": "img/portfolio/store-tumb.png"
+  },
+  {
+    "title": "Store Computer Products",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://storecomputer.netlify.app/",
+    "largeImage": "img/portfolio/store2.png",
+    "smallImage": "img/portfolio/store2-tumb.png"
+  },
+
+  {
+    "title": "Crypto Dashboard",
+    "description": "Plataforma de seguimiento de criptomonedas con gráficos en tiempo real y análisis de mercado",
+    "link": "#",
+    "largeImage": "img/portfolio/crypto.png",
+    "smallImage": "img/portfolio/crypto.png"
+  },
+  {
+    "title": "Gato Negro Premium",
+    "description": "Versión mejorada del ecommerce con funcionalidades avanzadas de catálogo",
+    "link": "#",
+    "largeImage": "img/portfolio/gatonegro1.png",
+    "smallImage": "img/portfolio/gatonegro1.png"
+  },
+  {
+    "title": "RM Construcciones",
+    "description": "Sitio web corporativo para empresa constructora con portfolio de proyectos",
+    "link": "#",
+    "largeImage": "img/portfolio/rm.png",
+    "smallImage": "img/portfolio/rm.png"
+  },
+  {
+    "title": "Yerba Mate App",
+    "description": "Aplicación móvil para amantes del mate con recetas y consejos de cebado",
+    "link": "#",
+    "largeImage": "img/portfolio/yerba.png",
+    "smallImage": "img/portfolio/yerba.png"
+  },
+  {
+    "title": "Yerba Mate Community",
+    "description": "Red social para compartir experiencias sobre la cultura del mate",
+    "link": "#",
+    "largeImage": "img/portfolio/yerba1.png",
+    "smallImage": "img/portfolio/yerba1.png"
+  },
+  {
+    "title": "Appel Design",
+    "description": "Portfolio digital para estudio de diseño gráfico y branding",
+    "link": "#",
+    "largeImage": "img/portfolio/appel.png",
+    "smallImage": "img/portfolio/appel.png"
+  },
+  {
+    "title": "Crypto Design",
+    "description": "Portfolio digital para estudio de diseño gráfico y branding",
+    "link": "#",
+    "largeImage": "img/portfolio/crypto1.png",
+    "smallImage": "img/portfolio/crypto1.png"
+  },
+  {
+    "title": "Crypto Design",
+    "description": "Portfolio digital para estudio de diseño gráfico y branding",
+    "link": "#",
+    "largeImage": "img/portfolio/crypto3.png",
+    "smallImage": "img/portfolio/crypto3.png"
+  },
+  {
+    "title": "Crypto Design",
+    "description": "Portfolio digital para estudio de diseño gráfico y branding",
+    "link": "#",
+    "largeImage": "img/portfolio/crypto4.png",
+    "smallImage": "img/portfolio/crypto4.png"
+  }
+],
   
   "Services": [
   {

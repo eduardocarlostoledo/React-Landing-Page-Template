@@ -1,12 +1,16 @@
-import React from "react";
+import React from 'react';
+
 import "./asesoramiento.css";
 
 export const Asesoramiento = (props) => {
+
+  
+
   return (
-    <section id="asesoramiento" className="asesoramiento-section">
+    <section id="asesoramiento"  style={{ paddingTop: "20px" }} className="asesoramiento-section">
       <div className="container">
         <div className="section-header">
-          <h2>OFERTAS TECNOLÓGICAS</h2>
+          <h2 >OFERTAS TECNOLÓGICAS</h2>
           <p>Cómo trabajamos y posicionamos tu negocio</p>
         </div>
         

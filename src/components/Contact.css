@@ -185,6 +185,7 @@
   
   /* Información de contacto */
   .contact-info {
+    
     background: white;
     padding: 2rem;
     border-radius: 10px;
@@ -192,7 +193,7 @@
   }
   
   .contact-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
     color: #2c3e50;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;

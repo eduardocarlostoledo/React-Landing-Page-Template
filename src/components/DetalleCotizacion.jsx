@@ -18,7 +18,7 @@ export const DetalleCotizacion = () => {
     if (botonRef.current) {
       botonRef.current.scrollIntoView({
         behavior: 'smooth',
-        block: 'center' // 'start', 'center', 'end' o 'nearest'
+        block: 'end' // 'start', 'center', 'end' o 'nearest'
       });
     }
   }, []); // El array vacío asegura que solo se ejecute al montar el componente
