@@ -14,6 +14,7 @@ import { Hero } from "./components/Hero";
 import { Chatbot } from "./components/ChatBot";
 import { Cotizaciones } from "./components/Cotizaciones";
 import { Graciasporsucompra } from "./components/graciasporsucompra";
+import { DetalleCotizacion } from "./components/DetalleCotizacion";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -53,6 +54,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<LandingPage data={landingPageData} />} />
       <Route path="/gracias-por-su-compra" element={<Graciasporsucompra />} />
+      <Route path="/detalle/:id" element={<DetalleCotizacion />} />
+
     </Routes>
   );
 };

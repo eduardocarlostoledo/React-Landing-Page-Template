@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
+import Swal from "sweetalert2";
 import "./Contact.css";
 
 export const Contact = ({ data }) => {
@@ -23,13 +24,20 @@ export const Contact = ({ data }) => {
     try {
       await emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_TEMPLATE_ID_CLIENT,
         e.target,
         process.env.REACT_APP_PUBLIC_KEY
       );
       
       setSubmitStatus({ success: true, message: "Mensaje enviado con éxito!" });
       setFormData({ name: "", email: "", message: "" });
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Hemos recibido tu consulta',
+        text: 'Nos comunicaremos a la brevedad posible',
+        confirmButtonColor: '#3085d6'
+      });
       
       // Reset status after 5 seconds
       setTimeout(() => setSubmitStatus(null), 5000);
@@ -137,7 +145,7 @@ export const Contact = ({ data }) => {
               </div>
               <div className="info-content">
                 <h4>Email</h4>
-                <p>eduardocarlostoledo@gmail.com</p>
+                <p>ventas@toledoconsultora.com</p>
               </div>
             </div>
 

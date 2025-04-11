@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './cotizaciones.css';
+import { useNavigate } from 'react-router-dom';
 
-export const Cotizaciones = () => {
+export const Cotizaciones = ({ selectedIds = [] }) => {
+  const navigate = useNavigate();
   const pricingPlans = [
     {
       id: 1,
@@ -61,7 +63,7 @@ export const Cotizaciones = () => {
     {
       id: 4,
       title: "Campañas Digitales",
-      price: "$99.000/mes",
+      price: "$99.000",
       description: "Gestión profesional",
       popular: false,
       features: [
@@ -84,16 +86,16 @@ export const Cotizaciones = () => {
       popular: false,
       features: [
         "Dominio y Hosting FREE por 1 año",
-        "Dos cuentas @email corporativas",                
+        "Dos cuentas @email corporativas",
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
         "Integración con MercadoPago",
-        "Panel autogestionable Sin límite de productos",        
+        "Panel autogestionable Sin límite de productos",
         "Base de datos Postgresql/ORM + Node/Express web server",
-        "Diseño Adaptativo a Pc y Móvil",                
+        "Diseño Adaptativo a Pc y Móvil",
         "Estrategia SEO completa",
-        "Posicionamiento en Google Business y Maps",        
-        "Campaña Publicitaria Estándar x 30días en Google Ads",
+        "Posicionamiento en Google Business y Maps",
+        "Campaña Publicitaria Estándar x 30días en Google Ads"
       ],
       cta: "Contratar Pack Bussiness",
       link: "https://mpago.la/1ppUGph"
@@ -117,6 +119,9 @@ export const Cotizaciones = () => {
       link: "https://mpago.la/1Bgc6i5"
     }
   ];
+  const selectedPlans = selectedIds.length > 0
+    ? pricingPlans.filter(plan => selectedIds.includes(plan.id))
+    : pricingPlans;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -133,9 +138,7 @@ export const Cotizaciones = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.5
-      }
+      transition: { duration: 0.5 }
     }
   };
 
@@ -144,15 +147,14 @@ export const Cotizaciones = () => {
     tap: { scale: 0.95 }
   };
 
-  const handleCtaClick = (link) => {
-    // Abre el enlace en una nueva pestaña
-    window.open(link, '_blank', 'noopener,noreferrer');
+  const handlePlanClick = (plan) => {
+    navigate(`/detalle/${plan.id}`, { state: { plan } });
   };
 
   return (
     <section className="pricing-section" id="pricing">
       <div className="pricing-container">
-        <motion.div 
+        <motion.div
           className="section-header"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -162,14 +164,14 @@ export const Cotizaciones = () => {
           <p>Soluciones digitales a medida con precios transparentes y resultados garantizados</p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="pricing-grid"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {pricingPlans.map((plan) => (
+          {selectedPlans.map((plan) => (
             <motion.div
               key={plan.id}
               className={`pricing-card ${plan.popular ? 'popular' : ''}`}
@@ -179,7 +181,7 @@ export const Cotizaciones = () => {
               <div className="card-header">
                 <h3>{plan.title}</h3>
                 <div className="price">
-                  {plan.price} <span>{plan.title.includes("Campañas") ? "/mes" : "único"}</span>
+                  {plan.price} <span>{plan.title === "Campañas Digitales" ? "/mes" : "único"}</span>
                 </div>
                 <p>{plan.description}</p>
               </div>
@@ -194,7 +196,7 @@ export const Cotizaciones = () => {
                   variants={buttonVariants}
                   whileHover="hover"
                   whileTap="tap"
-                  onClick={() => handleCtaClick(plan.link)}
+                  onClick={() => handlePlanClick(plan)}
                 >
                   {plan.cta}
                 </motion.button>
