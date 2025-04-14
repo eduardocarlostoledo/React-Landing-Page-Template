@@ -8,14 +8,14 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 220px;
+  
   z-index: 1030; /* Asegura que esté por encima del contenido */
 }
 
-/* Evita que el contenido quede oculto detrás del navbar */
+/* Evita que el contenido quede oculto detrás del navbar la navbar en responsivo 
 body {
   padding-top: 220px;
-}
+} */
 
 
 body,
@@ -286,15 +286,7 @@ header .intro-text {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
-/* Asesoramiento*/
-#asesoramiento {
-  margin: 20px;
-  text-align: center;
-  padding: 40px;
-  border-radius: 20px;
-  
 
-}
 #asesoramiento i.fa {
   font-size: 38px;
   margin-bottom: 20px;

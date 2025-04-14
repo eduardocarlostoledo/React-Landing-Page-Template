@@ -73,6 +73,18 @@
     .contact-content {
       grid-template-columns: 1fr;
     }
+
+    .contact-form{
+      width: 90%;
+    }
+
+    .contact-info{
+      width: 90%;
+    }
+
+    .social-links {      
+      width: 80%;
+    }
   }
   
   /* Formulario */

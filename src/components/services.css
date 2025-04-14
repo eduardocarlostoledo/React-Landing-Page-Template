@@ -11,6 +11,9 @@
         height: 200px;
         text-align: center;
     }
+    .section-title {
+        margin: 0px;
+    }
 }
 
 @media (min-width: 350px) {

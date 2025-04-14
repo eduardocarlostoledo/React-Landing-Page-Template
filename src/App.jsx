@@ -31,15 +31,18 @@ const LandingPage = ({ data }) => (
   <>
     <Navigation />
     <Hero />
+    <Gallery data={data.Gallery} />
+    <Testimonials />
+    <PartnerLogos />
+    <Cotizaciones />
     <Asesoramiento data={data.Asesoramiento} />
     <Features data={data.Features} />
     <About data={data.About} />
     <Services data={data.Services} />
-    <Gallery data={data.Gallery} />
-    <Testimonials />
+    
+    
     <Team data={data.Team} />
-    <PartnerLogos />
-    <Cotizaciones />
+    
     <Contact data={data.Contact} />
     <Chatbot />
   </>
