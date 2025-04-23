@@ -28,7 +28,8 @@ export const Graciasporsucompra = ({ data, orderId, customerName }) => {
         <div className="order-details">
           <h3>Detalles de tu compra:</h3>
           <ul>
-            <li>📧 Recibirás una llamada de confirmación</li>
+            <li>📧 Recibirás email con el resumen de tu compra</li>
+            <li>🛒 Te contactaremos para coordinar una entrevista</li>
             <li>⏱️ Tiempo de entrega: 2-5 días hábiles</li>
           </ul>
         </div>

@@ -7,25 +7,45 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
   const navigate = useNavigate();
   const pricingPlans = [
     {
-      id: 1,
+      id: "contratar-landingpage-toledoconsultora",
       title: "Landing Page",
+      price: "$99.000",
+      description: "Diseño de landing page",
+      popular: false,
+      features: [
+        "Diseño (Pc, Tablet, Móvil)",
+        "Estrategia de Marketing",
+        "Hasta 6 Productos con un link de pago",
+        "Boton Reservar o Comprar",
+        "Boton para capturar datos cliente",
+        "Boton a whatsapp",
+        "Boton a redes sociales",
+        "Estrategia de No escapatoria, compre o deje datos"
+      ],
+      cta: "Solicitar Landing Page",
+      link: "https://mpago.la/1P56hD5"
+    },
+    {
+      id: "contratar-pagina-web-toledoconsultora",
+      title: "Página Web Tipo Spa",
       price: "$149.000",
       description: "Diseño profesional adaptable",
       popular: false,
       features: [
-        "Dominio por 1 año",
+        "Dominio.com.ar incluido por 1 año",
         "1 email corporativo",
         "Hosting por 1 año",
         "Diseño responsive",
         "SEO básico incluido",
         "Navbar y Footer personalizados",
-        "Secciones: Nosotros, Contacto"
+        "Secciones: Nosotros, Contacto",
+        "Acceso a redes socales y whatsapp",
       ],
       cta: "Solicitar Landing Page",
       link: "https://mpago.la/2SQELVR"
     },
     {
-      id: 2,
+      id: "contratar-ecommerce-toledoconsultora",      
       title: "Ecommerce",
       price: "$249.000",
       description: "Tienda online completa",
@@ -34,16 +54,16 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
         "Integración con MercadoPago",
         "Panel autogestionable",
         "Sin límite de productos",
-        "Base de datos incluida",
+        "Diseño y Despliegue de Base de datos incluida",
         "Diseño responsive",
         "Dominio y hosting 1 año",
-        "Frontend optimizado"
+        "Home optimizado para tu negocio"
       ],
       cta: "Quiero mi Tienda Online",
       link: "https://mpago.la/2w6ThwW"
     },
     {
-      id: 3,
+      id: "contratar-seo-avanzado-toledoconsultora",
       title: "SEO Avanzado",
       price: "$149.000",
       description: "Posicionamiento estratégico",
@@ -55,13 +75,14 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
         "Informes de rendimiento",
         "Palabras clave estratégicas",
         "SEO On-page/Off-page",
-        "Optimización para móviles"
+        "Optimización para móviles",
+        "Optimización de velocidad",
       ],
       cta: "Mejorar Posicionamiento",
       link: "https://mpago.la/1SgrAx3"
     },
     {
-      id: 4,
+      id: "contratar-campañasdigitales-toledoconsultora",
       title: "Campañas Digitales",
       price: "$99.000",
       description: "Gestión profesional",
@@ -79,14 +100,14 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
       link: "https://mpago.la/1NbDWJ9"
     },
     {
-      id: 5,
-      title: "Paquete Completo Ecommerce + Landing",
-      price: "$449.000",
+      id: "contratar-ecommerce-paginaweb-toledoconsultora",
+      title: "Paquete Completo Ecommerce + Pagina Web",
+      price: "$749.000",
       description: "Paquete Bussiness",
       popular: false,
       features: [
         "Dominio y Hosting FREE por 1 año",
-        "Dos cuentas @email corporativas",
+        "5 cuentas @email corporativas",
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
         "Integración con MercadoPago",
@@ -101,7 +122,7 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
       link: "https://mpago.la/1ppUGph"
     },
     {
-      id: 6,
+      id: "contratar-asesoria-de-negocios-toledoconsultora",
       title: "Asesoría de Negocios",
       price: "$50.000",
       description: "Sesión estratégica personalizada",

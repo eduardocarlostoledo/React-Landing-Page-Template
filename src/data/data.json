@@ -23,6 +23,73 @@
 "Gallery": [
   
   {
+    "title": "Moda Total Ecommerce",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://modatotal.netlify.app/",
+    "largeImage": "img/portfolio/modatotal1.png",
+    "smallImage": "img/portfolio/modatotal1.png"
+    
+  },
+  {
+    "title": "Moda Total Ecommerce",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://modatotal.netlify.app/",
+    "largeImage": "img/portfolio/modatotal2.png",
+    "smallImage": "img/portfolio/modatotal2.png"
+    
+  },
+  {
+    "title": "Moda Total Ecommerce",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://modatotal.netlify.app/",
+    "largeImage": "img/portfolio/modatotal3.png",
+    "smallImage": "img/portfolio/modatotal3.png"
+    
+  },
+  {
+    "title": "Moda Total Ecommerce",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://modatotal.netlify.app/",
+    "largeImage": "img/portfolio/modatotal4.png",
+    "smallImage": "img/portfolio/modatotal4.png"
+    
+  },
+  {
+    "title": "Moda Total Ecommerce",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://modatotal.netlify.app/",
+    "largeImage": "img/portfolio/modatotal5.png",
+    "smallImage": "img/portfolio/modatotal5.png"
+    
+  },
+  {
+    "title": "Global Home Group",
+    "description": "Pagina web para empresa de servicios de limpieza y mantenimiento, con un diseño moderno y funcional.",
+    "link": "https://globalhomegroup.netlify.app/",
+    
+    "largeImage": "img/portfolio/constructora.png",
+    "smallImage": "img/portfolio/constructora.png"
+    
+  },
+  {
+    "title": "Global Home Group",
+    "description": "Pagina web para empresa de servicios de limpieza y mantenimiento, con un diseño moderno y funcional.",
+    "link": "https://globalhomegroup.netlify.app/",
+    
+    "largeImage": "img/portfolio/constructora2.png",
+    "smallImage": "img/portfolio/constructora2.png"
+    
+  },
+  {
+    "title": "Global Home Group",
+    "description": "Pagina web para empresa de servicios de limpieza y mantenimiento, con un diseño moderno y funcional.",
+    "link": "https://globalhomegroup.netlify.app/",
+    
+    "largeImage": "img/portfolio/constructora3.png",
+    "smallImage": "img/portfolio/constructora3.png"
+    
+  },
+  {
     "title": "Calyaan Login",
     "description": "HRM, SaaS, CRM, ERP, Ecommerce",
     "link": "https://calyaan.netlify.app/",

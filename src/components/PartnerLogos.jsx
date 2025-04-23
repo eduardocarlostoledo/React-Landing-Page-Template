@@ -8,6 +8,8 @@ import logoRm from "../logo-rm.png"; // Logo de la empresa
 import logoalborada from "../logoalborada.jpg"; // Logo de la empresa
 import logocrypto from "../logocrypto.png"; // Logo de la empresa
 import logoappel from "../logoappel.png"; // Logo de la empresa
+import logoglobal from "../logoglobal.png"; // Logo de la empresa
+import logomodatotal from "../logomodatotal.png"; // Logo de la empresa
 // JSON con los datos de los logos
 const partnerLogos = [
   {
@@ -44,6 +46,16 @@ const partnerLogos = [
     name: "Appel Neumaticos PY",
     logo: logoappel,
     url: "https://appelneumaticos.com/",
+  },
+  {
+    name: "Global Home Group",
+    logo: logoglobal,
+    url: "https://globalhomegroup.netlify.app/",
+  },
+  {
+    name: "Moda Total",
+    logo: logomodatotal,
+    url: "https://modatotal.netlify.app/",
   }
 ];
 

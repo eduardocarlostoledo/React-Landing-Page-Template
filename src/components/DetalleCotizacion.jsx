@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
+import ClipLoader from 'react-spinners/ClipLoader';
 import './cotizaciones.css';
 import { Testimonials } from './testimonials';
 import { PartnerLogos } from './PartnerLogos';
@@ -12,36 +13,35 @@ export const DetalleCotizacion = () => {
   const plan = location.state?.plan;
 
   const botonRef = useRef(null);
+  const [loading, setLoading] = useState(true);
+  const [processing, setProcessing] = useState(false);
 
   useEffect(() => {
-    // Desplazar suavemente hasta el botón cuando el componente se monta
-    if (botonRef.current) {
-      botonRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'end' // 'start', 'center', 'end' o 'nearest'
-      });
-    }
-  }, []); // El array vacío asegura que solo se ejecute al montar el componente
+    const timeout = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(timeout);
+  }, []);
 
+  useEffect(() => {
+    if (botonRef.current) {
+      botonRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }, []);
 
   const sendEmailNotification = async (clientData) => {
     try {
-      // Parámetros para el email
-      const featuresHTML = plan.features.map(f => 
-        `<li style="margin-bottom: 5px;">${f.trim()}</li>`
-      ).join('');
-  
+      const featuresHTML = plan.features.map(f => `<li style="margin-bottom: 5px;">${f.trim()}</li>`).join('');
+
       const templateParams = {
         plan_title: plan.title,
         plan_price: plan.price.toLocaleString(),
-        plan_features: featuresHTML, // Envía el HTML ya formateado
+        plan_features: featuresHTML,
         client_name: clientData.nombre,
         email: clientData.email,
         support_email: 'ventas@toledoconsultora.com',
         to_email: clientData.email,
         current_year: new Date().getFullYear()
       };
-  
+
       await emailjs.send(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID_ADMIN,
@@ -74,6 +74,58 @@ export const DetalleCotizacion = () => {
     }
   };
 
+  const handleContratar = async () => {
+    const { value: formValues } = await Swal.fire({
+      title: 'Dejanos tus datos para comenzar',
+      html:
+        `<div style="display: flex; flex-direction: column; gap: 10px;">` +
+        `<input id="swal-input1" class="swal2-input" placeholder="Nombre del negocio" />` +
+        `<input id="swal-input2" class="swal2-input" placeholder="Correo electrónico" type="email" />` +
+        `<input id="swal-input3" class="swal2-input" placeholder="WhatsApp (opcional)" type="tel" />` +
+        `</div>`,
+      confirmButtonText: 'Confirmar y continuar',
+      confirmButtonColor: '#101629',
+      focusConfirm: false,
+      preConfirm: () => {
+        const nombre = document.getElementById('swal-input1').value.trim();
+        const email = document.getElementById('swal-input2').value.trim();
+        const telefono = document.getElementById('swal-input3').value.trim();
+
+        if (!nombre || !email) {
+          Swal.showValidationMessage('Nombre y correo electrónico son obligatorios');
+          return false;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          Swal.showValidationMessage('Por favor ingresa un email válido');
+          return false;
+        }
+
+        return { nombre, email, telefono };
+      },
+      backdrop: true,
+      showClass: {
+        popup: 'swal2-show animate__animated animate__fadeInDown'
+      },
+      customClass: {
+        popup: 'swal2-popup-custom'
+      }
+    });
+
+    if (formValues) {
+      setProcessing(true);
+      localStorage.setItem('clienteInfo', JSON.stringify({
+        ...formValues,
+        plan: plan.title,
+        price: plan.price,
+        date: new Date().toISOString()
+      }));
+
+      await sendEmailNotification(formValues);
+      setProcessing(false);
+    }
+  };
+
   if (!plan) {
     return (
       <div className="pricing-section">
@@ -85,53 +137,19 @@ export const DetalleCotizacion = () => {
     );
   }
 
-  const handleContratar = async () => {
-    const { value: formValues } = await Swal.fire({
-      title: 'Completa tus datos',
-      html:
-        `<input id="swal-input1" class="swal2-input" placeholder="Nombre del negocio" required>` +
-        `<input id="swal-input2" class="swal2-input" placeholder="Tu Email" type="email" required>` +
-        `<input id="swal-input3" class="swal2-input" placeholder="Teléfono" type="tel" required>`,
-      focusConfirm: false,
-      preConfirm: () => {
-        const nombre = document.getElementById('swal-input1').value;
-        const email = document.getElementById('swal-input2').value;
-        const telefono = document.getElementById('swal-input3').value;
-        
-        if (!nombre || !telefono || !email) {
-          Swal.showValidationMessage('Todos los campos son obligatorios');
-          return false;
-        }
-        
-        // Validación básica de email
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          Swal.showValidationMessage('Por favor ingresa un email válido');
-          return false;
-        }
-        
-        return { nombre, email, telefono };
-      }
-    });
-
-    if (formValues) {
-      // Guardar en localStorage
-      localStorage.setItem('clienteInfo', JSON.stringify({
-        ...formValues,
-        plan: plan.title,
-        price: plan.price,
-        date: new Date().toISOString()
-      }));
-      
-      // Enviar notificación por email
-      await sendEmailNotification(formValues);
-    }
-  };
+  if (loading || processing) {
+    return (
+      <div className="loading-overlay">
+        <ClipLoader color="#101629" size={60} />
+      </div>
+    );
+  }
 
   return (
     <section className="pricing-section">
       <div className="pricing-container">
         <div className="card-header">
-          <h1>DETALLES DEL SERVICIO A CONTRATAR: </h1>              
+          <h1>DETALLES DEL SERVICIO A CONTRATAR: </h1>
         </div>
 
         <div className="pricing-grid">
@@ -146,20 +164,20 @@ export const DetalleCotizacion = () => {
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-              <button         ref={botonRef} className="pricing-button" onClick={handleContratar}>
+              <button ref={botonRef} className="pricing-button" onClick={handleContratar}>
                 Contratar
               </button>
             </div>
           </div>
         </div>
       </div>
-      
+
       <Testimonials />
       <PartnerLogos />
-      
+
       <button className="pricing-button" onClick={handleContratar}>
-                Contratar
-              </button>
+        Contratar
+      </button>
     </section>
   );
 };
