@@ -17,11 +17,12 @@ import { Cotizaciones } from "./components/Cotizaciones";
 import { Graciasporsucompra } from "./components/graciasporsucompra";
 import { DetalleCotizacion } from "./components/DetalleCotizacion";
 import {DetalleCotizacionSEO } from "./components/DetalleCotizacionSEO.jsx"
-
+import IndiceSitemap from "./components/IndiceSitemaps.jsx";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import { use } from "react";
+
 
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -90,7 +91,7 @@ const App = () => {
       <Route path="/acerca-de-nosotros" element={<About  data={landingPageData.About} />} />
       <Route path="/nuestros-servicios" element={<Services  data={landingPageData.Services} />} />
       <Route path="/nuestros-proyectos" element={<Gallery  data={landingPageData.Gallery} />} />
-      
+      <Route path="/indice-sitemap" element={ IndiceSitemap} />
 
 
     </Routes>
