@@ -1,7 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
-
+# robots.txt - Toledo Consultora IT
 User-agent: *
 Allow: /
 Sitemap: https://toledoconsultora.com/sitemap.xml
