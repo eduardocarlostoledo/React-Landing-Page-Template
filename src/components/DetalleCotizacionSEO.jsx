@@ -148,44 +148,80 @@ export const DetalleCotizacionSEO = () => {
     );
   }
 
-  return (
-    <>
-      <Helmet>
-        <title>{plan.title} | Toledo Consultora</title>
-        <meta name="description" content={plan.description} />
-        <link rel="canonical" href={plan.canonical} />
-      </Helmet>
+return (
+  <>
+    <Helmet>
+      <title>{plan.title} | Toledo Consultora</title>
+      <meta name="description" content={plan.description} />
+      <link rel="canonical" href={`https://toledoconsultora.com/detalle/${plan.id}`} />
 
-      <section className="pricing-section">
-        <div className="pricing-container">
-          <div className="card-header">
-            <h1>DETALLES DEL SERVICIO A CONTRATAR: </h1>
-          </div>
+      {/* Open Graph */}
+      <meta property="og:title" content={`${plan.title} | Toledo Consultora`} />
+      <meta property="og:description" content={plan.description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`https://toledoconsultora.com/detalle/${plan.id}`} />
+      <meta property="og:image" content="https://toledoconsultora.com/logo.png" />
 
-          <div className="pricing-grid">
-            <div className={`pricing-card ${plan.popular ? 'popular' : ''}`}>
-              <div className="card-header">
-                <h3>{plan.title}</h3>
-                <div className="price">{plan.price}<span> / único</span></div>
-              </div>
-              <div className="card-body">
-                <ul className="feature-list">
-                  {plan.features.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-                <button ref={botonRef} className="pricing-button" onClick={handleContratar}>
-                  Contratar
-                </button>
-              </div>
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={`${plan.title} | Toledo Consultora`} />
+      <meta name="twitter:description" content={plan.description} />
+      <meta name="twitter:image" content="https://toledoconsultora.com/logo.png" />
+
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": plan.title,
+          "description": plan.description,
+          "provider": {
+            "@type": "Organization",
+            "name": "Toledo Consultora IT",
+            "url": "https://toledoconsultora.com"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": plan.price.replace(/[^0-9]/g, ''),
+            "priceCurrency": "ARS",
+            "url": `https://toledoconsultora.com/detalle/${plan.id}`,
+            "availability": "https://schema.org/InStock"
+          }
+        })}
+      </script>
+    </Helmet>
+
+    <section className="pricing-section">
+      <div className="pricing-container">
+        <div className="card-header">
+          <h1>DETALLES DEL SERVICIO A CONTRATAR: </h1>
+        </div>
+
+        <div className="pricing-grid">
+          <div className={`pricing-card ${plan.popular ? 'popular' : ''}`}>
+            <div className="card-header">
+              <h3>{plan.title}</h3>
+              <div className="price">{plan.price}<span> / único</span></div>
+            </div>
+            <div className="card-body">
+              <ul className="feature-list">
+                {plan.features.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+              <button ref={botonRef} className="pricing-button" onClick={handleContratar}>
+                Contratar
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        <Testimonials />
-        <PartnerLogos />
-        <button className="pricing-button" onClick={handleContratar}>Contratar</button>
-      </section>
-    </>
-  );
+      <Testimonials />
+      <PartnerLogos />
+      <button className="pricing-button" onClick={handleContratar}>Contratar</button>
+    </section>
+  </>
+);
+
 };
