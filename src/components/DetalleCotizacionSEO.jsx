@@ -153,13 +153,13 @@ return (
     <Helmet>
       <title>{plan.title} | Toledo Consultora</title>
       <meta name="description" content={plan.description} />
-      <link rel="canonical" href={`https://toledoconsultora.com/detalle/${plan.id}`} />
+      <link rel="canonical" href={`https://toledoconsultora.com/servicios-globales/${plan.id}`} />
 
       {/* Open Graph */}
       <meta property="og:title" content={`${plan.title} | Toledo Consultora`} />
       <meta property="og:description" content={plan.description} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://toledoconsultora.com/detalle/${plan.id}`} />
+      <meta property="og:url" content={`https://toledoconsultora.com/servicios-globales/${plan.id}`} />
       <meta property="og:image" content="https://toledoconsultora.com/logo.png" />
 
       {/* Twitter */}
@@ -184,7 +184,7 @@ return (
             "@type": "Offer",
             "price": plan.price.replace(/[^0-9]/g, ''),
             "priceCurrency": "ARS",
-            "url": `https://toledoconsultora.com/detalle/${plan.id}`,
+            "url": `https://toledoconsultora.com/servicios-globales/${plan.id}`,
             "availability": "https://schema.org/InStock"
           }
         })}
