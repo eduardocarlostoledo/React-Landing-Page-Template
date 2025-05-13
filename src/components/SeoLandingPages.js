@@ -1,10 +1,4 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import './cotizaciones.css';
-import { useNavigate } from 'react-router-dom';
-
-export const Cotizaciones = ({ selectedIds = [] }) => {
-  const navigate = useNavigate();
+const SeoLandingPages = [];
   const pricingPlans = [
     {
       id: "contratar-landingpage-toledoconsultora",
@@ -35,8 +29,7 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
         "Hosting Incluído en el primer año",
         "Incluye Desarrollo de Servicios Web, React, Css, EmailJs",
         "No aplica para Base de datos Postgresql/ORM + Node/Express web server",
-        "5 emails corporativos",
-        "Hosting por 1 año",
+"Incluye 5 emails corporativos con el dominio por el primer año",        
 "Diseño Adaptativo a Pc y Móvil",
         "SEO básico incluido",
         "Navbar y Footer personalizados",
@@ -59,7 +52,7 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
         "Desarrollo de API hasta 3 endpoints con controlador y modelos",
         "No aplica para sistemas con autenticación de usuarios",
         "No aplica para sistemas con pagos online",
-        "5 emails corporativos",        
+        "Incluye 5 emails corporativos con el dominio por el primer año",        
 "Diseño Adaptativo a Pc y Móvil",
         "SEO básico incluido",
         "Navbar y Footer personalizados",
@@ -90,7 +83,7 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
         "Secciones: Nosotros, Contacto",
         "Acceso a redes socales y whatsapp",
         "Incluye hosting capa gratuita de imagenes",
-        "5 emails corporativos",
+"Incluye 5 emails corporativos con el dominio por el primer año",        
         "*No incluye gastos de hosting ni gastos de mantenimiento",
       ],
       cta: "Solicitar Landing Page",
@@ -169,7 +162,7 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
       features: [
         "Dominio.com.ar incluido por 1 año",
 "Incluye Desarrollo de Servicios Web, React, Css, EmailJs",
-        "5 cuentas @email corporativas",        
+"Incluye 5 emails corporativos con el dominio por el primer año",        
          "Integración con MercadoPago",
         "Panel autogestionable de productos, no aplica para talles ni colores",
         "Sistema con control de stock",
@@ -177,13 +170,17 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
         "Panel autogestionable de usuarios",
         "Sin límite de productos",
         "Incluye Diseño y Despliegue de Base de datos y web Server",
+                "Incluye hosting capa gratuita de imagenes para tus productos",
+
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
         "Sin Comisiones por venta",        
         "Diseño Adaptativo a Pc y Móvil",
         "Estrategia SEO completa",
         "Posicionamiento en Google Business y Maps",
-        "Campaña Publicitaria Estándar x 30días en Google Ads"
+        "Campaña Publicitaria Estándar x 30días en Google Ads",
+                "*No incluye gastos de hosting de base de datos ni gastos de mantenimiento",
+
       ],
       cta: "Contratar Pack Bussiness",
       link: "https://mpago.la/1ppUGph"
@@ -207,92 +204,34 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
       link: "https://mpago.la/1Bgc6i5"
     }
   ];
-  const selectedPlans = selectedIds.length > 0
-    ? pricingPlans.filter(plan => selectedIds.includes(plan.id))
-    : pricingPlans;
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
+const ciudades = [
+  "Buenos Aires", "CABA", "La Plata", "Mar del Plata", "Bahía Blanca",
+  "Rosario", "Santa Fe", "Córdoba", "Villa Carlos Paz", "Río Cuarto",
+  "Mendoza", "San Rafael", "San Juan", "San Luis", "Neuquén",
+  "Bariloche", "General Roca", "Trelew", "Comodoro Rivadavia", "Rawson",
+  "Salta", "Jujuy", "Tucumán", "Santiago del Estero", "Catamarca",
+  "La Rioja", "Corrientes", "Resistencia", "Formosa", "Posadas"
+];
 
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.5 }
-    }
-  };
+pricingPlans.forEach(plan => {
+  ciudades.forEach(ciudad => {
+    const ciudadSlug = ciudad.toLowerCase().replace(/\s+/g, "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const idSeo = `${plan.id}-${ciudadSlug}`;
 
-  const buttonVariants = {
-    hover: { scale: 1.05 },
-    tap: { scale: 0.95 }
-  };
+    SeoLandingPages.push({
+      id: idSeo,
+      title: `${plan.title} en ${ciudad}`,
+      price: plan.price,
+      description: `${plan.description} para empresas y emprendedores en ${ciudad}.`,
+      ciudad,
+      features: plan.features,
+      link: plan.link || "https://www.toledoconsultora.com/pago",
+      popular: plan.popular || false,
+      canonical: `https://toledoconsultora.com/servicios-globales/${idSeo}`
+    });
+  });
+});
 
-  const handlePlanClick = (plan) => {
-    navigate(`/detalle/${plan.id}`, { state: { plan } });
-  };
 
-  return (
-    <section className="pricing-section" id="pricing">
-      <div className="pricing-container">
-        <motion.div
-          className="section-header"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2>Nuestros Servicios Profesionales</h2>
-          <p>Soluciones digitales a medida con precios transparentes y resultados garantizados</p>
-        </motion.div>
-
-        <motion.div
-          className="pricing-grid"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-        >
-          {selectedPlans.map((plan) => (
-            <motion.div
-              key={plan.id}
-              className={`pricing-card ${plan.popular ? 'popular' : ''}`}
-              variants={itemVariants}
-              whileHover={{ scale: 1.03 }}
-            >
-              <div className="card-header">
-                <h3>{plan.title}</h3>
-                <div className="price">
-                  {plan.price} <span>{plan.title === "Campañas Digitales" ? "/mes" : "único"}</span>
-                </div>
-                <p>{plan.description}</p>
-              </div>
-              <div className="card-body">
-                <ul className="feature-list">
-                  {plan.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-                <motion.button
-                  className="pricing-button"
-                  variants={buttonVariants}
-                  whileHover="hover"
-                  whileTap="tap"
-                  onClick={() => handlePlanClick(plan)}
-                >
-                  {plan.cta}
-                </motion.button>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
-  );
-};
+module.exports= SeoLandingPages

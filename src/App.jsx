@@ -16,6 +16,8 @@ import { Chatbot } from "./components/ChatBot";
 import { Cotizaciones } from "./components/Cotizaciones";
 import { Graciasporsucompra } from "./components/graciasporsucompra";
 import { DetalleCotizacion } from "./components/DetalleCotizacion";
+import {DetalleCotizacionSEO } from "./components/DetalleCotizacionSEO.jsx"
+
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -82,6 +84,14 @@ const App = () => {
       <Route path="/" element={<LandingPage data={landingPageData} />} />
       <Route path="/gracias-por-su-compra" element={<Graciasporsucompra />} />
       <Route path="/detalle/:id" element={<DetalleCotizacion />} />
+      <Route path="/servicios-globales/:id" element={<DetalleCotizacionSEO />} />
+      <Route path="/servicios-profesionales" element={<Cotizaciones />} />
+      <Route path="/asesoramiento-profesional" element={<Asesoramiento  data={landingPageData.Asesoramiento} />} />
+      <Route path="/acerca-de-nosotros" element={<About  data={landingPageData.About} />} />
+      <Route path="/nuestros-servicios" element={<Services  data={landingPageData.Services} />} />
+      <Route path="/nuestros-proyectos" element={<Gallery  data={landingPageData.Gallery} />} />
+      
+
 
     </Routes>
   );
