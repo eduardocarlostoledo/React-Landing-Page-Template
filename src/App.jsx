@@ -16,13 +16,12 @@ import { Chatbot } from "./components/ChatBot";
 import { Cotizaciones } from "./components/Cotizaciones";
 import { Graciasporsucompra } from "./components/graciasporsucompra";
 import { DetalleCotizacion } from "./components/DetalleCotizacion";
-import {DetalleCotizacionSEO } from "./components/DetalleCotizacionSEO.jsx"
+import { DetalleCotizacionSEO } from "./components/DetalleCotizacionSEO.jsx";
 import IndiceSitemap from "./components/IndiceSitemaps.jsx";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
-import { use } from "react";
-
+import Sitemap from "./components/Sitemaps.jsx";
 
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -42,10 +41,9 @@ const LandingPage = ({ data }) => (
     <Features data={data.Features} />
     <About data={data.About} />
     <Services data={data.Services} />
-    
-    
+
     <Team data={data.Team} />
-    
+
     <Contact data={data.Contact} />
     <Chatbot />
   </>
@@ -63,7 +61,8 @@ const App = () => {
       if (element) {
         const navbarHeight = 220;
         const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - navbarHeight;
 
         setTimeout(() => {
           window.scrollTo({
@@ -75,7 +74,6 @@ const App = () => {
     }
   }, [location]);
 
-
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
@@ -83,17 +81,31 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage data={landingPageData} />} />
-      <Route path="/gracias-por-su-compra" element={<Graciasporsucompra />} />
       <Route path="/detalle/:id" element={<DetalleCotizacion />} />
-      <Route path="/servicios-globales/:id" element={<DetalleCotizacionSEO />} />
+      <Route
+        path="/servicios-globales/:id"
+        element={<DetalleCotizacionSEO />}
+      />
       <Route path="/servicios-profesionales" element={<Cotizaciones />} />
-      <Route path="/asesoramiento-profesional" element={<Asesoramiento  data={landingPageData.Asesoramiento} />} />
-      <Route path="/acerca-de-nosotros" element={<About  data={landingPageData.About} />} />
-      <Route path="/nuestros-servicios" element={<Services  data={landingPageData.Services} />} />
-      <Route path="/nuestros-proyectos" element={<Gallery  data={landingPageData.Gallery} />} />
-      <Route path="/indice-sitemap" element={ IndiceSitemap} />
-
-
+      <Route
+        path="/asesoramiento-profesional"
+        element={<Asesoramiento data={landingPageData.Asesoramiento} />}
+      />
+      <Route
+        path="/acerca-de-nosotros"
+        element={<About data={landingPageData.About} />}
+      />
+      <Route
+        path="/nuestros-servicios"
+        element={<Services data={landingPageData.Services} />}
+      />
+      <Route
+        path="/nuestros-proyectos"
+        element={<Gallery data={landingPageData.Gallery} />}
+      />
+      <Route path="/indice-sitemap" element={<IndiceSitemap/>} />
+      <Route path="/indice-del-sitio" element={<Sitemap/>} />
+      <Route path="gracias-por-su-compra" element={<Graciasporsucompra/>}/>
     </Routes>
   );
 };

@@ -1,3 +1,25 @@
+.sitemap-footer-link {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.sitemap-map-link {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background-color: #e2e2ee;
+  color: #101629;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sitemap-map-link:hover {
+  background-color: #c69e5d;
+  color: white;
+}
+
+
 .social-links {
   display: flex;
   gap: 15px;

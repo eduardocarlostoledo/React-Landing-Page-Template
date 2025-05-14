@@ -1,0 +1,57 @@
+.sitemap-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #101629;
+}
+
+.sitemap-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.sitemap-section {
+  margin-bottom: 2.5rem;
+}
+
+.sitemap-section h2,
+.sitemap-section h3 {
+  font-size: 1.4rem;
+  color: #263d23;
+  border-bottom: 2px solid #c69e5d;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.sitemap-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sitemap-list li {
+  margin-bottom: 0.6rem;
+}
+
+.sitemap-list a,
+.sitemap-grid a {
+  color: #101629;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.sitemap-list a:hover,
+.sitemap-grid a:hover {
+  color: #c69e5d;
+}
+
+.sitemap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.8rem 1.2rem;
+  list-style: none;
+  padding-left: 0;
+}

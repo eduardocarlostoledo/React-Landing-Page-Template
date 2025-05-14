@@ -21,7 +21,7 @@ const IndiceSitemap = () => {
                 <li><a href="https://toledoconsultora.com/sitemap.xml">Sitemap XML</a></li>
             </ul>
             
-            {/* <ul>
+            <ul>
                 <li><a href="https://toledoconsultora.com">Servicios Profesionales</a></li>
                 <li><a href="https://toledoconsultora.com/servicios-profesionales">Servicios Profesionales</a></li>
                 <li><a href="https://toledoconsultora.com/asesoramiento-profesional">Servicios Profesionales</a></li>
@@ -300,7 +300,7 @@ const IndiceSitemap = () => {
                 <li><a href="https://toledoconsultora.com/servicios-globales/contratar-asesoria-de-negocios-toledoconsultora-formosa">Servicios Profesionales</a></li>
                 <li><a href="https://toledoconsultora.com/servicios-globales/contratar-asesoria-de-negocios-toledoconsultora-posadas">Servicios Profesionales</a></li>
 
-            </ul> */}
+            </ul>
 
 
         </div>

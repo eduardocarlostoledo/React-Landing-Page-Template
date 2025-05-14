@@ -130,12 +130,14 @@ export const DetalleCotizacionSEO = () => {
           <title>No encontrado | Toledo Consultora</title>
           <meta name="robots" content="noindex" />
         </Helmet>
+        
         <div className="pricing-section">
           <div className="pricing-container">
             <h2 className="section-header">No se encontró la cotización</h2>
             <button className="pricing-button" onClick={() => navigate(-1)}>Volver</button>
           </div>
         </div>
+        
       </>
     );
   }
@@ -221,6 +223,7 @@ return (
       <PartnerLogos />
       <button className="pricing-button" onClick={handleContratar}>Contratar</button>
     </section>
+                
   </>
 );
 

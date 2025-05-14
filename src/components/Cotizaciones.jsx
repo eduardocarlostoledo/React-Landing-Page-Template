@@ -142,7 +142,7 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
       link: "https://mpago.la/1SgrAx3"
     },
     {
-      id: "contratar-campañasdigitales-toledoconsultora",
+      id: "contratar-campanasdigitales-toledoconsultora",
       title: "Campañas Digitales Google Ads",
       price: "$99.000",
       description: "Gestión profesional",
