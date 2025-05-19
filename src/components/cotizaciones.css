@@ -1,4 +1,21 @@
 /* cotizaciones.css */
+.h4-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    font-family: sans-serif;
+    margin-bottom: 1em;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+    text-align: justify; /* Agregamos esta línea */
+}
+
+.h4-text strong {
+    font-weight: bold;
+    color: #007bff;
+}
 .floating-contract-button {
   position: fixed;
   bottom: 20px;

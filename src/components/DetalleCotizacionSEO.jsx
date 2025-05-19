@@ -10,6 +10,7 @@ import { PartnerLogos } from './PartnerLogos';
 import SeoLandingPages from './SeoLandingPages';
 
 export const DetalleCotizacionSEO = () => {
+  console.log(SeoLandingPages)
   const { id } = useParams();
   const navigate = useNavigate();
   const plan = SeoLandingPages.find(p => p.id === id);
@@ -197,12 +198,15 @@ return (
       <div className="pricing-container">
         <div className="card-header">
           <h1>DETALLES DEL SERVICIO A CONTRATAR: </h1>
+          <h2>Servicio: {plan.description} Precio en Pesos {plan.price} Toledo Consultora </h2>
+
         </div>
 
         <div className="pricing-grid">
           <div className={`pricing-card ${plan.popular ? 'popular' : ''}`}>
             <div className="card-header">
               <h3>{plan.title}</h3>
+              <h4 style={{textAlign: "justify"}}>{plan.detail} </h4>
               <div className="price">{plan.price}<span> / único</span></div>
             </div>
             <div className="card-body">
@@ -214,6 +218,8 @@ return (
               <button ref={botonRef} className="pricing-button" onClick={handleContratar}>
                 Contratar
               </button>
+              <p> Consulta nuestros términos y condiciones en https://toledoconsultora.com/terminos-y-condiciones </p>
+              <p> Consulta nuestra Política de Privacidad en https://toledoconsultora.com/politica-de-privacidad </p>
             </div>
           </div>
         </div>
