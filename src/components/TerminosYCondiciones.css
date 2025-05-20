@@ -1,0 +1,42 @@
+.tyc-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  font-family: "Open Sans", sans-serif;
+}
+
+.tyc-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tyc-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003766;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.tyc-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #003766;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.tyc-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #555;
+}
+
+.tyc-strong {
+  font-weight: 600;
+  color: #000;
+}

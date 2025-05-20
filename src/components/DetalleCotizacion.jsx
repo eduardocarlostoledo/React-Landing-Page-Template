@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Helmet } from 'react-helmet';
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -600,6 +602,14 @@ En resumen, Toledo Consultora ofrece una valiosa combinación de experiencia té
 
 
 export const DetalleCotizacion = () => {
+
+  
+
+    useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+
   const { id } = useParams();
   const navigate = useNavigate();
   const plan = pricingPlans.find(p => p.id === id);
@@ -805,8 +815,13 @@ export const DetalleCotizacion = () => {
         Contratar
       </button>
 
-       <p> Consulta nuestros términos y condiciones en https://toledoconsultora.com/terminos-y-condiciones </p>
-              <p> Consulta nuestra Política de Privacidad en https://toledoconsultora.com/politica-de-privacidad </p>
+<div style={{textAlign: "center"}}>
+            <Link to="/terminos-y-condiciones">Términos y Condiciones</Link>
+            <p>{" "}</p>
+                <Link to="/politica-de-privacidad">Política de Privacidad</Link>
+                <p>{" "}</p>
+                </div>
+              
 
 
     </section>

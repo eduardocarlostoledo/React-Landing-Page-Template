@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import { useEffect, useRef, useState } from 'react';
@@ -10,7 +11,13 @@ import { PartnerLogos } from './PartnerLogos';
 import SeoLandingPages from './SeoLandingPages';
 
 export const DetalleCotizacionSEO = () => {
-  console.log(SeoLandingPages)
+  
+  
+
+    useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const { id } = useParams();
   const navigate = useNavigate();
   const plan = SeoLandingPages.find(p => p.id === id);
@@ -218,9 +225,15 @@ return (
               <button ref={botonRef} className="pricing-button" onClick={handleContratar}>
                 Contratar
               </button>
-              <p> Consulta nuestros términos y condiciones en https://toledoconsultora.com/terminos-y-condiciones </p>
-              <p> Consulta nuestra Política de Privacidad en https://toledoconsultora.com/politica-de-privacidad </p>
-            </div>
+          
+            </div >
+
+            <div style={{textAlign: "center"}}>
+            <Link to="/terminos-y-condiciones">Términos y Condiciones</Link>
+            <p>{" "}</p>
+                <Link to="/politica-de-privacidad">Política de Privacidad</Link>
+                <p>{" "}</p>
+                </div>
           </div>
         </div>
       </div>

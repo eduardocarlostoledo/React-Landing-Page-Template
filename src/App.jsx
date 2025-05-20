@@ -22,6 +22,8 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import Sitemap from "./components/Sitemaps.jsx";
+import TerminosYCondiciones from "./components/TerminosYCondiciones.jsx";
+import Politica from "./components/Politica.jsx";
 
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -106,6 +108,10 @@ const App = () => {
       <Route path="/indice-sitemap" element={<IndiceSitemap/>} />
       <Route path="/indice-del-sitio" element={<Sitemap/>} />
       <Route path="gracias-por-su-compra" element={<Graciasporsucompra/>}/>
+      <Route path="/terminos-y-condiciones" element={<TerminosYCondiciones/>} />
+      <Route path="/politica-de-privacidad" element={<Politica/>} />
+      <Route path="/contacto" element={<Contact/>} />
+
     </Routes>
   );
 };
