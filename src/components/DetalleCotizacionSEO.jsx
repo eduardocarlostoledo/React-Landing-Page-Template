@@ -170,7 +170,7 @@ export const DetalleCotizacionSEO = () => {
         <meta name="description" content={plan.description} />
         <link
           rel="canonical"
-          href={`https://toledoconsultora.com/servicios-globales/${plan.id}`}
+          href={`https://toledoconsultora.com/servicios-consultora-toledo/${plan.id}`}
         />
 
         {/* Open Graph */}
@@ -182,7 +182,7 @@ export const DetalleCotizacionSEO = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://toledoconsultora.com/servicios-globales/${plan.id}`}
+          content={`https://toledoconsultora.com/servicios-consultora-toledo/${plan.id}`}
         />
         <meta
           property="og:image"
@@ -217,7 +217,7 @@ export const DetalleCotizacionSEO = () => {
               "@type": "Offer",
               price: plan.price.replace(/[^0-9]/g, ""),
               priceCurrency: "ARS",
-              url: `https://toledoconsultora.com/servicios-globales/${plan.id}`,
+              url: `https://toledoconsultora.com/servicios-consultora-toledo/${plan.id}`,
               availability: "https://schema.org/InStock",
             },
           })}

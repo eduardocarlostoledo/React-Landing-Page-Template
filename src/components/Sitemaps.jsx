@@ -22,7 +22,7 @@ const servicios = [
   "landingpage", "pagina-web", "sistema-web", "sistema-web-completo", "ecommerce", "seo-avanzado", "campanasdigitales", "ecommerce-paginaweb", "asesoria-de-negocios"
 ];
 
-const buildURL = (servicio, ciudad) => `https://toledoconsultora.com/servicios-globales/contratar-${servicio}-toledoconsultora-${ciudad}`;
+const buildURL = (servicio, ciudad) => `https://toledoconsultora.com/servicios-consultora-toledo/contratar-${servicio}-toledoconsultora-${ciudad}`;
 
 const Sitemap = () => {
   return (

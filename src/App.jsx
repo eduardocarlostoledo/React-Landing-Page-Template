@@ -85,7 +85,7 @@ const App = () => {
       <Route path="/" element={<LandingPage data={landingPageData} />} />
       <Route path="/detalle/:id" element={<DetalleCotizacion />} />
       <Route
-        path="/servicios-globales/:id"
+        path="/servicios-consultora-toledo/:id"
         element={<DetalleCotizacionSEO />}
       />
       <Route path="/servicios-profesionales" element={<Cotizaciones />} />

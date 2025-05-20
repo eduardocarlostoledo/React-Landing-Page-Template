@@ -19,7 +19,7 @@ const staticPaths = [
   "/contacto",
 ];
 
-const dynamicPaths = SeoLandingPages.map((p) => `/servicios-globales/${p.id}`);
+const dynamicPaths = SeoLandingPages.map((p) => `/servicios-consultora-toledo/${p.id}`);
 
 const urls = [...staticPaths, ...dynamicPaths].map((url) => {
   return `<url><loc>${baseUrl}${url}</loc></url>`;

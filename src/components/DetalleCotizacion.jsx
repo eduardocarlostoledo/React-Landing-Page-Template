@@ -58,7 +58,7 @@ En resumen, una landing page es una herramienta poderosa y esencial para cualqui
       id: "contratar-pagina-web-toledoconsultora",
       title: "Página Web Tipo Spa",
       price: "$249.000",
-      description: "Diseño profesional adaptable",
+      description: "Diseño de pagina web profesional",
       popular: false,
       features: [
         "Dominio.com.ar sin cargo incluido en el primer año",
@@ -120,14 +120,14 @@ Proporcionar información valiosa y soporte a tus clientes.
 Ofrecer una plataforma para el crecimiento y la expansión de tu negocio online.
 Invertir tiempo y recursos en la creación y optimización de una página web es una estrategia fundamental para el éxito a largo plazo en el entorno digital actual.
       `,
-      cta: "Solicitar Web Page Institucional o Corporativa",
+      cta: "Solicitar Web Page Tipo Spa Institucional",
       link: "https://mpago.la/2SQELVR"
     },
     {
       id: "contratar-sistema-web-toledoconsultora",
       title: "Sistema Web Tipo Spa",
       price: "$349.000",
-      description: "Diseño profesional adaptable",
+      description: "Diseño sistema web profesional",
       popular: false,
       features: [
         "Dominio.com.ar incluido por 1 año",
@@ -208,7 +208,7 @@ La elección entre PostgreSQL y MongoDB dependerá de las necesidades específic
       id: "contratar-sistema-web-completo-toledoconsultora",
       title: "Sistema con base de datos  y autenticación Web Tipo Spa",
       price: "$549.000",
-      description: "Diseño profesional adaptable",
+      description: "Diseño profesional sistema web completo",
       popular: false,
       features: [
         "Dominio.com.ar incluido por 1 año",
@@ -593,7 +593,7 @@ Enfoque en la innovación: Toledo Consultora se compromete a mantenerse a la van
 En resumen, Toledo Consultora ofrece una valiosa combinación de experiencia técnica, visión para los negocios, habilidades interpersonales y conocimiento especializado en campañas electorales y ciencias políticas. Esto la convierte en una opción ideal para empresas y organizaciones que buscan un asesoramiento estratégico e integral para alcanzar sus objetivos.
 
       `,
-      cta: "Contratar Asesoría",
+      cta: "Contratar Asesoría Tenológica",
       link: "https://mpago.la/1Bgc6i5"
     }
   ];
