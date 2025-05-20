@@ -1,4 +1,71 @@
 /* cotizaciones.css */
+.hero-banner {
+  border-radius: 15px;
+  
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45); /* opacidad negra */
+  display: flex;
+  align-items: center;
+ justify-content: flex-start; /* 👈 esto lo alinea a la izquierda */
+  }
+
+.banner-logo {
+  border-radius: 15px;
+  margin: 20px;
+  width: 180px;
+  max-width: 90%;
+  height: auto;
+  z-index: 2;
+  filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.6));
+}
+
+
+
+.social-links-cotizaciones {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-cotizaciones a {
+  color: white;
+  background: linear-gradient(45deg, #4facfe, #18585c); /* o tu color principal */
+  padding: 12px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-links-cotizaciones a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+}
+
+
+
 .h4-text {
     font-size: 1.1em;
     line-height: 1.6;
@@ -131,6 +198,8 @@
 }
 
 .card-header {
+  border-radius: 15px;
+  margin: 20px;
   padding: 2rem;
   background: var(--primary);
   color: white;
@@ -207,5 +276,72 @@
     right: -25px;
     padding: 5px 25px;
     font-size: 0.7rem;
+  }
+}
+
+
+@media (max-width: 370px) {
+  .hero-banner {
+    height: 220px;
+  }
+
+  .banner-logo {
+    width: 140px;
+    margin: 10px;
+  }
+
+  .card-header {
+    padding: 1.5rem;
+    margin: 10px;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .pricing-button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .social-links-cotizaciones {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-banner {
+    height: 180px;
+  }
+
+  .banner-logo {
+    display: none;
+  }
+
+  .card-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+
+  .pricing-button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .feature-list li {
+    font-size: 0.9rem;
+  }
+
+  .floating-contract-button .pricing-button {
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }

@@ -12,6 +12,11 @@ const staticPaths = [
   "/nuestros-servicios",
   "/nuestros-proyectos",
   "/gracias-por-su-compra",
+  "/indice-sitemap",
+  "/indice-del-sitio",  
+  "/terminos-y-condiciones",
+  "/politica-de-privacidad",
+  "/contacto",
 ];
 
 const dynamicPaths = SeoLandingPages.map((p) => `/servicios-globales/${p.id}`);

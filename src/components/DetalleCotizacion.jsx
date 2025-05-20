@@ -776,6 +776,16 @@ export const DetalleCotizacion = () => {
   <meta name="twitter:image" content="https://toledoconsultora.com/logo.png" />
 </Helmet>
 
+<div
+  className="hero-banner"
+  style={{ backgroundImage: "url('/img/baner.jpg')" }}
+>
+  <div className="banner-overlay">
+    <img src="/img/logo.png" alt="Logo Toledo Consultora" className="banner-logo" />
+  </div>
+</div>
+
+
 
     <section className="pricing-section">
       
@@ -783,7 +793,7 @@ export const DetalleCotizacion = () => {
 
       <div className="pricing-container">
         <div className="card-header">
-          <h1>DETALLES DEL SERVICIO A CONTRATAR: </h1>
+          <h1>Tu Página Web Profesional en: </h1>
           <h2>Servicio: {plan.description} Precio en Pesos {plan.price} Toledo Consultora </h2>
         </div>
 
@@ -803,6 +813,34 @@ export const DetalleCotizacion = () => {
               <button ref={botonRef} className="pricing-button" onClick={handleContratar}>
                 Contratar
               </button>
+
+      <div className="social-links-cotizaciones">
+          {/* WhatsApp SVG alternativo para mejor visibilidad */}
+          <a
+            href={`https://wa.me/5493764221063?text=${encodeURIComponent(
+              `Hola Eduardo, estoy interesado en el servicio "${plan.title}". 
+              
+detalle del servicio:
+              "${plan.features}" precio: "${plan.price}".
+              
+              Vi la info acá: ${window.location.href}`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="WhatsApp"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter: "brightness(1.1)",
+              }}
+            />
+          </a>
+        </div>
+
             </div>
           </div>
         </div>
@@ -814,6 +852,33 @@ export const DetalleCotizacion = () => {
       <button className="pricing-button" onClick={handleContratar}>
         Contratar
       </button>
+
+      <div className="social-links-cotizaciones">
+          {/* WhatsApp SVG alternativo para mejor visibilidad */}
+          <a
+            href={`https://wa.me/5493764221063?text=${encodeURIComponent(
+              `Hola Eduardo, estoy interesado en el servicio "${plan.title}". 
+              
+detalle del servicio:
+              "${plan.features}" precio: "${plan.price}".
+              
+              Vi la info acá: ${window.location.href}`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="WhatsApp"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp"
+              style={{
+                width: "40px",
+                height: "40px",
+                filter: "brightness(1.1)",
+              }}
+            />
+          </a>
+        </div>
 
 <div style={{textAlign: "center"}}>
             <Link to="/terminos-y-condiciones">Términos y Condiciones</Link>

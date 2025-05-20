@@ -1,24 +1,26 @@
 {
   "Header": {
-    "title": "Servicio de Desarrollo Web, Consultoría IT y Asesoramiento",
-    "paragraph": "Desarrollo de Aplicaciones Web, Tiendas Online, Landing Page en Misiones"
+    "title": "Especialistas en presencia digital para negocios locales - Diseño de Página Web - Google Business / SEO loca - Campañas Google Ads ",
+    "paragraph": "Tener presencia profesional, captar atención - Aparecer en mapas, búsquedas y tener reseñas - Generar llamadas, formularios o visitas "
   },
   "About": {
-    "paragraph": "Toledo Consultora IT, es una consultora tecnológica y de desarrollo de soluciones Web. Trabajamos con empresas y organizaciones de todos los tamaños. Nuestro Objetivo es ser tu socio tecnológico y darte las soluciones que tu negocio necesita. Fundada y liderada por Eduardo Toledo desde 2022.",
-    "Why": [
-      "Transparencia",
-      "Claridad",
-      "Confianza",
-      "Cobertura",
-      "Sociedad a largo plazo"
-    ],
+    "paragraph": "Toledo Consultora IT es una agencia especializada en desarrollo web, SEO local y campañas en Google Ads. Ayudamos a negocios, profesionales y emprendimientos a tener presencia real en internet, generando más clientes y más ventas. Nuestro objetivo es que tu marca aparezca en Google, destaque frente a la competencia y crezca online con resultados medibles. Somos tu socio tecnológico: trabajamos con responsabilidad, claridad y foco en objetivos concretos y viables. Fundada y liderada por Eduardo Toledo desde 2022, brindamos soluciones personalizadas a empresas de todos los tamaños.",
+   "Why": [
+  "Transparencia total en cada etapa del proyecto",
+  "Compromiso y responsabilidad con tus objetivos",
+  "Construimos relaciones basadas en la confianza",
+  "Respeto por tu tiempo, tu negocio y tus decisiones",
+  "Pensamos en relaciones a largo plazo, no ventas únicas"
+],
+
     "Why2": [
-      "Etica Empresarial",
-      "Post-Venta Garantizada",
-      "Atención Especial",
-      "Experiencia Internac.",
-      "Costos Accesibles"
-    ]
+  "Trabajo ético y profesional, sin atajos ni promesas falsas",
+  "Soporte post-venta garantizado y seguimiento continuo",
+  "Atención personalizada: tratás directamente con quien ejecuta",
+  "Experiencia con clientes locales e internacionales",
+  "Precios justos y adaptados a cada etapa del negocio"
+]
+
   },
 "Gallery": [
   
@@ -272,36 +274,37 @@
 ],
 "Asesoramiento": [
   {
-    "icon": "fa fa-support",
-    "title": "Asesoramiento Tecnológico",
-    "text": "Te ofrecemos un servicio de asesoramiento tecnológico para maximizar el uso de Internet y las TIC en tu negocio."
+    "icon": "fa fa-globe",
+    "title": "Creamos tu Página Web o Landing",
+    "text": "Desarrollamos sitios modernos, rápidos y adaptados a celulares para que tengas una presencia profesional en internet."
   },
   {
-    "icon": "fa fa-diamond",
-    "title": "Posiciona tu negocio e Incrementa Ventas",
-    "text": "Incrementa las ventas, accede a nuevos mercados y mejora tu presencia en internet."
+    "icon": "fa fa-map-marker",
+    "title": "Alta y Optimización en Google Mi Negocio",
+    "text": "Creamos tu ficha de Google, cargamos tus datos, productos, imágenes y te ubicamos correctamente en Google Maps."
   },
   {
-    "icon": "fa fa-users",
-    "title": "Implementa herramientas digitales para tu negocio",
-    "text": "Conecta con nuevos clientes, capta a los potenciales y cierra ventas."
+    "icon": "fa fa-search",
+    "title": "Posicionamiento SEO Local",
+    "text": "Hacemos que tu negocio aparezca cuando te buscan en tu ciudad o zona. Más visibilidad, más clientes."
   },
   {
-    "icon": "fa fa-connectdevelop",
-    "title": "Reinvéntate con Tecnología",
-    "text": "Identifica áreas de mejora en tu negocio y transforma tus procesos ."
+    "icon": "fa fa-bullhorn",
+    "title": "Campañas en Google Ads",
+    "text": "Lanzamos campañas publicitarias segmentadas para que te llamen, te escriban o visiten tu sitio desde el primer día."
   },
   {
-    "icon": "fa fa-laptop",
-    "title": "Interfaces Modernas",
-    "text": "Diseño de interfaces responsivas con React y Tailwind CSS, ofreciendo experiencias de usuario fluidas y compatibles con dispositivos móviles."
+    "icon": "fa fa-line-chart",
+    "title": "Estrategia Digital Personalizada",
+    "text": "Te guiamos paso a paso con un plan adaptado a tus objetivos, presupuesto y tipo de negocio."
   },
   {
-    "icon": "fa fa-cloud-upload",
-    "title": "Implementación DevOps",
-    "text": "Integración y despliegue continuo utilizando Docker y Kubernetes, optimizando la gestión y escalabilidad de aplicaciones en entornos de producción."
+    "icon": "fa fa-handshake",
+    "title": "Socio Tecnológico de tu Negocio",
+    "text": "Trabajamos con vos para hacer crecer tu marca online con soluciones concretas, medibles y sostenibles."
   }
 ]
+
 
 
 
