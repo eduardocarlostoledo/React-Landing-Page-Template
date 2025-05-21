@@ -28,40 +28,40 @@
     "title": "Moda Total Ecommerce",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://modatotal.netlify.app/",
-    "largeImage": "img/portfolio/modatotal1.png",
-    "smallImage": "img/portfolio/modatotal1.png"
+    "largeImage": "img/portfolio/modatotal1.jpg",
+    "smallImage": "img/portfolio/modatotal1.jpg"
     
   },
   {
     "title": "Moda Total Ecommerce",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://modatotal.netlify.app/",
-    "largeImage": "img/portfolio/modatotal2.png",
-    "smallImage": "img/portfolio/modatotal2.png"
+    "largeImage": "img/portfolio/modatotal2.jpg",
+    "smallImage": "img/portfolio/modatotal2.jpg"
     
   },
   {
     "title": "Moda Total Ecommerce",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://modatotal.netlify.app/",
-    "largeImage": "img/portfolio/modatotal3.png",
-    "smallImage": "img/portfolio/modatotal3.png"
+    "largeImage": "img/portfolio/modatotal3.jpg",
+    "smallImage": "img/portfolio/modatotal3.jpg"
     
   },
   {
     "title": "Moda Total Ecommerce",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://modatotal.netlify.app/",
-    "largeImage": "img/portfolio/modatotal4.png",
-    "smallImage": "img/portfolio/modatotal4.png"
+    "largeImage": "img/portfolio/modatotal4.jpg",
+    "smallImage": "img/portfolio/modatotal4.jpg"
     
   },
   {
     "title": "Moda Total Ecommerce",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://modatotal.netlify.app/",
-    "largeImage": "img/portfolio/modatotal5.png",
-    "smallImage": "img/portfolio/modatotal5.png"
+    "largeImage": "img/portfolio/modatotal5.jpg",
+    "smallImage": "img/portfolio/modatotal5.jpg"
     
   },
   {
@@ -69,8 +69,8 @@
     "description": "Pagina web para empresa de servicios de limpieza y mantenimiento, con un diseño moderno y funcional.",
     "link": "https://globalhomegroup.netlify.app/",
     
-    "largeImage": "img/portfolio/constructora.png",
-    "smallImage": "img/portfolio/constructora.png"
+    "largeImage": "img/portfolio/constructora.jpg",
+    "smallImage": "img/portfolio/constructora.jpg"
     
   },
   {
@@ -78,8 +78,8 @@
     "description": "Pagina web para empresa de servicios de limpieza y mantenimiento, con un diseño moderno y funcional.",
     "link": "https://globalhomegroup.netlify.app/",
     
-    "largeImage": "img/portfolio/constructora2.png",
-    "smallImage": "img/portfolio/constructora2.png"
+    "largeImage": "img/portfolio/constructora2.jpg",
+    "smallImage": "img/portfolio/constructora2.jpg"
     
   },
   {
@@ -87,109 +87,109 @@
     "description": "Pagina web para empresa de servicios de limpieza y mantenimiento, con un diseño moderno y funcional.",
     "link": "https://globalhomegroup.netlify.app/",
     
-    "largeImage": "img/portfolio/constructora3.png",
-    "smallImage": "img/portfolio/constructora3.png"
+    "largeImage": "img/portfolio/constructora3.jpg",
+    "smallImage": "img/portfolio/constructora3.jpg"
     
   },
   {
     "title": "Calyaan Login",
     "description": "HRM, SaaS, CRM, ERP, Ecommerce",
     "link": "https://calyaan.netlify.app/",
-    "largeImage": "img/portfolio/calyaan.png",
-    "smallImage": "img/portfolio/calyaan-tumb.png"
+    "largeImage": "img/portfolio/calyaan.jpg",
+    "smallImage": "img/portfolio/calyaan-tumb.jpg"
   }, 
   {
     "title": "Gato Negro Land",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://elgatonegropremium.netlify.app",
-    "largeImage": "img/portfolio/gatonegro.png",
-    "smallImage": "img/portfolio/gatonegro-tumb.png"
+    "largeImage": "img/portfolio/gatonegro.jpg",
+    "smallImage": "img/portfolio/gatonegro-tumb.jpg"
   },
   {
     "title": "Gato Negro Products",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://elgatonegropremium.netlify.app",
-    "largeImage": "img/portfolio/gatonegro2.png",
-    "smallImage": "img/portfolio/gatonegro2-tumb.png"
+    "largeImage": "img/portfolio/gatonegro2.jpg",
+    "smallImage": "img/portfolio/gatonegro2-tumb.jpg"
   },
  
   {
     "title": "Store Computer Land",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://storecomputer.netlify.app/",
-    "largeImage": "img/portfolio/store.png",
-    "smallImage": "img/portfolio/store-tumb.png"
+    "largeImage": "img/portfolio/store.jpg",
+    "smallImage": "img/portfolio/store-tumb.jpg"
   },
   {
     "title": "Store Computer Products",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
     "link": "https://storecomputer.netlify.app/",
-    "largeImage": "img/portfolio/store2.png",
-    "smallImage": "img/portfolio/store2-tumb.png"
+    "largeImage": "img/portfolio/store2.jpg",
+    "smallImage": "img/portfolio/store2-tumb.jpg"
   },
 
   {
     "title": "Crypto Dashboard",
     "description": "Plataforma de seguimiento de criptomonedas con gráficos en tiempo real y análisis de mercado",
     "link": "#",
-    "largeImage": "img/portfolio/crypto.png",
-    "smallImage": "img/portfolio/crypto.png"
+    "largeImage": "img/portfolio/crypto.jpg",
+    "smallImage": "img/portfolio/crypto.jpg"
   },
   {
     "title": "Gato Negro Premium",
     "description": "Versión mejorada del ecommerce con funcionalidades avanzadas de catálogo",
     "link": "#",
-    "largeImage": "img/portfolio/gatonegro1.png",
-    "smallImage": "img/portfolio/gatonegro1.png"
+    "largeImage": "img/portfolio/gatonegro1.jpg",
+    "smallImage": "img/portfolio/gatonegro1.jpg"
   },
   {
     "title": "RM Construcciones",
     "description": "Sitio web corporativo para empresa constructora con portfolio de proyectos",
     "link": "#",
-    "largeImage": "img/portfolio/rm.png",
-    "smallImage": "img/portfolio/rm.png"
+    "largeImage": "img/portfolio/rm.jpg",
+    "smallImage": "img/portfolio/rm.jpg"
   },
   {
     "title": "Yerba Mate App",
     "description": "Aplicación móvil para amantes del mate con recetas y consejos de cebado",
     "link": "#",
-    "largeImage": "img/portfolio/yerba.png",
-    "smallImage": "img/portfolio/yerba.png"
+    "largeImage": "img/portfolio/yerba.jpg",
+    "smallImage": "img/portfolio/yerba.jpg"
   },
   {
     "title": "Yerba Mate Community",
     "description": "Red social para compartir experiencias sobre la cultura del mate",
     "link": "#",
-    "largeImage": "img/portfolio/yerba1.png",
-    "smallImage": "img/portfolio/yerba1.png"
+    "largeImage": "img/portfolio/yerba1.jpg",
+    "smallImage": "img/portfolio/yerba1.jpg"
   },
   {
     "title": "Appel Design",
     "description": "Portfolio digital para estudio de diseño gráfico y branding",
     "link": "#",
-    "largeImage": "img/portfolio/appel.png",
-    "smallImage": "img/portfolio/appel.png"
+    "largeImage": "img/portfolio/appel.jpg",
+    "smallImage": "img/portfolio/appel.jpg"
   },
   {
     "title": "Crypto Design",
     "description": "Portfolio digital para estudio de diseño gráfico y branding",
     "link": "#",
-    "largeImage": "img/portfolio/crypto1.png",
-    "smallImage": "img/portfolio/crypto1.png"
+    "largeImage": "img/portfolio/crypto1.jpg",
+    "smallImage": "img/portfolio/crypto1.jpg"
   },
   {
     "title": "Crypto Design",
     "description": "Portfolio digital para estudio de diseño gráfico y branding",
     "link": "#",
-    "largeImage": "img/portfolio/crypto3.png",
-    "smallImage": "img/portfolio/crypto3.png"
+    "largeImage": "img/portfolio/crypto3.jpg",
+    "smallImage": "img/portfolio/crypto3.jpg"
   },
   {
     "title": "Crypto Design",
     "description": "Portfolio digital para estudio de diseño gráfico y branding",
     "link": "#",
-    "largeImage": "img/portfolio/crypto4.png",
-    "smallImage": "img/portfolio/crypto4.png"
+    "largeImage": "img/portfolio/crypto4.jpg",
+    "smallImage": "img/portfolio/crypto4.jpg"
   }
 ],
   
