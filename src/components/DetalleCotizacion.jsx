@@ -793,7 +793,7 @@ export const DetalleCotizacion = () => {
 
       <div className="pricing-container">
         <div className="card-header">
-          <h1>Tu Página Web Profesional en: </h1>
+          <h1> Contratar {plan.description} en Posadas Misiones </h1>
           <h2>Servicio: {plan.description} Precio en Pesos {plan.price} Toledo Consultora </h2>
         </div>
 

@@ -40,7 +40,7 @@ const Sitemap = () => {
 
       {servicios.map((servicio) => (
         <section className="sitemap-section" key={servicio}>
-          <h3>Landing Pages de {servicio.replace(/-/g, ' ').toUpperCase()}</h3>
+          <h3>Servicio de desarrollo de: {servicio.replace(/-/g, ' ').toUpperCase()}</h3>
           <ul className="sitemap-grid">
             {ciudades.map((ciudad) => (
               <li key={`${servicio}-${ciudad}`}>
