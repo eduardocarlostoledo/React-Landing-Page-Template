@@ -1,119 +1,174 @@
 .slider-section {
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-    position: relative;
-    background: #000;
-  }
+  position: relative;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.slider-container {
+  position: relative;
+  margin-top: 200px;
   
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.slider-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 80%;
+  backdrop-filter: blur(4px);
+}
+
+.slider-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.slider-content p {
+  font-size: 1rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00000090;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.arrow:hover {
+  background: #000;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Dispositivos chicos: 370px */
+@media screen and (max-width: 370px) {
+
   .slider-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
+  margin-top: 100px;
+}
+
   .slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 300px;
   }
-  
-  .slider-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+
   .slider-content {
-    position: absolute;
-    bottom: 15%;
-    left: 5%;
-    color: white;
-    text-align: left;
+    bottom: 20px;
+    left: 16px;
+    padding: 0.75rem 1rem;
+    max-width: 90%;
   }
-  
+
   .slider-content h2 {
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-  .slider-content p {
     font-size: 1.2rem;
-    margin: 1rem 0;
   }
-  
-  .slider-btn {
-    background: #e30613;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+
+  .slider-content p {
+    font-size: 0.9rem;
   }
-  
-  .slider-btn:hover {
-    background: #c00510;
-  }
-  
+
   .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-    padding: 0.5rem 1rem;
-    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 0.3rem;
   }
-  
-  .left {
-    left: 20px;
-  }
-  
-  .right {
-    right: 20px;
-  }
-  
-  .indicators {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-  }
-  
+
   .dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    width: 10px;
+    height: 10px;
   }
-  
-  .dot.active {
-    background: white;
+}
+
+/* Dispositivos ultra chicos: 320px */
+@media screen and (max-width: 320px) {
+
+  .slider-container {
+  margin-top: 100px;
+}
+
+  .slide {
+    height: 250px;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .slider-content h2 {
-      font-size: 2rem;
-    }
-  
-    .slider-content p {
-      font-size: 1rem;
-    }
-  
-    .slider-btn {
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-    }
+
+  .slider-content {
+    bottom: 16px;
+    left: 12px;
+    padding: 0.6rem 0.9rem;
   }
-  
+
+  .slider-content h2 {
+    font-size: 1rem;
+  }
+
+  .slider-content p {
+    font-size: 0.85rem;
+  }
+
+  .arrow {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+  }
+}
