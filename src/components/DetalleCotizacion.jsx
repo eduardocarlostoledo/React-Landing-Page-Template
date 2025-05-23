@@ -733,7 +733,7 @@ export const DetalleCotizacion = () => {
  <>
         <Helmet>
           <title>No encontrado | Toledo Consultora</title>
-          <meta name="robots" content="noindex" />
+          <meta name="robots" content="folow" />
         </Helmet>
         <div className="pricing-section">
           <div className="pricing-container">
