@@ -341,63 +341,6 @@ A pesar de no incluir el dominio, el hosting y el mantenimiento, esta estructura
       link: "https://mpago.la/2w6ThwW"
     },
     {
-      id: "contratar-seo-avanzado-toledoconsultora",
-      title: "SEO Avanzado",
-      price: "$249.000",
-      description: "Posicionamiento estratégico",
-      popular: false,
-      features: [
-        "Estrategia SEO completa",
-        "Posicionamos tu negocio en las Primeras 2 páginas de Google",
-        "Posicionamiento en Google Maps",
-        "Asesoramiento Global de Posicionamiento para tu negocio",
-        "Informes de rendimiento",
-        "Palabras clave estratégicas",
-        "SEO On-page/Off-page",        
-        "Análisis de velocidad, rendimiento y experiencia de usuario, propuestas de mejora",
-        "Análisis contenido y propuestas de mejora",
-      ],            detail: ` 
-
-Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
-
-Al confiar en Toledo Consultora para implementar una estrategia SEO completa, tu negocio puede obtener una ventaja competitiva significativa en el entorno digital, traduciéndose en mayor visibilidad, tráfico cualificado y, en última instancia, un aumento en las oportunidades de negocio. Aquí te presento los beneficios detallados:
-
-1. Mayor Visibilidad y Tráfico Orgánico de Calidad:
-
-Posicionamiento en las Primeras 2 páginas de Google: Este es un beneficio crucial. Estar en las primeras posiciones de Google para las palabras clave relevantes significa que tu negocio será visto por una gran cantidad de usuarios que están activamente buscando los productos o servicios que ofreces. Esto se traduce en un aumento significativo del tráfico orgánico (no pagado) a tu sitio web.
-Palabras clave estratégicas: Toledo Consultora realizará una investigación exhaustiva para identificar las palabras clave más relevantes y con mayor potencial de conversión para tu negocio. Al optimizar tu sitio web para estos términos, atraerás a usuarios que tienen una alta intención de compra o interés en tus servicios.
-2. Optimización Integral de tu Presencia Online:
-
-SEO On-page/Off-page: Una estrategia SEO completa aborda tanto la optimización interna de tu sitio web (SEO On-page - contenido, estructura, etiquetas, etc.) como los factores externos que influyen en el posicionamiento (SEO Off-page - backlinks, menciones de marca, autoridad del dominio, etc.). Esto asegura una optimización holística para obtener los mejores resultados.
-Análisis de contenido y propuestas de mejora: Toledo Consultora analizará el contenido existente en tu sitio web para identificar áreas de mejora en términos de relevancia, calidad, optimización para palabras clave y engagement del usuario. Esto te permitirá ofrecer contenido más valioso y atractivo tanto para los usuarios como para los motores de búsqueda.
-Análisis de velocidad, rendimiento y experiencia de usuario, propuestas de mejora: Un sitio web rápido, con buen rendimiento y una experiencia de usuario intuitiva son factores clave para el SEO y la satisfacción del cliente. Toledo Consultora analizará estos aspectos y te proporcionará recomendaciones concretas para optimizar tu sitio y reducir la tasa de rebote.
-3. Mayor Visibilidad Local y Captación de Clientes Cercanos:
-
-Posicionamiento en Google Maps: Para negocios con una ubicación física (tiendas, oficinas, restaurantes, etc.), el posicionamiento en Google Maps es fundamental para atraer clientes locales. Toledo Consultora optimizará tu perfil de Google My Business para que aparezcas en los primeros resultados cuando los usuarios busquen negocios como el tuyo en tu área geográfica.
-4. Estrategia Sólida y Asesoramiento Experto:
-
-Estrategia SEO completa: No se trata solo de tácticas aisladas, sino de un plan integral y personalizado diseñado para alcanzar tus objetivos de negocio a largo plazo. Toledo Consultora desarrollará una estrategia coherente y adaptada a tu nicho de mercado y competencia.
-Asesoramiento Global de Posicionamiento para tu negocio: Obtendrás la guía y el conocimiento de expertos en SEO que te ayudarán a comprender el panorama del posicionamiento web y a tomar decisiones informadas para tu negocio. Este asesoramiento continuo es invaluable para mantener una ventaja competitiva.
-5. Medición y Mejora Continua:
-
-Informes de rendimiento: Toledo Consultora proporcionará informes periódicos sobre el rendimiento de tu estrategia SEO, incluyendo métricas clave como el tráfico orgánico, las posiciones de las palabras clave, las conversiones y otros indicadores relevantes. Esto te permitirá visualizar el progreso y entender el impacto de la inversión.
-En resumen, contratar los servicios de "Estrategia SEO completa" de Toledo Consultora ofrece los siguientes beneficios cruciales para cualquier negocio:
-
-Aumento significativo de la visibilidad online en los resultados de búsqueda de Google.
-Atracción de tráfico orgánico altamente cualificado y con mayor potencial de conversión.
-Optimización integral de todos los aspectos clave del SEO (on-page, off-page, contenido, técnico y experiencia de usuario).
-Mejora de la visibilidad local y captación de clientes en tu área geográfica a través del posicionamiento en Google Maps.
-Desarrollo e implementación de una estrategia SEO personalizada y efectiva.
-Asesoramiento experto y continuo para tomar decisiones informadas sobre tu posicionamiento web.
-Medición del rendimiento y seguimiento del progreso a través de informes detallados.
-Mayor credibilidad y confianza por parte de los usuarios al aparecer en los primeros resultados de búsqueda.
-Una ventaja competitiva sostenible en el mercado digital.
-Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio estará sentando las bases para un crecimiento online sólido y a largo plazo.
-      `,
-      cta: "Mejorar Posicionamiento",
-      link: "https://mpago.la/1SgrAx3"
-    },
-    {
       id: "contratar-campanasdigitales-toledoconsultora",
       title: "Campañas Digitales Google Ads",
       price: "$99.000",
@@ -589,7 +532,185 @@ En resumen, Toledo Consultora ofrece una valiosa combinación de experiencia té
       `,
       cta: "Contratar Asesoría Tenológica",
       link: "https://mpago.la/1Bgc6i5"
-    }
+    },
+    {
+      id: "contratar-seo-operativo-toledoconsultora",
+      title: "SEO Operativo",
+      price: "$350.000",
+      description: "Posicionamiento Operativo",
+      popular: true,
+      features: [
+        "Optimizacion de meta description y keywords",
+        "Mobile Friendly",
+        "Optimización de contenido",
+        "Optimización de imágenes",
+        "Google Friendly",
+        "Optimizacion de title, h1, h2, h3",
+        "Posicionamiento en Google Maps",
+        "Posicionamiento en Google Business",
+        "Asesoramiento Global de Posicionamiento para tu negocio",
+        "Informes de rendimiento y propuestas de mejora",
+      ],            detail: ` 
+
+
+
+El servicio de posicionamiento Operativo esta orientado a aquellos interesados que ya tienen operativo su sitio web y buscan optimizarlo para mejorar su posicionamiento en Google. Este servicio incluye una serie de acciones específicas para mejorar la visibilidad y el rendimiento del sitio web en los motores de búsqueda. A saber: se determinan con el cliente 7 palabras clave relevantes para el negocio, se optimizan las meta descripciones y keywords, se realiza una optimización de contenido e imágenes, se asegura que el sitio sea "Google Friendly" (compatible con dispositivos móviles), se optimizan los títulos y encabezados (h1, h2, h3), se posiciona en Google Maps y Google Business, y se proporciona asesoramiento global de posicionamiento para el negocio. Además, se generan informes de rendimiento y propuestas de mejora para garantizar un seguimiento continuo del progreso.
+
+Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
+
+Al confiar en Toledo Consultora para implementar una estrategia SEO completa, tu negocio puede obtener una ventaja competitiva significativa en el entorno digital, traduciéndose en mayor visibilidad, tráfico cualificado y, en última instancia, un aumento en las oportunidades de negocio. Aquí te presento los beneficios detallados:
+
+1. Mayor Visibilidad y Tráfico Orgánico de Calidad:
+
+Posicionamiento en las Primeras 2 páginas de Google: Este es un beneficio crucial. Estar en las primeras posiciones de Google para las palabras clave relevantes significa que tu negocio será visto por una gran cantidad de usuarios que están activamente buscando los productos o servicios que ofreces. Esto se traduce en un aumento significativo del tráfico orgánico (no pagado) a tu sitio web.
+Palabras clave estratégicas: Toledo Consultora realizará una investigación exhaustiva para identificar las palabras clave más relevantes y con mayor potencial de conversión para tu negocio. Al optimizar tu sitio web para estos términos, atraerás a usuarios que tienen una alta intención de compra o interés en tus servicios.
+2. Optimización Integral de tu Presencia Online:
+
+SEO On-page/Off-page: Una estrategia SEO completa aborda tanto la optimización interna de tu sitio web (SEO On-page - contenido, estructura, etiquetas, etc.) como los factores externos que influyen en el posicionamiento (SEO Off-page - backlinks, menciones de marca, autoridad del dominio, etc.). Esto asegura una optimización holística para obtener los mejores resultados.
+Análisis de contenido y propuestas de mejora: Toledo Consultora analizará el contenido existente en tu sitio web para identificar áreas de mejora en términos de relevancia, calidad, optimización para palabras clave y engagement del usuario. Esto te permitirá ofrecer contenido más valioso y atractivo tanto para los usuarios como para los motores de búsqueda.
+Análisis de velocidad, rendimiento y experiencia de usuario, propuestas de mejora: Un sitio web rápido, con buen rendimiento y una experiencia de usuario intuitiva son factores clave para el SEO y la satisfacción del cliente. Toledo Consultora analizará estos aspectos y te proporcionará recomendaciones concretas para optimizar tu sitio y reducir la tasa de rebote.
+3. Mayor Visibilidad Local y Captación de Clientes Cercanos:
+
+Posicionamiento en Google Maps: Para negocios con una ubicación física (tiendas, oficinas, restaurantes, etc.), el posicionamiento en Google Maps es fundamental para atraer clientes locales. Toledo Consultora optimizará tu perfil de Google My Business para que aparezcas en los primeros resultados cuando los usuarios busquen negocios como el tuyo en tu área geográfica.
+4. Estrategia Sólida y Asesoramiento Experto:
+
+Estrategia SEO completa: No se trata solo de tácticas aisladas, sino de un plan integral y personalizado diseñado para alcanzar tus objetivos de negocio a largo plazo. Toledo Consultora desarrollará una estrategia coherente y adaptada a tu nicho de mercado y competencia.
+Asesoramiento Global de Posicionamiento para tu negocio: Obtendrás la guía y el conocimiento de expertos en SEO que te ayudarán a comprender el panorama del posicionamiento web y a tomar decisiones informadas para tu negocio. Este asesoramiento continuo es invaluable para mantener una ventaja competitiva.
+5. Medición y Mejora Continua:
+
+Informes de rendimiento: Toledo Consultora proporcionará informes periódicos sobre el rendimiento de tu estrategia SEO, incluyendo métricas clave como el tráfico orgánico, las posiciones de las palabras clave, las conversiones y otros indicadores relevantes. Esto te permitirá visualizar el progreso y entender el impacto de la inversión.
+En resumen, contratar los servicios de "Estrategia SEO completa" de Toledo Consultora ofrece los siguientes beneficios cruciales para cualquier negocio:
+
+Aumento significativo de la visibilidad online en los resultados de búsqueda de Google.
+Atracción de tráfico orgánico altamente cualificado y con mayor potencial de conversión.
+Optimización integral de todos los aspectos clave del SEO (on-page, off-page, contenido, técnico y experiencia de usuario).
+Mejora de la visibilidad local y captación de clientes en tu área geográfica a través del posicionamiento en Google Maps.
+Desarrollo e implementación de una estrategia SEO personalizada y efectiva.
+Asesoramiento experto y continuo para tomar decisiones informadas sobre tu posicionamiento web.
+Medición del rendimiento y seguimiento del progreso a través de informes detallados.
+Mayor credibilidad y confianza por parte de los usuarios al aparecer en los primeros resultados de búsqueda.
+Una ventaja competitiva sostenible en el mercado digital.
+Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio estará sentando las bases para un crecimiento online sólido y a largo plazo.
+      `,
+      cta: "Mejorar Posicionamiento",
+      link: "https://mpago.la/1SgrAx3"
+    },
+        {
+      id: "contratar-seo-estandard-toledoconsultora",
+      title: "SEO Estandard",
+      price: "$200.000",
+      description: "Posicionamiento Estandard",
+      popular: true,
+      features: [
+        "Optimizacion de meta description y keywords",
+        "Google Friendly",
+        "Optimizacion de title, h1, h2, h3",
+        "Posicionamiento en Google Maps",
+        "Posicionamiento en Google Business",
+        "Asesoramiento Global de Posicionamiento para tu negocio",
+        "Informes de rendimiento y propuestas de mejora",
+      ],            detail: ` 
+      El servicio de posicionamiento Estandar esta orientado a aquellos interesados que ya tienen operativo su sitio web y buscan optimizarlo para mejorar su posicionamiento en Google. Este servicio incluye una serie de acciones específicas para mejorar la visibilidad y el rendimiento del sitio web en los motores de búsqueda. A saber: se determinan con el cliente 7 palabras clave relevantes para el negocio, se optimizan las meta descripciones y keywords, se asegura que el sitio sea "Google Friendly" (compatible con dispositivos móviles), se optimizan los títulos y encabezados (h1, h2, h3), se posiciona en Google Maps y Google Business, y se proporciona asesoramiento global de posicionamiento para el negocio. Además, se generan informes de rendimiento y propuestas de mejora para garantizar un seguimiento continuo del progreso.
+
+Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
+
+Al confiar en Toledo Consultora para implementar una estrategia SEO completa, tu negocio puede obtener una ventaja competitiva significativa en el entorno digital, traduciéndose en mayor visibilidad, tráfico cualificado y, en última instancia, un aumento en las oportunidades de negocio. Aquí te presento los beneficios detallados:
+
+1. Mayor Visibilidad y Tráfico Orgánico de Calidad:
+
+Posicionamiento en las Primeras 2 páginas de Google: Este es un beneficio crucial. Estar en las primeras posiciones de Google para las palabras clave relevantes significa que tu negocio será visto por una gran cantidad de usuarios que están activamente buscando los productos o servicios que ofreces. Esto se traduce en un aumento significativo del tráfico orgánico (no pagado) a tu sitio web.
+Palabras clave estratégicas: Toledo Consultora realizará una investigación exhaustiva para identificar las palabras clave más relevantes y con mayor potencial de conversión para tu negocio. Al optimizar tu sitio web para estos términos, atraerás a usuarios que tienen una alta intención de compra o interés en tus servicios.
+2. Optimización Integral de tu Presencia Online:
+
+SEO On-page/Off-page: Una estrategia SEO completa aborda tanto la optimización interna de tu sitio web (SEO On-page - contenido, estructura, etiquetas, etc.) como los factores externos que influyen en el posicionamiento (SEO Off-page - backlinks, menciones de marca, autoridad del dominio, etc.). Esto asegura una optimización holística para obtener los mejores resultados.
+Análisis de contenido y propuestas de mejora: Toledo Consultora analizará el contenido existente en tu sitio web para identificar áreas de mejora en términos de relevancia, calidad, optimización para palabras clave y engagement del usuario. Esto te permitirá ofrecer contenido más valioso y atractivo tanto para los usuarios como para los motores de búsqueda.
+Análisis de velocidad, rendimiento y experiencia de usuario, propuestas de mejora: Un sitio web rápido, con buen rendimiento y una experiencia de usuario intuitiva son factores clave para el SEO y la satisfacción del cliente. Toledo Consultora analizará estos aspectos y te proporcionará recomendaciones concretas para optimizar tu sitio y reducir la tasa de rebote.
+3. Mayor Visibilidad Local y Captación de Clientes Cercanos:
+
+Posicionamiento en Google Maps: Para negocios con una ubicación física (tiendas, oficinas, restaurantes, etc.), el posicionamiento en Google Maps es fundamental para atraer clientes locales. Toledo Consultora optimizará tu perfil de Google My Business para que aparezcas en los primeros resultados cuando los usuarios busquen negocios como el tuyo en tu área geográfica.
+4. Estrategia Sólida y Asesoramiento Experto:
+
+Estrategia SEO completa: No se trata solo de tácticas aisladas, sino de un plan integral y personalizado diseñado para alcanzar tus objetivos de negocio a largo plazo. Toledo Consultora desarrollará una estrategia coherente y adaptada a tu nicho de mercado y competencia.
+Asesoramiento Global de Posicionamiento para tu negocio: Obtendrás la guía y el conocimiento de expertos en SEO que te ayudarán a comprender el panorama del posicionamiento web y a tomar decisiones informadas para tu negocio. Este asesoramiento continuo es invaluable para mantener una ventaja competitiva.
+5. Medición y Mejora Continua:
+
+Informes de rendimiento: Toledo Consultora proporcionará informes periódicos sobre el rendimiento de tu estrategia SEO, incluyendo métricas clave como el tráfico orgánico, las posiciones de las palabras clave, las conversiones y otros indicadores relevantes. Esto te permitirá visualizar el progreso y entender el impacto de la inversión.
+En resumen, contratar los servicios de "Estrategia SEO completa" de Toledo Consultora ofrece los siguientes beneficios cruciales para cualquier negocio:
+
+Aumento significativo de la visibilidad online en los resultados de búsqueda de Google.
+Atracción de tráfico orgánico altamente cualificado y con mayor potencial de conversión.
+Optimización integral de todos los aspectos clave del SEO (on-page, off-page, contenido, técnico y experiencia de usuario).
+Mejora de la visibilidad local y captación de clientes en tu área geográfica a través del posicionamiento en Google Maps.
+Desarrollo e implementación de una estrategia SEO personalizada y efectiva.
+Asesoramiento experto y continuo para tomar decisiones informadas sobre tu posicionamiento web.
+Medición del rendimiento y seguimiento del progreso a través de informes detallados.
+Mayor credibilidad y confianza por parte de los usuarios al aparecer en los primeros resultados de búsqueda.
+Una ventaja competitiva sostenible en el mercado digital.
+Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio estará sentando las bases para un crecimiento online sólido y a largo plazo.
+      `,
+      cta: "Mejorar Posicionamiento",
+      link: "https://mpago.la/1SgrAx3"
+    },
+        {
+      id: "contratar-seo-bussiness-toledoconsultora",
+      title: "SEO Bussiness",
+      price: "$750.000",
+      description: "Posicionamiento Bussiness",
+      popular: false,
+      features: [
+        "Optimizacion de meta description y keywords",
+        "100 resultados de busqueda en google",
+        "Mejora de rendimiento con PageSpeed",
+        "Google Friendly",
+        "Mobile Friendly",
+        "Optimización de contenido",
+        "Optimización de imágenes",        
+        "Optimizacion de title, h1, h2, h3",
+        "Posicionamiento en Google Maps",
+        "Posicionamiento en Google Business",
+        "Asesoramiento Global de Posicionamiento para tu negocio",
+        "Informes de rendimiento y propuestas de mejora",
+      ],            detail: ` 
+
+Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
+
+Al confiar en Toledo Consultora para implementar una estrategia SEO completa, tu negocio puede obtener una ventaja competitiva significativa en el entorno digital, traduciéndose en mayor visibilidad, tráfico cualificado y, en última instancia, un aumento en las oportunidades de negocio. Aquí te presento los beneficios detallados:
+
+1. Mayor Visibilidad y Tráfico Orgánico de Calidad:
+
+Posicionamiento en las Primeras 2 páginas de Google: Este es un beneficio crucial. Estar en las primeras posiciones de Google para las palabras clave relevantes significa que tu negocio será visto por una gran cantidad de usuarios que están activamente buscando los productos o servicios que ofreces. Esto se traduce en un aumento significativo del tráfico orgánico (no pagado) a tu sitio web.
+Palabras clave estratégicas: Toledo Consultora realizará una investigación exhaustiva para identificar las palabras clave más relevantes y con mayor potencial de conversión para tu negocio. Al optimizar tu sitio web para estos términos, atraerás a usuarios que tienen una alta intención de compra o interés en tus servicios.
+2. Optimización Integral de tu Presencia Online:
+
+SEO On-page/Off-page: Una estrategia SEO completa aborda tanto la optimización interna de tu sitio web (SEO On-page - contenido, estructura, etiquetas, etc.) como los factores externos que influyen en el posicionamiento (SEO Off-page - backlinks, menciones de marca, autoridad del dominio, etc.). Esto asegura una optimización holística para obtener los mejores resultados.
+Análisis de contenido y propuestas de mejora: Toledo Consultora analizará el contenido existente en tu sitio web para identificar áreas de mejora en términos de relevancia, calidad, optimización para palabras clave y engagement del usuario. Esto te permitirá ofrecer contenido más valioso y atractivo tanto para los usuarios como para los motores de búsqueda.
+Análisis de velocidad, rendimiento y experiencia de usuario, propuestas de mejora: Un sitio web rápido, con buen rendimiento y una experiencia de usuario intuitiva son factores clave para el SEO y la satisfacción del cliente. Toledo Consultora analizará estos aspectos y te proporcionará recomendaciones concretas para optimizar tu sitio y reducir la tasa de rebote.
+3. Mayor Visibilidad Local y Captación de Clientes Cercanos:
+
+Posicionamiento en Google Maps: Para negocios con una ubicación física (tiendas, oficinas, restaurantes, etc.), el posicionamiento en Google Maps es fundamental para atraer clientes locales. Toledo Consultora optimizará tu perfil de Google My Business para que aparezcas en los primeros resultados cuando los usuarios busquen negocios como el tuyo en tu área geográfica.
+4. Estrategia Sólida y Asesoramiento Experto:
+
+Estrategia SEO completa: No se trata solo de tácticas aisladas, sino de un plan integral y personalizado diseñado para alcanzar tus objetivos de negocio a largo plazo. Toledo Consultora desarrollará una estrategia coherente y adaptada a tu nicho de mercado y competencia.
+Asesoramiento Global de Posicionamiento para tu negocio: Obtendrás la guía y el conocimiento de expertos en SEO que te ayudarán a comprender el panorama del posicionamiento web y a tomar decisiones informadas para tu negocio. Este asesoramiento continuo es invaluable para mantener una ventaja competitiva.
+5. Medición y Mejora Continua:
+
+Informes de rendimiento: Toledo Consultora proporcionará informes periódicos sobre el rendimiento de tu estrategia SEO, incluyendo métricas clave como el tráfico orgánico, las posiciones de las palabras clave, las conversiones y otros indicadores relevantes. Esto te permitirá visualizar el progreso y entender el impacto de la inversión.
+En resumen, contratar los servicios de "Estrategia SEO completa" de Toledo Consultora ofrece los siguientes beneficios cruciales para cualquier negocio:
+
+Aumento significativo de la visibilidad online en los resultados de búsqueda de Google.
+Atracción de tráfico orgánico altamente cualificado y con mayor potencial de conversión.
+Optimización integral de todos los aspectos clave del SEO (on-page, off-page, contenido, técnico y experiencia de usuario).
+Mejora de la visibilidad local y captación de clientes en tu área geográfica a través del posicionamiento en Google Maps.
+Desarrollo e implementación de una estrategia SEO personalizada y efectiva.
+Asesoramiento experto y continuo para tomar decisiones informadas sobre tu posicionamiento web.
+Medición del rendimiento y seguimiento del progreso a través de informes detallados.
+Mayor credibilidad y confianza por parte de los usuarios al aparecer en los primeros resultados de búsqueda.
+Una ventaja competitiva sostenible en el mercado digital.
+Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio estará sentando las bases para un crecimiento online sólido y a largo plazo.
+      `,
+      cta: "Mejorar Posicionamiento",
+      link: "https://mpago.la/1SgrAx3"
+    },
   ];
   const selectedPlans = selectedIds.length > 0
     ? pricingPlans.filter(plan => selectedIds.includes(plan.id))

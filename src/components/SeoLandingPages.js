@@ -394,7 +394,7 @@ Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio est
     },
     {
       id: "contratar-campanasdigitales-toledoconsultora",
-      title: "Campañas Digitales Google Ads",
+      title: "Campanas Digitales Google Ads",
       price: "$99.000",
       description: "Gestión profesional",
       popular: false,

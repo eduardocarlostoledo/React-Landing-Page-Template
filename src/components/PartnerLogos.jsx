@@ -2,14 +2,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./PartnerLogos.css"; // Archivo CSS para estilos
-import logo1 from "../logo(1).png"; // Logo de la empresa
+import logo1 from "../logo(1).jpg"; // Logo de la empresa
 import logoCalyaan from "../logocalyaan.png"; // Logo de la empresa
-import logoRm from "../logo-rm.png"; // Logo de la empresa
+import logoRm from "../logo-rm.jpg"; // Logo de la empresa
 import logoalborada from "../logoalborada.jpg"; // Logo de la empresa
 import logocrypto from "../logocrypto.png"; // Logo de la empresa
-import logoappel from "../logoappel.png"; // Logo de la empresa
-import logoglobal from "../logoglobal.png"; // Logo de la empresa
-import logomodatotal from "../logomodatotal.png"; // Logo de la empresa
+import logoappel from "../logoappel.jpg"; // Logo de la empresa
+import logoglobal from "../logoglobal.jpg"; // Logo de la empresa
+import logomodatotal from "../logomodatotal.jpg"; // Logo de la empresa
 // JSON con los datos de los logos
 const partnerLogos = [
   {

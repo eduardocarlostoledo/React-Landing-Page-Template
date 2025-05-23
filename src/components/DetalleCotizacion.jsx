@@ -774,6 +774,42 @@ export const DetalleCotizacion = () => {
   <meta name="twitter:title" content={`${plan.title} | Toledo Consultora`} />
   <meta name="twitter:description" content={plan.description} />
   <meta name="twitter:image" content="https://toledoconsultora.com/logo.png" />
+
+   <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "name": "Toledo Consultora IT",
+      "url": `https://toledoconsultora.com/detalle/${plan.id}`,
+      "image": "https://toledoconsultora.com/logo.png",
+      "description": plan.description,
+      "telephone": "+54 376 422 1063",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle 52 220",
+        "addressLocality": "Posadas",
+        "addressRegion": "Misiones",
+        "postalCode": "N3300",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -27.3681118,
+        "longitude": -55.9514501
+      },
+      "sameAs": [
+        "https://www.facebook.com/toledoconsultorait",
+        "https://www.instagram.com/toledoconsultora.it"
+      ],
+      "serviceType": plan.title,
+      "areaServed": {
+        "@type": "Place",
+        "name": "Misiones, Argentina"
+      }
+    })}
+  </script>
+  
 </Helmet>
 
 <div
