@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
-import "./Contact.css";
+import "../styles/Contact.css";
+
 
 export const Contact = ({ data }) => {
   const [formData, setFormData] = useState({
@@ -157,39 +158,68 @@ export const Contact = ({ data }) => {
               </div>
             </div>
 
-            <div className="social-links">
-              {data?.facebook && (
-                <a href={data.facebook} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-              )}
+        <div className="social-links">
+          <a
+            href="https://wa.me/5493764221063"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="WhatsApp"
+          >            
+             <i  style={{ color: "green" }} className="fab fa-whatsapp"></i>
+          </a>
 
-              {/* WhatsApp SVG alternativo para mejor visibilidad */}
-              <a href="https://wa.me/5493764221063" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                  alt="WhatsApp"
-                  style={{ width: "40px", height: "40px", filter: "brightness(1.1)" }}
-                />
-              </a>
+          <a
+            href="https://www.instagram.com/toledoconsultora/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Instagram"
+          >
+            <i  style={{ color: "red" }} className="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/people/Toledo-Consultora-It/61567966653297/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Facebook"
+          >
+            <i  style={{ color: "blue" }} className="fab fa-facebook-f"></i>
+          </a>
 
-              {data?.instagram && (
-                <a href={data.instagram} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              )}
+             <a
+            href="https://www.linkedin.com/company/toledo-consultora-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+          >            
+             <i  style={{ color: "blue" }} className="fab fa-linkedin"></i>
+          </a>
 
-              {/* Icono YouTube alternativo (más contrastado) */}
-              {data?.youtube && (
-                <a href={data.youtube} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
-                    alt="YouTube"
-                    style={{ marginLeft: "40px", width: "80px", height: "24px" }}
-                  />
-                </a>
-              )}
-            </div>
+           
+
+             <a
+            href="https://vimeo.com/user185125486"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Vimeo"
+          >            
+             <i  style={{ color: "blue" }} className="fab fa-vimeo-v"></i>
+          </a>
+
+           
+
+             <a
+            href="https://www.youtube.com/@eduardocarlostoledo"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="YouTube"
+          >            
+             <i  style={{ color: "red" }} className="fab fa-youtube"></i>
+                    
+             
+          </a>
+
+        </div>
+
           </div>
         </div>
 
@@ -197,6 +227,39 @@ export const Contact = ({ data }) => {
         <Link to="/indice-del-sitio" className="sitemap-map-link">
           Ver Mapa Completo del sitio
         </Link>
+
+        <Link to="/about-comprar-dominio" className="sitemap-map-link">
+          Contratar un Dominio
+        </Link>
+
+        <Link to="/about-google-ads" className="sitemap-map-link">
+          Acerca de Google Ads
+        </Link>
+
+        <Link to="/about-reseñas" className="sitemap-map-link">
+          Porqué las reseñas importan
+        </Link>
+
+        <Link to="/about-posicionamiento" className="sitemap-map-link">
+          Porqué Contratar Posicionamiento SEO
+        </Link>
+
+        <Link to="/about-google-business" className="sitemap-map-link">
+          Ficha de Google Business
+        </Link>
+
+        <Link to="/about-optimizacion" className="sitemap-map-link">
+          Ventajas de la Optimización Web
+        </Link>
+
+<Link to="/about-redes-sociales" className="sitemap-map-link">
+Las redes sociales como Herramientas        </Link>
+
+        <Link to="/about-optimizacion" className="sitemap-map-link">
+          Landing Page como conversora
+        </Link>
+
+
       </div>
       
 

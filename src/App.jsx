@@ -20,10 +20,18 @@ import { DetalleCotizacionSEO } from "./components/DetalleCotizacionSEO.jsx";
 import IndiceSitemap from "./components/IndiceSitemaps.jsx";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
-import "./App.css";
+import "../src/styles/App.css";
 import Sitemap from "./components/Sitemaps.jsx";
 import TerminosYCondiciones from "./components/TerminosYCondiciones.jsx";
 import Politica from "./components/Politica.jsx";
+import { AboutComprarDominio } from "./components/aboutComprarDominio.jsx";
+import { AboutGoogleAds } from "./components/aboutGoogleAds.jsx";
+import { AboutReseñas } from "./components/aboutReseñas.jsx";
+import { AboutPosicionamiento } from "./components/aboutPosicionamiento.jsx";
+import { AboutGoogleBusiness } from "./components/aboutGoogleBussiness.jsx";
+import { AboutOptimizacion } from "./components/aboutOptimizacion.jsx";
+import { AboutRedesSociales } from "./components/aboutRedesSociales.jsx";
+import { AboutLandingPage } from "./components/aboutLandingPage.jsx";
 
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -111,6 +119,16 @@ const App = () => {
       <Route path="/terminos-y-condiciones" element={<TerminosYCondiciones/>} />
       <Route path="/politica-de-privacidad" element={<Politica/>} />
       <Route path="/contacto" element={<Contact/>} />
+      <Route path="/about-comprar-dominio" element={<AboutComprarDominio/>} />
+      <Route path="/about-google-ads" element={<AboutGoogleAds/>} />
+      <Route path="/about-reseñas" element={<AboutReseñas/>} />
+      <Route path="/about-posicionamiento" element={<AboutPosicionamiento/>} />
+      <Route path="/about-google-business" element={<AboutGoogleBusiness/>} />
+      <Route path="/about-optimizacion" element={<AboutOptimizacion/>} />
+      <Route path="/about-redes-sociales" element={<AboutRedesSociales/>} />
+      <Route path="/about-landing-page" element={<AboutLandingPage/>} />
+
+
 
     </Routes>
   );

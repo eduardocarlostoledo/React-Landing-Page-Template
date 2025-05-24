@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import "./Hero.css";
+import "../styles/Hero.css";
 
 import hero1 from "./images/hero/hero1.jpg";
 import hero2 from "./images/hero/hero2.jpg";

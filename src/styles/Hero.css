@@ -5,8 +5,12 @@
 }
 
 .slider-container {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  
+
   position: relative;
-  margin-top: 200px;
+  margin-top: 20px;
   
   border-radius: 12px;
   overflow: hidden;
@@ -102,9 +106,7 @@
 /* Dispositivos chicos: 370px */
 @media screen and (max-width: 370px) {
 
-  .slider-container {
-  margin-top: 100px;
-}
+
 
   .slide {
     height: 300px;
@@ -139,9 +141,7 @@
 /* Dispositivos ultra chicos: 320px */
 @media screen and (max-width: 320px) {
 
-  .slider-container {
-  margin-top: 100px;
-}
+ 
 
   .slide {
     height: 250px;

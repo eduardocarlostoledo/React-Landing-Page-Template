@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import ClipLoader from "react-spinners/ClipLoader";
-import "./cotizaciones.css";
+import "../styles/cotizaciones.css";
 import { Testimonials } from "./testimonials";
 import { PartnerLogos } from "./PartnerLogos";
 import SeoLandingPages from "./SeoLandingPages";

@@ -182,32 +182,27 @@
     justify-content: center;
   }
   
-  .social-links a {
+  .social-links a {    
     color: white;
     padding: 14px;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
-  
-  .social-links a[href*="whatsapp"] {
-    background-color: #25d366;
-  }
-  
-  .social-links a[href*="instagram"] {
-    background-color: #e1306c;
-  }
-  
-  .social-links a[href*="facebook"] {
-    background-color: #4267B2;
-  }
-  
+    
   .social-links a:hover {
     transform: scale(1.1);
     filter: brightness(1.1);
   }
   
+
+  @media (max-width: 768px) {
+   .social-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

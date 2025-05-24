@@ -1,11 +1,11 @@
 import React from "react";
-import "./services.css";
+import "../styles/servicesSolutions.css";
 
 
 export const Services = (props) => {
   return (
     <div id="services" className="text-center">
-      <div className="container">
+      <div className="container-services">
         <div className="section-title">
           <h2>Nuestras Soluciones</h2>
           <p>

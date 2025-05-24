@@ -1,11 +1,13 @@
 /* Estilos base */
 .team-section {
+  font-family: 'Montserrat', sans-serif;
     padding: 5rem 0;
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .container {
+    font-family: 'Montserrat', sans-serif;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;

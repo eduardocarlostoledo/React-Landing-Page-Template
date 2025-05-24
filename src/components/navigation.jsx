@@ -1,64 +1,69 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 import logo from "../components/images/logo.png";
+import "../styles/Navbar.css";
 
 export const Navigation = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Función para manejar el clic en los enlaces del navbar
-  const handleLinkClick = (e, sectionId) => {
-    e.preventDefault(); // Evita el comportamiento por defecto del anchor
-    setMenuOpen(false); // Cierra el menú móvil si está abierto
-
-    const element = document.getElementById(sectionId);
+  const handleLinkClick = (e, id) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    const element = document.getElementById(id);
     if (element) {
-      const navbarHeight = 220; // Altura exacta del navbar
-      const elementPosition = element.getBoundingClientRect().top; // Posición del elemento
-      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight; // Ajuste del scroll
-
-      // Desplazamiento suave
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-
-      // Actualiza la URL sin recargar (opcional, para SPA)
-      window.history.pushState(null, null, `#${sectionId}`);
+      const offset = element.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: offset, behavior: "smooth" });
+      window.history.pushState(null, null, `#${id}`);
     }
   };
 
+  const renderLink = (label, id) => (
+    <a href={`#${id}`} onClick={(e) => handleLinkClick(e, id)}>{label}</a>
+  );
+
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
-        <div className="navbar-header">
-          <Link to="/" className="navbar-brand page-scroll" onClick={() => setMenuOpen(false)}>
-            <img src={logo} alt="Toledo Consultora IT" style={{ height: "50px", width: "auto" }} />
+    <nav className="navbar">
+      <section className="layout">
+        <div className="grow1">
+          <Link className="logo" to="/">
+            <img src={logo} alt="Toledo Consultora IT" className="logo-image-navbar" />
           </Link>
-          <button
-            type="button"
-            className="navbar-toggle collapsed"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-expanded={menuOpen}
-          >
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-          </button>
         </div>
 
-        <div className={`collapse navbar-collapse ${menuOpen ? "in" : ""}`}>
-          <ul className="nav navbar-nav navbar-right">            
-            <li><a href="#asesoramiento" onClick={(e) => handleLinkClick(e, "asesoramiento")}>¿Qué hacemos?</a></li>
-            <li><a href="#acerca" onClick={(e) => handleLinkClick(e, "acerca")}>Acerca de</a></li>
-            <li><a href="#partners" onClick={(e) => handleLinkClick(e, "partners")}>Confían en Nosotros</a></li>
-            <li><a href="#services" onClick={(e) => handleLinkClick(e, "services")}>Soluciones</a></li>
-            <li><a href="#portfolio" onClick={(e) => handleLinkClick(e, "portfolio")}>Portfolio</a></li>
-            <li><a href="#testimonials" onClick={(e) => handleLinkClick(e, "testimonials")}>Testimonios</a></li>
-            <li><a href="#pricing" onClick={(e) => handleLinkClick(e, "pricing")}>Pricing</a></li>
-            <li><a href="#contact" onClick={(e) => handleLinkClick(e, "contact")}>Contacto</a></li>          </ul>
+        <div className="grow1">
+          <div className="navbar-brand">
+            <h1 className="company-name">Toledo Consultora IT</h1>
+            <h1 className="company-name-sub">Transformación Digital</h1>
+          </div>
         </div>
-      </div>
+
+        <div className="grow1">
+          <ul className={`navbar-menu ${menuOpen ? "show" : ""}`}>
+            <li>{renderLink("¿Qué hacemos?", "asesoramiento")}</li>
+            <li>{renderLink("Acerca de", "about")}</li>
+            <li>{renderLink("Confían en Nosotros", "partners")}</li>
+            <li>{renderLink("Portfolio", "portfolio")}</li>
+            <li>{renderLink("Testimonios", "testimonials")}</li>
+            <li>{renderLink("Pricing", "pricing")}</li>
+            <li>{renderLink("Contacto", "contact")}</li>
+            <li>
+              <a
+            href="https://wa.me/5493764221063"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="WhatsApp"
+          >            
+             <i  style={{ color: "green", marginBottom:"20px", width:"20px" }} className="fab fa-whatsapp"></i>
+          </a>
+            </li>
+          </ul>
+          <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
+          </div>
+        </div>
+      </section>
     </nav>
   );
 };

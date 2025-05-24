@@ -1,7 +1,10 @@
 .partner-logos {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15px;
   text-align: center;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #00205b;
+  color:aliceblue;
 }
 
 .logos-container {

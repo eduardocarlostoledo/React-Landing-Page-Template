@@ -1,7 +1,7 @@
 // PartnerLogos.js
 import React from "react";
 import { motion } from "framer-motion";
-import "./PartnerLogos.css"; // Archivo CSS para estilos
+import "../styles/PartnerLogos.css"; // Archivo CSS para estilos
 import logo1 from "../logo(1).jpg"; // Logo de la empresa
 import logoCalyaan from "../logocalyaan.png"; // Logo de la empresa
 import logoRm from "../logo-rm.jpg"; // Logo de la empresa

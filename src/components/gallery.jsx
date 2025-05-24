@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./galery.css";
+import "../styles/galery.css";
 
 export const Gallery = ({ data }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -19,7 +19,7 @@ export const Gallery = ({ data }) => {
 
   return (
     <section id="portfolio" className="gallery-section">
-      <div className="container">
+      <div className="container-portfolio">
         <div className="section-header">
           <h2>Nuestros Proyectos</h2>
           <p className="section-subtitle">Explora nuestro trabajo para clientes destacados</p>

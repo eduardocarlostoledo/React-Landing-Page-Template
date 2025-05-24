@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './cotizaciones.css';
+import "../styles/cotizaciones.css';
 
 export const Asesoria = () => {
   return (

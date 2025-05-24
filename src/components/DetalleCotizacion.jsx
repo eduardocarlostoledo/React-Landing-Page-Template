@@ -6,7 +6,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import emailjs from '@emailjs/browser';
 import ClipLoader from 'react-spinners/ClipLoader';
-import './cotizaciones.css';
+import "../styles/cotizaciones.css";
 import { Testimonials } from './testimonials';
 import { PartnerLogos } from './PartnerLogos';
 

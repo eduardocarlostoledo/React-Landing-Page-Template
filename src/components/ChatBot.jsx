@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import './Chatbot.css';
+import "../styles/Chatbot.css";
 
 export const Chatbot = () => {
   const [isChatbotLoaded, setIsChatbotLoaded] = useState(false);

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Image.css';
+import "../styles/Image.css';
 
 export const Image = ({ title, largeImage, smallImage }) => {
   return (

@@ -17,6 +17,14 @@ const staticPaths = [
   "/terminos-y-condiciones",
   "/politica-de-privacidad",
   "/contacto",
+  "/about-comprar-dominio",
+  "/about-google-ads",
+  "/about-reseñas",
+ "/about-posicionamiento",
+      "/about-google-business",
+     "/about-optimizacion",
+    "/about-redes-sociales",
+    "/about-landing-page",
 ];
 
 const dynamicPaths = SeoLandingPages.map((p) => `/servicios-consultora-toledo/${p.id}`);

@@ -1,4 +1,13 @@
 /* Estilos base */
+.container-porfolio {
+
+font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+
+}
 
 /* Estilos para el botón de proyecto */
 .project-link {
@@ -141,7 +150,7 @@
   .view-btn {
     background: linear-gradient(to right, #4285F4 0%, #34A853 100%);
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border-radius: 50px;
     font-weight: 500;
     transition: transform 0.3s ease;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./TerminosYCondiciones.css";
+import "../styles/TerminosYCondiciones.css";
 import { useEffect } from "react";
 const TerminosYCondiciones = () => {
 

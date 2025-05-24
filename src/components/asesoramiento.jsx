@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./asesoramiento.css";
+import "../styles/asesoramiento.css";
 
 export const Asesoramiento = (props) => {
 
@@ -8,13 +8,13 @@ export const Asesoramiento = (props) => {
 
   return (
     <section id="asesoramiento"  style={{ paddingTop: "20px" }} className="asesoramiento-section">
-      <div className="container">
-        <div className="section-header">
+      <div className="container-asesoramiento">
+        <div className="section-header-asesoramiento">
           <h2 >OFERTAS TECNOLÓGICAS</h2>
           <p>Cómo trabajamos y posicionamos tu negocio</p>
         </div>
         
-        <div className="servicios-grid">
+        <div className="servicios-grid-asesoramiento">
           {props.data ? (
             props.data.map((d, i) => (
               <div key={`${d.title}-${i}`} className="servicio-card">
