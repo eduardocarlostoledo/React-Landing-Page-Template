@@ -10,7 +10,7 @@ const VideoThumbnail = ({ title, videoId }) => (
   >
     <img
       src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-      alt={title}
+      alt={"toledoconsultora.com"}
       loading="lazy"
     />
     <span className="video-title">{title}</span>
