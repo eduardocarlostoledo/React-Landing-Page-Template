@@ -1,7 +1,6 @@
-
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import "../styles/cotizaciones.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export const Cotizaciones = ({ selectedIds = [] }) => {
   const navigate = useNavigate();
@@ -13,13 +12,13 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
       description: "Diseño de landing page",
       popular: false,
       features: [
-"Diseño Adaptativo a Pc y Móvil",
+        "Diseño Adaptativo a Pc y Móvil",
         "Estrategia de Marketing",
         "Hasta 6 Productos con un link de pago",
         "Boton Reservar o Comprar",
         "Boton para capturar datos cliente con EmailJS",
-        "Boton a Whatsapp de tu empresa opcional",        
-        "Estrategia de No escapatoria, compre o deje datos"
+        "Boton a Whatsapp de tu empresa opcional",
+        "Estrategia de No escapatoria, compre o deje datos",
       ],
       detail: `
 
@@ -46,7 +45,7 @@ Diseño centrado en el usuario: Un diseño limpio, intuitivo y optimizado para d
 En resumen, una landing page es una herramienta poderosa y esencial para cualquier estrategia de marketing digital. Su enfoque en la conversión, su capacidad para mejorar el rendimiento de las campañas, generar leads de calidad y ofrecer una buena experiencia al usuario la convierten en un activo invaluable para alcanzar los objetivos comerciales.
       `,
       cta: "Solicitar Landing Page",
-      link: "https://mpago.la/1P56hD5"
+      link: "https://mpago.la/1P56hD5",
     },
     {
       id: "contratar-pagina-web-toledoconsultora",
@@ -59,14 +58,14 @@ En resumen, una landing page es una herramienta poderosa y esencial para cualqui
         "Hosting Incluído en el primer año",
         "Incluye Desarrollo de Servicios Web, React, Css, EmailJs",
         "No aplica para Base de datos Postgresql/ORM + Node/Express web server",
-"Incluye 5 emails corporativos con el dominio por el primer año",        
-"Diseño Adaptativo a Pc y Móvil",
+        "Incluye 5 emails corporativos con el dominio por el primer año",
+        "Diseño Adaptativo a Pc y Móvil",
         "SEO básico incluido",
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
         "Acceso a redes socales y whatsapp",
       ],
-            detail: `
+      detail: `
             Tener una página web correctamente implementada y gestionada representa una base sólida para cualquier estrategia digital exitosa. Va mucho más allá de ser una simple tarjeta de presentación online; se convierte en un centro de operaciones digital, un canal de comunicación directo con tu audiencia y una plataforma para alcanzar múltiples objetivos comerciales.
 
 El Potencial General de una Página Web Correctamente Utilizada:
@@ -115,7 +114,7 @@ Ofrecer una plataforma para el crecimiento y la expansión de tu negocio online.
 Invertir tiempo y recursos en la creación y optimización de una página web es una estrategia fundamental para el éxito a largo plazo en el entorno digital actual.
       `,
       cta: "Solicitar Web Page Tipo Spa Institucional",
-      link: "https://mpago.la/2SQELVR"
+      link: "https://mpago.la/2SQELVR",
     },
     {
       id: "contratar-sistema-web-toledoconsultora",
@@ -125,13 +124,13 @@ Invertir tiempo y recursos en la creación y optimización de una página web es
       popular: false,
       features: [
         "Dominio.com.ar incluido por 1 año",
-"Incluye Desarrollo de Servicios Web, React, Css, EmailJs",
+        "Incluye Desarrollo de Servicios Web, React, Css, EmailJs",
         "Aplica para Base de datos Postgresql/ORM + Node/Express web server",
         "Desarrollo de API hasta 3 endpoints con controlador y modelos",
         "No aplica para sistemas con autenticación de usuarios",
         "No aplica para sistemas con pagos online",
-        "Incluye 5 emails corporativos con el dominio por el primer año",        
-"Diseño Adaptativo a Pc y Móvil",
+        "Incluye 5 emails corporativos con el dominio por el primer año",
+        "Diseño Adaptativo a Pc y Móvil",
         "SEO básico incluido",
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
@@ -139,7 +138,7 @@ Invertir tiempo y recursos en la creación y optimización de una página web es
         "Incluye hosting capa gratuita de imagenes",
         "*No incluye gastos de hosting ni gastos de mantenimiento",
       ],
-                  detail: `
+      detail: `
                   Un sistema integral o personalizado construido con tecnologías web modernas como React en el frontend y bases de datos como PostgreSQL o MongoDB en el backend puede ofrecerte una ayuda significativa en múltiples aspectos, brindando eficiencia, escalabilidad y una experiencia de usuario superior. Desglosemos cómo te puede beneficiar:
 
 Beneficios Generales de un Sistema Integral o Personalizado con Tecnología Web Moderna:
@@ -196,7 +195,7 @@ Adaptarte rápidamente a los cambios del mercado y las necesidades de tus client
 La elección entre PostgreSQL y MongoDB dependerá de las necesidades específicas de tu proyecto, la naturaleza de tus datos y los patrones de acceso. PostgreSQL es ideal para aplicaciones con relaciones complejas entre datos y la necesidad de una alta integridad transaccional, mientras que MongoDB brilla en aplicaciones con datos flexibles y la necesidad de una alta escalabilidad horizontal. La combinación de React en el frontend con cualquiera de estas potentes bases de datos en el backend te proporciona una base tecnológica sólida para construir una solución web robusta y adaptada a tus requerimientos.
       `,
       cta: "Solicitar Desarrollo de Sistema Integral a medida",
-      link: "https://mpago.la/2QJQTSC"
+      link: "https://mpago.la/2QJQTSC",
     },
     {
       id: "contratar-sistema-web-completo-toledoconsultora",
@@ -210,17 +209,17 @@ La elección entre PostgreSQL y MongoDB dependerá de las necesidades específic
         "Aplica para Base de datos Postgresql/ORM + Node/Express web server",
         "Desarrollo de API con sus controladoresm rutas y modelos",
         "Aplica para sistemas con autenticación de usuarios",
-        "Aplica para sistemas con pagos online con mercadopago",                
-"Diseño Adaptativo a Pc y Móvil",
+        "Aplica para sistemas con pagos online con mercadopago",
+        "Diseño Adaptativo a Pc y Móvil",
         "SEO básico incluido",
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
         "Acceso a redes socales y whatsapp",
         "Incluye hosting capa gratuita de imagenes",
-"Incluye 5 emails corporativos con el dominio por el primer año",        
+        "Incluye 5 emails corporativos con el dominio por el primer año",
         "*No incluye gastos de hosting ni gastos de mantenimiento",
       ],
-                  detail: `
+      detail: `
 
 Ventajas Clave de un Sistema Web SPA Personalizado con la Estructura Detallada:
 
@@ -270,11 +269,11 @@ Reduce los costos iniciales de infraestructura (en cuanto a dominio y hosting de
 En definitiva, esta estructura de desarrollo a medida sienta las bases para una solución web potente y personalizada que puede impulsar el crecimiento y la eficiencia de cualquier negocio en el entorno digital actual. Es crucial que las empresas consideren los costos de hosting y mantenimiento a largo plazo para una planificación financiera completa.
       `,
       cta: "Solicitar Sistema Integral Desarrollo a medida",
-      link: "https://mpago.la/2rp8wtV"
+      link: "https://mpago.la/2rp8wtV",
     },
-    
+
     {
-      id: "contratar-ecommerce-toledoconsultora",      
+      id: "contratar-ecommerce-toledoconsultora",
       title: "Ecommerce",
       price: "$249.000",
       description: "Tienda online Estándar",
@@ -287,14 +286,15 @@ En definitiva, esta estructura de desarrollo a medida sienta las bases para una 
         "Panel autogestionable de usuarios",
         "Sin límite de productos",
         "Incluye Diseño y Despliegue de Base de datos y web Server",
-"Diseño Adaptativo a Pc y Móvil",
+        "Diseño Adaptativo a Pc y Móvil",
         "Sin Comisiones por venta",
         "*No incluye dominio ni hosting ni gastos de mantenimiento",
         "Navbar y Footer personalizados",
         "Home optimizado para tu negocio, con productos fijos",
         "Secciones: Nosotros, Contacto, Historia de la empresa",
         "Incluye hosting capa gratuita de imagenes",
-      ],            detail: `
+      ],
+      detail: `
       Beneficios Clave de la Tienda Online Detallada:
 
 Esta estructura de tienda online ofrece una serie de ventajas significativas para facilitar la venta de productos a través de internet:
@@ -338,7 +338,7 @@ Reducción de costos iniciales en el alojamiento de imágenes.
 A pesar de no incluir el dominio, el hosting y el mantenimiento, esta estructura proporciona una base sólida y funcional para comenzar a vender online y expandir el alcance del negocio. Es crucial que las empresas consideren los costos adicionales para una planificación financiera completa y un funcionamiento continuo de la tienda.
       `,
       cta: "Quiero mi Tienda Online",
-      link: "https://mpago.la/2w6ThwW"
+      link: "https://mpago.la/2w6ThwW",
     },
     {
       id: "contratar-campanasdigitales-toledoconsultora",
@@ -346,16 +346,17 @@ A pesar de no incluir el dominio, el hosting y el mantenimiento, esta estructura
       price: "$99.000",
       description: "Gestión profesional",
       popular: false,
-      features: [      
-        "Gestión Mensual"  ,
+      features: [
+        "Gestión Mensual",
         "Gestión de Campañas digitales con Google Ads",
         "Optimización y monitorización continua de la campaña",
         "Gestión de Informes Periódicos",
         "Análisis de rendimiento y propuesta de mejora",
         "Segmentación avanzada",
-        "*No incluye presupuesto publicitario, el costo de la campaña es a cargo del cliente",        
+        "*No incluye presupuesto publicitario, el costo de la campaña es a cargo del cliente",
         "Realizamos campañas de tráfico, visitas a perfil, llamadas, ventas",
-      ],            detail: `
+      ],
+      detail: `
 
 Beneficios Clave de la Gestión Mensual de Campañas Digitales con Google Ads de Toledo Consultora:
 
@@ -389,7 +390,7 @@ Adaptación ágil a los cambios en el algoritmo de Google y las tendencias del m
 Al confiar en Toledo Consultora para la gestión de tus campañas de Google Ads, puedes enfocarte en otras áreas de tu negocio con la tranquilidad de saber que tu inversión publicitaria está en manos expertas y trabajando para alcanzar tus metas.
       `,
       cta: "Contratar Campañas Digitales",
-      link: "https://mpago.la/1NbDWJ9"
+      link: "https://mpago.la/1NbDWJ9",
     },
     {
       id: "contratar-ecommerce-paginaweb-toledoconsultora",
@@ -399,27 +400,27 @@ Al confiar en Toledo Consultora para la gestión de tus campañas de Google Ads,
       popular: false,
       features: [
         "Dominio.com.ar incluido por 1 año",
-"Incluye Desarrollo de Servicios Web, React, Css, EmailJs",
-"Incluye 5 emails corporativos con el dominio por el primer año",        
-         "Integración con MercadoPago",
+        "Incluye Desarrollo de Servicios Web, React, Css, EmailJs",
+        "Incluye 5 emails corporativos con el dominio por el primer año",
+        "Integración con MercadoPago",
         "Panel autogestionable de productos, no aplica para talles ni colores",
         "Sistema con control de stock",
         "Panel autogestionable de pedidos",
         "Panel autogestionable de usuarios",
         "Sin límite de productos",
         "Incluye Diseño y Despliegue de Base de datos y web Server",
-                "Incluye hosting capa gratuita de imagenes para tus productos",
+        "Incluye hosting capa gratuita de imagenes para tus productos",
 
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
-        "Sin Comisiones por venta",        
+        "Sin Comisiones por venta",
         "Diseño Adaptativo a Pc y Móvil",
         "Estrategia SEO completa",
         "Posicionamiento en Google Business y Maps",
         "Campaña Publicitaria Estándar x 30días en Google Ads",
-                "*No incluye gastos de hosting de base de datos ni gastos de mantenimiento",
-
-      ],            detail: `
+        "*No incluye gastos de hosting de base de datos ni gastos de mantenimiento",
+      ],
+      detail: `
       Beneficios Clave del Paquete Business de Toledo Consultora:
 
 Este paquete integral ofrece una solución completa para establecer y hacer crecer la presencia online de tu negocio, combinando una plataforma de comercio electrónico funcional con estrategias de marketing digital para alcanzar a tu audiencia y aumentar tus ventas.
@@ -460,7 +461,7 @@ Imagen profesional desde el inicio: Dominio propio, correos corporativos y dise�
 En resumen, el Paquete Business de Toledo Consultora ofrece una excelente oportunidad para cualquier negocio que desee establecer una presencia de comercio electrónico completa y comenzar a atraer clientes online desde el principio. La combinación de una plataforma funcional con estrategias de marketing digital iniciales proporciona un impulso significativo para el crecimiento online. Es importante considerar los costos de hosting y mantenimiento a largo plazo para una planificación financiera completa.
       `,
       cta: "Contratar Pack Bussiness",
-      link: "https://mpago.la/1ppUGph"
+      link: "https://mpago.la/1ppUGph",
     },
     {
       id: "contratar-asesoria-de-negocios-toledoconsultora",
@@ -475,8 +476,9 @@ En resumen, el Paquete Business de Toledo Consultora ofrece una excelente oportu
         "Estrategias de Crecimiento y Escalabilidad Web",
         "Análisis de Mercado y Estrategia SEO Competitiva",
         "Duración de la Asesoría: Sesión individual de 2 horas",
-        "Entrega: Informe ejecutivo detallado"
-      ],            detail: `
+        "Entrega: Informe ejecutivo detallado",
+      ],
+      detail: `
       Lista Concreta de Servicios de Asesoría de Negocios:
 
 Análisis y Optimización del Modelo de Negocio con Soluciones Tecnológicas:
@@ -531,7 +533,7 @@ En resumen, Toledo Consultora ofrece una valiosa combinación de experiencia té
 
       `,
       cta: "Contratar Asesoría Tenológica",
-      link: "https://mpago.la/1Bgc6i5"
+      link: "https://mpago.la/1Bgc6i5",
     },
     {
       id: "contratar-seo-operativo-toledoconsultora",
@@ -550,7 +552,8 @@ En resumen, Toledo Consultora ofrece una valiosa combinación de experiencia té
         "Posicionamiento en Google Business",
         "Asesoramiento Global de Posicionamiento para tu negocio",
         "Informes de rendimiento y propuestas de mejora",
-      ],            detail: ` 
+      ],
+      detail: ` 
 
 
 
@@ -593,9 +596,9 @@ Una ventaja competitiva sostenible en el mercado digital.
 Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio estará sentando las bases para un crecimiento online sólido y a largo plazo.
       `,
       cta: "Mejorar Posicionamiento",
-      link: "https://mpago.la/1SgrAx3"
+      link: "https://mpago.la/1SgrAx3",
     },
-        {
+    {
       id: "contratar-seo-estandard-toledoconsultora",
       title: "SEO Estandard",
       price: "$200.000",
@@ -609,7 +612,8 @@ Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio est
         "Posicionamiento en Google Business",
         "Asesoramiento Global de Posicionamiento para tu negocio",
         "Informes de rendimiento y propuestas de mejora",
-      ],            detail: ` 
+      ],
+      detail: ` 
       El servicio de posicionamiento Estandar esta orientado a aquellos interesados que ya tienen operativo su sitio web y buscan optimizarlo para mejorar su posicionamiento en Google. Este servicio incluye una serie de acciones específicas para mejorar la visibilidad y el rendimiento del sitio web en los motores de búsqueda. A saber: se determinan con el cliente 7 palabras clave relevantes para el negocio, se optimizan las meta descripciones y keywords, se asegura que el sitio sea "Google Friendly" (compatible con dispositivos móviles), se optimizan los títulos y encabezados (h1, h2, h3), se posiciona en Google Maps y Google Business, y se proporciona asesoramiento global de posicionamiento para el negocio. Además, se generan informes de rendimiento y propuestas de mejora para garantizar un seguimiento continuo del progreso.
 
 Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
@@ -649,9 +653,9 @@ Una ventaja competitiva sostenible en el mercado digital.
 Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio estará sentando las bases para un crecimiento online sólido y a largo plazo.
       `,
       cta: "Mejorar Posicionamiento",
-      link: "https://mpago.la/1SgrAx3"
+      link: "https://mpago.la/1SgrAx3",
     },
-        {
+    {
       id: "contratar-seo-bussiness-toledoconsultora",
       title: "SEO Bussiness",
       price: "$750.000",
@@ -664,13 +668,14 @@ Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio est
         "Google Friendly",
         "Mobile Friendly",
         "Optimización de contenido",
-        "Optimización de imágenes",        
+        "Optimización de imágenes",
         "Optimizacion de title, h1, h2, h3",
         "Posicionamiento en Google Maps",
         "Posicionamiento en Google Business",
         "Asesoramiento Global de Posicionamiento para tu negocio",
         "Informes de rendimiento y propuestas de mejora",
-      ],            detail: ` 
+      ],
+      detail: ` 
 
 Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
 
@@ -709,21 +714,22 @@ Una ventaja competitiva sostenible en el mercado digital.
 Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio estará sentando las bases para un crecimiento online sólido y a largo plazo.
       `,
       cta: "Mejorar Posicionamiento",
-      link: "https://mpago.la/1SgrAx3"
+      link: "https://mpago.la/1SgrAx3",
     },
   ];
-  const selectedPlans = selectedIds.length > 0
-    ? pricingPlans.filter(plan => selectedIds.includes(plan.id))
-    : pricingPlans;
+  const selectedPlans =
+    selectedIds.length > 0
+      ? pricingPlans.filter((plan) => selectedIds.includes(plan.id))
+      : pricingPlans;
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -731,13 +737,13 @@ Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio est
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.5 }
-    }
+      transition: { duration: 0.5 },
+    },
   };
 
   const buttonVariants = {
     hover: { scale: 1.05 },
-    tap: { scale: 0.95 }
+    tap: { scale: 0.95 },
   };
 
   const handlePlanClick = (plan) => {
@@ -754,7 +760,10 @@ Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio est
           transition={{ duration: 0.5 }}
         >
           <h2>Nuestros Servicios Profesionales</h2>
-          <p>Soluciones digitales a medida con precios transparentes y resultados garantizados</p>
+          <p>
+            Soluciones digitales a medida con precios transparentes y resultados
+            garantizados
+          </p>
         </motion.div>
 
         <motion.div
@@ -767,14 +776,17 @@ Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio est
           {selectedPlans.map((plan) => (
             <motion.div
               key={plan.id}
-              className={`pricing-card ${plan.popular ? 'popular' : ''}`}
+              className={`pricing-card ${plan.popular ? "popular" : ""}`}
               variants={itemVariants}
               whileHover={{ scale: 1.03 }}
             >
               <div className="card-header">
                 <h3>{plan.title}</h3>
                 <div className="price">
-                  {plan.price} <span>{plan.title === "Campañas Digitales" ? "/mes" : "único"}</span>
+                  {plan.price}{" "}
+                  <span>
+                    {plan.title === "Campañas Digitales" ? "/mes" : "único"}
+                  </span>
                 </div>
                 <p>{plan.description}</p>
               </div>
