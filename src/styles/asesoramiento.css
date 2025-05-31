@@ -28,7 +28,7 @@
     margin-bottom: 15px;
     font-weight: 700;
     text-align: center;
-  color: aliceblue;
+  color: white;
   }
   
   .section-header-asesoramiento p {
@@ -86,7 +86,7 @@
   }
   
   .servicio-content p {
-    color: #7f8c8d;
+    color: black;
     line-height: 1.6;
     text-align: center;
   }
@@ -95,7 +95,7 @@
   .loading {
     text-align: center;
     grid-column: 1 / -1;
-    color: #7f8c8d;
+    color: black;
     font-size: 1.2rem;
   }
   

@@ -22,10 +22,10 @@ export const Asesoramiento = (props) => {
                   <i className={`icon ${d.icon}`}></i>
                 </div>
                 <div className="servicio-content"
-                style={{ color: 'black'}}>
+               >
                   <h3 style={{ color: 'black' }}>{d.title}</h3>
                   <p
-                  style={{ color: 'black'}}
+             
                   >{d.text}</p>
                 </div>
               </div>

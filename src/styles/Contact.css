@@ -82,6 +82,8 @@
 }
 
 .info-content p {
+  
+  
   margin: 0;
   color: #ffffff;
 }
@@ -312,5 +314,58 @@ input:focus, textarea:focus {
   .social-link-contacto svg {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-header p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 1rem;
+  }
+
+  .info-icon svg {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .social-link-contacto {
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .social-link-contacto a {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social-link-contacto svg {
+    width: 18px;
+    height: 18px;
   }
 }
