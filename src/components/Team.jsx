@@ -11,7 +11,8 @@ export const Team = ({ data }) => {
             Nuestro equipo está conformado por Diseñadores Gráficos, Analistas de Sistemas, 
             Devs Full Stack y Devs Ops
           </p>
-          <p className="team-description">
+          <p className="team-description"
+            style={{ color: 'black', fontSize: '1.2rem', marginTop: '10px' }}>
             “Nuestra pasión es dar soluciones concretas a problemas cotidianos, a través de la 
             tecnología y el diseño. Nos gusta lo que hacemos y nos gusta hacerlo bien. Además, 
             ponemos énfasis en la seguridad digital y la protección de datos personales, porque 

@@ -22,7 +22,11 @@ export const Gallery = ({ data }) => {
       <div className="container-portfolio">
         <div className="section-header">
           <h2>Nuestros Proyectos</h2>
-          <p className="section-subtitle">Explora nuestro trabajo para clientes destacados</p>
+          <p className="section-subtitle"
+          
+            style={{ color: 'black', fontSize: '2rem', marginTop: '10px' }}>
+            
+            Explora nuestro trabajo para clientes destacados</p>
         </div>
 
         <div className="gallery-grid">

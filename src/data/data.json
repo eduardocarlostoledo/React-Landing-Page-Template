@@ -193,49 +193,48 @@
   }
 ],
   
-  "Services": [
-  {
-    "icon": "fa fa-stack-exchange",
-    "name": "Desarrollo Full Stack",
-    "text": "Desarrollo de aplicaciones completas utilizando stacks MERN y PERN, ofreciendo soluciones robustas y escalables para aplicaciones web."
-  },
-  {
-    "icon": "fa fa-cloud",
-    "name": "DevOps y Gestión en la Nube",
-    "text": "Implementación de prácticas DevOps con Docker y AWS, optimizando el despliegue, la escalabilidad y la eficiencia en entornos de producción."
-  },
-  {
-    "icon": "fa fa-file-code-o",
-    "name": "Lenguajes y Frameworks",
-    "text": "Experto en HTML, CSS, JavaScript, Node.js, React y Express, creando aplicaciones interactivas y de alto rendimiento."
-  },
-  {
-    "icon": "fa fa-database",
-    "name": "Bases de Datos",
-    "text": "Gestión de bases de datos con PostgreSQL y MongoDB, asegurando una integración eficiente y consultas optimizadas para grandes volúmenes de datos."
-  },
-  {
-    "icon": "fa fa-server",
-    "name": "Integraciones y APIs",
-    "text": "Desarrollo de integraciones con plataformas como MercadoPago, Twilio y Nodemailer, facilitando funcionalidades avanzadas en tus aplicaciones."
-  },
-  {
-    "icon": "fa fa-github-square",
-    "name": "Herramientas y Metodologías",
-    "text": "Uso de herramientas como Postman, Trello, Git, y metodologías ágiles como Scrum para una gestión eficiente y colaborativa del desarrollo."
-  },
-  {
-    "icon": "fa fa-database",
-    "title": "Bases de Datos",
-    "text": "Experiencia avanzada en PostgreSQL y MongoDB, asegurando almacenamiento y consultas eficientes para proyectos web y de alta demanda."
-  },
-  {
-    "icon": "fa fa-server",
-    "title": "Servidores Confiables",
-    "text": "Desarrollo de APIs y sistemas robustos con Node.js y Express, proporcionando seguridad y rendimiento óptimos en aplicaciones web."
-  }
-]
-,
+"Services": [
+    {
+      "icon": "fas fa-laptop-code",
+      "name": "Desarrollo Full Stack",
+      "text": "Desarrollo de aplicaciones completas utilizando stacks MERN y PERN, ofreciendo soluciones robustas y escalables para aplicaciones web."
+    },
+    {
+      "icon": "fas fa-cloud",
+      "name": "DevOps y Gestión en la Nube",
+      "text": "Implementación de prácticas DevOps con Docker y AWS, optimizando el despliegue, la escalabilidad y la eficiencia en entornos de producción."
+    },
+    {
+      "icon": "fas fa-file-code",
+      "name": "Lenguajes y Frameworks",
+      "text": "Experto en HTML, CSS, JavaScript, Node.js, React y Express, creando aplicaciones interactivas y de alto rendimiento."
+    },
+    {
+      "icon": "fas fa-database",
+      "name": "Bases de Datos",
+      "text": "Gestión de bases de datos con PostgreSQL y MongoDB, asegurando una integración eficiente y consultas optimizadas para grandes volúmenes de datos."
+    },
+    {
+      "icon": "fas fa-server",
+      "name": "Integraciones y APIs",
+      "text": "Desarrollo de integraciones con plataformas como MercadoPago, Twilio y Nodemailer, facilitando funcionalidades avanzadas en tus aplicaciones."
+    },
+    {
+      "icon": "fab fa-github-square",
+      "name": "Herramientas y Metodologías",
+      "text": "Uso de herramientas como Postman, Trello, Git, y metodologías ágiles como Scrum para una gestión eficiente y colaborativa del desarrollo."
+    },
+    {
+      "icon": "fas fa-database",
+      "name": "Diseño de Bases de Datos",
+      "text": "Experiencia avanzada en PostgreSQL y MongoDB, asegurando almacenamiento y consultas eficientes para proyectos web con alta y baja demanda."
+    },
+    {
+      "icon": "fas fa-network-wired",
+      "name": "APIs Profesionales",
+      "text": "Desarrollo de APIs y sistemas robustos con Node.js y Express, proporcionando seguridad y rendimiento óptimos en aplicaciones web."
+    }
+  ],
 
   
 "Testimonials": [

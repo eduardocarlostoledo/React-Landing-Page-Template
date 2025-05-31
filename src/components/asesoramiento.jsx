@@ -21,9 +21,12 @@ export const Asesoramiento = (props) => {
                 <div className="icon-container">
                   <i className={`icon ${d.icon}`}></i>
                 </div>
-                <div className="servicio-content">
-                  <h3>{d.title}</h3>
-                  <p>{d.text}</p>
+                <div className="servicio-content"
+                style={{ color: 'black'}}>
+                  <h3 style={{ color: 'black' }}>{d.title}</h3>
+                  <p
+                  style={{ color: 'black'}}
+                  >{d.text}</p>
                 </div>
               </div>
             ))
