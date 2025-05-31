@@ -12,7 +12,7 @@
 }
 
 .about-columns {
-  display: flex;
+  
   flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;

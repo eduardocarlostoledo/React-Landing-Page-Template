@@ -21,7 +21,10 @@ export const About = ({ data }) => {
           {/* Texto y beneficios */}
           <div className="about-text">
             <h2>¿Quiénes somos?</h2>
-            <p>{data?.paragraph || "Cargando descripción..."}</p>
+            <p
+            style={{ color: 'white', fontSize: '1.5rem', marginTop: '10px' }}
+            
+            >{data?.paragraph || "Cargando descripción..."}</p>
 
           
           </div>
@@ -30,22 +33,27 @@ export const About = ({ data }) => {
           <div className="about-highlight-box">
               <h3>¿Por qué trabajar con nosotros?</h3>
               {(data?.Why2 || []).map((item, index) => (
-                <div className="benefit-box" key={index}>
+                <div style={{ color: 'white', fontSize: '1.5rem', marginTop: '10px' }}
+                className="benefit-box" key={index}>
                   <span>✔</span>
-                  <p>{item}</p>
+                  <p
+                    style={{ color: 'white', fontSize: '1.5rem', marginTop: '10px' }}
+                  >{item}</p>
                 </div>
               ))}
             </div>
 
             <div className="about-highlight-box">
               <h4>Nuestros Valores</h4>
-              <ul>
-                {(data?.Why || []).map((item, index) => (
-                  <li key={index}>
-                    <span>✔</span> {item}
-                  </li>
-                ))}
-              </ul>
+              {(data?.Why || []).map((item, index) => (
+                <div style={{ color: 'white', fontSize: '1.5rem', marginTop: '10px' }}
+                className="benefit-box" key={index}>
+                  <span>✔</span>
+                  <p
+                    style={{ color: 'white', fontSize: '1.5rem', marginTop: '10px' }}
+                  >{item}</p>
+                </div>
+              ))}
             </div>
 </div>
 
