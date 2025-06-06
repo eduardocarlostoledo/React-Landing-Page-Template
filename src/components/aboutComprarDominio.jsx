@@ -1,9 +1,15 @@
 import React from "react";
 import "../styles/about.css";
 
+
+
 export const AboutComprarDominio = () => {
   return (
+    <div>
+
+    
     <section id="about" className="about-section">
+      
       <div className="about-container">
         <div className="about-columns">
           {/* Imagen y razones */}
@@ -140,5 +146,6 @@ export const AboutComprarDominio = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };

@@ -14,7 +14,7 @@ export const DetalleCotizacionSEO = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
-  console.log(SeoLandingPages);
+  //console.log(SeoLandingPages);
   const { id } = useParams();
   const navigate = useNavigate();
   const plan = SeoLandingPages.find((p) => p.id === id);
@@ -248,7 +248,7 @@ export const DetalleCotizacionSEO = () => {
             <div className={`pricing-card ${plan.popular ? "popular" : ""}`}>
               <div className="card-header">
                 <h3>{plan.title}</h3>
-                <h4 style={{ textAlign: "justify" }}>{plan.detail} </h4>
+                <p style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: plan.detail }} > </p>
                 <div className="price">
                   {plan.price}
                   <span> / único</span>

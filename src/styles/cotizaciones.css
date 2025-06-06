@@ -1,106 +1,3 @@
-/* cotizaciones.css */
-.hero-banner {
-  border-radius: 15px;
-  
-  position: relative;
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-
-.banner-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.45); /* opacidad negra */
-  display: flex;
-  align-items: center;
- justify-content: flex-start; /* 👈 esto lo alinea a la izquierda */
-  }
-
-.banner-logo {
-  border-radius: 15px;
-  margin: 20px;
-  width: 180px;
-  max-width: 90%;
-  height: auto;
-  z-index: 2;
-  filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.6));
-}
-
-
-
-.social-links-cotizaciones {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-  
-   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-links-cotizaciones a {
-  color: white;
-  background: linear-gradient(45deg, #4facfe, #18585c); /* o tu color principal */
-  padding: 12px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 18px;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.social-links-cotizaciones a:hover {
-  transform: scale(1.1);
-  background: linear-gradient(45deg, #00f2fe, #4facfe);
-}
-
-
-
-.h4-text {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #333;
-    font-family: sans-serif;
-    margin-bottom: 1em;
-    padding: 10px;
-    background-color: #f7f7f7;
-    border-left: 4px solid #007bff;
-    border-radius: 5px;
-    text-align: justify; /* Agregamos esta línea */
-}
-
-.h4-text strong {
-    font-weight: bold;
-    color: #007bff;
-}
-.floating-contract-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.floating-contract-button .pricing-button {
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Asegurar que el contenido no quede detrás del botón flotante */
-.pricing-section {
-  padding-bottom: 80px;
-}
-
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
@@ -116,10 +13,13 @@
 }
 
 /* Reset y estilos base */
-.pricing-section {
-  
-  background: #f8f9fa;
+body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-section {
+  background: #f8f9fa;
+  padding-bottom: 80px; /* espacio para botón flotante */
 }
 
 .pricing-container {
@@ -153,53 +53,72 @@
 }
 
 .section-header p {
-  color: var(--gray);
+  color: var(--black);
   font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto;
 }
 
+/* Grilla responsive */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
+/* Tarjetas */
 .pricing-card {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+  padding: 20px 0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   overflow: hidden;
-  transition: var(--transition);
 }
 
 .pricing-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.pricing-card.popular {
-  position: relative;
+.pricing-card.popular {  
+  border: 2px solid #3498db;
   border: 2px solid var(--secondary);
+  position: relative;
 }
 
 .pricing-card.popular::before {
-  content: 'MÁS POPULAR';
-  position: absolute;
-  top: 15px;
-  right: -30px;
+ background: #e74c3c;
   background: var(--accent);
-  color: white;
-  padding: 5px 30px;
-  font-size: 0.8rem;
+  color: #fff;
+  content: "MÁS POPULAR";
+  font-size: .8rem;
   font-weight: 600;
+  padding: 5px 30px;
+  position: absolute;
+  right: -30px;
+  top: 15px;
   transform: rotate(45deg);
   z-index: 1;
 }
 
 .card-header {
-  border-radius: 15px;
-  margin: 20px;
+  border-radius: 10px;
+  margin: 0 1.5rem 1rem 1.5rem;
+  padding: 2rem;
+  background: var(--primary);
+  color: white;
+  text-align: center;
+}
+
+.card-header h4 {
+  border-radius: 10px;
+  margin: 0 1.5rem 1rem 1.5rem;
   padding: 2rem;
   background: var(--primary);
   color: white;
@@ -207,7 +126,6 @@
 }
 
 .card-header h3 {
-    color: white;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -216,6 +134,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin: 1rem 0;
+  text-align: center;
 }
 
 .price span {
@@ -223,20 +142,29 @@
   font-weight: 400;
 }
 
+/* Contenido y features */
 .card-body {
-  margin:10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1.5rem;
 }
 
 .feature-list {
+  text-align: center;
   list-style: none;
-  margin-bottom: 2rem;
+  margin: 20px;
+  padding: 0;
+  flex-grow: 1;
 }
 
 .feature-list li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  display: flex;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  /* display: flex; */
   align-items: center;
+  font-size: 0.95rem;
 }
 
 .feature-list li::before {
@@ -246,9 +174,11 @@
   margin-right: 10px;
 }
 
+/* Botón */
 .pricing-button {
   width: 100%;
   padding: 1rem;
+  margin-top: auto;
   background: var(--secondary);
   color: white;
   border: none;
@@ -262,23 +192,117 @@
   background: #2980b9;
 }
 
+/* Banner hero */
+.hero-banner {
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.banner-logo {
+  border-radius: 15px;
+  margin: 20px;
+  width: 180px;
+  max-width: 90%;
+  height: auto;
+  z-index: 2;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.6));
+}
+
+/* Redes sociales */
+.social-links-cotizaciones {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-links-cotizaciones a {
+  color: white;
+  background: linear-gradient(45deg, #4facfe, #18585c);
+  padding: 12px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-links-cotizaciones a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+}
+
+/* Texto destacado */
+.h4-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  font-family: sans-serif;
+  margin-bottom: 1em;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-left: 4px solid #007bff;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.h4-text strong {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Botón flotante */
+.floating-contract-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.floating-contract-button .pricing-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .pricing-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .section-header h2 {
     font-size: 2rem;
   }
-  
+
   .pricing-card.popular::before {
     right: -25px;
     padding: 5px 25px;
     font-size: 0.7rem;
   }
 }
-
 
 @media (max-width: 370px) {
   .hero-banner {
@@ -302,11 +326,6 @@
   .pricing-button {
     font-size: 1rem;
     padding: 0.8rem;
-  }
-
-  .social-links-cotizaciones {
-    flex-wrap: wrap;
-    gap: 10px;
   }
 }
 

@@ -9,7 +9,8 @@ import logoalborada from "../logoalborada.jpg"; // Logo de la empresa
 import logocrypto from "../logocrypto.png"; // Logo de la empresa
 import logoappel from "../logoappel.jpg"; // Logo de la empresa
 import logoglobal from "../logoglobal.jpg"; // Logo de la empresa
-import logomodatotal from "../logomodatotal.jpg"; // Logo de la empresa
+import logomodatotal from "../logomodatotal.png"; // Logo de la empresa
+import logolua from "../logolua.png"
 // JSON con los datos de los logos
 const partnerLogos = [
   {
@@ -50,13 +51,18 @@ const partnerLogos = [
   {
     name: "Global Home Group",
     logo: logoglobal,
-    url: "https://globalhomegroup.netlify.app/",
+    url: "https://globalhomegroup.com.ar/",
   },
   {
     name: "Moda Total",
     logo: logomodatotal,
     url: "https://modatotal.netlify.app/",
-  }
+  },
+  {
+    name: "Lua Collection Circuito",
+    logo: logolua,
+    url: "https://luacollection.netlify.app/",
+  },
 ];
 
 export const PartnerLogos = () => {

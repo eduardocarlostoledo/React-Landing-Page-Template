@@ -9,7 +9,15 @@ const mainLinks = [
   { label: "Política de Privacidad", url: "https://toledoconsultora.com/politica-de-privacidad" },
   { label: "Términos y Condiciones", url: "https://toledoconsultora.com/terminos-y-condiciones" },
   { label: "Sitemap XML", url: "https://toledoconsultora.com/sitemap.xml" },
+  { label: "Comprar Dominio", url: "https://toledoconsultora.com/about-comprar-dominio" },
+  { label: "Google Ads", url: "https://toledoconsultora.com/about-google-ads" },
+  { label: "Reseñas de Clientes", url: "https://toledoconsultora.com/about-rese%C3%B1as" },
+  { label: "Posicionamiento en Google", url: "https://toledoconsultora.com/about-posicionamiento" },
+  { label: "Google Business Profile", url: "https://toledoconsultora.com/about-google-business" },
+  { label: "Optimización Técnica SEO", url: "https://toledoconsultora.com/about-optimizacion" },
+  { label: "Redes Sociales", url: "https://toledoconsultora.com/about-redes-sociales" },
 ];
+
 
 const ciudades = [
   "buenos-aires", "caba", "la-plata", "mar-del-plata", "bahia-blanca", "rosario", "santa-fe", "cordoba",
@@ -19,7 +27,7 @@ const ciudades = [
 ];
 
 const servicios = [
-  "landingpage", "pagina-web", "sistema-web", "sistema-web-completo", "ecommerce", "seo-avanzado", "campanasdigitales", "ecommerce-paginaweb", "asesoria-de-negocios"
+  "landingpage", "pagina-web", "sistema-web", "sistema-web-completo", "ecommerce", "seo-estandard", "seo-bussiness", "seo-operativo", "campanasdigitales", "ecommerce-paginaweb", "asesoria-de-negocios"
 ];
 
 const buildURL = (servicio, ciudad) => `https://toledoconsultora.com/servicios-consultora-toledo/contratar-${servicio}-toledoconsultora-${ciudad}`;

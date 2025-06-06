@@ -10,7 +10,11 @@ const pricingPlans = [
       features: [
         "Diseño Adaptativo a Pc y Móvil",
         "Estrategia de Marketing",
-        "Hasta 6 Productos con un link de pago",
+        "Embudo simple de conversión",
+        "① Atracción",
+        "② Confianza (medio del embudo)",
+        "③ Conversión (fondo del embudo)",
+        "Se puede agregar link de pago",
         "Boton Reservar o Comprar",
         "Boton para capturar datos cliente con EmailJS",
         "Boton a Whatsapp de tu empresa opcional",
@@ -18,7 +22,55 @@ const pricingPlans = [
       ],
       detail: `
 
+      <div class="landing-page">
+  <h2>🚀 Landing Page Profesional — Convierte más, invirtiendo menos</h2>
+  <p class="price"><strong>Valor:</strong> $199.000 Único</p>
+  
+
+  <h3>📌 ¿Qué es una Landing Page?</h3>
+  <p>
+    Es una página independiente diseñada exclusivamente para una conversión: <strong>vender un producto, capturar datos o recibir contactos calificados</strong>. Sin menús, sin distracciones. Solo resultados.
+  </p>
+
+  <h3>📈 Embudo de Conversión de 3 pasos</h3>
+  <ol class="embudo">
+    <li><strong>① Atracción:</strong> Reels, TikToks, frases de impacto: “¿Tenés seguidores pero no ventas?”, “Lo que hizo crecer mi facturación sin explotar en redes”.</li>
+    <li><strong>② Confianza:</strong> Historias reales (Lua Collection, Appel, Sabrina), muestra de procesos, mini tutoriales de SEO local y automatización.</li>
+    <li><strong>③ Conversión:</strong> CTA claro: “Comprá ahora”, “Reservá ya”, formulario con EmailJS, botón directo a WhatsApp. Sin escapatoria: compra o deja sus datos.</li>
+  </ol>
+
+  <h3>🏆 Caso de Éxito: Appel Neumáticos</h3>
+  <p>
+    Para Appel, desarrollamos una landing enfocada en destacar <strong>cubiertas Diablo Rosso II y cubiertas de moto semipro</strong>. ¿Qué conseguimos?
+  </p>
+  <ul class="success">
+    <li>Mejor tasa de conversión por producto con WhatsApp directo.</li>
+    <li>Aumento del 400% en consultas por cubiertas premium.</li>
+    <li>Clientes localizados por SEO con intención de compra activa.</li>
+    <li>Reforzamos con una campaña de Google Ads de 21 días con usd15 de presupuesto a público expecíficamente segmentado</li>
+  </ul>
+  <p><strong>Resultado:</strong> más ventas de alto valor, mejor tráfico desde Google y cierre directo sin intermediar plataformas.</p>
+
+  <h3>🎯 Beneficios de una Landing Page</h3>
+  <ul class="benefits">
+    <li><strong>✔️ Aumenta las conversiones:</strong> mensaje claro, CTA destacado y sin distracciones.</li>
+    <li><strong>✔️ Mejora tus campañas:</strong> foco total en un solo objetivo = más ROI.</li>
+    <li><strong>✔️ Genera leads calificados:</strong> capturás datos de gente que sí está interesada.</li>
+    <li><strong>✔️ Mejora la experiencia de usuario:</strong> rápida, móvil y directa.</li>
+  </ul>
+
+  <h3>🛠️ Incluye:</h3>
+  <ul class="features">
+    <li>Diseño adaptativo a PC y móvil</li>
+    <li>Embudo simple de conversión: Atracción → Confianza → Conversión</li>
+    <li>Link de pago, botón a WhatsApp, formulario con EmailJS</li>
+    <li>Diseño profesional y estrategia de marketing aplicada</li>
+  </ul>
+
+  <p class="final">Invertí una sola vez y convertí todos los días. <strong>Tu próxima venta empieza con una Landing Page bien hecha.</strong></p>
+
 Una landing page, o página de aterrizaje, es una página web independiente, diseñada con un único objetivo de conversión. A diferencia de la página de inicio de un sitio web, que suele tener múltiples enlaces y propósitos, la landing page se centra en una oferta específica, como la descarga de un ebook, el registro a un webinar, la solicitud de una demostración o la compra de un producto. Su importancia y valor radican en su capacidad para:
+
 
 1. Aumentar las tasas de conversión:
 
@@ -46,7 +98,7 @@ En resumen, una landing page es una herramienta poderosa y esencial para cualqui
     {
       id: "contratar-pagina-web-toledoconsultora",
       title: "Página Web Tipo Spa",
-      price: "$249.000",
+      price: "$449.000",
       description: "Diseño de pagina web profesional",
       popular: false,
       features: [
@@ -63,6 +115,69 @@ En resumen, una landing page es una herramienta poderosa y esencial para cualqui
       ],
       detail: `
             Tener una página web correctamente implementada y gestionada representa una base sólida para cualquier estrategia digital exitosa. Va mucho más allá de ser una simple tarjeta de presentación online; se convierte en un centro de operaciones digital, un canal de comunicación directo con tu audiencia y una plataforma para alcanzar múltiples objetivos comerciales.
+
+            
+<div class=""pagina-spa"">
+  <h2>✅ Página Web Profesional Tipo SPA — Tu marca, bien posicionada</h2>
+  <p class=""price""><strong>Valor:</strong> $449.000 Único</p>
+  
+    <h3>🌐 ¿Por qué es clave tener una página web profesional?</h3>
+  <p>
+    Una página web es mucho más que una tarjeta digital: es el <strong>centro estratégico de tu negocio online</strong>, tu herramienta para vender, posicionarte y destacar frente a la competencia.
+  </p>
+  <p>
+    Una SPA moderna, optimizada y con diseño responsivo permite que cualquier negocio, por pequeño o mediano que sea, tenga presencia profesional, visible y funcional las 24 horas.
+  </p>
+
+  <h3>🧱 ¿Qué incluye este servicio?</h3>
+  <ul class=""checklist"">
+    <li>Dominio .com.ar sin cargo el primer año</li>
+    <li>Hosting incluido durante el primer año</li>
+    <li>Desarrollo en React, CSS puro, EmailJS</li>
+    <li>Hasta 5 emails corporativos con tu dominio</li>
+    <li>Diseño adaptativo: PC, tablet y móvil</li>
+    <li>Navbar y footer personalizados</li>
+    <li>Secciones: Nosotros, Contacto, Redes Sociales y WhatsApp</li>
+    <li>SEO básico implementado desde el inicio</li>
+    <li><em>No incluye base de datos ni backend con Express/PostgreSQL</em></li>
+  </ul>
+
+  <h3>🏆 Caso de Éxito: Appel Neumáticos Showroom</h3>
+  <p>Ubicados en Encarnación, Paraguay, Appel nos confió su sitio institucional para destacar como proveedor premium de neumáticos en la región. ¿Qué logramos?</p>
+  <ul class=""success"">
+    <li>SPA veloz y con diseño profesional adaptado a PC y móviles.</li>
+    <li>Gestión clara de productos y secciones informativas.</li>
+    <li>Visibilidad inmediata en Google mediante SEO On-Page.</li>
+    <li>Integración con WhatsApp directo y contacto personalizado.</li>
+    <li>Percepción de marca elevada: de taller local a showroom profesional.</li>
+  </ul>
+  <p><strong>Resultado:</strong> Más consultas orgánicas, mejor imagen y más ventas.</p>
+
+  <h3>🎯 Ideal para rubros como:</h3>
+  <ul class=""rubros"">
+    <li>Negocios locales: ferreterías, librerías, talleres, estudios contables</li>
+    <li>Profesionales independientes: médicos, abogados, entrenadores</li>
+    <li>Comercios físicos con atención presencial</li>
+    <li>Emprendimientos en etapa inicial</li>
+    <li>Empresas de servicios</li>
+    <li>Instituciones educativas o capacitaciones</li>
+  </ul>
+
+  <h3>🔎 ¿Por qué elegir esta web tipo SPA?</h3>
+  <ul class=""ventajas"">
+    <li>Rápida de cargar, liviana, y optimizada para posicionar</li>
+    <li>No necesitás mantenimiento constante como en WordPress</li>
+    <li>Adaptada a móviles, sin plantillas genéricas</li>
+    <li>Lista para Google Search Console, Analytics y SEO Local</li>
+  </ul>
+
+  <h3>📈 Conclusión:</h3>
+  <p>
+    Esta es la inversión mínima y estratégica para tener una <strong>presencia digital fuerte</strong>, controlada por vos, sin cuotas mensuales, y lista para escalar más adelante a un sistema completo si lo necesitás.
+  </p>
+  <p><strong>👉 Pedila hoy mismo y aparecé en Google como un negocio profesional.</strong></p>
+</div>"
+
 
 El Potencial General de una Página Web Correctamente Utilizada:
 
@@ -115,7 +230,7 @@ Invertir tiempo y recursos en la creación y optimización de una página web es
     {
       id: "contratar-sistema-web-toledoconsultora",
       title: "Sistema Web Tipo Spa",
-      price: "$349.000",
+      price: "$649.000",
       description: "Diseño sistema web profesional",
       popular: false,
       features: [
@@ -125,17 +240,61 @@ Invertir tiempo y recursos en la creación y optimización de una página web es
         "Desarrollo de API hasta 3 endpoints con controlador y modelos",
         "No aplica para sistemas con autenticación de usuarios",
         "No aplica para sistemas con pagos online",
-        "Incluye 5 emails corporativos con el dominio por el primer año",
+        "No aplica para sistemas de facturación",
+        "Incluye hasta 5 emails corporativos con el dominio por el primer año",
         "Diseño Adaptativo a Pc y Móvil",
         "SEO básico incluido",
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
-        "Acceso a redes socales y whatsapp",
-        "Incluye hosting capa gratuita de imagenes",
+        "Botones de Acceso a redes socales y whatsapp",
+        "Incluye hosting capa gratuita de imagenes con cloudinary",
         "*No incluye gastos de hosting ni gastos de mantenimiento",
       ],
       detail: `
-                  Un sistema integral o personalizado construido con tecnologías web modernas como React en el frontend y bases de datos como PostgreSQL o MongoDB en el backend puede ofrecerte una ayuda significativa en múltiples aspectos, brindando eficiencia, escalabilidad y una experiencia de usuario superior. Desglosemos cómo te puede beneficiar:
+
+      
+
+                  Un sistema integral o personalizado construido con tecnologías web modernas como React en el frontend y bases de datos como PostgreSQL en el backend puede ofrecerte una ayuda significativa en múltiples aspectos, brindando eficiencia, escalabilidad y una experiencia de usuario superior. Puede aplicarse a negocios que necesiten publicar sus productos o proyectos en una web de forma autogestionable
+
+                  <h2>🏆 Caso de Éxito: GlobalHomeGroup</h2>
+  <p>
+    A GlobalHomeGroup, empresa con 3 unidades de negocio (constructora, inmobiliaria y consultora empresarial), le desarrollamos un sistema unificado con:
+  </p>
+  <ul class="success-list">
+    <li>Navegación SPA moderna.</li>
+    <li>Secciones independientes para cada unidad.</li>
+    <li>Gestión de contenido sin panel de WordPress.</li>
+    <li>Presentación profesional de sus servicios.</li>
+    <li>Formulario integrado con EmailJS y WhatsApp.</li>
+    <li>Optimización SEO por cada vertical.</li>
+  </ul>
+  <p class="highlight">Resultado: mejor imagen de marca, más contactos orgánicos desde Google y mayor claridad comercial.</p>
+
+  <h2>🎯 ¿A qué rubros se adapta este sistema?</h2>
+  <ul class="rubros-list">
+    <li>🏘️ Inmobiliarias pequeñas o medianas</li>
+    <li>🏢 Empresas de servicios profesionales</li>
+    <li>🧰 PyMEs industriales o talleres técnicos</li>
+    <li>👩‍🏫 Instituciones educativas y academias</li>
+    <li>💡 Startups o emprendimientos B2B</li>
+  </ul>
+
+  <h2>🧠 ¿Por qué es mejor que usar WordPress o Wix?</h2>
+  <ul class="ventajas-list">
+    <li>Código 100% personalizado → sin plantillas genéricas.</li>
+    <li>Carga ultrarrápida y rendimiento optimizado.</li>
+    <li>Control total del backend → API propia.</li>
+    <li>Mayor seguridad y escalabilidad técnica.</li>
+  </ul>
+
+  <h2>🔎 ¿Y si en el futuro necesito autenticación o pagos?</h2>
+  <p>Podés luego ampliar con un upgrade hacia el plan de sistema con login, pagos y facturación automática.</p>
+
+  <h2>📈 Beneficio central: te diferencia de la competencia</h2>
+  <p>Con este sistema, tu marca no solo tiene presencia, sino que transmite autoridad, tecnología y organización profesional.</p>
+</div>
+                  
+                  Cómo te puede beneficiar? 
 
 Beneficios Generales de un Sistema Integral o Personalizado con Tecnología Web Moderna:
 
@@ -196,7 +355,7 @@ La elección entre PostgreSQL y MongoDB dependerá de las necesidades específic
     {
       id: "contratar-sistema-web-completo-toledoconsultora",
       title: "Sistema con base de datos  y autenticación Web Tipo Spa",
-      price: "$549.000",
+      price: "$649.000",
       description: "Diseño profesional sistema web completo",
       popular: false,
       features: [
@@ -215,46 +374,71 @@ La elección entre PostgreSQL y MongoDB dependerá de las necesidades específic
         "Incluye 5 emails corporativos con el dominio por el primer año",
         "*No incluye gastos de hosting ni gastos de mantenimiento",
       ],
-      detail: `
+      detail: `<section class="servicio-spa">
+  <div class="container">
+    <h2>Sistema Web SPA Personalizado para Empresas Exigentes</h2>
 
-Ventajas Clave de un Sistema Web SPA Personalizado con la Estructura Detallada:
+    <p class="intro-text">
+      Transformá la operación de tu empresa con un sistema web moderno, robusto y escalable. Ideal para negocios que requieren gestión de usuarios, pedidos, pagos y presencia profesional online. Esta solución ya fue elegida por <strong>Calyaan SaaS Colombia</strong> para automatizar procesos internos y ofrecer una plataforma comercial sólida.
+    </p>
 
-Este tipo de desarrollo a medida ofrece una serie de beneficios estratégicos que pueden impulsar el crecimiento, la eficiencia y la imagen de cualquier negocio:
+    <ul class="features-list">
+      <li>✅ Dominio.com.ar incluido por 1 año</li>
+      <li>✅ Desarrollo Fullstack con React, CSS, EmailJS, Node y PostgreSQL</li>
+      <li>✅ Backend con API RESTful (controladores, rutas, modelos)</li>
+      <li>✅ Sistema de autenticación de usuarios incluido</li>
+      <li>✅ Integración con pagos online vía MercadoPago</li>
+      <li>✅ Diseño Adaptativo a Pc, Tablet y Móvil</li>
+      <li>✅ SEO básico para aparecer en Google</li>
+      <li>✅ Navbar y Footer personalizados</li>
+      <li>✅ Secciones: Nosotros, Contacto, Historia</li>
+      <li>✅ Botones a redes sociales y WhatsApp</li>
+      <li>✅ Hosting gratuito de imágenes con Cloudinary</li>
+      <li>✅ 5 Emails corporativos con tu dominio</li>
+      <li>⚠️ *No incluye hosting ni mantenimiento mensual</li>
+    </ul>
 
-1. Experiencia de Usuario (UX) Superior:
+    <div class="detalle-servicio">
+      <h3>Beneficios Comerciales y Técnicos</h3>
 
-Navegación fluida y rápida: Al ser una SPA, la mayor parte de la interfaz se carga una sola vez. Las interacciones posteriores (cambio de secciones, envío de formularios) se realizan mediante la manipulación dinámica del DOM (Document Object Model) a través de React, lo que resulta en transiciones suaves y tiempos de carga mínimos, similar a una aplicación de escritorio. Esto mejora significativamente la experiencia del usuario.
-Interactividad enriquecida: React facilita la creación de interfaces de usuario interactivas y dinámicas, permitiendo incorporar animaciones, validaciones en tiempo real y otras funcionalidades que hacen la experiencia más atractiva y usable.
-Diseño adaptativo (Responsive): La inclusión del diseño adaptativo garantiza que el sistema funcione de manera óptima y se vea bien en cualquier dispositivo (ordenadores de escritorio, portátiles, tablets y smartphones). Esto es crucial en un mundo donde los usuarios acceden a la información desde múltiples dispositivos.
-2. Desarrollo Robusto y Escalable:
+      <h4>⚡ Experiencia Moderna para tu Usuario:</h4>
+      <p>Sitios rápidos, fluidos y con excelente rendimiento. Gracias a React y a la arquitectura SPA, tu sistema funcionará con la agilidad de una app profesional.</p>
 
-Tecnologías modernas y eficientes: El uso de React para el frontend y Node.js/Express para el backend (con PostgreSQL y un ORM como Sequelize o TypeORM) representa un stack tecnológico moderno, eficiente y ampliamente utilizado en la industria. Esto se traduce en un desarrollo más rápido, un código más mantenible y una mayor escalabilidad del sistema.
-Arquitectura modular: La separación entre el frontend (React) y el backend (Node/Express API) promueve una arquitectura modular. Esto facilita el desarrollo concurrente, las pruebas unitarias y la incorporación de nuevas funcionalidades en el futuro sin afectar otras partes del sistema.
-API bien definida: El desarrollo de una API con sus controladores, rutas y modelos proporciona una interfaz clara y estructurada para la comunicación entre el frontend y el backend. Esto es fundamental para la escalabilidad y la posible integración con otras aplicaciones o servicios en el futuro.
-Gestión de datos eficiente: La elección de PostgreSQL (una base de datos relacional robusta con soporte para transacciones ACID y consultas complejas a través de SQL) o una combinación con un ORM (Object-Relational Mapper) asegura una gestión de datos eficiente y consistente.
-3. Seguridad y Autenticación:
+      <h4>🧱 Base Tecnológica Escalable:</h4>
+      <p>Node.js, PostgreSQL y React: un stack robusto que permite crecer a la par de tu negocio. Perfecto para escalar módulos, conectar sistemas externos o migrar a un modelo SaaS.</p>
 
-Autenticación de usuarios: La inclusión de un sistema de autenticación permite controlar el acceso a diferentes partes del sistema y personalizar la experiencia según el rol del usuario. Esto es esencial para la seguridad de los datos y la gestión de usuarios.
-Seguridad en la API: El desarrollo de la API con sus controladores y rutas permite implementar medidas de seguridad específicas en el backend para proteger los datos y prevenir accesos no autorizados.
-4. Integración de Pagos Online:
+      <h4>🔒 Seguridad y Control:</h4>
+      <p>Incluye login seguro, gestión de usuarios, y posibilidad de permisos por roles. Pensado para proteger datos y garantizar estabilidad operativa.</p>
 
-Mercado Pago integrado: La capacidad de integrar pagos online a través de Mercado Pago abre las puertas al comercio electrónico y facilita la monetización de productos o servicios directamente desde la plataforma. Mercado Pago es una solución popular y segura en Latinoamérica, lo que genera confianza en los usuarios.
-5. Presencia Online Profesional y Marketing Básico:
+      <h4>💳 Monetización Fácil:</h4>
+      <p>Integración directa con MercadoPago. Vendé servicios, suscripciones o productos sin intermediarios.</p>
 
-Dominio personalizado: El dominio ".com.ar" incluido por un año proporciona una identidad online profesional y facilita el branding.
-Emails corporativos: Los 5 emails corporativos con el dominio mejoran la imagen profesional de la empresa y facilitan la comunicación con clientes y proveedores.
-SEO básico incluido: La optimización SEO básica ayuda a mejorar la visibilidad del sitio web en los motores de búsqueda, lo que puede atraer tráfico orgánico y clientes potenciales.
-Secciones informativas clave: Las secciones "Nosotros" y "Contacto" proporcionan información esencial sobre la empresa y facilitan la comunicación con los usuarios.
-Enlaces a redes sociales y WhatsApp: La integración de acceso a redes sociales y WhatsApp facilita la conexión con la audiencia en sus plataformas preferidas y abre canales de comunicación directa.
-Navbar y Footer personalizados: Estos elementos de navegación y pie de página personalizados contribuyen a una mejor experiencia de usuario y refuerzan la identidad visual de la marca.
-6. Ahorro Inicial y Facilidad de Inicio:
+      <h4>📈 Presencia Profesional:</h4>
+      <p>Dominio propio, emails empresariales, SEO básico y contacto directo vía WhatsApp o redes. Todo incluido para proyectar seriedad desde el primer clic.</p>
 
-Hosting de imágenes gratuito: La inclusión de hosting gratuito para imágenes reduce los costos iniciales de infraestructura.
-Desventajas a Considerar (aunque no son inherentes a la estructura, sino a la necesidad de gestión continua):
+      <h4>✅ Validado en el Mercado:</h4>
+      <p>Ya implementado con éxito en <strong>Calyaan SaaS Colombia</strong>, empresa que eligió esta estructura para lanzar su plataforma tecnológica en tiempo récord.</p>
 
-Gastos de hosting no incluidos: Es importante tener en cuenta que el hosting del sistema en sí no está incluido y será un costo recurrente.
-Gastos de mantenimiento no incluidos: El mantenimiento continuo del sistema (actualizaciones, corrección de errores, nuevas funcionalidades) también generará costos a largo plazo.
-En resumen, tener este desarrollo a medida a disposición de cualquier negocio o empresa ofrece las siguientes ventajas competitivas:
+      <h4>💡 Ideal Para:</h4>
+      <ul>
+        <li>Emprendedores con visión digital</li>
+        <li>Negocios que quieren automatizar sus ventas</li>
+        <li>Empresas que necesitan gestionar usuarios, pagos y datos</li>
+        <li>Startups con necesidades técnicas sólidas y bajo costo de entrada</li>
+      </ul>
+
+      <h4>⚠️ Importante:</h4>
+      <ul>
+        <li>El hosting debe contratarse por separado (te asesoramos).</li>
+        <li>El mantenimiento mensual también puede ser cotizado según el crecimiento del sistema.</li>
+      </ul>
+
+      <p class="cta-final"><strong>Invertí en una plataforma sólida desde el inicio.</strong> Tu sistema web personalizado puede ser el motor de tu próximo salto comercial. Consultanos para una demo o presupuesto detallado.</p>
+    </div>
+  </div>
+</section>
+
+
 
 Mejora la interacción y satisfacción del cliente a través de una experiencia de usuario moderna y fluida.
 Proporciona una plataforma tecnológica robusta, escalable y adaptable a las necesidades específicas del negocio.
@@ -271,7 +455,7 @@ En definitiva, esta estructura de desarrollo a medida sienta las bases para una 
     {
       id: "contratar-ecommerce-toledoconsultora",
       title: "Ecommerce",
-      price: "$249.000",
+      price: "$449.000",
       description: "Tienda online Estándar",
       popular: true,
       features: [
@@ -286,52 +470,94 @@ En definitiva, esta estructura de desarrollo a medida sienta las bases para una 
         "Sin Comisiones por venta",
         "*No incluye dominio ni hosting ni gastos de mantenimiento",
         "Navbar y Footer personalizados",
-        "Home optimizado para tu negocio, con productos fijos",
+        "Home optimizado para tu negocio, con productos fijos",        
         "Secciones: Nosotros, Contacto, Historia de la empresa",
-        "Incluye hosting capa gratuita de imagenes",
+        "Incluye hosting capa gratuita de imagenes con cloudinary",
       ],
       detail: `
-      Beneficios Clave de la Tienda Online Detallada:
 
-Esta estructura de tienda online ofrece una serie de ventajas significativas para facilitar la venta de productos a través de internet:
+      <div class="ecommerce-autogestionable">
+  <h2>🛒 Ecommerce Autogestionable — Vendé sin límites, sin comisiones</h2>
+  <p class="price"><strong>Ideal para tiendas que quieren controlar todo su catálogo y pedidos sin depender de terceros.</strong></p>
 
-1. Facilidad de Gestión y Autonomía:
+  <h3>💡 ¿Qué incluye esta solución?</h3>
+  <ul class="features">
+    <li>Integración con MercadoPago</li>
+    <li>Panel autogestionable de productos (no aplica para talles ni colores)</li>
+    <li>Sistema con control de stock</li>
+    <li>Panel autogestionable de pedidos</li>
+    <li>Panel autogestionable de usuarios</li>
+    <li>Sin límite de productos</li>
+    <li>Incluye diseño y despliegue de base de datos y servidor web</li>
+    <li>Diseño adaptativo a PC y Móvil</li>
+    <li>Sin comisiones por venta</li>
+    <li><em>*No incluye dominio, hosting ni mantenimiento</em></li>
+    <li>Navbar y Footer personalizados</li>
+    <li>Home optimizado para tu negocio con productos destacados</li>
+    <li>Secciones: Nosotros, Contacto, Historia de la empresa</li>
+    <li>Incluye hosting de imágenes gratuito con Cloudinary</li>
+  </ul>
 
-Panel autogestionable de productos: Permite a la empresa añadir, editar, eliminar y actualizar la información de sus productos (descripción, precio, imágenes, etc.) de manera sencilla y directa, sin necesidad de conocimientos técnicos avanzados ni depender de un desarrollador para cada cambio.
-Panel autogestionable de pedidos: Facilita el seguimiento y la gestión de todos los pedidos realizados por los clientes, incluyendo el estado del pedido (pendiente, procesado, enviado, entregado), detalles del cliente y productos solicitados. Esto agiliza el flujo de trabajo de ventas y mejora la atención al cliente.
-Panel autogestionable de usuarios: Permite administrar las cuentas de los clientes registrados, visualizar su historial de compras y, potencialmente, segmentarlos para futuras campañas de marketing.
-2. Potencial de Ventas y Crecimiento:
+  <h3>🏆 ¿Por qué elegir este ecommerce?</h3>
+  <ul class="benefits">
+    <li><strong>✔️ Control total:</strong> sin límites, sin comisiones, todo desde tu panel.</li>
+    <li><strong>✔️ Optimizado para vender:</strong> desde la primera visita hasta el pago final.</li>
+    <li><strong>✔️ Escalable:</strong> preparado para crecer a medida que crece tu catálogo.</li>
+    <li><strong>✔️ Profesional:</strong> visual, rápido y preparado para campañas de marketing digital.</li>
+  </ul>
 
-Integración con Mercado Pago: La conexión con Mercado Pago, una plataforma de pagos online líder en Latinoamérica, ofrece a los clientes múltiples opciones de pago seguras y confiables (tarjetas de crédito/débito, transferencias, efectivo en puntos de pago). Esto reduce las fricciones en el proceso de compra y aumenta las posibilidades de conversión.
-Sin límite de productos: La capacidad de listar una cantidad ilimitada de productos permite a la empresa escalar su catálogo online sin restricciones, adaptándose a su crecimiento y a la variedad de su oferta.
-Sin comisiones por venta: A diferencia de algunas plataformas de marketplace que cobran comisiones por cada venta, esta tienda online permite a la empresa conservar la totalidad de sus ganancias, lo que impacta directamente en la rentabilidad.
-Alcance ampliado: Una tienda online abre las puertas a un mercado mucho más amplio que una tienda física, permitiendo llegar a clientes a nivel local, regional e incluso nacional.
-3. Gestión de Inventario Eficiente:
+  <p class="final">Controlá tu tienda, tus ventas y tu estrategia digital desde un solo lugar. <strong>Tu ecommerce, 100% tuyo.</strong></p>
 
-Sistema con control de stock: La funcionalidad de control de stock permite a la empresa realizar un seguimiento en tiempo real de la disponibilidad de sus productos. Esto evita la venta de artículos agotados, mejora la planificación de reposición y ofrece una mejor experiencia al cliente al mostrar la disponibilidad de los productos.
-4. Diseño y Experiencia de Usuario:
 
-Diseño adaptativo (Responsive): Asegura que la tienda online se visualice correctamente y funcione de manera óptima en cualquier dispositivo (ordenadores, tablets y smartphones). Esto es crucial para llegar a todos los segmentos de la audiencia, ya que muchos usuarios navegan y compran desde sus dispositivos móviles.
-Navbar y Footer personalizados: Estos elementos de navegación y pie de página personalizados mejoran la usabilidad del sitio, facilitan la navegación entre las secciones y refuerzan la identidad visual de la marca.
-Home optimizado para tu negocio, con productos fijos: La página de inicio personalizada y la posibilidad de destacar productos específicos permiten dirigir la atención de los visitantes hacia las ofertas más relevantes o los productos estrella del negocio.
-Secciones informativas clave: Las secciones "Nosotros", "Contacto" e "Historia de la empresa" brindan información importante sobre la empresa, generan confianza en los clientes y facilitan la comunicación.
-Incluye hosting capa gratuita de imágenes: Reduce los costos iniciales de alojamiento de los elementos visuales de la tienda.
-Desventajas a Considerar (Costos Adicionales):
+      <div class="beneficios-tienda-online">
+  <h2>🛍️ Beneficios Clave de la Tienda Online Autogestionable</h2>
 
-No incluye dominio ni hosting: Es fundamental tener en cuenta que el costo del nombre de dominio (la dirección web) y el alojamiento del sitio web (el espacio en un servidor donde se guardan los archivos de la tienda) no están incluidos y serán gastos recurrentes.
-No incluye gastos de mantenimiento: El mantenimiento continuo de la tienda online (actualizaciones de software, seguridad, corrección de errores, posibles mejoras) también generará costos a largo plazo.
-En resumen, tener a disposición esta tienda online ofrece a cualquier negocio o empresa:
+  <h3>1️⃣ Facilidad de Gestión y Autonomía</h3>
+  <ul class="benefits">
+    <li><strong>Panel autogestionable de productos:</strong> gestioná descripciones, precios e imágenes sin depender de terceros.</li>
+    <li><strong>Panel de pedidos:</strong> controlá cada etapa: pendiente, procesado, enviado, entregado.</li>
+    <li><strong>Panel de usuarios:</strong> visualizá historial de compras y gestioná campañas futuras.</li>
+  </ul>
 
-Una plataforma de comercio electrónico propia y personalizada.
-Control total sobre sus productos, pedidos y clientes.
-La capacidad de vender online sin pagar comisiones por venta.
-Una gestión de inventario eficiente para evitar problemas de stock.
-Una experiencia de compra optimizada para diferentes dispositivos.
-Integración con una solución de pagos segura y popular.
-La posibilidad de escalar su negocio online sin límites de productos.
-Una presencia online informativa y profesional.
-Reducción de costos iniciales en el alojamiento de imágenes.
-A pesar de no incluir el dominio, el hosting y el mantenimiento, esta estructura proporciona una base sólida y funcional para comenzar a vender online y expandir el alcance del negocio. Es crucial que las empresas consideren los costos adicionales para una planificación financiera completa y un funcionamiento continuo de la tienda.
+  <h3>2️⃣ Potencial de Ventas y Crecimiento</h3>
+  <ul class="benefits">
+    <li><strong>Integración con Mercado Pago:</strong> aceptá tarjetas, transferencias y pagos en efectivo con seguridad.</li>
+    <li><strong>Sin límite de productos:</strong> ampliá tu catálogo sin restricciones.</li>
+    <li><strong>Sin comisiones por venta:</strong> conservá el 100% de tus ganancias.</li>
+    <li><strong>Mayor alcance:</strong> vendé a nivel local, regional o nacional.</li>
+  </ul>
+
+  <h3>3️⃣ Gestión de Inventario Eficiente</h3>
+  <ul class="benefits">
+    <li><strong>Control de stock:</strong> evitá vender productos agotados y mejorá la experiencia de compra.</li>
+  </ul>
+
+  <h3>4️⃣ Diseño y Experiencia de Usuario</h3>
+  <ul class="benefits">
+    <li><strong>Diseño adaptativo:</strong> óptimo para móviles, tablets y computadoras.</li>
+    <li><strong>Navbar y Footer personalizados:</strong> navegación fluida y coherencia visual.</li>
+    <li><strong>Home optimizado:</strong> destacá productos clave desde la primera vista.</li>
+    <li><strong>Secciones informativas:</strong> "Nosotros", "Contacto" e "Historia" generan confianza y conexión.</li>
+    <li><strong>Hosting gratuito para imágenes:</strong> ahorrá en alojamiento visual gracias a Cloudinary.</li>
+  </ul>
+
+  <h3>⚠️ Consideraciones importantes</h3>
+  <ul class="warnings">
+    <li><strong>No incluye dominio ni hosting:</strong> se abonan por separado.</li>
+    <li><strong>No incluye mantenimiento:</strong> el soporte continuo es un gasto adicional.</li>
+  </ul>
+
+  <h3>📦 En resumen:</h3>
+  <ul class="summary">
+    <li>✔️ Tienda personalizada y autogestionable</li>
+    <li>✔️ Control total sobre productos, pedidos y clientes</li>
+    <li>✔️ Cero comisiones por venta</li>
+    <li>✔️ Escalable sin límite de productos</li>
+    <li>✔️ Preparada para SEO, campañas y pagos online</li>
+    <li>✔️ Presencia digital profesional, moderna y confiable</li>
+  </ul>
+
+  <p class="final">Invertí en una tienda propia que potencie tu marca y tu rentabilidad. <strong>Preparada para crecer con tu negocio.</p>
       `,
       cta: "Quiero mi Tienda Online",
       link: "https://mpago.la/2w6ThwW",
@@ -353,37 +579,48 @@ A pesar de no incluir el dominio, el hosting y el mantenimiento, esta estructura
         "Realizamos campañas de tráfico, visitas a perfil, llamadas, ventas",
       ],
       detail: `
+<div class="gestion-campanas-googleads">
+  <h2>📊 Gestión Mensual de Campañas Google Ads — Publicidad que convierte</h2>
 
-Beneficios Clave de la Gestión Mensual de Campañas Digitales con Google Ads de Toledo Consultora:
+  <p>Confiar en Toledo Consultora para la gestión mensual de tus campañas de Google Ads es apostar por resultados concretos, optimización constante y atención personalizada.</p>
 
-Contratar la gestión mensual de tus campañas de Google Ads con Toledo Consultora te permite maximizar el retorno de tu inversión publicitaria, llegar a tu público objetivo de manera efectiva y optimizar continuamente tus resultados. Aquí te presento los beneficios detallados:
+  <h3>1️⃣ Optimización y Rendimiento Continuo</h3>
+  <ul class="benefits">
+    <li><strong>Monitoreo permanente:</strong> tus campañas son ajustadas regularmente para reducir costos innecesarios y mejorar el ROI.</li>
+    <li><strong>Análisis de resultados:</strong> detectamos oportunidades, tendencias y problemas para hacer mejoras accionables.</li>
+  </ul>
 
-1. Optimización y Rendimiento Continuo de tus Campañas:
+  <h3>2️⃣ Llegá a tu Audiencia Correcta</h3>
+  <ul class="benefits">
+    <li><strong>Segmentación avanzada:</strong> ubicación, edad, intereses, intención de compra y más. Mostrá tus anuncios al público ideal.</li>
+  </ul>
 
-Optimización y monitorización continua de la campaña: El entorno digital es dinámico y las campañas de publicidad requieren una atención constante. Toledo Consultora se encargará de monitorear el rendimiento de tus campañas de forma regular, realizando ajustes y optimizaciones para mejorar los resultados, reducir costos innecesarios y asegurar que tu inversión publicitaria esté trabajando de la manera más eficiente posible.
-Análisis de rendimiento y propuesta de mejora: Periódicamente, Toledo Consultora analizará los datos de rendimiento de tus campañas para identificar tendencias, áreas de oportunidad y posibles problemas. Basándose en este análisis, te proporcionarán propuestas de mejora concretas y accionables para optimizar aún más tus resultados.
-2. Llegar a tu Audiencia Correcta:
+  <h3>3️⃣ Información Clara y Transparente</h3>
+  <ul class="benefits">
+    <li><strong>Informes periódicos:</strong> recibirás reportes detallados de impresiones, clics, conversiones, CTR, CPA y más.</li>
+  </ul>
 
-Segmentación avanzada: Google Ads ofrece una amplia gama de opciones de segmentación para llegar a la audiencia más relevante para tu negocio (ubicación geográfica, datos demográficos, intereses, comportamiento online, etc.). Toledo Consultora implementará estrategias de segmentación avanzadas para asegurar que tus anuncios se muestren a las personas con mayor probabilidad de convertirse en clientes.
-3. Información Clara y Transparente:
+  <h3>4️⃣ Campañas Adaptadas a tus Objetivos</h3>
+  <ul class="benefits">
+    <li><strong>Campañas específicas:</strong> tráfico web, visitas al perfil, llamadas telefónicas o ventas online. Ejecutamos según tu meta.</li>
+  </ul>
 
-Gestión de Informes Periódicos: Recibirás informes periódicos y detallados sobre el rendimiento de tus campañas de Google Ads. Estos informes te proporcionarán una visión clara de las métricas clave (impresiones, clics, CTR, conversiones, costo por adquisición, etc.) y te permitirán entender el impacto de tu inversión publicitaria.
-4. Campañas Adaptadas a tus Objetivos:
+  <h3>⚠️ Consideración importante</h3>
+  <ul class="warnings">
+    <li><strong>El presupuesto publicitario no está incluido:</strong> el costo por clic/impresión es asumido por el cliente.</li>
+  </ul>
 
-Realizamos campañas de tráfico, visitas a perfil, llamadas, ventas: Toledo Consultora tiene la experiencia para configurar y gestionar campañas de Google Ads enfocadas en tus objetivos específicos. Ya sea que busques aumentar el tráfico a tu sitio web, generar visitas a tu perfil de negocio, recibir más llamadas telefónicas o impulsar las ventas online, ellos adaptarán la estrategia y la configuración de la campaña para lograr tus metas.
-Consideración Importante:
+  <h3>📈 En resumen:</h3>
+  <ul class="summary">
+    <li>✔️ Optimización experta y continua de campañas</li>
+    <li>✔️ Segmentación precisa para llegar a tu cliente ideal</li>
+    <li>✔️ Informes claros para tomar decisiones con datos</li>
+    <li>✔️ Campañas diseñadas para tus objetivos específicos</li>
+    <li>✔️ Ahorro de tiempo y foco en tu negocio</li>
+    <li>✔️ Adaptación a cambios de Google y el mercado</li>
+  </ul>
 
-No incluye presupuesto publicitario, el costo de la campaña es a cargo del cliente: Es fundamental recordar que el costo directo de los clics y las impresiones generadas por los anuncios en Google Ads es responsabilidad del cliente. Toledo Consultora se encarga de la gestión experta de ese presupuesto para obtener el máximo rendimiento posible.
-En resumen, contratar la "Gestión Mensual" de Campañas Digitales con Google Ads de Toledo Consultora ofrece los siguientes beneficios para tu negocio:
-
-Optimización continua y experta de tus campañas de Google Ads para maximizar el retorno de la inversión.
-Llegar de manera efectiva a tu público objetivo a través de estrategias de segmentación avanzadas.
-Comprensión clara del rendimiento de tus campañas a través de informes periódicos y detallados.
-Implementación de campañas diseñadas específicamente para alcanzar tus objetivos de negocio (tráfico, visitas, llamadas, ventas).
-Ahorro de tiempo y esfuerzo al delegar la compleja tarea de gestión de campañas a profesionales.
-Acceso a la experiencia y el conocimiento de especialistas en Google Ads para obtener mejores resultados.
-Adaptación ágil a los cambios en el algoritmo de Google y las tendencias del mercado.
-Al confiar en Toledo Consultora para la gestión de tus campañas de Google Ads, puedes enfocarte en otras áreas de tu negocio con la tranquilidad de saber que tu inversión publicitaria está en manos expertas y trabajando para alcanzar tus metas.
+  <p class="final">📣 Enfocate en crecer. Nosotros nos encargamos de que tu inversión en Google Ads dé resultados reales.</p>
       `,
       cta: "Contratar Campañas Digitales",
       link: "https://mpago.la/1NbDWJ9",
@@ -391,7 +628,7 @@ Al confiar en Toledo Consultora para la gestión de tus campañas de Google Ads,
     {
       id: "contratar-ecommerce-paginaweb-toledoconsultora",
       title: "Paquete Completo Ecommerce + Pagina Web",
-      price: "$749.000",
+      price: "$1.249.000",
       description: "Paquete Bussiness",
       popular: false,
       features: [
@@ -405,8 +642,7 @@ Al confiar en Toledo Consultora para la gestión de tus campañas de Google Ads,
         "Panel autogestionable de usuarios",
         "Sin límite de productos",
         "Incluye Diseño y Despliegue de Base de datos y web Server",
-        "Incluye hosting capa gratuita de imagenes para tus productos",
-
+        "Incluye hosting de imagenes para tus productos",
         "Navbar y Footer personalizados",
         "Secciones: Nosotros, Contacto",
         "Sin Comisiones por venta",
@@ -414,7 +650,9 @@ Al confiar en Toledo Consultora para la gestión de tus campañas de Google Ads,
         "Estrategia SEO completa",
         "Posicionamiento en Google Business y Maps",
         "Campaña Publicitaria Estándar x 30días en Google Ads",
+        "Chat Bot Web local incorporado y entrenado con datos de la empresa",
         "*No incluye gastos de hosting de base de datos ni gastos de mantenimiento",
+        
       ],
       detail: `
       Beneficios Clave del Paquete Business de Toledo Consultora:
@@ -466,68 +704,89 @@ En resumen, el Paquete Business de Toledo Consultora ofrece una excelente oportu
       description: "Sesión estratégica personalizada",
       popular: false,
       features: [
-        "Análisis y Optimización del Modelo de Negocio con Soluciones Tecnológicas",
-        "Optimización de Procesos a través de la Tecnología Web",
-        "Planificación Comercial Estratégica con Marketing Digital",
+        "Diagnóstico del modelo de negocio y oportunidades tecnológicas",
+        "Propuesta de automatización de tareas manuales con herramientas web",
+        "Plan de acción SEO básico para captar tráfico orgánico desde Google",
         "Estrategias de Crecimiento y Escalabilidad Web",
-        "Análisis de Mercado y Estrategia SEO Competitiva",
+        "Estrategia de visibilidad local: Google Maps, WhatsApp y reseñas",
+        "Evaluación de soluciones web según tu rubro (ecommerce, inmobiliaria, servicios, etc.)",
         "Duración de la Asesoría: Sesión individual de 2 horas",
         "Entrega: Informe ejecutivo detallado",
       ],
       detail: `
-      Lista Concreta de Servicios de Asesoría de Negocios:
+      
+      <section class="servicio-asesoria">
+  <div class="container">
+    <h2>Asesoría de Negocios Digitales</h2>
+    <p class="intro">
+      Te ayudamos a detectar oportunidades reales para escalar, automatizar o lanzar tu negocio usando tecnología web moderna.
+      Esta asesoría está basada en nuestra experiencia práctica con empresas reales como Calyaan, Appel Neumáticos, Lua Collection y otras que ya confiaron en nuestra metodología.
+    </p>
 
-Análisis y Optimización del Modelo de Negocio con Soluciones Tecnológicas:
+    <h3>¿Qué incluye la asesoría?</h3>
+    <ul class="checklist">
+      <li>✅ Diagnóstico del modelo de negocio y oportunidades tecnológicas</li>
+      <li>✅ Propuesta de automatización de tareas manuales con herramientas web</li>
+      <li>✅ Plan de acción SEO básico para captar tráfico orgánico desde Google</li>
+      <li>✅ Estrategia de visibilidad local: Google Maps, WhatsApp y reseñas</li>
+      <li>✅ Evaluación de soluciones web según tu rubro (ecommerce, inmobiliaria, servicios, etc.)</li>
+      <li>✅ Informe ejecutivo con las recomendaciones paso a paso</li>
+    </ul>
 
-Descripción: Sesión de 2 horas para obtener una visión general del modelo de negocio del cliente, identificar problemas y oportunidades de mejora. Se analizará cómo las tecnologías que ofreces (desarrollo web, SEO, publicidad online, etc.) pueden resolver desafíos específicos y optimizar sus operaciones.
-Entregable: Informe ejecutivo detallando el análisis del modelo de negocio, los problemas identificados y las recomendaciones tecnológicas específicas.
-Optimización de Procesos a través de la Tecnología Web:
+    <h3>Caso de Éxito:</h3>
+    <p><strong>Cliente:</strong> Appel Neumáticos</p>
+    <p><strong>Problema:</strong> Perdían ventas porque no podían mostrar sus productos ni contestar fuera de horario.</p>
+    <p><strong>Solución:</strong> Les armamos una web con catálogo autogestionable, botón de WhatsApp directo, posicionamiento local y una landing específica para cubiertas de moto. Hoy reciben pedidos 24/7 y están primeros en Google Maps.</p>
 
-Descripción: Sesión de 2 horas dedicada a analizar los flujos de trabajo y procesos actuales del cliente. Se identificarán cuellos de botella e ineficiencias y se propondrán soluciones tecnológicas personalizadas (automatización con herramientas web, desarrollo de funcionalidades específicas, integración de sistemas, etc.) para mejorar la productividad y reducir costos.
-Entregable: Informe ejecutivo con el análisis de los procesos, las áreas de mejora identificadas y las soluciones tecnológicas recomendadas con un enfoque en la tecnología web disponible.
-Planificación Comercial Estratégica con Marketing Digital:
+    <p class="cierre">
+      <strong>Duración:</strong> Sesión 1 a 1 de hasta 2 horas.<br/>
+      <strong>Entrega:</strong> Informe digital detallado con recomendaciones accionables.<br/>
+      <strong>Inversión:</strong> $50.000
+    </p>
 
-Descripción: Sesión de 2 horas enfocada en diseñar una estrategia comercial digital efectiva. Se evaluarán las necesidades y objetivos del cliente para recomendar las herramientas y canales de marketing digital más adecuados:
-Generación de tráfico y visibilidad: SEO, Google Ads, campañas en redes sociales.
-Captación de leads: Landing pages optimizadas.
-Ventas online: Desarrollo de e-commerce.
-Presencia local: Optimización de Google Business Profile.
-Entregable: Informe ejecutivo con un plan comercial digital detallado, incluyendo las estrategias recomendadas, las herramientas a utilizar y los posibles flujos de acción.
-Estrategias de Crecimiento y Escalabilidad Web:
+    
+  </div>
+</section>
 
-Descripción: Sesión de 2 horas para explorar cómo el cliente puede escalar su presencia y operaciones online. Se analizarán las oportunidades de crecimiento a través de la implementación de nuevas funcionalidades web, la optimización de la infraestructura para manejar un mayor tráfico, la expansión a nuevos mercados online y la implementación de estrategias de retención de clientes.
-Entregable: Informe ejecutivo con estrategias de crecimiento y escalabilidad específicas para el proyecto web del cliente, incluyendo recomendaciones técnicas y de marketing.
-Análisis de Mercado y Estrategia SEO Competitiva:
+<section class="checklist-asesoria">
+  <div class="container">
+    <h3>¿Qué hacemos durante tu asesoría?</h3>
+    <ul class="checklist-explicada">
+      <li>
+        <strong>✅ Analizamos tu negocio actual</strong><br/>
+        Revisamos qué vendés, cómo lo hacés hoy y detectamos puntos de mejora donde podrías ahorrar tiempo, automatizar o vender más con tecnología web.
+      </li>
+      <li>
+        <strong>✅ Proponemos automatizaciones reales</strong><br/>
+        Te mostramos ejemplos concretos de cómo automatizar tareas como consultas por WhatsApp, formularios de contacto, gestión de productos o reservas. Sin depender de terceros.
+      </li>
+      <li>
+        <strong>✅ Evaluamos tu presencia digital</strong><br/>
+        Te decimos si tu página está ayudando o estorbando a tus ventas. Revisamos si está indexada, visible en Google y bien estructurada.
+      </li>
+      <li>
+        <strong>✅ Te damos una estrategia SEO simple y aplicable</strong><br/>
+        No usamos jerga técnica: te explicamos cómo aparecer mejor en Google con acciones concretas como títulos optimizados, imágenes livianas, rutas amigables y contenido útil.
+      </li>
+      <li>
+        <strong>✅ Mejoramos tu posicionamiento local</strong><br/>
+        Te guiamos para que destaques en Google Maps, tengas reseñas reales y estés bien presentado en el perfil de tu negocio.
+      </li>
+      <li>
+        <strong>✅ Te orientamos según tu rubro</strong><br/>
+        No es lo mismo un taller mecánico que una inmobiliaria. Adaptamos nuestras recomendaciones a tu caso: ecommerce, servicios, capacitaciones, tiendas físicas, etc.
+      </li>
+      <li>
+        <strong>✅ Te entregamos un plan claro y por escrito</strong><br/>
+        Recibís un informe con las recomendaciones concretas que vimos juntos, explicado en un lenguaje que puedas entender y aplicar.
+      </li>
+    </ul>
+  </div>
+</section>
 
-Descripción: Sesión de 2 horas dedicada a analizar el panorama digital del cliente y la estrategia SEO de sus principales competidores. Se identificarán las palabras clave clave que utiliza la competencia y se definirán estrategias para superar su posicionamiento y captar una mayor cuota de mercado online.
-Entregable: Informe ejecutivo con el análisis del mercado digital, la estrategia SEO de la competencia y un plan de acción para mejorar el posicionamiento SEO del cliente.
-Características Comunes a Todos los Servicios:
-
-Duración de la Asesoría: Sesión individual de 2 horas.
-Entrega: Informe ejecutivo detallado con el análisis, las recomendaciones y los pasos a seguir.
 
 
-Presentación de Toledo Consultora
-
-Toledo Consultora se presenta como una opción sólida para empresas que buscan asesoramiento de negocios, gracias a una combinación única de experiencia técnica, conocimiento del panorama digital y un enfoque estratégico. La consultora ofrece una perspectiva integral, respaldada por:
-
-Experiencia en el mundo digital: Toledo Consultora cuenta con experiencia en el desarrollo de soluciones tecnológicas para empresas de diversos sectores, incluyendo plataformas de comercio electrónico, servicios de salud, tecnología y educación. Esto demuestra un profundo entendimiento de los desafíos y oportunidades que enfrentan las empresas en el entorno digital actual.
-
-Capacidad para la transformación digital: La consultora posee un dominio de un amplio espectro de tecnologías relevantes, incluyendo HTML, CSS, JavaScript, React, MongoDB, Postgres, Node.js, Git, GitHub, Docker, Linux y AWS. Este conocimiento permite a Toledo Consultora brindar asesoramiento experto sobre cómo implementar y aprovechar la tecnología para optimizar operaciones, mejorar la presencia en línea e impulsar el crecimiento de sus clientes.
-
-Especialización en optimización de procesos: Toledo Consultora tiene experiencia en metodologías ágiles y Scrum, lo que le permite analizar y mejorar los procesos de negocio, optimizar los flujos de trabajo y aumentar la productividad. Esto es esencial para las empresas que buscan optimizar sus operaciones y lograr una mayor eficiencia.
-
-Habilidades estratégicas y de comunicación: La consultora cuenta con sólidas habilidades de liderazgo, comunicación, trabajo en equipo y adaptabilidad. Estas habilidades son cruciales para comunicarse eficazmente con los clientes, comprender sus necesidades y colaborar en la búsqueda de soluciones.
-
-Conocimiento especializado en campañas electorales: Toledo Consultora posee experiencia en el desarrollo web para campañas electorales, lo que le otorga un conocimiento especializado en estrategias de comunicación política y movilización digital.
-
-Formación en ciencias políticas: La formación en ciencias políticas complementa la experiencia técnica de Toledo Consultora, permitiéndole comprender el contexto político y social en el que operan las organizaciones, y ofrecer estrategias de comunicación y posicionamiento más efectivas.
-
-Enfoque en la innovación: Toledo Consultora se compromete a mantenerse a la vanguardia de las últimas tendencias tecnológicas, incluyendo Inteligencia Artificial, para ofrecer a sus clientes soluciones innovadoras y estrategias de vanguardia.
-
-En resumen, Toledo Consultora ofrece una valiosa combinación de experiencia técnica, visión para los negocios, habilidades interpersonales y conocimiento especializado en campañas electorales y ciencias políticas. Esto la convierte en una opción ideal para empresas y organizaciones que buscan un asesoramiento estratégico e integral para alcanzar sus objetivos.
-
-      `,
+`,
       cta: "Contratar Asesoría Tenológica",
       link: "https://mpago.la/1Bgc6i5",
     },
@@ -551,45 +810,61 @@ En resumen, Toledo Consultora ofrece una valiosa combinación de experiencia té
       ],
       detail: ` 
 
+<div class="estrategia-seo-completa">
+  <h2>🔍 Estrategia SEO Completa — Tu negocio en los primeros lugares de Google</h2>
+  <p>Este servicio está orientado a empresas que ya tienen su sitio web online y desean llevar su posicionamiento al siguiente nivel con acciones específicas, medibles y sostenibles.</p>
 
+  <h3>📋 ¿Qué incluye?</h3>
+  <ul class="features">
+    <li>Optimización de meta description y keywords</li>
+    <li>Mobile Friendly: diseño adaptado a móviles</li>
+    <li>Optimización de contenido e imágenes</li>
+    <li>Google Friendly: estructura y velocidad alineada con buenas prácticas</li>
+    <li>Optimización de títulos: title, h1, h2, h3</li>
+    <li>Posicionamiento en Google Maps y Google Business</li>
+    <li>Asesoramiento global de posicionamiento para tu negocio</li>
+    <li>Informes de rendimiento y propuestas de mejora continuas</li>
+  </ul>
 
-El servicio de posicionamiento Operativo esta orientado a aquellos interesados que ya tienen operativo su sitio web y buscan optimizarlo para mejorar su posicionamiento en Google. Este servicio incluye una serie de acciones específicas para mejorar la visibilidad y el rendimiento del sitio web en los motores de búsqueda. A saber: se determinan con el cliente 7 palabras clave relevantes para el negocio, se optimizan las meta descripciones y keywords, se realiza una optimización de contenido e imágenes, se asegura que el sitio sea "Google Friendly" (compatible con dispositivos móviles), se optimizan los títulos y encabezados (h1, h2, h3), se posiciona en Google Maps y Google Business, y se proporciona asesoramiento global de posicionamiento para el negocio. Además, se generan informes de rendimiento y propuestas de mejora para garantizar un seguimiento continuo del progreso.
+  <h3>1️⃣ Mayor Visibilidad y Tráfico Orgánico</h3>
+  <ul class="benefits">
+    <li><strong>Posicionamiento en las primeras páginas:</strong> mayor exposición para búsquedas relevantes.</li>
+    <li><strong>Palabras clave estratégicas:</strong> orientadas a intención de compra o interés real.</li>
+  </ul>
 
-Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
+  <h3>2️⃣ Optimización Integral de tu Presencia Online</h3>
+  <ul class="benefits">
+    <li><strong>SEO On-page y Off-page:</strong> estructura, contenido, enlaces externos, autoridad de dominio.</li>
+    <li><strong>Mejora del contenido:</strong> análisis de calidad, engagement y relevancia para el usuario.</li>
+    <li><strong>Velocidad y experiencia de usuario:</strong> propuestas de mejora en rendimiento y navegación.</li>
+  </ul>
 
-Al confiar en Toledo Consultora para implementar una estrategia SEO completa, tu negocio puede obtener una ventaja competitiva significativa en el entorno digital, traduciéndose en mayor visibilidad, tráfico cualificado y, en última instancia, un aumento en las oportunidades de negocio. Aquí te presento los beneficios detallados:
+  <h3>3️⃣ Posicionamiento Local</h3>
+  <ul class="benefits">
+    <li><strong>Optimización para Google Maps:</strong> destacá tu negocio en búsquedas locales con Google My Business.</li>
+  </ul>
 
-1. Mayor Visibilidad y Tráfico Orgánico de Calidad:
+  <h3>4️⃣ Estrategia + Asesoramiento</h3>
+  <ul class="benefits">
+    <li><strong>Plan SEO completo:</strong> tácticas coordinadas adaptadas a tu rubro.</li>
+    <li><strong>Acompañamiento experto:</strong> decisiones informadas, mejoras sostenidas.</li>
+  </ul>
 
-Posicionamiento en las Primeras 2 páginas de Google: Este es un beneficio crucial. Estar en las primeras posiciones de Google para las palabras clave relevantes significa que tu negocio será visto por una gran cantidad de usuarios que están activamente buscando los productos o servicios que ofreces. Esto se traduce en un aumento significativo del tráfico orgánico (no pagado) a tu sitio web.
-Palabras clave estratégicas: Toledo Consultora realizará una investigación exhaustiva para identificar las palabras clave más relevantes y con mayor potencial de conversión para tu negocio. Al optimizar tu sitio web para estos términos, atraerás a usuarios que tienen una alta intención de compra o interés en tus servicios.
-2. Optimización Integral de tu Presencia Online:
+  <h3>5️⃣ Medición de Resultados</h3>
+  <ul class="benefits">
+    <li><strong>Informes de rendimiento:</strong> tráfico, posiciones, conversiones, impacto general.</li>
+  </ul>
 
-SEO On-page/Off-page: Una estrategia SEO completa aborda tanto la optimización interna de tu sitio web (SEO On-page - contenido, estructura, etiquetas, etc.) como los factores externos que influyen en el posicionamiento (SEO Off-page - backlinks, menciones de marca, autoridad del dominio, etc.). Esto asegura una optimización holística para obtener los mejores resultados.
-Análisis de contenido y propuestas de mejora: Toledo Consultora analizará el contenido existente en tu sitio web para identificar áreas de mejora en términos de relevancia, calidad, optimización para palabras clave y engagement del usuario. Esto te permitirá ofrecer contenido más valioso y atractivo tanto para los usuarios como para los motores de búsqueda.
-Análisis de velocidad, rendimiento y experiencia de usuario, propuestas de mejora: Un sitio web rápido, con buen rendimiento y una experiencia de usuario intuitiva son factores clave para el SEO y la satisfacción del cliente. Toledo Consultora analizará estos aspectos y te proporcionará recomendaciones concretas para optimizar tu sitio y reducir la tasa de rebote.
-3. Mayor Visibilidad Local y Captación de Clientes Cercanos:
-
-Posicionamiento en Google Maps: Para negocios con una ubicación física (tiendas, oficinas, restaurantes, etc.), el posicionamiento en Google Maps es fundamental para atraer clientes locales. Toledo Consultora optimizará tu perfil de Google My Business para que aparezcas en los primeros resultados cuando los usuarios busquen negocios como el tuyo en tu área geográfica.
-4. Estrategia Sólida y Asesoramiento Experto:
-
-Estrategia SEO completa: No se trata solo de tácticas aisladas, sino de un plan integral y personalizado diseñado para alcanzar tus objetivos de negocio a largo plazo. Toledo Consultora desarrollará una estrategia coherente y adaptada a tu nicho de mercado y competencia.
-Asesoramiento Global de Posicionamiento para tu negocio: Obtendrás la guía y el conocimiento de expertos en SEO que te ayudarán a comprender el panorama del posicionamiento web y a tomar decisiones informadas para tu negocio. Este asesoramiento continuo es invaluable para mantener una ventaja competitiva.
-5. Medición y Mejora Continua:
-
-Informes de rendimiento: Toledo Consultora proporcionará informes periódicos sobre el rendimiento de tu estrategia SEO, incluyendo métricas clave como el tráfico orgánico, las posiciones de las palabras clave, las conversiones y otros indicadores relevantes. Esto te permitirá visualizar el progreso y entender el impacto de la inversión.
-En resumen, contratar los servicios de "Estrategia SEO completa" de Toledo Consultora ofrece los siguientes beneficios cruciales para cualquier negocio:
-
-Aumento significativo de la visibilidad online en los resultados de búsqueda de Google.
-Atracción de tráfico orgánico altamente cualificado y con mayor potencial de conversión.
-Optimización integral de todos los aspectos clave del SEO (on-page, off-page, contenido, técnico y experiencia de usuario).
-Mejora de la visibilidad local y captación de clientes en tu área geográfica a través del posicionamiento en Google Maps.
-Desarrollo e implementación de una estrategia SEO personalizada y efectiva.
-Asesoramiento experto y continuo para tomar decisiones informadas sobre tu posicionamiento web.
-Medición del rendimiento y seguimiento del progreso a través de informes detallados.
-Mayor credibilidad y confianza por parte de los usuarios al aparecer en los primeros resultados de búsqueda.
-Una ventaja competitiva sostenible en el mercado digital.
-Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio estará sentando las bases para un crecimiento online sólido y a largo plazo.
+  <h3>📈 En resumen:</h3>
+  <ul class="summary">
+    <li>✔️ Más visibilidad en Google</li>
+    <li>✔️ Tráfico de calidad con intención de compra</li>
+    <li>✔️ Optimización técnica y de contenido</li>
+    <li>✔️ Captación de clientes locales</li>
+    <li>✔️ Estrategia adaptada y asesoría continua</li>
+    <li>✔️ Informes para seguir el progreso real</li>
+    <li>✔️ Ventaja competitiva sostenible</li>
+  </ul>
       `,
       cta: "Mejorar Posicionamiento",
       link: "https://mpago.la/1SgrAx3",
@@ -612,30 +887,58 @@ Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio est
       detail: ` 
       El servicio de posicionamiento Estandar esta orientado a aquellos interesados que ya tienen operativo su sitio web y buscan optimizarlo para mejorar su posicionamiento en Google. Este servicio incluye una serie de acciones específicas para mejorar la visibilidad y el rendimiento del sitio web en los motores de búsqueda. A saber: se determinan con el cliente 7 palabras clave relevantes para el negocio, se optimizan las meta descripciones y keywords, se asegura que el sitio sea "Google Friendly" (compatible con dispositivos móviles), se optimizan los títulos y encabezados (h1, h2, h3), se posiciona en Google Maps y Google Business, y se proporciona asesoramiento global de posicionamiento para el negocio. Además, se generan informes de rendimiento y propuestas de mejora para garantizar un seguimiento continuo del progreso.
 
-Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
+<div class="seo-estandar">
+  <h2>🔍 Posicionamiento SEO Estándar — Hacé que tu web se destaque en Google</h2>
+  <p>Este servicio está pensado para negocios que ya tienen su sitio operativo y quieren optimizarlo para ser más visibles en los motores de búsqueda, atraer más visitas y mejorar su rendimiento digital.</p>
 
-Al confiar en Toledo Consultora para implementar una estrategia SEO completa, tu negocio puede obtener una ventaja competitiva significativa en el entorno digital, traduciéndose en mayor visibilidad, tráfico cualificado y, en última instancia, un aumento en las oportunidades de negocio. Aquí te presento los beneficios detallados:
+  <h3>📋 ¿Qué incluye?</h3>
+  <ul class="features">
+    <li>Optimización de meta description y keywords</li>
+    <li>Compatibilidad "Google Friendly" para móviles</li>
+    <li>Optimización de títulos: title, h1, h2, h3</li>
+    <li>Posicionamiento en Google Maps y Google Business</li>
+    <li>Asesoramiento global de posicionamiento estratégico</li>
+    <li>Informes de rendimiento y propuestas de mejora</li>
+  </ul>
 
-1. Mayor Visibilidad y Tráfico Orgánico de Calidad:
+  <h3>1️⃣ Visibilidad y Tráfico Orgánico</h3>
+  <ul class="benefits">
+    <li><strong>Posicionamiento en primeras páginas:</strong> tus servicios frente a usuarios con intención de búsqueda real.</li>
+    <li><strong>Palabras clave estratégicas:</strong> seleccionadas en conjunto con el cliente según su rubro.</li>
+  </ul>
 
-Posicionamiento en las Primeras 2 páginas de Google: Este es un beneficio crucial. Estar en las primeras posiciones de Google para las palabras clave relevantes significa que tu negocio será visto por una gran cantidad de usuarios que están activamente buscando los productos o servicios que ofreces. Esto se traduce en un aumento significativo del tráfico orgánico (no pagado) a tu sitio web.
-Palabras clave estratégicas: Toledo Consultora realizará una investigación exhaustiva para identificar las palabras clave más relevantes y con mayor potencial de conversión para tu negocio. Al optimizar tu sitio web para estos términos, atraerás a usuarios que tienen una alta intención de compra o interés en tus servicios.
-2. Optimización Integral de tu Presencia Online:
+  <h3>2️⃣ Optimización Integral</h3>
+  <ul class="benefits">
+    <li><strong>SEO On-page:</strong> contenido, etiquetas, estructura y rendimiento web.</li>
+    <li><strong>Mejoras de contenido e imágenes:</strong> más atractivo para usuarios y buscadores.</li>
+  </ul>
 
-SEO On-page/Off-page: Una estrategia SEO completa aborda tanto la optimización interna de tu sitio web (SEO On-page - contenido, estructura, etiquetas, etc.) como los factores externos que influyen en el posicionamiento (SEO Off-page - backlinks, menciones de marca, autoridad del dominio, etc.). Esto asegura una optimización holística para obtener los mejores resultados.
-Análisis de contenido y propuestas de mejora: Toledo Consultora analizará el contenido existente en tu sitio web para identificar áreas de mejora en términos de relevancia, calidad, optimización para palabras clave y engagement del usuario. Esto te permitirá ofrecer contenido más valioso y atractivo tanto para los usuarios como para los motores de búsqueda.
-Análisis de velocidad, rendimiento y experiencia de usuario, propuestas de mejora: Un sitio web rápido, con buen rendimiento y una experiencia de usuario intuitiva son factores clave para el SEO y la satisfacción del cliente. Toledo Consultora analizará estos aspectos y te proporcionará recomendaciones concretas para optimizar tu sitio y reducir la tasa de rebote.
-3. Mayor Visibilidad Local y Captación de Clientes Cercanos:
+  <h3>3️⃣ Visibilidad Local Mejorada</h3>
+  <ul class="benefits">
+    <li><strong>Presencia destacada en Google Maps:</strong> ideal para negocios físicos o de atención local.</li>
+  </ul>
 
-Posicionamiento en Google Maps: Para negocios con una ubicación física (tiendas, oficinas, restaurantes, etc.), el posicionamiento en Google Maps es fundamental para atraer clientes locales. Toledo Consultora optimizará tu perfil de Google My Business para que aparezcas en los primeros resultados cuando los usuarios busquen negocios como el tuyo en tu área geográfica.
-4. Estrategia Sólida y Asesoramiento Experto:
+  <h3>4️⃣ Estrategia y Asesoramiento</h3>
+  <ul class="benefits">
+    <li><strong>Plan adaptado a tu negocio:</strong> sin plantillas, sin recetas generales.</li>
+    <li><strong>Acompañamiento experto:</strong> entendé el SEO y aplicalo con nuestra guía.</li>
+  </ul>
 
-Estrategia SEO completa: No se trata solo de tácticas aisladas, sino de un plan integral y personalizado diseñado para alcanzar tus objetivos de negocio a largo plazo. Toledo Consultora desarrollará una estrategia coherente y adaptada a tu nicho de mercado y competencia.
-Asesoramiento Global de Posicionamiento para tu negocio: Obtendrás la guía y el conocimiento de expertos en SEO que te ayudarán a comprender el panorama del posicionamiento web y a tomar decisiones informadas para tu negocio. Este asesoramiento continuo es invaluable para mantener una ventaja competitiva.
-5. Medición y Mejora Continua:
+  <h3>5️⃣ Medición y Seguimiento</h3>
+  <ul class="benefits">
+    <li><strong>Informes detallados:</strong> sabé en qué estás mejorando y qué podés ajustar.</li>
+  </ul>
 
-Informes de rendimiento: Toledo Consultora proporcionará informes periódicos sobre el rendimiento de tu estrategia SEO, incluyendo métricas clave como el tráfico orgánico, las posiciones de las palabras clave, las conversiones y otros indicadores relevantes. Esto te permitirá visualizar el progreso y entender el impacto de la inversión.
-En resumen, contratar los servicios de "Estrategia SEO completa" de Toledo Consultora ofrece los siguientes beneficios cruciales para cualquier negocio:
+  <h3>📈 En resumen:</h3>
+  <ul class="summary">
+    <li>✔️ Mayor visibilidad en Google</li>
+    <li>✔️ Más visitas de calidad con intención de compra</li>
+    <li>✔️ Optimización de contenido, títulos y estructura</li>
+    <li>✔️ Google Maps y Business mejor configurados</li>
+    <li>✔️ Asesoramiento técnico y estratégico</li>
+    <li>✔️ Informes de avance constantes</li>
+  </ul>
+
 
 Aumento significativo de la visibilidad online en los resultados de búsqueda de Google.
 Atracción de tráfico orgánico altamente cualificado y con mayor potencial de conversión.
@@ -673,30 +976,63 @@ Al invertir en una estrategia SEO completa con Toledo Consultora, tu negocio est
       ],
       detail: ` 
 
-Beneficios Clave de Contratar la Estrategia SEO Completa de Toledo Consultora:
+<div class="seo-completa">
+  <h2>📊 Estrategia SEO Completa — Tu sitio en los primeros resultados de Google</h2>
+  <p>Con esta estrategia integral, optimizamos todos los aspectos clave de tu sitio web para mejorar su visibilidad, rendimiento y posicionamiento en los buscadores, especialmente Google.</p>
 
-Al confiar en Toledo Consultora para implementar una estrategia SEO completa, tu negocio puede obtener una ventaja competitiva significativa en el entorno digital, traduciéndose en mayor visibilidad, tráfico cualificado y, en última instancia, un aumento en las oportunidades de negocio. Aquí te presento los beneficios detallados:
+  <h3>✅ ¿Qué incluye?</h3>
+  <ul class="features">
+    <li>Optimización de meta description y keywords</li>
+    <li>Generación de hasta 100 resultados de búsqueda indexables en Google</li>
+    <li>Mejora de rendimiento con PageSpeed Insights</li>
+    <li>Google Friendly y Mobile Friendly</li>
+    <li>Optimización de contenido e imágenes</li>
+    <li>Optimización de title, h1, h2, h3</li>
+    <li>Posicionamiento en Google Maps y Google Business</li>
+    <li>Asesoramiento global de posicionamiento para tu negocio</li>
+    <li>Informes de rendimiento y propuestas de mejora periódicas</li>
+  </ul>
 
-1. Mayor Visibilidad y Tráfico Orgánico de Calidad:
+  <h3>1️⃣ Mayor Visibilidad y Tráfico Orgánico</h3>
+  <ul class="benefits">
+    <li><strong>Posicionamiento en las primeras 2 páginas de Google:</strong> visibilidad frente a búsquedas reales y activas.</li>
+    <li><strong>Palabras clave estratégicas:</strong> investigadas con foco en conversión e intención de búsqueda.</li>
+  </ul>
 
-Posicionamiento en las Primeras 2 páginas de Google: Este es un beneficio crucial. Estar en las primeras posiciones de Google para las palabras clave relevantes significa que tu negocio será visto por una gran cantidad de usuarios que están activamente buscando los productos o servicios que ofreces. Esto se traduce en un aumento significativo del tráfico orgánico (no pagado) a tu sitio web.
-Palabras clave estratégicas: Toledo Consultora realizará una investigación exhaustiva para identificar las palabras clave más relevantes y con mayor potencial de conversión para tu negocio. Al optimizar tu sitio web para estos términos, atraerás a usuarios que tienen una alta intención de compra o interés en tus servicios.
-2. Optimización Integral de tu Presencia Online:
+  <h3>2️⃣ Optimización Integral</h3>
+  <ul class="benefits">
+    <li><strong>SEO On-page y Off-page:</strong> contenido, estructura técnica, backlinks, autoridad de dominio.</li>
+    <li><strong>Auditoría de contenido:</strong> se detectan mejoras en legibilidad, intención de búsqueda y calidad.</li>
+    <li><strong>Velocidad y experiencia de usuario:</strong> optimización de tiempos de carga y estructura UX para reducir rebote.</li>
+  </ul>
 
-SEO On-page/Off-page: Una estrategia SEO completa aborda tanto la optimización interna de tu sitio web (SEO On-page - contenido, estructura, etiquetas, etc.) como los factores externos que influyen en el posicionamiento (SEO Off-page - backlinks, menciones de marca, autoridad del dominio, etc.). Esto asegura una optimización holística para obtener los mejores resultados.
-Análisis de contenido y propuestas de mejora: Toledo Consultora analizará el contenido existente en tu sitio web para identificar áreas de mejora en términos de relevancia, calidad, optimización para palabras clave y engagement del usuario. Esto te permitirá ofrecer contenido más valioso y atractivo tanto para los usuarios como para los motores de búsqueda.
-Análisis de velocidad, rendimiento y experiencia de usuario, propuestas de mejora: Un sitio web rápido, con buen rendimiento y una experiencia de usuario intuitiva son factores clave para el SEO y la satisfacción del cliente. Toledo Consultora analizará estos aspectos y te proporcionará recomendaciones concretas para optimizar tu sitio y reducir la tasa de rebote.
-3. Mayor Visibilidad Local y Captación de Clientes Cercanos:
+  <h3>3️⃣ Visibilidad Local Estratégica</h3>
+  <ul class="benefits">
+    <li><strong>Google Maps optimizado:</strong> tu negocio visible en búsquedas locales para captar clientes cercanos.</li>
+  </ul>
 
-Posicionamiento en Google Maps: Para negocios con una ubicación física (tiendas, oficinas, restaurantes, etc.), el posicionamiento en Google Maps es fundamental para atraer clientes locales. Toledo Consultora optimizará tu perfil de Google My Business para que aparezcas en los primeros resultados cuando los usuarios busquen negocios como el tuyo en tu área geográfica.
-4. Estrategia Sólida y Asesoramiento Experto:
+  <h3>4️⃣ Planificación Estratégica y Soporte</h3>
+  <ul class="benefits">
+    <li><strong>Estrategia SEO personalizada:</strong> enfocada a largo plazo, adaptada a tu competencia y público.</li>
+    <li><strong>Asesoramiento experto:</strong> acompañamiento profesional continuo con enfoque de negocio.</li>
+  </ul>
 
-Estrategia SEO completa: No se trata solo de tácticas aisladas, sino de un plan integral y personalizado diseñado para alcanzar tus objetivos de negocio a largo plazo. Toledo Consultora desarrollará una estrategia coherente y adaptada a tu nicho de mercado y competencia.
-Asesoramiento Global de Posicionamiento para tu negocio: Obtendrás la guía y el conocimiento de expertos en SEO que te ayudarán a comprender el panorama del posicionamiento web y a tomar decisiones informadas para tu negocio. Este asesoramiento continuo es invaluable para mantener una ventaja competitiva.
-5. Medición y Mejora Continua:
+  <h3>5️⃣ Medición y Mejoras Continuas</h3>
+  <ul class="benefits">
+    <li><strong>Informes de rendimiento:</strong> visibilidad de tráfico, rankings, oportunidades y resultados concretos.</li>
+  </ul>
 
-Informes de rendimiento: Toledo Consultora proporcionará informes periódicos sobre el rendimiento de tu estrategia SEO, incluyendo métricas clave como el tráfico orgánico, las posiciones de las palabras clave, las conversiones y otros indicadores relevantes. Esto te permitirá visualizar el progreso y entender el impacto de la inversión.
-En resumen, contratar los servicios de "Estrategia SEO completa" de Toledo Consultora ofrece los siguientes beneficios cruciales para cualquier negocio:
+  <h3>📌 En resumen:</h3>
+  <ul class="summary">
+  <li>✔️ Primeros resultados de busqueda en google </li>
+    <li>✔️ Posicionamiento en Google con hasta 100 resultados indexables</li>
+    <li>✔️ Mayor tráfico orgánico y de calidad</li>
+    <li>✔️ SEO técnico, de contenido y local</li>
+    <li>✔️ Rendimiento web mejorado con PageSpeed</li>
+    <li>✔️ Asesoramiento estratégico personalizado</li>
+    <li>✔️ Visibilidad geolocalizada con Google Maps y Business</li>
+    <li>✔️ Informes claros, seguimiento constante</li>
+  </ul>
 
 Aumento significativo de la visibilidad online en los resultados de búsqueda de Google.
 Atracción de tráfico orgánico altamente cualificado y con mayor potencial de conversión.
@@ -744,4 +1080,6 @@ pricingPlans.forEach(plan => {
 });
 
 
-module.exports= SeoLandingPages
+// module.exports= SeoLandingPages
+
+module.exports= {SeoLandingPages , pricingPlans}
