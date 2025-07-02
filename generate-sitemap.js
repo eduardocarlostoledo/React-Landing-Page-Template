@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const SeoLandingPages=require ("./src/components/SeoLandingPages");
+const {SeoLandingPages}=require ("./src/components/SeoLandingPages");
 
 const baseUrl = "https://toledoconsultora.com";
 
