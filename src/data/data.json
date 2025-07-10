@@ -23,7 +23,58 @@
 
   },
 "Gallery": [
+  {
+    "title": "Lua Colection Circuito",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://luacollection.netlify.app/",
+    "largeImage": "img/portfolio/lua1.jpg",
+    "smallImage": "img/portfolio/lua2.jpg"
+    
+  },
+    {
+    "title": "Lua Colection Circuito",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://luacollection.netlify.app/",
+    "largeImage": "img/portfolio/lua2.jpg",
+    "smallImage": "img/portfolio/lua2.jpg"
+    
+  },
+    {
+    "title": "Lua Colection Circuito",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://luacollection.netlify.app/",
+    "largeImage": "img/portfolio/lua3.jpg",
+    "smallImage": "img/portfolio/lua3.jpg"
+    
+  },
+
+    {
+    "title": "July Marroquineria",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://july-marroquineria.netlify.app/",
+    "largeImage": "img/portfolio/juli1.jpg",
+    "smallImage": "img/portfolio/juli1.jpg"
+    
+  },
+
   
+    {
+    "title": "July Marroquineria",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://july-marroquineria.netlify.app/",
+    "largeImage": "img/portfolio/juli2.jpg",
+    "smallImage": "img/portfolio/juli2.jpg"
+    
+  },
+  
+    {
+    "title": "July Marroquineria",
+    "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
+    "link": "https://july-marroquineria.netlify.app/",
+    "largeImage": "img/portfolio/juli3.jpg",
+    "smallImage": "img/portfolio/juli3.jpg"
+    
+  },
   {
     "title": "Moda Total Ecommerce",
     "description": "Ecommerce con panel de autogestion de productos y venta de ordenes, mas administracion de usuarios",
