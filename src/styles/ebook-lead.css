@@ -1,0 +1,158 @@
+/* ---- Gate / Ebook ---- */
+.ebook-section .lead-copy {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.ebook-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Form tweaks para verse "premium" */
+.ebook-form .form-group label {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.ebook-form input[type="text"],
+.ebook-form input[type="email"],
+.ebook-form textarea {
+  border: 1px solid #e4e6eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  background: #fff;
+}
+
+.ebook-form input:focus,
+.ebook-form textarea:focus {
+  outline: none;
+  border-color: #c69e5d;         /* dorado suave de tu paleta */
+  box-shadow: 0 0 0 3px rgba(198, 158, 93, 0.15);
+}
+
+.terms-row {
+  margin: 10px 0 14px;
+  font-size: 0.95rem;
+}
+
+.checkbox {
+  display: inline-flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.inline-link {
+  color: #7e98ec;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Estado de envío */
+.submit-status {
+  margin: 10px 0 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.submit-status.success {
+  background: #e8f6ef;
+  color: #1e7f52;
+  border: 1px solid #cbeadf;
+}
+.submit-status.error {
+  background: #fdeeee;
+  color: #b00020;
+  border: 1px solid #f6d4d4;
+}
+
+/* Botón descarga */
+.download-card {
+  border: 1px solid #eef0f4;
+  border-radius: 14px;
+  padding: 22px;
+  background: #1a1f33;
+  box-shadow: 0 8px 20px rgba(16, 22, 41, 0.06);
+}
+
+.download-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: #101629;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.download-btn:hover { transform: translateY(-1px); opacity: 0.95; }
+
+.extra-links {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+/* Spinner overlay central (pantalla completa) */
+.spinner-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 22, 41, 0.45);
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.spinner-lg {
+  width: 44px;
+  height: 44px;
+  border: 4px solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Honeypot: fuera de vista pero accesible a screen readers como aria-hidden en JSX */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  height: 0 !important;
+  width: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Responsivo — prioridad 370px y 320px */
+@media (max-width: 1024px) {
+  .ebook-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 370px) {
+  .download-card, .ebook-form, .contact-info {
+    padding: 16px;
+  }
+  .download-btn { width: 85%; text-align: center; }
+}
+
+@media (max-width: 320px) {
+  .ebook-section .lead-copy { font-size: 0.95rem; }
+  .submit-btn { width: 100%; }
+}

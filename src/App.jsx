@@ -32,7 +32,7 @@ import { AboutOptimizacion } from "./components/aboutOptimizacion.jsx";
 import { AboutRedesSociales } from "./components/aboutRedesSociales.jsx";
 import { AboutLandingPage } from "./components/aboutLandingPage.jsx";
 import { GlobalNavbar } from "./components/GlobalNavbar";
-
+import { EBook} from "./components/EBook.jsx";
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -109,6 +109,7 @@ const App = () => {
         <Route path="/about-optimizacion" element={<AboutOptimizacion />} />
         <Route path="/about-redes-sociales" element={<AboutRedesSociales />} />
         <Route path="/about-landing-page" element={<AboutLandingPage />} />
+        <Route path="/e-book-gratuito" element={<EBook />} />
       </Routes>
     </>
   );
