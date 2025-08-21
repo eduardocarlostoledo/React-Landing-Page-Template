@@ -312,7 +312,7 @@ export const EBook = ({
                     rows="4"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="¿Consultas y Sugerencias (Opcionales)?"
+                    placeholder="Consultas y Sugerencias (Opcionales)"
                   ></textarea>
                 </div>
 
