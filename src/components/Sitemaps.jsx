@@ -18,7 +18,6 @@ const mainLinks = [
   { label: "Redes Sociales", url: "https://toledoconsultora.com/about-redes-sociales" },
 ];
 
-
 const ciudades = [
   "buenos-aires", "caba", "la-plata", "mar-del-plata", "bahia-blanca", "rosario", "santa-fe", "cordoba",
   "villa-carlos-paz", "rio-cuarto", "mendoza", "san-rafael", "san-juan", "san-luis", "neuquen", "bariloche",
@@ -30,7 +29,7 @@ const servicios = [
   "landingpage", "pagina-web", "sistema-web", "sistema-web-completo", "ecommerce", "seo-estandard", "seo-bussiness", "seo-operativo", "campanasdigitales", "ecommerce-paginaweb", "asesoria-de-negocios"
 ];
 
-const buildURL = (servicio, ciudad) => `https://toledoconsultora.com/servicios-consultora-toledo/contratar-${servicio}-toledoconsultora-${ciudad}`;
+const buildURL = (servicio, ciudad) => `https://toledoconsultora.com/servicios-consultora-toledo/${servicio}-${ciudad}`;
 
 const Sitemap = () => {
   return (
