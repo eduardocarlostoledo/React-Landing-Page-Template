@@ -33,6 +33,13 @@ import { AboutRedesSociales } from "./components/aboutRedesSociales.jsx";
 import { AboutLandingPage } from "./components/aboutLandingPage.jsx";
 import { GlobalNavbar } from "./components/GlobalNavbar";
 import { EBook} from "./components/EBook.jsx";
+import { HowWeWork } from "./components/HowWeWork.jsx";
+import { InstagramFeed } from "./components/InstagramFeed.jsx";
+import { SuccessCases } from "./components/SuccessCases.jsx";
+import { SocialProof } from "./components/SocialProof.jsx";
+import { Guarantees } from "./components/Guarantees.jsx";
+import { Differentials } from "./components/Differentials.jsx";
+import { LeadMagnet } from "./components/LeadMagnet.jsx";
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -42,15 +49,21 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 const LandingPage = ({ data }) => (
   <>
     <Hero />
+    <Services data={data.Services} />
+    <SocialProof />
+    <Features data={data.Features} />
+    <HowWeWork />
+    <SuccessCases />
     <Gallery data={data.Gallery} />
     <Testimonials />
+    <Guarantees />
     <PartnerLogos />
+    <Differentials />
     <Cotizaciones />
     <Asesoramiento data={data.Asesoramiento} />
-    <Features data={data.Features} />
     <About data={data.About} />
-    <Services data={data.Services} />
     <Team data={data.Team} />
+    <LeadMagnet />
     <Contact data={data.Contact} />
     <Chatbot />
   </>

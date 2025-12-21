@@ -1,6 +1,8 @@
 // PartnerLogos.js
 import React from "react";
 import { motion } from "framer-motion";
+import { useSEO } from "../hooks/useSEO";
+import { seoConfig } from "../utils/seoConfig";
 import "../styles/PartnerLogos.css"; // Archivo CSS para estilos
 import logo1 from "../logo(1).jpg"; // Logo de la empresa
 import logoCalyaan from "../logocalyaan.png"; // Logo de la empresa
@@ -74,18 +76,63 @@ const partnerLogos = [
 ];
 
 export const PartnerLogos = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08,
+        delayChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 12 },
+    },
+  };
+
+  const headerVariants = {
+    hidden: { opacity: 0, y: -30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 12, delay: 0.1 },
+    },
+  };
+
+  // SEO Configuration for Partners Section
+  const partnersSEO = seoConfig.home;
+
   return (
-    <div className="partner-logos" id="partners">
-      <h2>Confían en Nosotros</h2>
-      <div className="logos-container">
+    <>
+      {useSEO(partnersSEO)}
+      <div className="partner-logos" id="partners">
+      <motion.h2
+        initial="hidden"
+        whileInView="visible"
+        variants={headerVariants}
+        viewport={{ once: true }}
+      >
+        Confían en Nosotros
+      </motion.h2>
+      <motion.div
+        className="logos-container"
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+        viewport={{ once: true }}
+      >
         {partnerLogos.map((partner, index) => (
           <motion.div
             key={index}
             className="logo-item"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            variants={itemVariants}
+            whileHover={{ y: -12, transition: { duration: 0.3 } }}
           >
             <div className="logo-image">
               <img src={partner.logo} alt={partner.name} />
@@ -98,39 +145,40 @@ export const PartnerLogos = () => {
             </p>
           </motion.div>
         ))}
-      </div>
-      <div className="stats-container">
+      </motion.div>
+      <motion.div
+        className="stats-container"
+        initial="hidden"
+        whileInView="visible"
+        variants={containerVariants}
+        viewport={{ once: true }}
+      >
         <motion.div
           className="stat-item"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          variants={itemVariants}
+          whileHover={{ y: -8, transition: { duration: 0.3 } }}
         >
           <h3>Más de 20</h3>
           <p>Projectos Completados</p>
         </motion.div>
         <motion.div
           className="stat-item"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          variants={itemVariants}
+          whileHover={{ y: -8, transition: { duration: 0.3 } }}
         >
           <h3>Clientes en 6 países</h3>
           <p>Argentina, Paraguay, Colombia, Estados Unidos, Australia, Brasil</p>
         </motion.div>
         <motion.div
           className="stat-item"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          variants={itemVariants}
+          whileHover={{ y: -8, transition: { duration: 0.3 } }}
         >
-          <h3>Mas de 5</h3>
+          <h3>Más de 5</h3>
           <p>Años de experiencia en desarrollo web</p>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
+    </>
   );
 };

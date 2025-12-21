@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
+import { useSEO } from "../hooks/useSEO";
+import { seoConfig } from "../utils/seoConfig";
 import "../styles/cotizaciones.css";
 import { useNavigate } from "react-router-dom";
 const { pricingPlans } = require("../components/SeoLandingPages");
 
 export const Cotizaciones = ({ selectedIds = [] }) => {
+  // SEO Configuration for Quotations Section
+  const cotizacionesSEO = seoConfig.cotizaciones;
+
   const navigate = useNavigate();
 
   const selectedPlans =
@@ -26,7 +31,11 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.5 },
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 12,
+      },
     },
   };
 
@@ -38,9 +47,10 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
   const handlePlanClick = (plan) => {
     navigate(`/detalle/${plan.id}`, { state: { plan } });
   };
-
   return (
-    <section className="pricing-section" id="pricing">
+    <>
+      {useSEO(cotizacionesSEO)}
+      <section className="pricing-section" id="pricing">
       <div className="pricing-container">
         <motion.div
           className="section-header"
@@ -100,5 +110,6 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
         </motion.div>
       </div>
     </section>
+    </>
   );
 };

@@ -1,6 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import "../styles/Hero.css";
+import { useSEO } from "../hooks/useSEO";
+import { seoConfig, localBusinessSchema } from "../utils/seoConfig";
 
 // Imágenes JPG optimizadas
 import hero1 from "./images/hero/hero1.jpg";
@@ -34,6 +36,12 @@ const slides = [
 export const Hero = () => {
   const [current, setCurrent] = useState(0);
 
+  // SEO Local Configuration
+  const heroSEO = {
+    ...seoConfig.home,
+    schema: localBusinessSchema,
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -48,7 +56,9 @@ export const Hero = () => {
   const { image, title, desc } = slides[current];
 
   return (
-    <section className="slider-section" id="neumaticos">
+    <>
+      {useSEO(heroSEO)}
+      <section className="slider-section" id="neumaticos">
       <div className="slider-container">
         <AnimatePresence mode="wait">
           <motion.div
@@ -65,32 +75,61 @@ export const Hero = () => {
               height="500"
               alt={title}
               className="slider-image"
-              initial={{ scale: 1.02 }}
+              initial={{ scale: 1.05 }}
               animate={{ scale: 1 }}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 2 }}
               style={{ willChange: "opacity, transform" }}
             />
             <div className="slider-content">
-              <h2>{title}</h2>
-              <p>{desc}</p>
+              <motion.h2
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+              >
+                {title}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+              >
+                {desc}
+              </motion.p>
             </div>
           </motion.div>
         </AnimatePresence>
 
-        <button className="arrow left" onClick={prevSlide}>❮</button>
-        <button className="arrow right" onClick={nextSlide}>❯</button>
+        <motion.button
+          className="arrow left"
+          onClick={prevSlide}
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          ❮
+        </motion.button>
+        <motion.button
+          className="arrow right"
+          onClick={nextSlide}
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          ❯
+        </motion.button>
 
-      <div className="indicators">
+        <motion.div className="indicators" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}>
           {slides.map((_, index) => (
-            <span
+            <motion.span
               key={index}
               className={`dot ${index === current ? "active" : ""}`}
               onClick={() => goToSlide(index)}
-            ></span>
+              whileHover={{ scale: 1.2 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            ></motion.span>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
-/* TESTIMONIALS SECTION - TOLEDO CONSULTORA IT */
-.testimonials-section {
+/* INSTAGRAM FEED SECTION - TOLEDO CONSULTORA IT */
+.instagram-section {
   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   padding: 6rem 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
@@ -7,11 +7,11 @@
   overflow: hidden;
 }
 
-.testimonials-section::before {
+.instagram-section::before {
   content: '';
   position: absolute;
   top: -10%;
-  right: -5%;
+  left: -5%;
   width: 500px;
   height: 500px;
   background: radial-gradient(circle, rgba(255, 203, 5, 0.15) 0%, transparent 70%);
@@ -19,11 +19,11 @@
   pointer-events: none;
 }
 
-.testimonials-section::after {
+.instagram-section::after {
   content: '';
   position: absolute;
   bottom: -15%;
-  left: -10%;
+  right: -10%;
   width: 400px;
   height: 400px;
   background: radial-gradient(circle, rgba(29, 46, 123, 0.1) 0%, transparent 70%);
@@ -31,7 +31,7 @@
   pointer-events: none;
 }
 
-.container {
+.instagram-container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -39,15 +39,15 @@
 }
 
 /* HEADER */
-.testimonials-header {
+.instagram-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.testimonials-header h2 {
+.instagram-header h2 {
   font-size: 3rem;
   font-weight: 800;
   color: #00205b;
@@ -55,7 +55,7 @@
   letter-spacing: -1px;
 }
 
-.testimonials-header p {
+.instagram-header p {
   font-size: 1.05rem;
   color: #4a5568;
   margin: 0 0 2rem 0;
@@ -71,26 +71,25 @@
 }
 
 /* STATS SECTION */
-.testimonials-stats {
+.instagram-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
 }
 
-.stat-card {
+.stat-item {
   background: white;
-  border-radius: 16px;
-  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 0 8px 30px rgba(0, 32, 91, 0.08);
   border: 1px solid rgba(0, 32, 91, 0.05);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  overflow: hidden;
 }
 
-.stat-card::before {
+.stat-item::before {
   content: '';
   position: absolute;
   top: 0;
@@ -100,25 +99,18 @@
   background: linear-gradient(90deg, #ffcb05 0%, #ff9500 100%);
 }
 
-.stat-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 50px rgba(0, 32, 91, 0.12);
+.stat-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 32, 91, 0.12);
 }
 
 .stat-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
   display: block;
 }
 
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #00205b;
-  margin-bottom: 0.5rem;
-}
-
-.stat-card p {
+.stat-item p {
   font-size: 0.95rem;
   color: #4a5568;
   margin: 0;
@@ -126,7 +118,7 @@
 }
 
 /* WIDGET WRAPPER */
-.widget-wrapper {
+.instagram-widget-wrapper {
   background: white;
   border-radius: 16px;
   padding: 3rem 2rem;
@@ -138,7 +130,7 @@
   overflow: hidden;
 }
 
-.widget-wrapper::before {
+.instagram-widget-wrapper::before {
   content: '';
   position: absolute;
   top: 0;
@@ -148,18 +140,18 @@
   background: linear-gradient(90deg, #ffcb05 0%, #ff9500 100%);
 }
 
-.widget-wrapper:hover {
+.instagram-widget-wrapper:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 60px rgba(0, 32, 91, 0.12);
 }
 
 /* Personalización del widget Elfsight */
-.elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261 {
-  min-height: 400px;
+.elfsight-app-87fcf7c6-9d4f-4add-bfbe-22abb8f62d24 {
+  min-height: 500px;
 }
 
 /* CTA SECTION */
-.testimonials-cta {
+.instagram-cta {
   background: linear-gradient(135deg, rgba(0, 32, 91, 0.05) 0%, rgba(255, 203, 5, 0.05) 100%);
   border: 2px solid rgba(0, 32, 91, 0.1);
   border-radius: 16px;
@@ -167,21 +159,14 @@
   text-align: center;
 }
 
-.testimonials-cta h3 {
+.instagram-cta h3 {
   font-size: 1.8rem;
   color: #00205b;
   font-weight: 700;
-  margin: 0 0 0.8rem 0;
-}
-
-.testimonials-cta p {
-  font-size: 1.05rem;
-  color: #4a5568;
   margin: 0 0 2rem 0;
-  font-weight: 500;
 }
 
-.review-btn {
+.follow-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
@@ -198,108 +183,114 @@
   cursor: pointer;
 }
 
-.review-btn:hover {
+.follow-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 30px rgba(255, 203, 5, 0.4);
   border-color: #00205b;
 }
 
-.review-btn:active {
+.follow-btn:active {
   transform: translateY(0);
 }
 
-.review-btn i {
+.follow-btn i {
   font-size: 1.2rem;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .testimonials-section {
+  .instagram-section {
     padding: 4rem 1.5rem;
   }
 
-  .testimonials-header h2 {
+  .instagram-header h2 {
     font-size: 2.2rem;
   }
 
-  .testimonials-header p {
+  .instagram-header p {
     font-size: 0.95rem;
   }
 
-  .testimonials-stats {
-    grid-template-columns: 1fr;
+  .instagram-stats {
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-bottom: 3rem;
   }
 
-  .stat-number {
-    font-size: 2rem;
+  .stat-item {
+    padding: 1.5rem 1rem;
   }
 
-  .widget-wrapper {
+  .stat-icon {
+    font-size: 1.8rem;
+  }
+
+  .instagram-widget-wrapper {
     padding: 2rem 1.5rem;
     margin-bottom: 2rem;
   }
 
-  .testimonials-cta {
+  .elfsight-app-87fcf7c6-9d4f-4add-bfbe-22abb8f62d24 {
+    min-height: 400px;
+  }
+
+  .instagram-cta {
     padding: 2rem 1.5rem;
   }
 
-  .testimonials-cta h3 {
+  .instagram-cta h3 {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .testimonials-section {
+  .instagram-section {
     padding: 3rem 1rem;
   }
 
-  .testimonials-header h2 {
+  .instagram-header h2 {
     font-size: 1.8rem;
   }
 
-  .testimonials-header p {
+  .instagram-header p {
     font-size: 0.9rem;
   }
 
-  .stat-card {
-    padding: 2rem 1.5rem;
+  .instagram-stats {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .stat-item {
+    padding: 1.2rem;
   }
 
   .stat-icon {
-    font-size: 2rem;
-  }
-
-  .stat-number {
     font-size: 1.8rem;
   }
 
-  .stat-card p {
+  .stat-item p {
     font-size: 0.85rem;
   }
 
-  .widget-wrapper {
+  .instagram-widget-wrapper {
     padding: 1.5rem 1rem;
   }
 
-  .elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261 {
+  .elfsight-app-87fcf7c6-9d4f-4add-bfbe-22abb8f62d24 {
     min-height: 300px;
   }
 
-  .testimonials-cta {
+  .instagram-cta {
     padding: 1.5rem 1rem;
   }
 
-  .testimonials-cta h3 {
+  .instagram-cta h3 {
     font-size: 1.3rem;
+    margin-bottom: 1.5rem;
   }
 
-  .testimonials-cta p {
-    font-size: 0.95rem;
-  }
-
-  .review-btn {
+  .follow-btn {
     padding: 0.85rem 2rem;
     font-size: 0.9rem;
   }

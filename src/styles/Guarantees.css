@@ -1,0 +1,215 @@
+.guarantees-section {
+  padding: 80px 20px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.guarantees-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #ffcb05 50%, transparent 100%);
+}
+
+.guarantees-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.guarantees-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.guarantees-header h2 {
+  font-size: 42px;
+  font-weight: 900;
+  color: #00205b;
+  margin-bottom: 15px;
+}
+
+.guarantees-header .header-accent {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffcb05 0%, #ff9500 100%);
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.guarantees-header p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+.guarantees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.guarantee-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, #ffcb05 0%, #ff9500 100%) 1;
+}
+
+.guarantee-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffcb05 0%, #ff9500 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+.guarantee-card:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.guarantee-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.guarantee-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #00205b;
+  margin: 20px 0 15px;
+}
+
+.guarantee-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+.guarantee-detail {
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+}
+
+.guarantees-cta {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+  padding: 50px 40px;
+  border-radius: 12px;
+  text-align: center;
+  border-top: 4px solid #ffcb05;
+}
+
+.guarantees-cta p {
+  font-size: 18px;
+  color: #00205b;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.guarantee-badges {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffcb05;
+  border: 2px solid #ffcb05;
+}
+
+@media (max-width: 768px) {
+  .guarantees-section {
+    padding: 60px 20px;
+  }
+
+  .guarantees-header h2 {
+    font-size: 32px;
+  }
+
+  .guarantees-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .guarantee-card {
+    padding: 30px 25px;
+  }
+
+  .guarantee-icon {
+    font-size: 40px;
+  }
+
+  .guarantee-card h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .guarantees-section {
+    padding: 40px 15px;
+  }
+
+  .guarantees-header h2 {
+    font-size: 24px;
+  }
+
+  .guarantees-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .guarantee-card {
+    padding: 25px 20px;
+  }
+
+  .guarantee-icon {
+    font-size: 36px;
+  }
+
+  .guarantee-card h3 {
+    font-size: 16px;
+  }
+
+  .guarantee-card p {
+    font-size: 13px;
+  }
+
+  .guarantees-cta {
+    padding: 30px 20px;
+  }
+
+  .guarantees-cta p {
+    font-size: 16px;
+  }
+
+  .guarantee-badges {
+    gap: 10px;
+  }
+
+  .badge {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}

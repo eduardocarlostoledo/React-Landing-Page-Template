@@ -1,0 +1,308 @@
+/* DIFFERENTIALS & LEAD MAGNET */
+
+/* ===== DIFFERENTIALS ===== */
+.differentials-section {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  padding: 6rem 2rem;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.differentials-section::before {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 203, 5, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.differentials-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.differentials-container .section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.differentials-container h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  color: #00205b;
+}
+
+.differentials-container .section-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.differentials-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.differential-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 203, 5, 0.05) 0%, rgba(255, 149, 0, 0.02) 100%);
+  border-radius: 12px;
+  border-left: 4px solid #ffcb05;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.differential-item:hover {
+  box-shadow: 0 10px 30px rgba(255, 203, 5, 0.15);
+  background: linear-gradient(135deg, rgba(255, 203, 5, 0.1) 0%, rgba(255, 149, 0, 0.05) 100%);
+}
+
+.diff-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.diff-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #00205b;
+}
+
+.diff-content p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===== LEAD MAGNET ===== */
+.lead-magnet-section {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #00205b 0%, #1d2e7b 100%);
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.lead-magnet-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 203, 5, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.lead-magnet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.lead-magnet-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.lead-magnet-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  letter-spacing: -1px;
+}
+
+.lead-magnet-text > p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.lead-magnet-benefits {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.lead-magnet-benefits li {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.lead-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.lead-input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.lead-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 203, 5, 0.3);
+}
+
+.lead-input::placeholder {
+  color: #999;
+}
+
+.lead-button {
+  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, #ffcb05 0%, #ff9500 100%);
+  color: #00205b;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.lead-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 203, 5, 0.4);
+}
+
+.lead-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.lead-guarantee {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.lead-magnet-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-preview {
+  width: 100%;
+  max-width: 250px;
+}
+
+.guide-cover {
+  background: linear-gradient(135deg, #ffcb05 0%, #ff9500 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.guide-badge {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.guide-cover h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #00205b;
+}
+
+.guide-cover p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #00205b;
+}
+
+.guide-pages {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 32, 91, 0.2);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #00205b;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .differentials-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .differentials-container h2 {
+    font-size: 2rem;
+  }
+
+  .differentials-list {
+    grid-template-columns: 1fr;
+  }
+
+  .lead-magnet-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .lead-magnet-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .lead-magnet-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .lead-form {
+    flex-direction: column;
+  }
+
+  .lead-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .differential-item {
+    padding: 1.5rem;
+  }
+
+  .lead-magnet-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .lead-magnet-text > p {
+    font-size: 0.95rem;
+  }
+
+  .guide-cover {
+    padding: 1.5rem;
+  }
+
+  .guide-badge {
+    font-size: 2rem;
+  }
+}

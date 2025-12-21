@@ -1,19 +1,52 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { useSEO } from "../hooks/useSEO";
+import { seoConfig } from "../utils/seoConfig";
 import "../styles/Contact.css";
-import { form } from "framer-motion/client";
 
 export const Contact = ({ data }) => {
+  // SEO Configuration for Contact Section
+  const contactSEO = seoConfig.contact;
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.12,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 12 },
+    },
+  };
+
+  const headerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 12, delay: 0.05 },
+    },
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -57,18 +90,30 @@ export const Contact = ({ data }) => {
   };
 
   return (
-    <section id="contact" className="contact-section">
+    <>
+      {useSEO(contactSEO)}
+      <section id="contact" className="contact-section">
       <div className="contact-container">
-        <div className="contact-header">
-          <h2>MANTENGAMOS EL CONTACTO</h2>
-          <p>
-            Déjanos un mensaje o consulta y estaremos en comunicación a la
-            brevedad posible.
-          </p>
-        </div>
+        <motion.div
+          className="contact-header"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={headerVariants}
+        >
+          <h2>Mantengamos el Contacto</h2>
+          <p>Déjanos un mensaje o consulta y estaremos en comunicación a la brevedad posible.</p>
+          <div className="header-accent"></div>
+        </motion.div>
 
-        <div className="contact-content">
-          <form onSubmit={handleSubmit} className="contact-form">
+        <motion.div
+          className="contact-content"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={containerVariants}
+        >
+          <motion.form onSubmit={handleSubmit} className="contact-form" variants={itemVariants}>
             <div className="form-grid">
               <div className="form-group">
                 <label htmlFor="name">Nombre</label>
@@ -133,9 +178,9 @@ export const Contact = ({ data }) => {
                 "Enviar Mensaje"
               )}
             </button>
-          </form>
+          </motion.form>
 
-          <div className="contact-info">
+          <motion.div className="contact-info" variants={itemVariants}>
             <h3>Información de Contacto</h3>
 
             <div className="info-item">
@@ -222,8 +267,8 @@ export const Contact = ({ data }) => {
                 <i style={{ color: "red" }} className="fab fa-youtube"></i>
               </a>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <div className="sitemap-footer-link">
           <Link to="/indice-del-sitio" className="sitemap-map-link">
@@ -273,5 +318,6 @@ export const Contact = ({ data }) => {
         </div>
       </div>
     </section>
+    </>
   );
 };
