@@ -5,6 +5,18 @@ import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
 import "../styles/LeadMagnet.css";
 
+// Google Ads Conversion Tracking Helper
+const gtagSendEvent = (eventName = 'close_convert_lead') => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, {
+      'event_callback': function() {
+        console.log('Google Ads conversion tracked: ' + eventName);
+      },
+      'event_timeout': 2000,
+    });
+  }
+};
+
 export const LeadMagnet = ({
   guideTitle = "Argentina ECommerce 2025: El Estado del Comercio Online",
   guideId = "argentina-ecommerce-2025",
@@ -95,6 +107,9 @@ export const LeadMagnet = ({
       });
       setCanDownload(true);
       localStorage.setItem(`guideLead:${guideId}`, "ok");
+
+      // Track Google Ads Conversion
+      gtagSendEvent('close_convert_lead');
 
       Swal.fire({
         icon: "success",

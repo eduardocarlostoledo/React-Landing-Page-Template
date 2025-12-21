@@ -7,6 +7,18 @@ import { useSEO } from "../hooks/useSEO";
 import { seoConfig } from "../utils/seoConfig";
 import "../styles/Contact.css";
 
+// Google Ads Conversion Tracking Helper
+const gtagSendEvent = (eventName = 'close_convert_lead') => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, {
+      'event_callback': function() {
+        console.log('Google Ads conversion tracked: ' + eventName);
+      },
+      'event_timeout': 2000,
+    });
+  }
+};
+
 export const Contact = ({ data }) => {
   // SEO Configuration for Contact Section
   const contactSEO = seoConfig.contact;
@@ -70,6 +82,9 @@ export const Contact = ({ data }) => {
 
       setSubmitStatus({ success: true, message: "Mensaje enviado con éxito!" });
       setFormData({ name: "", email: "", message: "" });
+
+      // Track Google Ads Conversion
+      gtagSendEvent('close_convert_lead');
 
       Swal.fire({
         icon: "success",
