@@ -1,0 +1,951 @@
+/* CONFIRMA SUSCRIPCIÓN STYLES */
+
+:root {
+  --primary-dark: #00205b;
+  --primary-light: #1d2e7b;
+  --accent-gold: #ffcb05;
+  --accent-green: #28a745;
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --bg-light: #f8f9fa;
+  --surface-dark: #07122a;
+  --muted-surface: rgba(3,8,23,0.55);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.confirma-container {
+  background-color: #00205b;
+  color: #ffffff;
+  border-radius: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* HERO SECTION */
+
+/* HERO VIDEO BACKGROUND */
+.hero-video-bg {
+  position: relative;
+  width: 100vw;
+  min-height: 75vh; /* reduce to avoid overflow issues and visual conflict with body */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+  .contact-section {
+    max-width: 820px;
+    margin: 2rem auto;
+    background: linear-gradient(180deg, rgba(3,8,23,0.04), rgba(0,16,45,0.06));
+    border: 1px solid rgba(255,203,5,0.06);
+    border-radius: 12px;
+    padding: 1.6rem 1.4rem;
+    text-align: center;
+  }
+
+  .contact-section h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .contact-section > p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.9rem;
+    align-items: center;
+  }
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    justify-content: center;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    color: rgba(255,255,255,0.95);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.18s ease, background 0.18s ease;
+    cursor: pointer;
+  }
+
+  .contact-link:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,203,5,0.12);
+    transform: translateY(-2px);
+  }
+.checkout-image-pro {
+  max-width: 180px;
+  margin: 0 auto 2.5rem auto;
+  display: block;
+  filter: drop-shadow(0 8px 24px rgba(255,203,5,0.18));
+}
+.confirma-title-pro {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--accent-gold);
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+.confirma-subtitle-pro {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  opacity: 0.92;
+  margin-bottom: 1.8rem;
+  line-height: 1.7;
+}
+.confirma-divider-pro {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-gold) 0%, #fffbe6 100%);
+  border-radius: 2px;
+  margin: 1.5rem auto 1.5rem auto;
+}
+.confirma-branding-pro {
+  font-size: 1.1rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+.confirma-brand-pro {
+  color: var(--accent-gold);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.confirma-content {
+  position: relative;
+  z-index: 4; /* ensure content sits above overlay */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Scoped helper so containers within hero don't visually overflow */
+.confirma-hero .confirma-container {
+  max-width: 820px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* SUCCESS ICON */
+.success-icon-large {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* CHECKOUT SECURITY IMAGE */
+.checkout-image {
+  max-width: 300px;
+  height: auto;
+  margin: 1.5rem 0 2rem 0;
+  display: block;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+}
+
+.confirma-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+
+.confirma-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  opacity: 0.95;
+  margin: 0;
+}
+
+/* BRANDING BOX */
+.branding-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--accent-green);
+  border-radius: 15px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  margin: 2rem 0;
+}
+
+.branding-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.branding-website {
+  color: var(--accent-gold);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* WHATSAPP SECTION */
+.whatsapp-section {
+  max-width: 760px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-left: 4px solid rgba(255,203,5,0.25);
+  border-radius: 14px;
+  padding: 1.6rem 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+/* Global card styling: apply requested card background and center text */
+.card-surface,
+.next-steps,
+.pdf-payment-section,
+.access-card,
+.step-item,
+.faq-item,
+.contact-section,
+.whatsapp-section,
+.verificacion-box {
+  background: rgb(23, 43, 116);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Ensure inner text has sufficient contrast and readable line-height */
+.card-surface p,
+.next-steps p,
+.pdf-payment-section p,
+.access-card p,
+.step-item p,
+.faq-item p,
+.contact-section p,
+.whatsapp-section p,
+.verificacion-box p {
+  color: rgba(255,255,255,0.95);
+  line-height: 1.6;
+}
+
+/* Buttons and links with clear focus for keyboard users */
+.whatsapp-button:focus-visible,
+.contact-link:focus-visible,
+.access-button:focus-visible,
+.final-cta-button:focus-visible,
+.back-button:focus-visible {
+  outline: 3px solid rgba(255,203,5,0.9);
+  outline-offset: 3px;
+}
+
+/* Make sure lists inside verification and FAQ are readable and centered */
+.verificacion-list,
+.whatsapp-benefits {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  text-align: left; /* keep list items left-aligned for scanability */
+  color: rgba(255,255,255,0.95);
+}
+
+/* Improve verification box contrast and spacing */
+.verificacion-box {
+  padding: 1.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.whatsapp-intro {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  color: rgba(255,255,255,0.95);
+}
+
+.whatsapp-benefits {
+  list-style: none;
+  margin-bottom: 1rem;
+  text-align: left;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.25rem;
+}
+
+.whatsapp-benefits li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.92);
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.6rem;
+  background: linear-gradient(180deg, #22b95a 0%, #1e9b4c 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 6px 18px rgba(16,120,60,0.18);
+  margin: 0.9rem 0;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(16,120,60,0.22);
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.whatsapp-note {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+/* NEXT STEPS */
+.next-steps {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 203, 5, 0.2);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.next-steps h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.steps-container {
+  color: #1d2e7b;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.step-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-gold);
+  color: #00205b;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--accent-gold);
+  color: var(--primary-light);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0 auto 1rem;
+}
+
+.step-item h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.step-item p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  color: #00205b;
+}
+
+/* GUARANTEE SECTION */
+.guarantee-section {
+  background: rgba(40, 167, 69, 0.15);
+  border: 2px solid var(--accent-green);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.guarantee-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.guarantee-section h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.guarantee-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.guarantee-subtext {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  opacity: 0.9;
+}
+
+/* FAQ SECTION */
+.faq-section {
+  background: linear-gradient(to bottom, transparent, rgba(255, 203, 5, 0.05));
+  padding: 3rem 2rem;
+  text-align: left;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid var(--accent-gold);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.faq-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--accent-gold);
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin: 0;
+  color: #00205b;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  
+  background: rgba(255, 203, 5, 0.1);
+  border: 2px solid rgba(255, 203, 5, 0.3);
+  border-radius: 15px;
+  padding: 2.5rem;
+  
+  text-align: center;
+  color: #00205b;
+}
+
+.contact-section h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #00205b;
+}
+
+.contact-section > p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  color: #00205b;
+  margin: 0 auto;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 203, 5, 0.3);
+  border-radius: 10px;
+  color: #00205b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  background: rgba(255, 203, 5, 0.2);
+  border-color: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+/* BACK BUTTON */
+.back-button {
+  padding: 1.2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+/* VERIFICATION SECTION */
+.verificacion-section {
+  padding: 4rem 2rem;
+  background: white;
+  color: var(--text-light);
+}
+
+.verificacion-content {
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.verificacion-content h2 {
+  color: var(--text-light);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  
+}
+
+.verificacion-content > p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.verificacion-box {
+  color: var(--text-light);
+  background: linear-gradient(135deg, rgba(0, 32, 91, 0.05) 0%, rgba(255, 203, 5, 0.05) 100%);
+  border: 2px solid rgba(0, 32, 91, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.verificacion-list {
+  list-style-position: inside;
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--text-light);
+}
+
+.verificacion-list li {
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+/* FINAL CTA SECTION */
+.final-cta {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 203, 5, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.final-cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.final-cta-content h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.final-cta-content > p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.final-cta-button {
+  display: inline-block;
+  padding: 1.4rem 3.5rem;
+  background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.final-cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+}
+
+.final-note {
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+  opacity: 0.8;
+  line-height: 1.8;
+}
+
+/* PDF & PAYMENT SECTION */
+.pdf-payment-section {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  margin: 3rem 0;
+  backdrop-filter: blur(10px);
+}
+
+.pdf-payment-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+.pdf-payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.access-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.access-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+}
+
+.pdf-card {
+  border-left: 4px solid var(--accent-gold);
+}
+
+.payment-card {
+  border-left: 4px solid #25d366;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.access-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+}
+
+.payment-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.benefit-badge {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.access-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.pdf-button {
+  background: linear-gradient(135deg, var(--accent-gold) 0%, #ffd80f 100%);
+  color: var(--primary-dark);
+}
+
+.pdf-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(255, 203, 5, 0.3);
+}
+
+.payment-button {
+  background: linear-gradient(135deg, #25d366 0%, #1fa855 100%);
+  color: white;
+}
+
+.payment-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.card-note {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+.payment-info {
+  background: rgba(37, 211, 102, 0.1);
+  border-left: 4px solid #25d366;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.payment-guarantee {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 2;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .pdf-payment-section {
+    padding: 2rem 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .pdf-payment-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .pdf-payment-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .access-card {
+    padding: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+  }
+
+  .access-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .confirma-hero {
+    padding: 3rem 1.5rem;
+    min-height: auto;
+  }
+
+  .confirma-content h1 {
+    font-size: 2rem;
+  }
+
+  .success-icon-large {
+    font-size: 3.5rem;
+  }
+
+  .confirma-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .whatsapp-section,
+  .next-steps,
+  .guarantee-section,
+  .contact-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .whatsapp-button,
+  .final-cta-button {
+    padding: 1.2rem 2rem;
+    font-size: 1rem;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .verificacion-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .final-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .final-cta-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .faq-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .pdf-payment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-payment-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .pdf-payment-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .access-card h3 {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+
+  .access-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .confirma-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .success-icon-large {
+    font-size: 2.5rem;
+  }
+
+  .whatsapp-button,
+  .final-cta-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .branding-website {
+    font-size: 1rem;
+  }
+}

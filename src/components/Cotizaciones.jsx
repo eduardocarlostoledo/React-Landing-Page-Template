@@ -45,7 +45,10 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
   };
 
   const handlePlanClick = (plan) => {
-    navigate(`/detalle/${plan.id}`, { state: { plan } });
+    // Sistema dual: planes SEO van a /servicios-globales, planes regulares van a /detalle
+    const isSEOPlan = plan.ciudad !== undefined;
+    const route = isSEOPlan ? `/servicios-consultora-toledo/${plan.id}` : `/detalle/${plan.id}`;
+    navigate(route, { state: { plan } });
   };
   return (
     <>

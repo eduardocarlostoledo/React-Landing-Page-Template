@@ -16,7 +16,7 @@ const gtagSendEvent = (eventName = 'close_convert_lead') => {
     });
   }
 };
-
+ 
 export const LeadMagnet = ({
   guideTitle = "Argentina ECommerce 2025: El Estado del Comercio Online",
   guideId = "argentina-ecommerce-2025",

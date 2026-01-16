@@ -71,7 +71,7 @@ export const Contact = ({ data }) => {
 
     try {
      
-      // ENVÍO AL CLIENTE
+      // ENVÍO AL CLIENTE 
       await emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID_CLIENT, // Solicitud de informacion
