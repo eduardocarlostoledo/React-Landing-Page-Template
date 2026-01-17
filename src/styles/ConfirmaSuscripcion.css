@@ -47,7 +47,7 @@
   width: 100vw;
   height: 100vh;
 }
-  .contact-section {
+  .confirma-contact-section {
     max-width: 820px;
     margin: 2rem auto;
     background: linear-gradient(180deg, rgba(3,8,23,0.04), rgba(0,16,45,0.06));
@@ -57,13 +57,13 @@
     text-align: center;
   }
 
-  .contact-section h2 {
+  .confirma-contact-section h2 {
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 1rem;
   }
 
-  .contact-section > p {
+  .confirma-contact-section > p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     opacity: 0.95;
@@ -228,7 +228,7 @@
 .access-card,
 .step-item,
 .faq-item,
-.contact-section,
+.confirma-contact-section,
 .whatsapp-section,
 .verificacion-box {
   background: rgb(23, 43, 116);
@@ -243,7 +243,7 @@
 .access-card p,
 .step-item p,
 .faq-item p,
-.contact-section p,
+.confirma-contact-section p,
 .whatsapp-section p,
 .verificacion-box p {
   color: rgba(255,255,255,0.95);
@@ -472,7 +472,7 @@
 }
 
 /* CONTACT SECTION */
-.contact-section {
+.confirma-contact-section {
   
   background: rgba(255, 203, 5, 0.1);
   border: 2px solid rgba(255, 203, 5, 0.3);
@@ -483,14 +483,14 @@
   color: #00205b;
 }
 
-.contact-section h2 {
+.confirma-contact-section h2 {
   font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 1rem;
   color: #00205b;
 }
 
-.contact-section > p {
+.confirma-contact-section > p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   opacity: 0.9;
@@ -854,7 +854,7 @@
   .whatsapp-section,
   .next-steps,
   .guarantee-section,
-  .contact-section {
+  .confirma-contact-section {
     padding: 2rem 1.5rem;
   }
 

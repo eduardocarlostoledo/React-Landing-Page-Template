@@ -184,6 +184,8 @@ export const Contact = ({ data }) => {
               type="submit"
               className="submit-btn"
               disabled={isSubmitting}
+              aria-label="Enviar formulario de contacto"
+              aria-busy={isSubmitting}
             >
               {isSubmitting ? (
                 <>
@@ -228,58 +230,70 @@ export const Contact = ({ data }) => {
               </div>
             </div>
 
-            <div className="social-links">
+            <div className="social-links" aria-label="Síguenos en redes sociales">
               <a
                 href="https://wa.me/5493764221063"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="WhatsApp"
+                title="Comunícate con nosotros por WhatsApp"
+                aria-label="WhatsApp"
+                className="social-link whatsapp"
               >
-                <i style={{ color: "green" }} className="fab fa-whatsapp"></i>
+                <i className="fab fa-whatsapp" aria-hidden="true"></i>
               </a>
 
               <a
                 href="https://www.instagram.com/toledoconsultora/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Instagram"
+                title="Síguenos en Instagram"
+                aria-label="Instagram"
+                className="social-link instagram"
               >
-                <i style={{ color: "red" }} className="fab fa-instagram"></i>
+                <i className="fab fa-instagram" aria-hidden="true"></i>
               </a>
               <a
                 href="https://www.facebook.com/people/Toledo-Consultora-It/61567966653297/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Facebook"
+                title="Visita nuestro Facebook"
+                aria-label="Facebook"
+                className="social-link facebook"
               >
-                <i style={{ color: "blue" }} className="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f" aria-hidden="true"></i>
               </a>
 
               <a
                 href="https://www.linkedin.com/company/toledo-consultora-it"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="LinkedIn"
+                title="Conecta con nosotros en LinkedIn"
+                aria-label="LinkedIn"
+                className="social-link linkedin"
               >
-                <i style={{ color: "blue" }} className="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin" aria-hidden="true"></i>
               </a>
 
               <a
                 href="https://vimeo.com/user185125486"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Vimeo"
+                title="Ver nuestros videos en Vimeo"
+                aria-label="Vimeo"
+                className="social-link vimeo"
               >
-                <i style={{ color: "blue" }} className="fab fa-vimeo-v"></i>
+                <i className="fab fa-vimeo-v" aria-hidden="true"></i>
               </a>
 
               <a
                 href="https://www.youtube.com/@eduardocarlostoledo"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="YouTube"
+                title="Suscríbete a nuestro canal de YouTube"
+                aria-label="YouTube"
+                className="social-link youtube"
               >
-                <i style={{ color: "red" }} className="fab fa-youtube"></i>
+                <i className="fab fa-youtube" aria-hidden="true"></i>
               </a>
             </div>
           </motion.div>

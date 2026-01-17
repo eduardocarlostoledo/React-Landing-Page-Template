@@ -15,7 +15,7 @@
   left: -5%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(255, 203, 5, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 32, 91, 0.08) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -27,7 +27,7 @@
   right: -10%;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(29, 46, 123, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(29, 46, 123, 0.06) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -63,7 +63,7 @@
 .header-accent {
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #ffcb05 0%, #ff9500 100%);
+  background-color: #00205b;
   margin: 0 auto;
   border-radius: 2px;
 }
@@ -94,7 +94,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #ffcb05 0%, #ff9500 100%);
+  background-color: #00205b;
 }
 
 .contact-form {
@@ -111,7 +111,7 @@
   margin: 0 0 1.8rem 0;
   font-weight: 700;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #ffcb05;
+  border-bottom: 2px solid #00205b;
 }
 
 .info-item {
@@ -133,7 +133,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #ffcb05 0%, #ff9500 100%);
+  background-color: #00205b;
   border-radius: 12px;
   flex-shrink: 0;
   font-size: 1.5rem;
@@ -176,15 +176,16 @@
 label {
   margin-bottom: 0.7rem;
   color: #00205b;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
+  display: block;
 }
 
 input,
 textarea {
   padding: 0.9rem 1rem;
   border-radius: 8px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #d1d5db;
   background-color: #ffffff;
   color: #1a1f33;
   font-size: 0.95rem;
@@ -192,16 +193,36 @@ textarea {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+input:focus,
+textarea:focus {
+  border-color: #00205b;
+  box-shadow: 0 0 0 3px rgba(0, 32, 91, 0.1);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #00205b;
+  outline-offset: 2px;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #9ca3af;
+  opacity: 0.7;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #ffcb05;
-  box-shadow: 0 0 0 3px rgba(255, 203, 5, 0.1);
+  border-color: #00205b;
+  box-shadow: 0 0 0 3px rgba(0, 32, 91, 0.1);
+  background-color: #fafafa;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #00205b;
+  outline-offset: 2px;
 }
 
 textarea {
@@ -231,12 +252,12 @@ textarea {
 
 .submit-btn {
   width: 100%;
-  background: linear-gradient(135deg, #ffcb05 0%, #ff9500 100%);
+  background-color: #00205b;
   color: white;
   padding: 1rem;
   font-size: 1rem;
   font-weight: 700;
-  border: none;
+  border: 2px solid #00205b;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -248,8 +269,14 @@ textarea {
 }
 
 .submit-btn:hover:not(:disabled) {
+  background-color: #00153a;
   transform: translateY(-2px);
-  box-shadow: 0 15px 40px rgba(255, 203, 5, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 32, 91, 0.2);
+}
+
+.submit-btn:focus-visible {
+  outline: 2px solid #ffcb05;
+  outline-offset: 2px;
 }
 
 .submit-btn:active:not(:disabled) {
@@ -257,7 +284,7 @@ textarea {
 }
 
 .submit-btn:disabled {
-  opacity: 0.7;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
@@ -281,13 +308,14 @@ textarea {
   gap: 1rem;
   margin-top: 1.8rem;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .social-links a {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #ffcb05 0%, #ff9500 100%);
+  background-color: #4a5568;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,15 +323,84 @@ textarea {
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 1.2rem;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
 }
 
-.social-links a:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(255, 203, 5, 0.3);
+/* Hover effect mejorado para accesibilidad */
+.social-links a:hover,
+.social-links a:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(74, 85, 104, 0.2);
+  border-color: #4a5568;
+  background-color: #2d3748;
+}
+
+/* Focus visible para accesibilidad */
+.social-links a:focus-visible {
+  outline: 2px solid #00205b;
+  outline-offset: 2px;
 }
 
 .social-links i {
   color: white;
+  transition: color 0.3s ease;
+}
+
+/* Colores sobrios por red social */
+.social-link.whatsapp {
+  background-color: #555555;
+}
+
+.social-link.whatsapp:hover,
+.social-link.whatsapp:focus {
+  background-color: #3a3a3a;
+}
+
+.social-link.instagram {
+  background-color: #555555;
+}
+
+.social-link.instagram:hover,
+.social-link.instagram:focus {
+  background-color: #3a3a3a;
+}
+
+.social-link.facebook {
+  background-color: #555555;
+}
+
+.social-link.facebook:hover,
+.social-link.facebook:focus {
+  background-color: #3a3a3a;
+}
+
+.social-link.linkedin {
+  background-color: #555555;
+}
+
+.social-link.linkedin:hover,
+.social-link.linkedin:focus {
+  background-color: #3a3a3a;
+}
+
+.social-link.vimeo {
+  background-color: #555555;
+}
+
+.social-link.vimeo:hover,
+.social-link.vimeo:focus {
+  background-color: #3a3a3a;
+}
+
+.social-link.youtube {
+  background-color: #555555;
+}
+
+.social-link.youtube:hover,
+.social-link.youtube:focus {
+  background-color: #3a3a3a;
 }
 
 .contact-map {
@@ -338,15 +435,23 @@ textarea {
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0.5rem;
-  border: 2px solid rgba(0, 32, 91, 0.1);
+  border: 2px solid #00205b;
 }
 
 .sitemap-map-link:hover {
-  background: linear-gradient(135deg, #ffcb05 0%, #ff9500 100%);
+  background-color: #00205b;
   color: white;
-  border-color: #ffcb05;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 203, 5, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 32, 91, 0.2);
+}
+
+.sitemap-map-link:focus-visible {
+  outline: 2px solid #ffcb05;
+  outline-offset: 2px;
+}
+
+.sitemap-map-link:active {
+  transform: translateY(0);
 }
 
 /* Responsive Design */
@@ -406,7 +511,7 @@ textarea {
 
   input,
   textarea {
-    font-size: 0.9rem;
+    font-size: 16px; /* Prevents zoom on iOS */
     padding: 0.8rem 0.9rem;
   }
 
@@ -427,6 +532,16 @@ textarea {
 
   .info-content p {
     font-size: 0.9rem;
+  }
+
+  .social-links {
+    gap: 0.8rem;
+  }
+
+  .social-links a {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
   }
 
   .contact-map {

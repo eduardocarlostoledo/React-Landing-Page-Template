@@ -194,7 +194,7 @@ export const ConfirmaSuscripcion = () => {
             </motion.div>
 
             {/* CONTACT SECTION */}
-            <motion.div variants={itemVariants} className="contact-section">
+            <motion.div variants={itemVariants} className="confirma-contact-section">
               <h2>¿Necesitas ayuda?</h2>
               <p>Contacta con nuestro equipo:</p>
               <div className="contact-methods">

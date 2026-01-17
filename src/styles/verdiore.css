@@ -1,0 +1,725 @@
+/* ============================================
+   VERDIORE - Natural Cosmetics Landing Page
+   Pure CSS - Mobile First & Responsive
+   ============================================ */
+
+:root {
+  --primary-green: #547749;
+  --secondary-green: #1f3d2b;
+  --bg-light: #f6f5f2;
+  --bg-white: #ffffff;
+  --text-dark: #2c2c2c;
+  --text-light: #666666;
+  --accent-gold: #d4a574;
+  --border-radius: 12px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   HEADER / NAVBAR
+   ============================================ */
+
+.verdiore-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-white);
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  letter-spacing: 2px;
+}
+
+.header-cta {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.cta-button {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: var(--primary-green);
+  color: var(--bg-white);
+  text-align: center;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-green);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.primary-cta {
+  background-color: var(--primary-green);
+  color: var(--bg-white);
+}
+
+.primary-cta:hover {
+  background-color: var(--secondary-green);
+}
+
+.cta-button.large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero-section {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-headline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--secondary-green);
+  line-height: 1.2;
+}
+
+.hero-subheadline {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.trust-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.bullet-icon {
+  font-size: 1.5rem;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   SECTIONS - GENERAL
+   ============================================ */
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.benefits-section,
+.before-after-section,
+.testimonial-section,
+.product-highlight,
+.final-cta-section {
+  padding: 4rem 1.5rem;
+}
+
+.benefits-section,
+.testimonial-section {
+  background-color: var(--bg-light);
+}
+
+.before-after-section,
+.product-highlight {
+  background-color: var(--bg-white);
+}
+
+.final-cta-section {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+  color: var(--bg-white);
+  text-align: center;
+  padding: 5rem 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-green);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.final-cta-section .section-title,
+.final-cta-section .cta-headline {
+  color: var(--bg-white);
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* ============================================
+   BENEFITS SECTION
+   ============================================ */
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  background-color: var(--bg-white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-green);
+  margin-bottom: 0.8rem;
+}
+
+.benefit-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ============================================
+   BEFORE/AFTER SECTION
+   ============================================ */
+
+.before-after-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.before-after-image {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.comparison-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.before-after-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.before-after-description {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.results-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background-color: var(--bg-light);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-green);
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+  min-width: 2rem;
+}
+
+.badge span:last-child {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+/* ============================================
+   TESTIMONIAL SECTION
+   ============================================ */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: var(--bg-white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.testimonial-card-landscape {
+  grid-template-columns: 1fr;
+}
+
+.testimonial-photo {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.testimonial-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stars {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial-author {
+  text-align: center;
+}
+
+.testimonial-author h4 {
+  font-size: 1.1rem;
+  color: var(--primary-green);
+  margin-bottom: 0.3rem;
+}
+
+.author-tag {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0.2rem 0;
+}
+
+/* ============================================
+   PRODUCT HIGHLIGHT SECTION
+   ============================================ */
+
+.product-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.product-image {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.product-nature-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product-info h2 {
+  font-size: 2rem;
+  color: var(--secondary-green);
+  font-weight: 700;
+}
+
+.product-category {
+  font-size: 0.95rem;
+  color: var(--primary-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.product-description h3 {
+  font-size: 1.1rem;
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.product-description p {
+  color: var(--text-light);
+  margin-left: 0;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: var(--bg-light);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent-gold);
+}
+
+.price-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.price-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+/* ============================================
+   FINAL CTA SECTION
+   ============================================ */
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cta-headline {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cta-subtext {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.verdiore-footer {
+  background-color: var(--secondary-green);
+  color: var(--bg-white);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-trust {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* ============================================
+   RESPONSIVE - TABLET (768px+)
+   ============================================ */
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 4rem 2rem;
+    min-height: 90vh;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .hero-headline {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .before-after-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .testimonial-card {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-photo {
+    height: auto;
+    min-height: 300px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .product-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .results-badges {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    flex: 1;
+    min-width: 150px;
+  }
+}
+
+/* ============================================
+   RESPONSIVE - DESKTOP (1024px+)
+   ============================================ */
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding: 5rem 2rem;
+    min-height: 100vh;
+  }
+
+  .hero-headline {
+    font-size: 3.5rem;
+  }
+
+  .hero-subheadline {
+    font-size: 1.3rem;
+  }
+
+  .trust-item {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .benefit-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .benefits-section,
+  .before-after-section,
+  .testimonial-section,
+  .product-highlight {
+    padding: 5rem 2rem;
+  }
+
+  .final-cta-section {
+    padding: 6rem 2rem;
+  }
+
+  .cta-headline {
+    font-size: 2.5rem;
+  }
+
+  .cta-subtext {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================================
+   LARGE DESKTOP (1440px+)
+   ============================================ */
+
+@media (min-width: 1440px) {
+  .hero-headline {
+    font-size: 4rem;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+  }
+
+  .cta-headline {
+    font-size: 3rem;
+  }
+}
+
+/* ============================================
+   ANIMATION & TRANSITIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text,
+.benefit-card,
+.testimonial-card,
+.product-content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ============================================
+   PRINT & ACCESSIBILITY
+   ============================================ */
+
+@media print {
+  .verdiore-header,
+  .cta-button {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

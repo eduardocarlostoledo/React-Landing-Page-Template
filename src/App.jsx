@@ -42,6 +42,7 @@ import { Differentials } from "./components/Differentials.jsx";
 import { LeadMagnet } from "./components/LeadMagnet.jsx";
 import { Sistema55 } from "./components/Sistema55.jsx";
 import { ConfirmaSuscripcion } from "./components/ConfirmaSuscripcion.jsx";
+import { Verdiore } from "./components/verdiore.jsx";
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -127,6 +128,7 @@ const App = () => {
         <Route path="/e-book-gratuito" element={<EBook />} />
         <Route path="/sistema-5-5" element={<Sistema55 />} />
         <Route path="/confirma-suscripcion" element={<ConfirmaSuscripcion />} />
+        <Route path="/verdiore" element={<Verdiore />} />
       </Routes>
     </>
   );
