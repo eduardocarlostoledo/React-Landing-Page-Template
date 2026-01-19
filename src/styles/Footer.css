@@ -1,0 +1,505 @@
+/* ============================================================================
+   FOOTER - PROFESIONAL Y OPTIMIZADO
+   ============================================================================ */
+
+:root {
+  --footer-bg: linear-gradient(135deg, #00205b 0%, #1d2e7b 100%);
+  --footer-text: #ffffff;
+  --footer-text-secondary: rgba(255, 255, 255, 0.75);
+  --footer-text-tertiary: rgba(255, 255, 255, 0.5);
+  --footer-accent: #ffcb05;
+  --footer-hover: #ff9500;
+  --footer-border: rgba(255, 255, 255, 0.1);
+  --transition-duration: 0.3s;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Footer Main Container */
+.footer-main {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 6rem 2rem 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid var(--footer-border);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background elements */
+.footer-main::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 203, 5, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.footer-main::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -15%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 203, 5, 0.03) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Footer Container */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+/* Footer Column */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.footer-column:nth-child(1) { animation-delay: 0.1s; }
+.footer-column:nth-child(2) { animation-delay: 0.2s; }
+.footer-column:nth-child(3) { animation-delay: 0.3s; }
+.footer-column:nth-child(4) { animation-delay: 0.4s; }
+.footer-column:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Column Styling */
+.footer-about {
+  grid-column: span 1;
+}
+
+/* Footer Title */
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--footer-text);
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.5px;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--footer-accent) 0%, var(--footer-hover) 100%);
+  border-radius: 2px;
+}
+
+/* Footer Subtitle */
+.footer-subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--footer-text);
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Footer Description */
+.footer-description {
+  font-size: 0.95rem;
+  color: var(--footer-text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.footer-text-small {
+  font-size: 0.9rem;
+  color: var(--footer-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Social Links */
+.footer-socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--footer-text);
+  text-decoration: none;
+  transition: all var(--transition-duration) var(--transition-timing);
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+  background: var(--footer-accent);
+  color: #00205b;
+  transform: translateY(-4px);
+  border-color: var(--footer-accent);
+  box-shadow: 0 8px 20px rgba(255, 203, 5, 0.3);
+}
+
+/* Navigation Links */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-link {
+  color: var(--footer-text-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all var(--transition-duration) var(--transition-timing);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-link::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+.footer-link:hover {
+  color: var(--footer-accent);
+  padding-left: 15px;
+}
+
+.footer-link:hover::before {
+  opacity: 1;
+  left: -15px;
+}
+
+.footer-link:focus-visible {
+  outline: 2px solid var(--footer-accent);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Newsletter Form */
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.newsletter-input {
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--footer-text);
+  font-size: 0.95rem;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-color: var(--footer-accent);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(255, 203, 5, 0.2);
+}
+
+.newsletter-btn {
+  padding: 0.9rem 1.5rem;
+  background: linear-gradient(135deg, var(--footer-accent) 0%, var(--footer-hover) 100%);
+  color: #00205b;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all var(--transition-duration) var(--transition-timing);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.newsletter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 203, 5, 0.4);
+}
+
+.newsletter-btn:active {
+  transform: translateY(0);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid var(--footer-border);
+  padding-top: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: var(--footer-text-tertiary);
+  margin: 0;
+}
+
+.divider {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+/* SEO Links */
+.footer-seo-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.seo-link {
+  font-size: 0.85rem;
+  color: var(--footer-text-tertiary);
+  text-decoration: none;
+  transition: color var(--transition-duration) var(--transition-timing);
+}
+
+.seo-link:hover {
+  color: var(--footer-accent);
+}
+
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================ */
+
+@media (max-width: 1024px) {
+  .footer-main {
+    padding: 4rem 1.5rem 1.5rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    padding: 3rem 1rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-about {
+    grid-column: span 1;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    width: 100%;
+  }
+
+  .footer-seo-links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-link {
+    width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-main {
+    padding: 2rem 0.75rem 0.75rem;
+  }
+
+  .footer-container {
+    gap: 1.5rem;
+  }
+
+  .footer-title {
+    font-size: 1.1rem;
+  }
+
+  .footer-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-input,
+  .newsletter-btn {
+    font-size: 0.9rem;
+    padding: 0.8rem 0.9rem;
+  }
+
+  .footer-socials {
+    gap: 1rem;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================================================
+   ACCESIBILIDAD
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-column,
+  .footer-link,
+  .social-link,
+  .newsletter-input,
+  .newsletter-btn {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ============================================================================
+   MODO OSCURO (si aplica)
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  .footer-main {
+    --footer-text-secondary: rgba(255, 255, 255, 0.8);
+    --footer-text-tertiary: rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* ============================================================================
+   IMPRESIÓN
+   ============================================================================ */
+
+@media print {
+  .footer-main {
+    page-break-inside: avoid;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+  }
+
+  .footer-link,
+  .social-link {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .newsletter-form {
+    display: none;
+  }
+}
+
+/* ============================================================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================================================ */
+
+/* Will-change para animaciones suaves */
+.footer-column {
+  will-change: transform, opacity;
+}
+
+.social-link,
+.footer-link {
+  will-change: color, transform;
+}
+
+/* Contain para aislar el footer del flujo de renderizado */
+.footer-main {
+  contain: layout style paint;
+}
+
+/* ============================================================================
+   UTILIDADES
+   ============================================================================ */
+
+.footer-text-center {
+  text-align: center;
+}
+
+.footer-text-large {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-text-bold {
+  font-weight: 700;
+}
+
+/* Links activos */
+.footer-link.active {
+  color: var(--footer-accent);
+  font-weight: 600;
+}
+
+/* Estado visitado */
+.footer-link:visited {
+  color: rgba(255, 203, 5, 0.6);
+}

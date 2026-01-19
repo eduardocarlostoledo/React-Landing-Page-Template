@@ -31,7 +31,7 @@
   pointer-events: none;
 }
 
-.container {
+.container-testimonials {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -153,9 +153,28 @@
   box-shadow: 0 20px 60px rgba(0, 32, 91, 0.12);
 }
 
-/* Personalización del widget Elfsight */
+/* Personalización del widget Elfsight - Grid Layout */
 .elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261 {
   min-height: 400px;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+/* Estilos para tarjetas individuales dentro del widget */
+.elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261 > * {
+  display: flex !important;
+  flex-direction: column !important;
+  background: #f8f9fa !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261 > *:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 20px rgba(0, 32, 91, 0.15) !important;
 }
 
 /* CTA SECTION */
@@ -241,6 +260,12 @@
     margin-bottom: 2rem;
   }
 
+  .elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 1.5rem !important;
+    min-height: 350px;
+  }
+
   .testimonials-cta {
     padding: 2rem 1.5rem;
   }
@@ -284,6 +309,8 @@
   }
 
   .elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261 {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
     min-height: 300px;
   }
 

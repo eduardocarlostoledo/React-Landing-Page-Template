@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useSEO } from "../hooks/useSEO";
 import { seoConfig } from "../utils/seoConfig";
@@ -8,23 +8,15 @@ export const Testimonials = () => {
   // SEO Configuration for Testimonials Section
   const testimonialsSEO = seoConfig.testimonials;
 
-  const [widgetLoaded, setWidgetLoaded] = useState(false);
-
-  // Cargar el widget de Elfsight
+  // El widget Elfsight se carga ahora de forma asíncrona desde index.html
+  // para evitar render blocking. Este efecto solo re-renderiza si el widget
+  // ya está disponible globalmente (inyectado desde HTML)
   useEffect(() => {
-    if (!widgetLoaded) {
-      const script = document.createElement("script");
-      script.src = "https://static.elfsight.com/platform/platform.js";
-      script.async = true;
-      script.defer = true;
-      script.onload = () => setWidgetLoaded(true);
-      document.body.appendChild(script);
-
-      return () => {
-        document.body.removeChild(script);
-      };
+    if (window.elfWidgetPlatform && !window.elfWidgetInitialized) {
+      window.elfWidgetInitialized = true;
+      window.elfWidgetPlatform.renderWidget(document.querySelector('.elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261'));
     }
-  }, [widgetLoaded]);
+  }, []);
 
   // Animaciones
   const containerVariants = {
@@ -60,7 +52,7 @@ export const Testimonials = () => {
     <>
       {useSEO(testimonialsSEO)}
       <section id="testimonials" className="testimonials-section">
-      <div className="container">
+      <div className="container-testimonials">
         {/* Header */}
         <motion.div
           className="testimonials-header"

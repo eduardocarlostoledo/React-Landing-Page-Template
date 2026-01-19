@@ -9,6 +9,7 @@ import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
+import { Footer } from "./components/Footer";
 import { PartnerLogos } from "./components/PartnerLogos";
 import { Hero } from "./components/Hero";
 import { Chatbot } from "./components/ChatBot";
@@ -27,7 +28,7 @@ import { AboutComprarDominio } from "./components/aboutComprarDominio.jsx";
 import { AboutGoogleAds } from "./components/aboutGoogleAds.jsx";
 import { AboutReseñas } from "./components/aboutReseñas.jsx";
 import { AboutPosicionamiento } from "./components/aboutPosicionamiento.jsx";
-import { AboutGoogleBusiness } from "./components/aboutGoogleBussiness.jsx";
+import { AboutGoogleBussiness } from "./components/aboutGoogleBussiness.jsx";
 import { AboutOptimizacion } from "./components/aboutOptimizacion.jsx";
 import { AboutRedesSociales } from "./components/aboutRedesSociales.jsx";
 import { AboutLandingPage } from "./components/aboutLandingPage.jsx";
@@ -69,6 +70,7 @@ const LandingPage = ({ data }) => (
     <LeadMagnet />
     <Contact data={data.Contact} />
     <Chatbot />
+    <Footer />
   </>
 );
 
@@ -104,31 +106,31 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<LandingPage data={landingPageData} />} />
-        <Route path="/detalle/:id" element={<DetalleCotizacion />} />
-        <Route path="/servicios-consultora-toledo/:id" element={<DetalleCotizacionSEO />} />
-        <Route path="/servicios-profesionales" element={<Cotizaciones />} />
-        <Route path="/asesoramiento-profesional" element={<Asesoramiento data={landingPageData.Asesoramiento} />} />
-        <Route path="/acerca-de-nosotros" element={<About data={landingPageData.About} />} />
-        <Route path="/nuestros-servicios" element={<Services data={landingPageData.Services} />} />
-        <Route path="/nuestros-proyectos" element={<Gallery data={landingPageData.Gallery} />} />
-        <Route path="/indice-sitemap" element={<IndiceSitemap />} />
-        <Route path="/indice-del-sitio" element={<Sitemap />} />
-        <Route path="/gracias-por-su-compra" element={<Graciasporsucompra />} />
-        <Route path="/terminos-y-condiciones" element={<TerminosYCondiciones />} />
-        <Route path="/politica-de-privacidad" element={<Politica />} />
-        <Route path="/contacto" element={<Contact />} />
-        <Route path="/about-comprar-dominio" element={<AboutComprarDominio />} />
-        <Route path="/about-google-ads" element={<AboutGoogleAds />} />
-        <Route path="/about-reseñas" element={<AboutReseñas />} />
-        <Route path="/about-posicionamiento" element={<AboutPosicionamiento />} />
-        <Route path="/about-google-business" element={<AboutGoogleBusiness />} />
-        <Route path="/about-optimizacion" element={<AboutOptimizacion />} />
-        <Route path="/about-redes-sociales" element={<AboutRedesSociales />} />
-        <Route path="/about-landing-page" element={<AboutLandingPage />} />
-        <Route path="/e-book-gratuito" element={<EBook />} />
-        <Route path="/sistema-5-5" element={<Sistema55 />} />
-        <Route path="/confirma-suscripcion" element={<ConfirmaSuscripcion />} />
-        <Route path="/verdiore" element={<Verdiore />} />
+        <Route path="/detalle/:id" element={<><DetalleCotizacion /><Footer /></>} />
+        <Route path="/servicios-consultora-toledo/:id" element={<><DetalleCotizacionSEO /><Footer /></>} />
+        <Route path="/servicios-profesionales" element={<><Cotizaciones /><Footer /></>} />
+        <Route path="/asesoramiento-profesional" element={<><Asesoramiento data={landingPageData.Asesoramiento} /><Footer /></>} />
+        <Route path="/acerca-de-nosotros" element={<><About data={landingPageData.About} /><Footer /></>} />
+        <Route path="/nuestros-servicios" element={<><Services data={landingPageData.Services} /><Footer /></>} />
+        <Route path="/nuestros-proyectos" element={<><Gallery data={landingPageData.Gallery} /><Footer /></>} />
+        <Route path="/indice-sitemap" element={<><IndiceSitemap /><Footer /></>} />
+        <Route path="/indice-del-sitio" element={<><Sitemap /><Footer /></>} />
+        <Route path="/gracias-por-su-compra" element={<><Graciasporsucompra /><Footer /></>} />
+        <Route path="/terminos-y-condiciones" element={<><TerminosYCondiciones /><Footer /></>} />
+        <Route path="/politica-de-privacidad" element={<><Politica /><Footer /></>} />
+        <Route path="/contacto" element={<><Contact /><Footer /></>} />
+        <Route path="/about-comprar-dominio" element={<><AboutComprarDominio /><Footer /></>} />
+        <Route path="/about-google-ads" element={<><AboutGoogleAds /><Footer /></>} />
+        <Route path="/about-reseñas" element={<><AboutReseñas /><Footer /></>} />
+        <Route path="/about-posicionamiento" element={<><AboutPosicionamiento /><Footer /></>} />
+        <Route path="/about-google-business" element={<><AboutGoogleBussiness /><Footer /></>} />
+        <Route path="/about-optimizacion" element={<><AboutOptimizacion /><Footer /></>} />
+        <Route path="/about-redes-sociales" element={<><AboutRedesSociales /><Footer /></>} />
+        <Route path="/about-landing-page" element={<><AboutLandingPage /><Footer /></>} />
+        <Route path="/e-book-gratuito" element={<><EBook /><Footer /></>} />
+        <Route path="/sistema-5-5" element={<><Sistema55 /><Footer /></>} />
+        <Route path="/confirma-suscripcion" element={<><ConfirmaSuscripcion /><Footer /></>} />
+        <Route path="/verdiore" element={<><Verdiore /><Footer /></>} />
       </Routes>
     </>
   );

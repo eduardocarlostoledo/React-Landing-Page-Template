@@ -1,8 +1,13 @@
 import React from "react";
-import "../styles/about.css";
+import { Helmet } from "react-helmet";
+import { articleSEOConfig, generateArticleSchema, generateFAQSchema } from "../utils/articleSEOConfig";
 import { useEffect } from "react";
+import "../styles/about.css";
 
 export const AboutReseñas = () => {
+  const seo = articleSEOConfig.reseñas;
+  const articleSchema = generateArticleSchema(seo);
+  const faqSchema = generateFAQSchema(seo.FAQs);
 
         useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });

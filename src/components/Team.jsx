@@ -81,7 +81,7 @@ export const Team = ({ data }) => {
     <>
       {useSEO(teamSEO)}
     <section id="team" className="team-section">
-      <div className="container">
+      <div className="container-team">
         {/* Header */}
         <motion.div
           className="team-header"

@@ -26,7 +26,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "serve -s build -l 3000"
+    "serve": "serve -s build -l 3000",
+    "validate-perf": "node validate-optimizations.js",
+    "validate-css": "node validate-css-optimization.js",
+    "validate-services": "node validate-services-section.js",
+    "validate-testimonials": "node validate-testimonials-layout.js",
+    "validate-classes": "node validate-class-duplicates.js",
+    "build-and-test": "npm run validate-classes && npm run build && npm run validate-perf && npm run validate-css && npm run validate-services && npm run validate-testimonials && npm run serve",
+    "extract-css": "node extract-critical-css.js"
   },
   "eslintConfig": {
     "extends": "react-app"
