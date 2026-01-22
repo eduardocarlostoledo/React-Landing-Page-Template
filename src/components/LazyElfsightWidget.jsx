@@ -24,12 +24,50 @@ export const LazyElfsightWidget = ({ appId, className = "", style = {} }) => {
         if (entry.isIntersecting && !isLoaded) {
           setIsVisible(true);
           setIsLoaded(true);
-          
-          // Si el script ya está cargado globalmente
+
+          const renderTarget = entry.target.querySelector(`[data-elfsight-app-id="${appId}"]`);
+
+          const tryRender = () => {
+            if (window.elfWidgetPlatform && renderTarget) {
+              try {
+                window.elfWidgetPlatform.renderElement(renderTarget);
+              } catch (err) {
+                // fail silently
+                console.warn('Elfsight render error', err);
+              }
+            }
+          };
+
+          // Si ya está cargado, renderizar inmediatamente
           if (window.elfWidgetPlatform) {
-            window.elfWidgetPlatform.renderElement(entry.target.querySelector(`[data-elfsight-app-id="${appId}"]`));
+            tryRender();
+          } else {
+            // Si no, inyectar el script de Elfsight una sola vez y al cargar renderizar
+            if (!window._elfsightScriptLoading) {
+              window._elfsightScriptLoading = true;
+              const s = document.createElement('script');
+              s.src = 'https://static.elfsight.com/platform/platform.js';
+              s.defer = true;
+              s.onload = function() {
+                tryRender();
+              };
+              s.onerror = function() {
+                console.warn('Failed to load Elfsight platform script');
+              };
+              document.body.appendChild(s);
+            } else {
+              // Si ya se está cargando, esperar un pequeño intervalo para intentar renderizar
+              const interval = setInterval(() => {
+                if (window.elfWidgetPlatform) {
+                  clearInterval(interval);
+                  tryRender();
+                }
+              }, 300);
+              // timeout por seguridad
+              setTimeout(() => clearInterval(interval), 10000);
+            }
           }
-          
+
           // Dejar de observar después de que se cargue
           observer.unobserve(entry.target);
         }
@@ -80,3 +118,4 @@ export const LazyElfsightWidget = ({ appId, className = "", style = {} }) => {
     </div>
   );
 };
+

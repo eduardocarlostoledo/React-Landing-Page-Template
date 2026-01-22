@@ -702,26 +702,42 @@ a:hover {
     </noscript>
 
     <!-- Elfsight Chatbot - Carga Asíncrona (Performance Optimization) -->
+    <!-- Non-critical third-party scripts will be loaded after full page load to improve performance -->
     <script>
       window.addEventListener('load', function() {
+        // Small delay to ensure interactive readiness
         setTimeout(function() {
-          var script = document.createElement('script');
-          script.src = 'https://static.elfsight.com/platform/platform.js';
-          script.defer = true;
-          script.onload = function() {
-            if (window.elfWidgetPlatform) {
-              window.elfWidgetPlatform.renderElement(document.querySelector('.elfsight-app-511f315b-e748-4328-a6cb-d6c95ab9cb97'));
-            }
-          };
-          document.body.appendChild(script);
-        }, 4000); // Retraso 4s después de load event
+          function loadScript(src, attrs) {
+            return new Promise(function(resolve, reject) {
+              var s = document.createElement('script');
+              s.src = src;
+              s.async = true;
+              if (attrs && attrs.defer) s.defer = true;
+              s.onload = function() { resolve(s); };
+              s.onerror = function(e) { reject(e); };
+              document.body.appendChild(s);
+            });
+          }
+
+          // Load Google Tag (Analytics + Ads) last
+          Promise.all([
+            loadScript('https://www.googletagmanager.com/gtag/js?id=AW-16912032526'),
+            loadScript('https://www.googletagmanager.com/gtag/js?id=G-WENNK2M7Y0')
+          ]).then(function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            window.gtag = window.gtag || gtag;
+            gtag('js', new Date());
+            gtag('config', 'AW-16912032526');
+            gtag('config', 'G-WENNK2M7Y0');
+          }).catch(function(err){
+            console.warn('Failed to load gtag scripts', err);
+          });
+
+          // Elfsight platform will be loaded by the LazyElfsightWidget component when it is visible
+        }, 2000); // 2s after window.load
       });
     </script>
-    <div class="elfsight-app-511f315b-e748-4328-a6cb-d6c95ab9cb97" data-elfsight-app-lazy style="min-height: 100px;"></div>
-
-    <!-- Google Tag Manager Scripts (Deferred) -->
-    <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-16912032526"></script>
-    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-WENNK2M7Y0"></script>
     
     <!-- EmailJS (Async loaded) -->
     <script>

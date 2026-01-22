@@ -1,41 +1,14 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import "../styles/Chatbot.css";
+import { LazyElfsightWidget } from './LazyElfsightWidget';
 
 export const Chatbot = () => {
-  const [isChatbotLoaded, setIsChatbotLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-
-  const initElfsightWidget = useCallback(() => {
-    if (window.ElfsightApp) {
-      window.ElfsightApp.init();
-    } else {
-      setTimeout(initElfsightWidget, 500);
-    }
-  }, []);
-
-  useEffect(() => {
-    const scriptSrc = 'https://static.elfsight.com/platform/platform.js';
-
-    if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
-      const script = document.createElement('script');
-      script.src = scriptSrc;
-      script.async = true;
-      script.onload = () => {
-        setIsChatbotLoaded(true);
-        initElfsightWidget();
-      };
-      document.body.appendChild(script);
-    } else {
-      setIsChatbotLoaded(true);
-      initElfsightWidget();
-    }
-  }, [initElfsightWidget]);
 
   return (
     <div className="chatbot-container">
-      {isChatbotLoaded && (
-        <motion.button
+      <motion.button
           className="chatbot-toggle"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ 
@@ -50,8 +23,7 @@ export const Chatbot = () => {
         >
           {isVisible ? '✖' : '💬'}
         </motion.button>
-      )}
-
+      
       <AnimatePresence>
         {isVisible && (
           <motion.div
@@ -64,8 +36,8 @@ export const Chatbot = () => {
               transition: { type: 'spring', stiffness: 200, damping: 20 } 
             }}
             exit={{ y: 100, opacity: 0, transition: { duration: 0.2 } }}
-          >
-            <div className="elfsight-app-511f315b-e748-4328-a6cb-d6c95ab9cb97" data-elfsight-app-lazy />
+            >
+            <LazyElfsightWidget appId="511f315b-e748-4328-a6cb-d6c95ab9cb97" className="chatbot-elfsight" />
           </motion.div>
         )}
       </AnimatePresence>

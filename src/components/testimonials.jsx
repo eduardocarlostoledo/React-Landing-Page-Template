@@ -1,22 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { useSEO } from "../hooks/useSEO";
 import { seoConfig } from "../utils/seoConfig";
 import "../styles/testimonials.css";
+import { LazyElfsightWidget } from './LazyElfsightWidget';
 
 export const Testimonials = () => {
   // SEO Configuration for Testimonials Section
   const testimonialsSEO = seoConfig.testimonials;
 
-  // El widget Elfsight se carga ahora de forma asíncrona desde index.html
-  // para evitar render blocking. Este efecto solo re-renderiza si el widget
-  // ya está disponible globalmente (inyectado desde HTML)
-  useEffect(() => {
-    if (window.elfWidgetPlatform && !window.elfWidgetInitialized) {
-      window.elfWidgetInitialized = true;
-      window.elfWidgetPlatform.renderWidget(document.querySelector('.elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261'));
-    }
-  }, []);
+  // Usar componente lazy que inyecta el script solo cuando el widget está visible
 
   // Animaciones
   const containerVariants = {
@@ -99,10 +92,7 @@ export const Testimonials = () => {
           viewport={{ once: true, margin: "-100px" }}
           variants={itemVariants}
         >
-          <div 
-            className="elfsight-app-ee107658-e146-4bcf-9ca9-ab0cb731e261"
-            data-elfsight-app-lazy
-          />
+          <LazyElfsightWidget appId="ee107658-e146-4bcf-9ca9-ab0cb731e261" className="testimonials-elfsight" />
         </motion.div>
 
         {/* CTA Section */}

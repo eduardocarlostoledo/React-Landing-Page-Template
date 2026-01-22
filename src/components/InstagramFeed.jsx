@@ -4,24 +4,8 @@ import "../styles/InstagramFeed.css";
 
 export const InstagramFeed = () => {
   const [widgetLoaded, setWidgetLoaded] = useState(false);
-
-  // Cargar el widget de Elfsight
-  useEffect(() => {
-    if (!widgetLoaded) {
-      const script = document.createElement("script");
-      script.src = "https://static.elfsight.com/platform/platform.js";
-      script.async = true;
-      script.defer = true;
-      script.onload = () => setWidgetLoaded(true);
-      document.body.appendChild(script);
-
-      return () => {
-        if (document.body.contains(script)) {
-          document.body.removeChild(script);
-        }
-      };
-    }
-  }, [widgetLoaded]);
+  // Widget injection removed to avoid loading Elfsight script unnecessarily.
+  // Use LazyElfsightWidget where the widget is actually needed.
 
   // Animaciones
   const containerVariants = {
