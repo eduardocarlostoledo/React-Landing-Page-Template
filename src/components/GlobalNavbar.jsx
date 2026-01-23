@@ -54,8 +54,8 @@ export const GlobalNavbar = () => {
 
         <div className="grow1">
           <motion.div className="navbar-brand" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
-            <h1 className="company-name">Toledo Consultora IT</h1>
-            <h1 className="company-name-sub">Transformación Digital</h1>
+            <h2 className="company-name">Toledo Consultora IT</h2>
+            <h3 className="company-name-sub">Transformación Digital</h3>
           </motion.div>
         </div>
 

@@ -34,8 +34,8 @@ export const Navigation = () => {
 
         <div className="grow1">
           <div className="navbar-brand">
-            <h1 className="company-name">Toledo Consultora IT</h1>
-            <h1 className="company-name-sub">Transformación Digital</h1>
+            <h2 className="company-name">Toledo Consultora IT</h2>
+            <h3 className="company-name-sub">Transformación Digital</h3>
           </div>
         </div>
 

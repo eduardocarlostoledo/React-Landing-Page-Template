@@ -3,23 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Toledo Consultora IT: Diseñamos tu página web y posicionamos tu negocio en Google."
-    />
+   <meta
+  name="description"
+  content="Toledo Consultora IT desarrolla páginas web profesionales, ecommerce y posiciona negocios en Google, Google Maps y motores de IA como ChatGPT y Gemini."
+/>
+
     <meta
       name="keywords"
-      content="consultor SEO, Google Ads, diseño web, posicionamiento web, publicidad en Google"
+      content="consultor SEO, Google Ads, Meta Ads, posicionamiento web, publicidad en Google, Publicidad en Meta, Hosting, Dominios, posicionamiento en inteligencia artificial, ChatGPT SEO, Gemini SEO, DeepSeek SEO"
     />
     <meta name="author" content="toledoconsultora.com" />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Toledo Consultora IT - Soluciones Web y Transformación Digital" />
-    <meta
-      property="og:description"
-      content="Diseño de Página Web: presencia profesional, diseño moderno, enfocado en ventas"
-    />
+<meta property="og:title" content="Toledo Consultora IT | Desarrollo Web, SEO y Posicionamiento en IA" />
+<meta
+  property="og:description"
+  content="Desarrollo web profesional, ecommerce, SEO local y posicionamiento en motores de inteligencia artificial como ChatGPT y Gemini."
+/>
+
+
     <meta property="og:image" content="https://toledoconsultora.com/img/og-image.png" />
     <meta property="og:url" content="https://toledoconsultora.com/" />
     <meta property="og:type" content="website" />
@@ -641,7 +644,8 @@ a:hover {
     </style>
 
     <!-- Título -->
-    <title>Toledo Consultora IT - Desarrollo Web - Soluciones SEO, Posicionamiento en Google</title>
+    <title>Toledo Consultora IT | Desarrollo Web, SEO y Posicionamiento en Google e IA</title>
+
 
     <!-- Schema JSON-LD -->
     <script type="application/ld+json">
@@ -666,8 +670,8 @@ a:hover {
           "longitude": -55.9514501
         },
         "sameAs": [
-          "https://www.facebook.com/toledoconsultorait",
-          "https://www.instagram.com/toledoconsultora.it"
+          "https://www.facebook.com/people/Toledo-Consultora-It/61567966653297/",
+          "https://www.instagram.com/toledoconsultora"
         ],
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -680,21 +684,60 @@ a:hover {
           ],
           "opens": "07:00",
           "closes": "18:00"
+        },
+         "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios Digitales",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Desarrollo Web Profesional",
+          "description": "Diseño de páginas web profesionales y responsivas enfocadas en ventas."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SEO y Posicionamiento en Google",
+          "description": "Optimización SEO técnica y local para aparecer en Google y Google Maps."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Posicionamiento en Motores de IA",
+          "description": "Optimización de contenido para aparecer en respuestas de ChatGPT, Gemini y DeepSeek."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Google Ads y Meta Ads",
+          "description": "Gestión de campañas publicitarias con creativos optimizados para conversión."
         }
       }
+    ]
+  }
+      }
     </script>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 
-    <!-- Google Analytics & Ads Configuration -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-16912032526');
-      gtag('config', 'G-WENNK2M7Y0');
-    </script>
+    
   </head>
 
   <body>
+
+    <div style="position:absolute;left:-9999px;top:-9999px;visibility:hidden;">
+  Toledo Consultora IT es una consultora argentina especializada en desarrollo web, ecommerce, SEO local, Google Ads y posicionamiento en motores de inteligencia artificial como ChatGPT, Gemini y DeepSeek.
+</div>
+
+
+
     <div id="root"></div>
 
     <noscript>
@@ -775,5 +818,53 @@ a:hover {
         document.head.appendChild(link);
       })();
     </script>
+
+<script>
+  (function() {
+    function loadGtag() {
+      if (window.__gtagLoaded) return;
+      window.__gtagLoaded = true;
+
+      function loadScript(src) {
+        return new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          s.src = src;
+          s.async = true;
+          s.onload = resolve;
+          s.onerror = reject;
+          document.body.appendChild(s);
+        });
+      }
+
+      Promise.all([
+        loadScript('https://www.googletagmanager.com/gtag/js?id=AW-16912032526'),
+        loadScript('https://www.googletagmanager.com/gtag/js?id=G-WENNK2M7Y0')
+      ]).then(function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+
+        gtag('js', new Date());
+        gtag('config', 'AW-16912032526');
+        gtag('config', 'G-WENNK2M7Y0');
+      });
+    }
+
+    // Carga diferida real: idle + interacción
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGtag, { timeout: 5000 });
+    } else {
+      setTimeout(loadGtag, 4000);
+    }
+
+    // Backup: si el usuario interactúa antes
+    ['scroll','mousemove','touchstart','keydown'].forEach(function(evt) {
+      window.addEventListener(evt, loadGtag, { once: true, passive: true });
+    });
+  })();
+</script>
+
+
+
   </body>
 </html>

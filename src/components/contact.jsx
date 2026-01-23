@@ -299,7 +299,7 @@ export const Contact = ({ data }) => {
           </motion.div>
         </motion.div>
 
-        <div className="sitemap-footer-link">
+        <div className="sitemap-footer-link"> 
           <Link to="/indice-del-sitio" className="sitemap-map-link">
             Ver Mapa Completo del sitio
           </Link>

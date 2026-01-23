@@ -59,6 +59,10 @@ export const Hero = () => {
     <>
       {useSEO(heroSEO)}
       <section className="slider-section" id="neumaticos">
+      {/* H1 único y semántico: titular principal del sitio. Mantener SOLO aquí como H1 global */}
+      <h1 className="hero-main-title"
+      style={{ textAlign: "center" }}
+      >Toledo Consultora IT — Transformación Digital y Marketing Digital</h1>
       <div className="slider-container">
         <AnimatePresence mode="wait">
           <motion.div
