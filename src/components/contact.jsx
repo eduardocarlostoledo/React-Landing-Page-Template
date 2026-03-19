@@ -335,6 +335,25 @@ export const Contact = ({ data }) => {
           <Link to="/about-optimizacion" className="sitemap-map-link">
             Landing Page como conversora
           </Link>
+
+          <Link to="/cybersecurity-audit-spain" className="sitemap-map-link">
+            Auditoría ciberseguridad España
+          </Link>
+          <Link to="/auditoria-de-seguridad-web" className="sitemap-map-link">
+            Auditoría seguridad web
+          </Link>
+          <Link to="/cumplimiento-nis2" className="sitemap-map-link">
+            Cumplimiento NIS2
+          </Link>
+          <Link to="/auditoria-gdpr" className="sitemap-map-link">
+            Auditoría GDPR
+          </Link>
+          <Link to="/test-de-vulnerabilidades" className="sitemap-map-link">
+            Test de vulnerabilidades
+          </Link>
+          <Link to="/seguridad-ecommerce" className="sitemap-map-link">
+            Seguridad para e-commerce
+          </Link>
         </div>
 
         <div className="contact-map">

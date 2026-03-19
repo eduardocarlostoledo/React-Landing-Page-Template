@@ -3,6 +3,41 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Hero styles for cybersecurity offering */
+.hero {
+  padding: 48px 24px;
+  background: #f8fafc;
+  color: #0f172a;
+}
+.hero h1 { font-size: 2rem; margin: 0 0 12px 0; }
+.hero p { color: #334155; margin: 0 0 12px 0; }
+.hero .btn-primary { background: #0b74de; color: #fff; padding: 10px 16px; border-radius: 6px; text-decoration: none; }
+.hero .btn-secondary { background: transparent; color: #0b74de; padding: 8px 14px; border-radius: 6px; text-decoration: none; }
+.hero aside { box-shadow: 0 6px 18px rgba(15,23,42,0.06); }
+
+@media (max-width: 800px) {
+  .hero { padding: 28px 16px; }
+  .hero h1 { font-size: 1.4rem; }
+  .hero aside { width: 100%; order: 2; }
+  .hero > div > div { flex-direction: column; gap: 12px; }
+}
+
+/* Service page base styles */
+.service-page { padding: 40px 20px; max-width: 1100px; margin: 0 auto; color: #0f172a; }
+.service-page .lead { font-size: 1.05rem; color: #334155; margin-bottom: 18px; }
+.service-grid { display: grid; grid-template-columns: 1fr 320px; gap: 28px; align-items: start; }
+.service-card { background:#fff; border-radius:10px; padding:18px; box-shadow:0 6px 18px rgba(15,23,42,0.04);} 
+.service-cta { display:inline-block; padding:12px 18px; background:#0b74de; color:#fff; border-radius:8px; text-decoration:none; }
+.service-meta { font-size:13px; color:#64748b; margin-top:8px; }
+.tech-badges { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+.tech-badge { background:#eef2ff; color:#3730a3; padding:6px 10px; border-radius:999px; font-size:12px; }
+.owasp-list { margin:12px 0 0 0; padding-left:18px; }
+.owasp-list li { margin-bottom:8px; }
+
+@media (max-width: 900px) {
+  .service-grid { grid-template-columns: 1fr; }
+}
+
 /* 
 
 @media screen and (max-width: 360px) {

@@ -44,6 +44,12 @@ import { LeadMagnet } from "./components/LeadMagnet.jsx";
 import { Sistema55 } from "./components/Sistema55.jsx";
 import { ConfirmaSuscripcion } from "./components/ConfirmaSuscripcion.jsx";
 import { Verdiore } from "./components/verdiore.jsx";
+import CybersecuritySpain from "./pages/CybersecuritySpain";
+import AuditoriaSeguridadWeb from "./pages/AuditoriaSeguridadWeb";
+import CumplimientoNIS2 from "./pages/CumplimientoNIS2";
+import AuditoriaGDPR from "./pages/AuditoriaGDPR";
+import TestVulnerabilidades from "./pages/TestVulnerabilidades";
+import SeguridadEcommerce from "./pages/SeguridadEcommerce";
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -54,19 +60,24 @@ const LandingPage = ({ data }) => (
   <>
     <Hero />
     <Services data={data.Services} />
-    <SocialProof />
-    <Features data={data.Features} />
-    <HowWeWork />
-    <SuccessCases />
-    <Gallery data={data.Gallery} />
-    <Testimonials />
-    <Guarantees />
-    <PartnerLogos />
-    <Differentials />
-    <Cotizaciones />
     <Asesoramiento data={data.Asesoramiento} />
+    <HowWeWork />
+    <Differentials />
+    <Guarantees />
+    
     <About data={data.About} />
     <Team data={data.Team} />
+    <Testimonials />
+    <Features data={data.Features} />
+    
+    <PartnerLogos />
+    <SuccessCases />
+    <SocialProof />
+    <Gallery data={data.Gallery} />
+    
+    
+    <Cotizaciones />
+    
     <LeadMagnet />
     <Contact data={data.Contact} />
     <Chatbot />
@@ -100,6 +111,14 @@ const App = () => {
     }
   }, [location]);
 
+  // Scroll to top on route change when there's no hash (fixes landing at footer)
+  useEffect(() => {
+    if (!location.hash) {
+      // small timeout to allow new route/component to render
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 50);
+    }
+  }, [location.pathname, location.hash]);
+
   return (
     <>
       {isHome ? <Navigation /> : <GlobalNavbar />}
@@ -131,6 +150,12 @@ const App = () => {
         <Route path="/sistema-5-5" element={<><Sistema55 /><Footer /></>} />
         <Route path="/confirma-suscripcion" element={<><ConfirmaSuscripcion /><Footer /></>} />
         <Route path="/verdiore" element={<><Verdiore /><Footer /></>} />
+        <Route path="/cybersecurity-audit-spain" element={<><CybersecuritySpain /><Footer /></>} />
+        <Route path="/auditoria-de-seguridad-web" element={<><AuditoriaSeguridadWeb /><Footer /></>} />
+        <Route path="/cumplimiento-nis2" element={<><CumplimientoNIS2 /><Footer /></>} />
+        <Route path="/auditoria-gdpr" element={<><AuditoriaGDPR /><Footer /></>} />
+        <Route path="/test-de-vulnerabilidades" element={<><TestVulnerabilidades /><Footer /></>} />
+        <Route path="/seguridad-ecommerce" element={<><SeguridadEcommerce /><Footer /></>} />
       </Routes>
     </>
   );

@@ -354,7 +354,7 @@ La elección entre PostgreSQL y MongoDB dependerá de las necesidades específic
     },
     {
       id: "contratar-sistema-web-completo-toledoconsultora",
-      title: "Sistema con base de datos  y autenticación Web Tipo Spa",
+      title: "Sistema Web",
       price: "$649.000",
       description: "Diseño profesional sistema web completo",
       popular: false,
@@ -564,13 +564,13 @@ En definitiva, esta estructura de desarrollo a medida sienta las bases para una 
     },
     {
       id: "contratar-campanasdigitales-toledoconsultora",
-      title: "Campañas Digitales Google Ads",
+      title: "Campañas Digitales",
       price: "$99.000",
       description: "Gestión profesional",
       popular: false,
       features: [
         "Gestión Mensual",
-        "Gestión de Campañas digitales con Google Ads",
+        "Gestión de Campañas digitales Google-Meta",
         "Optimización y monitorización continua de la campaña",
         "Gestión de Informes Periódicos",
         "Análisis de rendimiento y propuesta de mejora",
@@ -627,7 +627,7 @@ En definitiva, esta estructura de desarrollo a medida sienta las bases para una 
     },
     {
       id: "contratar-ecommerce-paginaweb-toledoconsultora",
-      title: "Paquete Completo Ecommerce + Pagina Web",
+      title: "Paquete Bussiness",
       price: "$1.249.000",
       description: "Paquete Bussiness",
       popular: false,

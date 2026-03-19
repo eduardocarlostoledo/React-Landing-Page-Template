@@ -32,7 +32,7 @@ export const AboutOptimizacion = () => {
         <div className="about-container">
           <div className="about-columns">
             <div className="about-image-wrapper">
-              <img src="/img/optimizacion.svg" alt="Optimización web profesional" className="about-image" itemProp="image" loading="lazy" />
+              <img src="/img/optimization.png" alt="Optimización web profesional" className="about-image" itemProp="image" loading="lazy" />
             </div>
             <div className="about-text">
               <meta itemProp="headline" content={seo.title} />

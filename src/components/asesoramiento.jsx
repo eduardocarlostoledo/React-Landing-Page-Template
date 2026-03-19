@@ -47,7 +47,7 @@ export const Asesoramiento = (props) => {
           variants={headerVariants}
         >
           <h2>OFERTAS TECNOLÓGICAS</h2>
-          <p>Cómo trabajamos y posicionamos tu negocio</p>
+          <p>A qué nos dedicamos y cómo podemos ayudarte</p>
         </motion.div>
         
         <motion.div

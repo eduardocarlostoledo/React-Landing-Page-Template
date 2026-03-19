@@ -32,7 +32,7 @@ export const AboutGoogleBussiness = () => {
         <div className="about-container">
           <div className="about-columns">
             <div className="about-image-wrapper">
-              <img src="/img/google-business.svg" alt="Google Business Profile" className="about-image" itemProp="image" loading="lazy" />
+              <img src="/img/bussiness.png" alt="Google Business Profile" className="about-image" itemProp="image" loading="lazy" />
             </div>
             <div className="about-text">
               <meta itemProp="headline" content={seo.title} />

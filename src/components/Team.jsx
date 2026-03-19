@@ -64,9 +64,9 @@ export const Team = ({ data }) => {
       color: "#96CEB4",
     },
     {
-      title: "DevOps & Infraestructura",
+      title: "SecDevOps & Infraestructura",
       icon: "⚙️",
-      description: "Despliegues con Railway y Netlify",
+      description: "Ciber Seguridad y Despliegues con Railway y Netlify",
       color: "#FFEAA7",
     },
     {

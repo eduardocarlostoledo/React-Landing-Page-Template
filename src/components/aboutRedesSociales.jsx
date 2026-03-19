@@ -32,7 +32,7 @@ export const AboutRedesSociales = () => {
         <div className="about-container">
           <div className="about-columns">
             <div className="about-image-wrapper">
-              <img src="/img/redes-sociales.svg" alt="Importancia de redes sociales" className="about-image" itemProp="image" loading="lazy" />
+              <img src="/img/social.png" alt="Importancia de redes sociales" className="about-image" itemProp="image" loading="lazy" />
             </div>
             <div className="about-text">
               <meta itemProp="headline" content={seo.title} />

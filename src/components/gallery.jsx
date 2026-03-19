@@ -50,9 +50,9 @@ export const Gallery = ({ data }) => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2>Nuestros Proyectos</h2>
+          <h2>Desarrollos Web</h2>
           <p className="section-subtitle">
-            Explora nuestro trabajo para clientes destacados
+            Explora nuestro trabajo para ecommerce, desarrolladoras, blockchain y Saas. Proyectos que combinan diseño, tecnología y resultados.
           </p>
         </motion.header>
 

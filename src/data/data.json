@@ -4,24 +4,25 @@
     "paragraph": "Tener presencia profesional, captar atención - Aparecer en mapas, búsquedas y tener reseñas - Generar llamadas, formularios o visitas "
   },
   "About": {
-    "paragraph": "Toledo Consultora IT es una agencia especializada en desarrollo web, SEO local y campañas en Google Ads. Ayudamos a negocios, profesionales y emprendimientos a tener presencia real en internet, generando más clientes y más ventas. Nuestro objetivo es que tu marca aparezca en Google, destaque frente a la competencia y crezca online con resultados medibles. Somos tu socio tecnológico: trabajamos con responsabilidad, claridad y foco en objetivos concretos y viables. Fundada y liderada por Eduardo Toledo desde 2022, brindamos soluciones personalizadas a empresas de todos los tamaños.",
-   "Why": [
-  "Transparencia total en cada etapa del proyecto",
-  "Compromiso y responsabilidad con tus objetivos",
-  "Construimos relaciones basadas en la confianza",
-  "Respeto por tu tiempo, tu negocio y tus decisiones",
-  "Pensamos en relaciones a largo plazo, no ventas únicas"
-],
+    "paragraph": "Toledo Consultora IT es una agencia de ingeniería de software y ciberseguridad liderada por Eduardo Toledo. Nos especializamos en transformar MVPs en infraestructuras resilientes bajo estándares de la Unión Europea (NIS2, GDPR, DORA). No solo desarrollamos aplicaciones Full-Stack; blindamos activos digitales para rondas de inversión, asegurando que tu software sea legalmente defendible y técnicamente inexpugnable. Somos el socio tecnológico de startups y pymes que buscan escalar con soberanía digital, transparencia radical y un enfoque de seguridad desde el diseño (Secure-by-Design).",
+    
+    "Why": [
+      "Arquitectura de Seguridad: Implementación de OWASP Top 10 y RLS desde la primera línea de código.",
+      "Cumplimiento Normativo UE: Alineación total con NIS2, GDPR y la Cyber Resilience Act.",
+      "Soberanía Digital: Entrega absoluta de credenciales, repositorios y documentación. El código es tuyo.",
+      "Visibilidad IA (SGE): Optimización de infraestructura para buscadores generativos de próxima generación.",
+      "Partnership de Inversión: Preparamos tu tecnología para superar auditorías técnicas y Due Diligence."
+    ],
 
     "Why2": [
-  "Trabajo ético y profesional, sin atajos ni promesas falsas",
-  "Soporte post-venta garantizado y seguimiento continuo",
-  "Atención personalizada: tratás directamente con quien ejecuta",
-  "Experiencia con clientes locales e internacionales",
-  "Precios justos y adaptados a cada etapa del negocio"
-]
-
-  },
+      "Equipo Senior Dedicado: Sin rotación; trabajás con especialistas fijos en SecDevOps, Backend y UX/UI.",
+      "Transparencia Radical: Gestión ágil en Trello con reporte semanal de deuda técnica y avances reales.",
+      "Alcance Global: Experiencia comprobada con clientes en España, Australia, EE.UU. y Latinoamérica.",
+      "Infraestructura de Baja Latencia: Despliegue estratégico en nodos locales (AWS eu-south-2) para máxima velocidad.",
+      "Ética y Rigor Técnico: Soporte post-venta garantizado y escalabilidad planificada, sin atajos ni promesas falsas."
+    ]
+},
+  
 "Gallery": [
   {
     "title": "Lua Colection Circuito",
@@ -243,50 +244,49 @@
     "smallImage": "img/portfolio/crypto4.jpg"
   }
 ],
-  
+
 "Services": [
     {
-      "icon": "fas fa-laptop-code",
-      "name": "Desarrollo Full Stack",
-      "text": "Desarrollo de aplicaciones completas utilizando stacks MERN y PERN, ofreciendo soluciones robustas y escalables para aplicaciones web."
+      "icon": "fas fa-shield-alt",
+      "name": "Arquitectura Secure-by-Design",
+      "text": "Desarrollo Full Stack (PERN/MERN) alineado con la Cyber Resilience Act (CRA). Construimos software que nace seguro, reduciendo la superficie de ataque desde la primera línea de código."
     },
     {
-      "icon": "fas fa-cloud",
-      "name": "DevOps y Gestión en la Nube",
-      "text": "Implementación de prácticas DevOps con Docker y AWS, optimizando el despliegue, la escalabilidad y la eficiencia en entornos de producción."
+      "icon": "fas fa-user-lock",
+      "name": "Aislamiento de Datos y RLS",
+      "text": "Implementación avanzada de Row Level Security (RLS) en PostgreSQL para garantizar el aislamiento total de datos entre clientes, cumpliendo estrictamente con el RGPD y la NIS2."
     },
     {
-      "icon": "fas fa-file-code",
-      "name": "Lenguajes y Frameworks",
-      "text": "Experto en HTML, CSS, JavaScript, Node.js, React y Express, creando aplicaciones interactivas y de alto rendimiento."
+      "icon": "fas fa-microchip",
+      "name": "Infraestructura Inmune (DevOps)",
+      "text": "Despliegue automatizado en Docker y entornos Cloud con hardening de servidores. Configuramos sistemas autorreparables y logs de auditoría inmutables exigidos por DORA."
+    },
+    {
+      "icon": "fas fa-file-invoice-dollar",
+      "name": "Compliance para Terceros (DORA)",
+      "text": "Preparamos tu plataforma para integrarse con el sector financiero y asegurador, cumpliendo con los estándares de resiliencia operativa digital que exige la normativa europea."
+    },
+    {
+      "icon": "fas fa-search-plus",
+      "name": "Auditoría de Vulnerabilidades",
+      "text": "Análisis continuo de dependencias y generación de SBOM (Software Bill of Materials) para asegurar que tu cadena de suministro digital esté libre de componentes obsoletos o riesgosos."
+    },
+    {
+      "icon": "fas fa-robot",
+      "name": "Posicionamiento en IA (SGE)",
+      "text": "Optimizamos la visibilidad de tu negocio para los nuevos motores de búsqueda generativa (Gemini, Perplexity), asegurando que tu infraestructura sea legible y confiable para la IA."
     },
     {
       "icon": "fas fa-database",
-      "name": "Bases de Datos",
-      "text": "Gestión de bases de datos con PostgreSQL y MongoDB, asegurando una integración eficiente y consultas optimizadas para grandes volúmenes de datos."
+      "name": "Gestión Ética de Datos",
+      "text": "Diseño de bases de datos de alta disponibilidad con protocolos de 'Derecho al Olvido' y cifrado en reposo, transformando la privacidad de una carga legal en una ventaja competitiva."
     },
     {
-      "icon": "fas fa-server",
-      "name": "Integraciones y APIs",
-      "text": "Desarrollo de integraciones con plataformas como MercadoPago, Twilio y Nodemailer, facilitando funcionalidades avanzadas en tus aplicaciones."
-    },
-    {
-      "icon": "fab fa-github-square",
-      "name": "Herramientas y Metodologías",
-      "text": "Uso de herramientas como Postman, Trello, Git, y metodologías ágiles como Scrum para una gestión eficiente y colaborativa del desarrollo."
-    },
-    {
-      "icon": "fas fa-database",
-      "name": "Diseño de Bases de Datos",
-      "text": "Experiencia avanzada en PostgreSQL y MongoDB, asegurando almacenamiento y consultas eficientes para proyectos web con alta y baja demanda."
-    },
-    {
-      "icon": "fas fa-network-wired",
-      "name": "APIs Profesionales",
-      "text": "Desarrollo de APIs y sistemas robustos con Node.js y Express, proporcionando seguridad y rendimiento óptimos en aplicaciones web."
+      "icon": "fas fa-code-branch",
+      "name": "APIs Blindadas",
+      "text": "Desarrollo de integraciones profesionales (MercadoPago, Twilio) protegidas con middlewares de seguridad avanzados, evitando fugas de información y ataques de inyección."
     }
-  ],
-
+],
   
 "Testimonials": [
   
@@ -324,34 +324,49 @@
 ],
 "Asesoramiento": [
   {
-    "icon": "fa fa-globe",
-    "title": "Creamos tu Página Web o Landing",
-    "text": "Desarrollamos sitios modernos, rápidos y adaptados a celulares para que tengas una presencia profesional en internet."
+    "icon": "fas fa-shield-alt",
+    "title": "NIS2 — Cumplimiento",
+    "text": "Evaluamos controles y evidencias básicas para reducir riesgo regulatorio."
   },
   {
-    "icon": "fa fa-map-marker",
-    "title": "Alta y Optimización en Google Mi Negocio",
-    "text": "Creamos tu ficha de Google, cargamos tus datos, productos, imágenes y te ubicamos correctamente en Google Maps."
+    "icon": "fas fa-shield-alt",
+    "title": "Owasp — Estándar",
+    "text": "Revisamos el estándar OWASP para garantizar la seguridad de nuestras aplicaciones."
   },
   {
-    "icon": "fa fa-search",
-    "title": "Posicionamiento SEO Local",
-    "text": "Hacemos que tu negocio aparezca cuando te buscan en tu ciudad o zona. Más visibilidad, más clientes."
+    "icon": "fas fa-certificate",
+    "title": "CRA — Producto",
+    "text": "Revisamos requisitos de producto y SBOM para comercializar software en la UE."
+  },
+  {
+    "icon": "fas fa-user-shield",
+    "title": "GDPR — Datos",
+    "text": "Revisión práctica de tratamientos, cifrado y borrado automático de datos."
+  },
+  {
+    "icon": "fas fa-life-ring",
+    "title": "DORA — Resiliencia",
+    "text": "Tests de resiliencia y planes de recuperación exigidos por terceros críticos."
+  },
+  {
+    "icon": "fas fa-robot",
+    "title": "SEO local",
+    "text": "Mejoramos visibilidad en búsquedas locales con acciones rápidas."
   },
   {
     "icon": "fa fa-bullhorn",
-    "title": "Campañas en Google Ads",
-    "text": "Lanzamos campañas publicitarias segmentadas para que te llamen, te escriban o visiten tu sitio desde el primer día."
+    "title": "Google Ads",
+    "text": "Campañas focalizadas para atraer clientes desde el primer día."
   },
   {
     "icon": "fa fa-line-chart",
-    "title": "Estrategia Digital Personalizada",
-    "text": "Te guiamos paso a paso con un plan adaptado a tus objetivos, presupuesto y tipo de negocio."
+    "title": "Estrategia",
+    "text": "Plan digital adaptado a objetivos y presupuesto."
   },
   {
     "icon": "fa fa-handshake",
-    "title": "Socio Tecnológico de tu Negocio",
-    "text": "Trabajamos con vos para hacer crecer tu marca online con soluciones concretas, medibles y sostenibles."
+    "title": "Socio Tecnológico",
+    "text": "Soporte y soluciones prácticas para crecer online."
   }
 ]
 
