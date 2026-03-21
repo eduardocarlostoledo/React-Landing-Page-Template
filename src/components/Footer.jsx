@@ -249,12 +249,12 @@ export const Footer = () => {
               <Link to="/politica-de-privacidad" className="footer-link">
                 Política de Privacidad
               </Link>
-              <a href="https://toledoconsultoraitservice.com/cookies" className="footer-link">
+              <Link to="/politica-de-cookies" className="footer-link">
                 Política de Cookies
-              </a>
-              <a href="https://toledoconsultoraitservice.com/aviso-legal" className="footer-link">
+              </Link>
+              <Link to="/aviso-legal" className="footer-link">
                 Aviso Legal
-              </a>
+              </Link>
             </nav>
           </div>
 

@@ -51,6 +51,8 @@ import AuditoriaGDPR from "./pages/AuditoriaGDPR";
 import TestVulnerabilidades from "./pages/TestVulnerabilidades";
 import SeguridadEcommerce from "./pages/SeguridadEcommerce";
 import CookieConsent from "./components/CookieConsent/CookieConsent.jsx";
+import AvisoLegal from "./components/AvisoLegal.jsx";
+import PoliticaCookies from "./components/PoliticaCookies.jsx";
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -139,7 +141,9 @@ const App = () => {
         <Route path="/gracias-por-su-compra" element={<><Graciasporsucompra /><Footer /></>} />
         <Route path="/terminos-y-condiciones" element={<><TerminosYCondiciones /><Footer /></>} />
         <Route path="/politica-de-privacidad" element={<><Politica /><Footer /></>} />
+        <Route path="/politica-de-cookies" element={<><PoliticaCookies /><Footer /></>} />
         <Route path="/contacto" element={<><Contact /><Footer /></>} />
+        <Route path="/aviso-legal" element={<><AvisoLegal /><Footer /></>} />
         <Route path="/about-comprar-dominio" element={<><AboutComprarDominio /><Footer /></>} />
         <Route path="/about-google-ads" element={<><AboutGoogleAds /><Footer /></>} />
         <Route path="/about-reseñas" element={<><AboutReseñas /><Footer /></>} />

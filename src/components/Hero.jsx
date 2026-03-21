@@ -2,6 +2,7 @@
 // Requiere: react-router-dom (useNavigate) o ajustar según el router del proyecto
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import SecurityReport from "../SecurityReport/SecurityReport.jsx";
 
 const TELEGRAM_URL =
@@ -338,6 +339,17 @@ export const Hero = () => {
           background: rgba(255,255,255,0.04);
         }
 
+        .plans-cta-note {
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          margin: 0;
+        }
+        .plans-cta-note a {
+          color: #ffcb05;
+          text-decoration: underline;
+        }
+
         /* ── Scores strip ── */
         .scores-strip {
           display: flex;
@@ -496,6 +508,10 @@ export const Hero = () => {
                   </svg>
                   Ver diagnóstico completo
                 </button>
+                <p className="plans-cta-note">
+                  Al contactar aceptás nuestros{" "}
+                  <Link to="/terminos-y-condiciones">Términos y Condiciones</Link>.
+                </p>
               </div>
             </div>
           </aside>

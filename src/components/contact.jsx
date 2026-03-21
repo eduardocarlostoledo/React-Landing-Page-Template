@@ -180,6 +180,17 @@ export const Contact = ({ data }) => {
               </div>
             )}
 
+            <div className="contact-terms">
+              <input type="checkbox" id="contact-privacy" name="contact-privacy" required />
+              <label htmlFor="contact-privacy">
+                Al enviar acepto la{" "}
+                <Link to="/politica-de-privacidad" className="contact-terms-link">
+                  Política de Privacidad
+                </Link>
+                .
+              </label>
+            </div>
+
             <button
               type="submit"
               className="submit-btn"
