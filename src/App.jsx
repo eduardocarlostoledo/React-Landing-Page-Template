@@ -70,7 +70,7 @@ const LandingPage = ({ data }) => (
     <Guarantees />
     
     <About data={data.About} />
-    <Team data={data.Team} />
+    {/* <Team data={data.Team} /> */}
     <Testimonials />
     <Features data={data.Features} />
     

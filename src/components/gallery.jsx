@@ -52,7 +52,7 @@ export const Gallery = ({ data }) => {
         >
           <h2>Desarrollos Web</h2>
           <p className="section-subtitle">
-            Explora nuestro trabajo para ecommerce, desarrolladoras, blockchain y Saas. Proyectos que combinan diseño, tecnología y resultados.
+            Explora nuestro trabajo para ecommerce, constructoras, inmobiliarias, blockchain y Saas. Proyectos que combinan diseño, tecnología y resultados.
           </p>
         </motion.header>
 

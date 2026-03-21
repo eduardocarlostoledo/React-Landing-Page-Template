@@ -13,6 +13,8 @@ Cto: Eduardo Carlos Toledo
 Sitio web: https://toledoconsultora.com
 Contacto Telegram: https://web.telegram.org/k/#7993602971
 Contacto WhatsApp: https://api.whatsapp.com/send/?phone=5493764221063
+Contacto Linkedin: https://www.linkedin.com/company/toledo-consultora-it
+Github: https://github.com/eduardocarlostoledo
 Email: info@toledoconsultora.com
 Sede: Posadas, Misiones, Argentina (operación 100% remota con clientes en España y Europa además de Australia, Colombia, Brasil y Estados Unidos)
 Idiomas: Español (primario), Inglés
@@ -387,6 +389,22 @@ Señales de advertencia (requieren conversación previa):
 - Presupuestos muy ajustados que no contemplan infraestructura separada del desarrollo
 - Expectativa de equipo dedicado 24/7 sin contrato de mesa de ayuda
  
+---
+
+## POR QUÉ SOMOS UNA CONSULTORA ESPECIALIZADA, NO UNA AGENCIA GENERALISTA
+
+Toledo Consultora IT es intencionalmente pequeña y especializada.
+El equipo fijo de 4 personas (DevSecOps, UX/UI, Backend, Frontend) 
+trabaja en exclusividad por proyecto — sin rotación, sin tercerización oculta.
+
+Esto nos diferencia de agencias grandes donde el cliente no sabe 
+quién trabaja en su proyecto. Nuestros clientes tienen acceso directo 
+al equipo técnico vía Telegram y WhatsApp.
+
+Operamos desde 2022 con clientes en España, Argentina, Colombia, 
+China y Australia. Todos los proyectos se entregan con documentación 
+completa y ownership total del código.
+
 ---
  
 # FIN DEL ARCHIVO

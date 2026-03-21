@@ -45,7 +45,7 @@ export const Navigation = () => {
             
             <li>{renderLink("Soluciones", "services")}</li>
             <li>{renderLink("Acerca de", "about")}</li>
-            <li>{renderLink("Confían en Nosotros", "partners")}</li>
+            <li>{renderLink("Nuestros Clientes", "partners")}</li>
             <li>{renderLink("Portfolio", "portfolio")}</li>
             <li>{renderLink("Testimonios", "testimonials")}</li>
             <li>{renderLink("Pricing", "pricing")}</li>
