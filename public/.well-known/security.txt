@@ -1,0 +1,24 @@
+# Toledo Consultora IT — Security Disclosure Policy
+# RFC 9116 compliant
+# Ubicación: /public/.well-known/security.txt
+#
+# Si encontraste una vulnerabilidad en nuestros sistemas,
+# reportala de forma responsable antes de divulgarla públicamente.
+
+Contact: mailto:info@toledoconsultora.com
+Expires: 2027-03-31T23:59:59Z
+Preferred-Languages: es, en
+Policy: https://toledoconsultora.com/politica-de-seguridad
+Canonical: https://toledoconsultora.com/.well-known/security.txt
+
+# Alcance del programa de divulgación responsable:
+#   · toledoconsultora.com (producción)
+#   · APIs y endpoints publicados bajo el mismo dominio
+#
+# Fuera de alcance:
+#   · Ataques de fuerza bruta o DoS
+#   · Ingeniería social a empleados
+#   · Vulnerabilidades en dependencias de terceros sin PoC aplicable al sitio
+#
+# No operamos bug bounty económico actualmente.
+# Otorgamos crédito público en nuestra política de seguridad si así lo solicitás.

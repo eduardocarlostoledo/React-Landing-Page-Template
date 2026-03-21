@@ -42,6 +42,8 @@ export const Navigation = () => {
         <div className="grow1">
           <ul className={`navbar-menu ${menuOpen ? "show" : ""}`}>
             <li>{renderLink("¿Qué hacemos?", "asesoramiento")}</li>
+            
+            <li>{renderLink("Soluciones", "services")}</li>
             <li>{renderLink("Acerca de", "about")}</li>
             <li>{renderLink("Confían en Nosotros", "partners")}</li>
             <li>{renderLink("Portfolio", "portfolio")}</li>

@@ -50,6 +50,7 @@ import CumplimientoNIS2 from "./pages/CumplimientoNIS2";
 import AuditoriaGDPR from "./pages/AuditoriaGDPR";
 import TestVulnerabilidades from "./pages/TestVulnerabilidades";
 import SeguridadEcommerce from "./pages/SeguridadEcommerce";
+import CookieConsent from "./components/CookieConsent/CookieConsent.jsx";
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -58,6 +59,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const LandingPage = ({ data }) => (
   <>
+  <CookieConsent />
     <Hero />
     <Services data={data.Services} />
     <Asesoramiento data={data.Asesoramiento} />

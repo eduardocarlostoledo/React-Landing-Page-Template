@@ -61,7 +61,7 @@ export const Cotizaciones = ({ selectedIds = [] }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2>Contratá nuestros Servicios</h2>
+          <h2>Servicios Web</h2>
           <p>
             Soluciones digitales a medida con precios transparentes y resultados
             garantizados

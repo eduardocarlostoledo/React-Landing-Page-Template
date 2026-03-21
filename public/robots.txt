@@ -1,4 +1,41 @@
-# robots.txt - Toledo Consultora IT
+# Toledo Consultora IT — robots.txt
+# Sitio: https://toledoconsultora.com
+# Última revisión: 2026-03-20
+
+# ─── Crawlers web estándar ────────────────────────────────────────────────────
 User-agent: *
 Allow: /
+
+# ─── Crawlers de motores de IA (AIO / GEO positioning) ───────────────────────
+# Permitir indexación en ChatGPT, Perplexity, Claude y similares
+# para posicionamiento en respuestas generativas (GEO strategy).
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# ─── Reglas generales ────────────────────────────────────────────────────────
+# NO exponer rutas de admin o internas en robots.txt.
+# Si no querés que Google indexe algo, usá:
+#   • meta name="robots" content="noindex" en la página
+#   • Header X-Robots-Tag: noindex en la respuesta HTTP
+# No lo bloquees con Disallow — eso NO evita la indexación, solo el crawl.
+
 Sitemap: https://toledoconsultora.com/sitemap.xml

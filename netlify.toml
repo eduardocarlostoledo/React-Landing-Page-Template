@@ -1,0 +1,121 @@
+# ============================================================
+# TOLEDO CONSULTORA IT — netlify.toml
+# Security Headers: NIS2 Art.21 · OWASP A05 · CRA · GDPR
+# Última revisión: 2026-03-20
+# ============================================================
+
+[build]
+  publish = "build"   # Cambiar a "dist" si se migra a Vite
+
+# ─── Headers globales (todas las rutas) ─────────────────────────────────────
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+
+    # ── HSTS — OWASP A02 / NIS2 Art.21 ──────────────────────────────────────
+    # Fuerza HTTPS por 1 año. "preload" permite entrar al listado HSTS de Chrome.
+    # ⚠ Solo activar preload cuando el sitio esté 100% en HTTPS (ya está ✓).
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # ── Clickjacking — OWASP A05 / NIS2 Art.21 ───────────────────────────────
+    X-Frame-Options = "DENY"
+
+    # ── MIME sniffing — OWASP A05 ────────────────────────────────────────────
+    X-Content-Type-Options = "nosniff"
+
+    # ── Referrer — GDPR (evita fuga de paths a terceros) / OWASP A04 ─────────
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # ── Browser features — CRA hardening ─────────────────────────────────────
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+
+    # ── Cross-Origin protections — OWASP A01 ─────────────────────────────────
+    Cross-Origin-Opener-Policy   = "same-origin"
+    Cross-Origin-Resource-Policy = "same-origin"
+
+    # ── Content-Security-Policy — OWASP A05 (el más crítico) ─────────────────
+    #
+    # IMPORTANTE: gtag/emailjs/elfsight NO se precargan aquí.
+    # Solo se conectan DESPUÉS del consentimiento (CookieConsent.jsx).
+    # Esta directiva es el "permiso" del browser, no la orden de carga.
+    #
+    # Dominios autorizados:
+    #   · Google Analytics / Ads   → googletagmanager.com, google-analytics.com
+    #   · EmailJS                  → cdn.jsdelivr.net, api.emailjs.com
+    #   · Elfsight widget          → elfsight.com, static.elfsight.com, core.service.elfsight.com
+    #   · Fonts                    → fonts.googleapis.com, fonts.gstatic.com
+    #   · Font Awesome             → cdnjs.cloudflare.com
+    #
+    Content-Security-Policy = """
+      default-src 'self';
+      script-src  'self' 'unsafe-inline'
+                  https://www.googletagmanager.com
+                  https://www.google-analytics.com
+                  https://tagmanager.google.com
+                  https://cdn.jsdelivr.net
+                  https://static.elfsight.com
+                  https://core.service.elfsight.com;
+      style-src   'self' 'unsafe-inline'
+                  https://fonts.googleapis.com
+                  https://cdnjs.cloudflare.com
+                  https://static.elfsight.com;
+      font-src    'self'
+                  https://fonts.gstatic.com
+                  https://cdnjs.cloudflare.com;
+      img-src     'self' data: blob: https:;
+      connect-src 'self'
+                  https://www.google-analytics.com
+                  https://region1.google-analytics.com
+                  https://api.emailjs.com
+                  https://api.elfsight.com
+                  https://core.service.elfsight.com;
+      frame-src   'none';
+      object-src  'none';
+      base-uri    'self';
+      form-action 'self';
+      upgrade-insecure-requests;
+    """
+
+# ─── Cache: assets hasheados por React build ─────────────────────────────────
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    # Inmutable — el hash cambia en cada build, el browser nunca sirve un stale
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ─── Cache: HTML — SPA entry point sin cache ─────────────────────────────────
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+# ─── Cache: manifest y service worker — nunca cachear ────────────────────────
+
+[[headers]]
+  for = "/manifest.json"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/service-worker.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# ─── security.txt — RFC 9116 ─────────────────────────────────────────────────
+
+[[headers]]
+  for = "/.well-known/security.txt"
+  [headers.values]
+    Content-Type  = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+# ─── SPA fallback — React Router ─────────────────────────────────────────────
+# Todas las rutas sirven index.html (client-side routing)
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

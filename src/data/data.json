@@ -285,6 +285,11 @@
       "icon": "fas fa-code-branch",
       "name": "APIs Blindadas",
       "text": "Desarrollo de integraciones profesionales (MercadoPago, Twilio) protegidas con middlewares de seguridad avanzados, evitando fugas de información y ataques de inyección."
+    },
+    {
+      "icon": "fas fa-robot",
+      "name": "Automatización N8N",
+      "text": "Automatizamos procesos a través de Telegram con IA y Google para simplificar tus tareas diarias. Desde análisis de documentos hasta procesos complejos."
     }
 ],
   
