@@ -49,7 +49,7 @@
     #
     Content-Security-Policy = """
       default-src 'self';
-      script-src  'self' 'unsafe-inline'
+      script-src  'self'
                   https://www.googletagmanager.com
                   https://www.google-analytics.com
                   https://tagmanager.google.com
@@ -70,7 +70,14 @@
                   https://api.emailjs.com
                   https://api.elfsight.com
                   https://core.service.elfsight.com;
-      frame-src   'none';
+      frame-src   'self'
+                  https://www.google.com
+                  https://maps.google.com
+                  https://www.googletagmanager.com
+                  https://elfsight.com
+                  https://*.elfsight.com
+                  https://static.elfsight.com
+                  https://core.service.elfsight.com;
       object-src  'none';
       base-uri    'self';
       form-action 'self';

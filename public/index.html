@@ -31,12 +31,12 @@
   <meta http-equiv="Content-Security-Policy"
     content="
       default-src 'self';
-      script-src  'self' https://www.googletagmanager.com https://cdn.jsdelivr.net https://elfsight.com https://static.elfsight.com 'unsafe-inline';
+      script-src  'self' https://www.googletagmanager.com https://www.google-analytics.com https://tagmanager.google.com https://cdn.jsdelivr.net https://static.elfsight.com https://core.service.elfsight.com;
       style-src   'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline';
       font-src    'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
       img-src     'self' data: https: blob:;
-      connect-src 'self' https://www.google-analytics.com https://api.emailjs.com https://elfsight.com;
-      frame-src   https://www.google.com https://maps.google.com https://www.googletagmanager.com https://elfsight.com https://*.elfsight.com https://static.elfsight.com;
+      connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://api.emailjs.com https://api.elfsight.com https://core.service.elfsight.com;
+      frame-src   'self' https://www.google.com https://maps.google.com https://www.googletagmanager.com https://elfsight.com https://*.elfsight.com https://static.elfsight.com https://core.service.elfsight.com;
       object-src  'none';
       base-uri    'self';
       form-action 'self';
@@ -140,10 +140,8 @@
   <!-- ═══════════════════════════════════════════════════════════════════════
        FONTS — non-blocking
        ═══════════════════════════════════════════════════════════════════════ -->
-  <link rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    as="style"
-    onload="this.rel='stylesheet'" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" />
   <noscript>
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" />
@@ -152,8 +150,7 @@
   <!-- Font Awesome — non-blocking -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    media="print"
-    onload="this.media='all'" />
+    />
   <noscript>
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -503,7 +500,7 @@
        CSS PRINCIPAL — non-blocking (no render-blocking)
        ═══════════════════════════════════════════════════════════════════════ -->
   <link rel="preload" href="/static/css/main.css" as="style" />
-  <link rel="stylesheet" href="/static/css/main.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/static/css/main.css" />
   <noscript>
     <link rel="stylesheet" href="/static/css/main.css" />
   </noscript>
