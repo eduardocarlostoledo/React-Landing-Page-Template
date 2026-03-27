@@ -32,7 +32,7 @@ export const AboutLandingPage = () => {
         <div className="about-container">
           <div className="about-columns">
             <div className="about-image-wrapper">
-              <img src="/img/landing-page.svg" alt="Importancia de landing page" className="about-image" itemProp="image" loading="lazy" />
+              <img src="/img/landing.webp" alt="Importancia de landing page" className="about-image" itemProp="image" loading="lazy" />
             </div>
             <div className="about-text">
               <meta itemProp="headline" content={seo.title} />

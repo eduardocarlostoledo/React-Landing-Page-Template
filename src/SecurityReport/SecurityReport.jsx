@@ -3,7 +3,7 @@
 // o desde React Router: <Route path="/diagnostico" element={<SecurityReport />} />
 
 const TELEGRAM_URL =
-  "https://web.telegram.org/k/#@devsecopsconsultorabot";
+  "https://web.telegram.org/k/#7993602971";
 const WHATSAPP_URL =
   "https://api.whatsapp.com/send/?phone=5493764221063&text&type=phone_number&app_absent=0";
 

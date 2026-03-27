@@ -263,6 +263,17 @@ textarea {
   color: #0f172a;
 }
 
+.contact-legal-links {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
 .submit-status.success {
   background-color: #d1fae5;
   color: #065f46;

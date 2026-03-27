@@ -5,10 +5,11 @@
 # Si encontraste una vulnerabilidad en nuestros sistemas,
 # reportala de forma responsable antes de divulgarla públicamente.
 
+Contact: mailto:security@toledoconsultora.com
 Contact: mailto:info@toledoconsultora.com
 Expires: 2027-03-31T23:59:59Z
 Preferred-Languages: es, en
-Policy: https://toledoconsultora.com/politica-de-seguridad
+Policy: https://toledoconsultora.com/politica-de-privacidad#seguridad
 Canonical: https://toledoconsultora.com/.well-known/security.txt
 
 # Alcance del programa de divulgación responsable:

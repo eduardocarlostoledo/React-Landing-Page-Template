@@ -34,7 +34,7 @@ export default function CybersecuritySpain(){
 
           <p className="service-meta">Trabajamos con Node.js + Express + Postgres. Por otro tipo de tecnología consultar.</p>
 
-          <a href="/contacto" className="service-cta">Solicitar diagnóstico gratuito (15 min)</a>
+          <a href="https://web.telegram.org/k/#@devsecopsconsultorabot" target="_blank" rel="noopener noreferrer" className="service-cta">Solicitar diagnóstico gratuito (15 min)</a>
           <p className="service-meta">Todas las consultas van directo a la ruta <strong>/contacto</strong>.</p>
         </section>
 

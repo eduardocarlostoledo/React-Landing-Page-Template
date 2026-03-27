@@ -1,33 +1,50 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
 import "../styles/Guarantees.css";
 
 export const Guarantees = () => {
   const guarantees = [
     {
-      icon: "🛡️",
-      title: "Garantía de Resultados",
-      description: "30 días o devolvemos tu dinero",
-      details: "Si no ves mejora en posicionamiento, te reembolsamos",
-    },
-    {
-      icon: "📈",
-      title: "Posicionamiento Garantizado",
-      description: "Top 10 en 90 días o gratis el mes siguiente",
-      details: "Trabajamos hasta lograrlo - sin costos adicionales",
-    },
-    {
-      icon: "💬",
+      icon: "🕐",
       title: "Soporte 24/7",
-      description: "Atención rápida en menos de 5 minutos",
-      details: "Chat, WhatsApp o llamada directa con quien ejecuta",
+      description: "Siempre hay alguien del equipo disponible",
+      details: "Chat, WhatsApp o llamada directa con quien ejecuta tu proyecto — no con un bot ni un call center.",
     },
     {
-      icon: "📊",
-      title: "Dashboard Transparente",
-      description: "Acceso en tiempo real a todos tus datos",
-      details: "Ves exactamente qué hacemos y qué resultados generas",
+      icon: "🗝️",
+      title: "Tu código es tuyo",
+      description: "Repositorio, credenciales e integraciones: entregados al cierre",
+      details: "Te entregamos el repo completo con todas las integraciones configuradas. Sin dependencia de nosotros para acceder a tu propio producto.",
+    },
+    {
+      icon: "📧",
+      title: "Email corporativo con tu dominio",
+      description: "Correos profesionales asociados a tu marca",
+      details: "Configuramos las cuentas de correo corporativas bajo tu dominio propio para que operes con identidad digital completa.",
+    },
+    {
+      icon: "🔑",
+      title: "Acceso total a tus integraciones",
+      description: "Variables de entorno, APIs y claves: todas tuyas",
+      details: "Documentamos y entregamos cada clave, token y variable de entorno. Soberanía digital garantizada desde el primer día.",
+    },
+    {
+      icon: "📚",
+      title: "Documentación técnica completa",
+      description: "Colección Postman con todos los endpoints",
+      details: "Entregamos documentación técnica estructurada y una colección Postman con los endpoints, payloads y objetos que recibe cada servicio.",
+    },
+    {
+      icon: "🔒",
+      title: "Auditoría de seguridad incluida",
+      description: "Cumplimiento OWASP · NIS2 · DORA · GDPR",
+      details: "Auditamos tu proyecto contra los estándares de la Unión Europea. Tu software es legalmente defendible y técnicamente resistente.",
+    },
+    {
+      icon: "👁️",
+      title: "Monitoreo continuo de riesgos",
+      description: "Sabemos si tu proyecto está en riesgo antes que tú",
+      details: "Supervisión activa de vulnerabilidades, disponibilidad e incidentes. Actuamos antes de que el problema llegue a tus usuarios.",
     },
   ];
 
@@ -68,7 +85,7 @@ export const Guarantees = () => {
           variants={headerVariants}
         >
           <h2>Nuestras Garantías</h2>
-          <p>Nos comprometemos con tus resultados</p>
+          <p>Compromisos reales. Sin letra chica.</p>
           <div className="header-accent"></div>
         </motion.div>
 

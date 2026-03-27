@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -19,7 +19,7 @@ const gtagSendEvent = (eventName = 'close_convert_lead') => {
   }
 };
 
-export const Contact = ({ data }) => {
+export const Contact = () => {
   // SEO Configuration for Contact Section
   const contactSEO = seoConfig.contact;
   
@@ -71,14 +71,14 @@ export const Contact = ({ data }) => {
 
     try {
      
-      // ENVÍO AL CLIENTE 
+      // ENVÍO AL CLIENTE
       await emailjs.sendForm(
         process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID_CLIENT, // Solicitud de informacion
+        process.env.REACT_APP_TEMPLATE_ID_CLIENT,
         e.target,
         process.env.REACT_APP_PUBLIC_KEY
       );
-      console.log("dentro de handle  sendFORM", formData);
+      
 
       setSubmitStatus({ success: true, message: "Mensaje enviado con éxito!" });
       setFormData({ name: "", email: "", message: "" });
@@ -184,8 +184,20 @@ export const Contact = ({ data }) => {
               <input type="checkbox" id="contact-privacy" name="contact-privacy" required />
               <label htmlFor="contact-privacy">
                 Al enviar acepto la{" "}
+                <Link to="/politica-de-seguridad" className="contact-terms-link">
+                  Política de Seguridad
+                </Link>
+                , la{" "}
                 <Link to="/politica-de-privacidad" className="contact-terms-link">
                   Política de Privacidad
+                </Link>
+                {" "}y la{" "}
+                <Link to="/politica-de-cookies" className="contact-terms-link">
+                  Política de Cookies
+                </Link>
+                {" "}y las{" "}
+                <Link to="/condiciones-de-aceptacion-del-servicio" className="contact-terms-link">
+                  Condiciones de Aceptación del Servicio
                 </Link>
                 .
               </label>
@@ -206,6 +218,24 @@ export const Contact = ({ data }) => {
                 "Enviar Mensaje"
               )}
             </button>
+
+            <div className="contact-legal-links">
+              <Link to="/politica-de-seguridad" className="contact-terms-link">
+                Ver Política de Seguridad
+              </Link>
+              <span aria-hidden="true">•</span>
+              <Link to="/politica-de-privacidad" className="contact-terms-link">
+                Ver Política de Privacidad
+              </Link>
+              <span aria-hidden="true">•</span>
+              <Link to="/politica-de-cookies" className="contact-terms-link">
+                Ver Política de Cookies
+              </Link>
+              <span aria-hidden="true">•</span>
+              <Link to="/condiciones-de-aceptacion-del-servicio" className="contact-terms-link">
+                Ver Condiciones de Aceptación del Servicio
+              </Link>
+            </div>
           </motion.form>
 
           <motion.div className="contact-info" variants={itemVariants}>

@@ -32,7 +32,7 @@ export default function CumplimientoNIS2(){
             <span className="tech-badge">Postgres</span>
           </div>
 
-          <a href="/contacto" className="service-cta">Solicitar diagnóstico gratuito (15 min)</a>
+          <a href="https://web.telegram.org/k/#@devsecopsconsultorabot" target="_blank" rel="noopener noreferrer" className="service-cta">Solicitar diagnóstico gratuito (15 min)</a>
           <p className="service-meta">Todas las consultas van directo a la ruta <strong>/contacto</strong>.</p>
         </section>
 

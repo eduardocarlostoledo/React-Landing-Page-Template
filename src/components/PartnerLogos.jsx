@@ -341,7 +341,7 @@ export const PartnerLogos = () => {
           viewport={{ once:true }}
           transition={{ duration:0.5 }}>
           <p className="pl__cta-text">¿Tu proyecto puede ser el próximo caso de éxito?</p>
-          <a href="https://web.telegram.org/k/#@devsecopsconsultorabot"
+          <a href="https://web.telegram.org/k/#7993602971"
              target="_blank" rel="noopener noreferrer" className="pl__cta-btn">
             Hablemos por Telegram
           </a>

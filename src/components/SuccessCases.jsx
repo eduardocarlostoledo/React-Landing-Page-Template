@@ -198,7 +198,7 @@ export const SuccessCases = () => {
             ¿Querés resultados similares para tu negocio?
           </p>
           <div className="sc__cta-buttons">
-            <a href="https://web.telegram.org/k/#@devsecopsconsultorabot"
+            <a href="https://web.telegram.org/k/#7993602971"
                target="_blank" rel="noopener noreferrer" className="sc__cta-btn sc__cta-btn--primary">
               Hablemos por Telegram
             </a>

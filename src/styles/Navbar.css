@@ -148,6 +148,120 @@
   transform: scale(1.1);
 }
 
+/* ========== DROPDOWNS ========== */
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-trigger {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-dropdown-trigger:hover {
+  color: #ffcb05;
+}
+
+.nav-arrow {
+  font-size: 0.65rem;
+  opacity: 0.8;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, #00205b 0%, #1d2e7b 100%);
+  border: 1px solid rgba(255, 203, 5, 0.25);
+  border-radius: 10px;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+  min-width: 230px;
+  z-index: 1000;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.nav-dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid rgba(255, 203, 5, 0.25);
+}
+
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 9px 20px;
+  color: #e0e6f0;
+  font-size: 0.88rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.nav-dropdown-menu li a::after {
+  display: none;
+}
+
+.nav-dropdown-menu li a:hover {
+  background: rgba(255, 203, 5, 0.12);
+  color: #ffcb05;
+  padding-left: 26px;
+}
+
+/* Mobile: dropdowns inline */
+@media (max-width: 1024px) {
+  .nav-dropdown-menu {
+    position: static;
+    transform: none;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-left: 3px solid rgba(255, 203, 5, 0.4);
+    border-radius: 0;
+    box-shadow: none;
+    min-width: unset;
+    padding: 4px 0;
+    margin: 4px 0 4px 12px;
+  }
+
+  .nav-dropdown-menu::before {
+    display: none;
+  }
+
+  .nav-dropdown-menu li a {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .nav-dropdown-menu li a:hover {
+    padding-left: 20px;
+  }
+
+  .nav-dropdown-trigger {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+  }
+}
+
 /* ========== RESPONSIVE DESIGN ========== */
 
 @media (max-width: 1024px) {

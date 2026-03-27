@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Navigation } from "./components/navigation";
-import { Features } from "./components/features";
 import { Asesoramiento } from "./components/asesoramiento";
 import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import { Footer } from "./components/Footer";
-import { PartnerLogos } from "./components/PartnerLogos";
 import { Hero } from "./components/Hero";
 import { Chatbot } from "./components/ChatBot";
 import { Cotizaciones } from "./components/Cotizaciones";
@@ -36,11 +32,9 @@ import { GlobalNavbar } from "./components/GlobalNavbar";
 import { EBook} from "./components/EBook.jsx";
 import { HowWeWork } from "./components/HowWeWork.jsx";
 import { InstagramFeed } from "./components/InstagramFeed.jsx";
-import { SuccessCases } from "./components/SuccessCases.jsx";
 import { SocialProof } from "./components/SocialProof.jsx";
 import { Guarantees } from "./components/Guarantees.jsx";
 import { Differentials } from "./components/Differentials.jsx";
-import { LeadMagnet } from "./components/LeadMagnet.jsx";
 import { Sistema55 } from "./components/Sistema55.jsx";
 import { ConfirmaSuscripcion } from "./components/ConfirmaSuscripcion.jsx";
 import { Verdiore } from "./components/verdiore.jsx";
@@ -53,6 +47,13 @@ import SeguridadEcommerce from "./pages/SeguridadEcommerce";
 import CookieConsent from "./components/CookieConsent/CookieConsent.jsx";
 import AvisoLegal from "./components/AvisoLegal.jsx";
 import PoliticaCookies from "./components/PoliticaCookies.jsx";
+import PoliticaSeguridad from "./components/PoliticaSeguridad.jsx";
+import CondicionesAceptacionServicio from "./components/CondicionesAceptacionServicio.jsx";
+import DesarrolloWeb from "./pages/DesarrolloWeb.jsx";
+import NotFound from "./pages/NotFound.jsx";
+import { Services } from "./components/services.jsx";
+import { Gallery } from "./components/gallery.jsx";
+
 // Smooth scroll para los links tipo #seccion
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -61,29 +62,17 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const LandingPage = ({ data }) => (
   <>
-  <CookieConsent />
+    <CookieConsent />
     <Hero />
-    <Services data={data.Services} />
     <Asesoramiento data={data.Asesoramiento} />
     <HowWeWork />
     <Differentials />
     <Guarantees />
-    
     <About data={data.About} />
-    {/* <Team data={data.Team} /> */}
     <Testimonials />
-    <Features data={data.Features} />
-    
-    <PartnerLogos />
-    <SuccessCases />
     <SocialProof />
-    <Gallery data={data.Gallery} />
     
-    
-    <Cotizaciones />
-    
-    <LeadMagnet />
-    <Contact data={data.Contact} />
+    <Contact />
     <Chatbot />
     <Footer />
   </>
@@ -140,7 +129,9 @@ const App = () => {
         <Route path="/indice-del-sitio" element={<><Sitemap /><Footer /></>} />
         <Route path="/gracias-por-su-compra" element={<><Graciasporsucompra /><Footer /></>} />
         <Route path="/terminos-y-condiciones" element={<><TerminosYCondiciones /><Footer /></>} />
+        <Route path="/condiciones-de-aceptacion-del-servicio" element={<><CondicionesAceptacionServicio /><Footer /></>} />
         <Route path="/politica-de-privacidad" element={<><Politica /><Footer /></>} />
+        <Route path="/politica-de-seguridad" element={<><PoliticaSeguridad /><Footer /></>} />
         <Route path="/politica-de-cookies" element={<><PoliticaCookies /><Footer /></>} />
         <Route path="/contacto" element={<><Contact /><Footer /></>} />
         <Route path="/aviso-legal" element={<><AvisoLegal /><Footer /></>} />
@@ -162,6 +153,8 @@ const App = () => {
         <Route path="/auditoria-gdpr" element={<><AuditoriaGDPR /><Footer /></>} />
         <Route path="/test-de-vulnerabilidades" element={<><TestVulnerabilidades /><Footer /></>} />
         <Route path="/seguridad-ecommerce" element={<><SeguridadEcommerce /><Footer /></>} />
+        <Route path="/desarrollo-web" element={<><DesarrolloWeb /><Footer /></>} />
+        <Route path="*" element={<><NotFound /><Footer /></>} />
       </Routes>
     </>
   );

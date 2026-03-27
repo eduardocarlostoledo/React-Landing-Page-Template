@@ -1,30 +1,31 @@
 // src/components/CookieConsent/CookieConsent.jsx
-// GDPR compliant — bloquea TODOS los scripts de terceros hasta consentimiento explícito
-// Cubre: Google Analytics (G-WENNK2M7Y0) · Google Ads (AW-16912032526) · EmailJS
-// npm install js-cookie
+// GDPR compliant. Blocks third-party scripts until explicit consent.
+// Covers Google Analytics, Google Ads and EmailJS.
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
-import emailjs from '@emailjs/browser';
-const CONSENT_KEY     = "toledo_cookie_consent";
-const CONSENT_VERSION = "1.1"; // ⬆ Incrementar si cambia la política o los servicios
+import emailjs from "@emailjs/browser";
 
-// ─── Utilidad: inyectar script evitando duplicados ───────────────────────────
+const CONSENT_KEY = "toledo_cookie_consent";
+const CONSENT_VERSION = "1.2";
+
+const DEFAULT_PREFERENCES = {
+  analyticsMarketing: false,
+  forms: false,
+};
 
 function injectScript(src) {
   return new Promise((resolve, reject) => {
     if (document.querySelector(`script[src="${src}"]`)) return resolve();
-    const s = document.createElement("script");
-    s.src   = src;
-    s.async = true;
-    s.onload  = resolve;
-    s.onerror = reject;
-    document.body.appendChild(s);
+
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    script.onload = resolve;
+    script.onerror = reject;
+    document.body.appendChild(script);
   });
 }
-
-// ─── Loader: Google Analytics + Google Ads ───────────────────────────────────
-// Se ejecuta en idle para no competir con el hilo principal tras el clic.
 
 function loadGtag() {
   if (window.__gtagLoaded) return;
@@ -37,7 +38,9 @@ function loadGtag() {
     ])
       .then(() => {
         window.dataLayer = window.dataLayer || [];
-        function gtag() { window.dataLayer.push(arguments); }
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
         window.gtag = window.gtag || gtag;
         gtag("js", new Date());
         gtag("config", "AW-16912032526");
@@ -46,7 +49,6 @@ function loadGtag() {
       .catch((err) => console.warn("[CookieConsent] gtag load failed", err));
   };
 
-  // Diferido real: idle callback con fallback a 4 s
   if ("requestIdleCallback" in window) {
     requestIdleCallback(doLoad, { timeout: 5000 });
   } else {
@@ -54,100 +56,118 @@ function loadGtag() {
   }
 }
 
-// ─── Loader: EmailJS ─────────────────────────────────────────────────────────
-// EmailJS procesa nombre + email del formulario → dato personal → requiere
-// consentimiento explícito bajo GDPR Art.5 (1)(a).
-
 function loadEmailJS() {
   if (window.__emailjsLoaded) return;
   window.__emailjsLoaded = true;
-
-  injectScript("https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js")
-    .then(() => {
-      if (typeof emailjs !== "undefined") {
-        emailjs.init({ publicKey: "wLtvtXG40GFnhOaf9" });
-      }
-    })
-    .catch((err) => console.warn("[CookieConsent] EmailJS load failed", err));
+  emailjs.init({ publicKey: "wLtvtXG40GFnhOaf9" });
 }
 
-// ─── Punto de entrada: activa todos los servicios consentidos ────────────────
-// Agregar aquí cualquier servicio futuro (Meta Pixel, Hotjar, etc.).
+function activateConsent(preferences = DEFAULT_PREFERENCES) {
+  if (preferences.analyticsMarketing) {
+    loadGtag();
+  }
 
-function activateConsent() {
-  loadGtag();
-  loadEmailJS();
+  if (preferences.forms) {
+    loadEmailJS();
+  }
 }
-
-// ─── Componente ──────────────────────────────────────────────────────────────
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
+  const [preferences, setPreferences] = useState(DEFAULT_PREFERENCES);
 
   useEffect(() => {
     const raw = Cookies.get(CONSENT_KEY);
 
     if (!raw) {
-      // Sin decisión previa → mostrar banner
-      // Delay de 1.5 s para no impactar LCP
       const timer = setTimeout(() => setVisible(true), 1500);
       return () => clearTimeout(timer);
     }
 
-    // Parsear — soporte de cookie legacy (string plano "accepted")
     let parsed;
     try {
       parsed = JSON.parse(raw);
     } catch {
-      // Versión antigua: forzar re-consentimiento
       Cookies.remove(CONSENT_KEY);
       const timer = setTimeout(() => setVisible(true), 1500);
       return () => clearTimeout(timer);
     }
 
-    // Política actualizada → re-pedir consentimiento
     if (parsed.version !== CONSENT_VERSION) {
       Cookies.remove(CONSENT_KEY);
       const timer = setTimeout(() => setVisible(true), 1500);
       return () => clearTimeout(timer);
     }
 
-    // Consentimiento vigente
+    const savedPreferences = {
+      ...DEFAULT_PREFERENCES,
+      ...(parsed.preferences || {}),
+    };
+
+    setPreferences(savedPreferences);
+
     if (parsed.status === "accepted") {
-      activateConsent();
+      activateConsent(savedPreferences);
     }
-    // Si es "declined" → ningún script se carga ✓
   }, []);
 
-  // ─── Persistencia ───────────────────────────────────────────────────────────
-
-  function saveConsent(status) {
+  function saveConsent(status, nextPreferences = DEFAULT_PREFERENCES) {
     Cookies.set(
       CONSENT_KEY,
-      JSON.stringify({ status, version: CONSENT_VERSION }),
+      JSON.stringify({
+        status,
+        version: CONSENT_VERSION,
+        preferences: nextPreferences,
+      }),
       {
-        expires  : status === "accepted" ? 365 : 30,
-        sameSite : "Strict",
-        secure   : true,
+        expires: status === "accepted" ? 365 : 30,
+        sameSite: "Strict",
+        secure: true,
       }
     );
   }
 
   function handleAccept() {
-    saveConsent("accepted");
+    const acceptedPreferences = {
+      analyticsMarketing: true,
+      forms: true,
+    };
+
+    setPreferences(acceptedPreferences);
+    saveConsent("accepted", acceptedPreferences);
     setVisible(false);
-    activateConsent();
+    activateConsent(acceptedPreferences);
   }
 
   function handleDecline() {
-    saveConsent("declined");
+    setPreferences(DEFAULT_PREFERENCES);
+    saveConsent("declined", DEFAULT_PREFERENCES);
+    setShowSettings(false);
     setVisible(false);
-    // Ningún script de terceros se ejecuta ✓
+  }
+
+  function handleSavePreferences() {
+    const nextPreferences = {
+      analyticsMarketing: !!preferences.analyticsMarketing,
+      forms: !!preferences.forms,
+    };
+
+    const nextStatus =
+      nextPreferences.analyticsMarketing || nextPreferences.forms
+        ? "accepted"
+        : "declined";
+
+    saveConsent(nextStatus, nextPreferences);
+    setShowSettings(false);
+    setVisible(false);
+
+    if (nextStatus === "accepted") {
+      activateConsent(nextPreferences);
+    }
   }
 
   if (!visible) return null;
-
-  // ─── UI ─────────────────────────────────────────────────────────────────────
 
   return (
     <div
@@ -156,27 +176,26 @@ export default function CookieConsent() {
       aria-label="Consentimiento de cookies"
       aria-live="polite"
       style={{
-        position      : "fixed",
-        bottom        : "1.5rem",
-        left          : "50%",
-        transform     : "translateX(-50%)",
-        width         : "min(560px, calc(100vw - 2rem))",
-        background    : "#ffffff",
-        border        : "1px solid #e2e8f0",
-        borderRadius  : "12px",
-        padding       : "1.25rem 1.5rem",
-        boxShadow     : "0 4px 24px rgba(0,0,0,0.12)",
-        zIndex        : 9999,
-        display       : "flex",
-        flexDirection : "column",
-        gap           : "1rem",
-        fontFamily    : "inherit",
+        position: "fixed",
+        bottom: "1.5rem",
+        left: "50%",
+        transform: "translateX(-50%)",
+        width: "min(560px, calc(100vw - 2rem))",
+        background: "#ffffff",
+        border: "1px solid #e2e8f0",
+        borderRadius: "12px",
+        padding: "1.25rem 1.5rem",
+        boxShadow: "0 4px 24px rgba(0,0,0,0.12)",
+        zIndex: 9999,
+        display: "flex",
+        flexDirection: "column",
+        gap: "1rem",
+        fontFamily: "inherit",
       }}
     >
       <p style={{ margin: 0, fontSize: "14px", color: "#374151", lineHeight: 1.6 }}>
-        Usamos cookies de análisis y publicidad (Google Analytics, Google Ads) y de
-        comunicación (EmailJS) para mejorar tu experiencia. Podés aceptar o rechazar
-        su uso.{" "}
+        Usamos cookies de analítica, publicidad y comunicación para mejorar tu
+        experiencia. Podés aceptar, rechazar o configurar el uso.{" "}
         <a
           href="/politica-de-privacidad"
           style={{ color: "#3B82F6", textDecoration: "underline" }}
@@ -185,35 +204,131 @@ export default function CookieConsent() {
         </a>
       </p>
 
-      <div style={{ display: "flex", gap: "0.75rem", justifyContent: "flex-end" }}>
+      {showSettings && (
+        <div
+          style={{
+            border: "1px solid #e5e7eb",
+            borderRadius: "10px",
+            padding: "0.9rem 1rem",
+            background: "#f8fafc",
+            display: "grid",
+            gap: "0.75rem",
+          }}
+        >
+          <label
+            style={{
+              display: "flex",
+              gap: "0.75rem",
+              alignItems: "flex-start",
+              fontSize: "13px",
+              color: "#374151",
+            }}
+          >
+            <input
+              type="checkbox"
+              checked={preferences.analyticsMarketing}
+              onChange={(e) =>
+                setPreferences((prev) => ({
+                  ...prev,
+                  analyticsMarketing: e.target.checked,
+                }))
+              }
+              style={{ marginTop: "0.2rem" }}
+            />
+            <span>
+              <strong>Analítica y publicidad</strong>
+              <br />
+              Google Analytics y Google Ads se cargarán solo si activás esta opción.
+            </span>
+          </label>
+
+          <label
+            style={{
+              display: "flex",
+              gap: "0.75rem",
+              alignItems: "flex-start",
+              fontSize: "13px",
+              color: "#374151",
+            }}
+          >
+            <input
+              type="checkbox"
+              checked={preferences.forms}
+              onChange={(e) =>
+                setPreferences((prev) => ({
+                  ...prev,
+                  forms: e.target.checked,
+                }))
+              }
+              style={{ marginTop: "0.2rem" }}
+            />
+            <span>
+              <strong>Formulario de contacto</strong>
+              <br />
+              EmailJS se activa para enviar consultas desde el formulario.
+            </span>
+          </label>
+
+          <p style={{ margin: 0, fontSize: "12px", color: "#6b7280", lineHeight: 1.5 }}>
+            Podés cambiar estas preferencias en cualquier momento borrando la cookie
+            <code style={{ marginLeft: "0.3rem" }}>toledo_cookie_consent</code>.
+          </p>
+        </div>
+      )}
+
+      <div
+        style={{
+          display: "flex",
+          gap: "0.75rem",
+          justifyContent: "flex-end",
+          flexWrap: "wrap",
+        }}
+      >
         <button
+          type="button"
+          onClick={() => setShowSettings((current) => !current)}
+          style={{
+            padding: "0.5rem 1.25rem",
+            borderRadius: "8px",
+            border: "1px solid #2563EB",
+            background: "transparent",
+            fontSize: "13px",
+            color: "#2563EB",
+            cursor: "pointer",
+          }}
+        >
+          Configurar
+        </button>
+        <button
+          type="button"
           onClick={handleDecline}
           style={{
-            padding      : "0.5rem 1.25rem",
-            borderRadius : "8px",
-            border       : "1px solid #d1d5db",
-            background   : "transparent",
-            fontSize     : "13px",
-            color        : "#6b7280",
-            cursor       : "pointer",
+            padding: "0.5rem 1.25rem",
+            borderRadius: "8px",
+            border: "1px solid #d1d5db",
+            background: "transparent",
+            fontSize: "13px",
+            color: "#6b7280",
+            cursor: "pointer",
           }}
         >
           Rechazar
         </button>
         <button
-          onClick={handleAccept}
+          type="button"
+          onClick={showSettings ? handleSavePreferences : handleAccept}
           style={{
-            padding      : "0.5rem 1.25rem",
-            borderRadius : "8px",
-            border       : "none",
-            background   : "#2563EB",
-            color        : "#ffffff",
-            fontSize     : "13px",
-            fontWeight   : 500,
-            cursor       : "pointer",
+            padding: "0.5rem 1.25rem",
+            borderRadius: "8px",
+            border: "none",
+            background: "#2563EB",
+            color: "#ffffff",
+            fontSize: "13px",
+            fontWeight: 500,
+            cursor: "pointer",
           }}
         >
-          Aceptar
+          {showSettings ? "Guardar selección" : "Aceptar"}
         </button>
       </div>
     </div>

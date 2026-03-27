@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"require\\(''./src/data/data.json''\\); console.log\\(''JSON válido''\\)\")",
+      "Bash(node -e \":*)"
+    ]
+  }
+}
